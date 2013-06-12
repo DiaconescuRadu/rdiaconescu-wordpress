@@ -1,0 +1,7 @@
+Logging in and adding writs
+
+mysql -u root -p
+
+GRANT SELECT,LOCK TABLES ON DBNAME.* TO 'username'@'localhost';
+
+connection details radi / X7Wr5KzR
