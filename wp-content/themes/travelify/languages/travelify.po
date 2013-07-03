@@ -1,0 +1,583 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Travelify\n"
+"POT-Creation-Date: 2013-06-12 19:45+0200\n"
+"PO-Revision-Date: 2013-06-12 19:48+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: Color Awesomeness <info@colorawesomeness.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:11
+msgid "Error 404 - Page NOT Found"
+msgstr ""
+
+#: 404.php:14
+msgid "It seems we can't find what you're looking for."
+msgstr ""
+
+#: 404.php:15
+msgid "This might be because:"
+msgstr ""
+
+#: 404.php:17
+msgid "You have typed the web address incorrectly"
+msgstr ""
+
+#: 404.php:18
+msgid "The page you were looking for may have been moved, updated or deleted."
+msgstr ""
+
+#: 404.php:20
+msgid "Please try the following:"
+msgstr ""
+
+#: 404.php:22
+msgid "Check for a mis-typed URL error"
+msgstr ""
+
+#: 404.php:23
+msgid "Press the refresh button on your browser."
+msgstr ""
+
+#: 404.php:24
+msgid "Go back to"
+msgstr ""
+
+#: 404.php:24
+msgid "Homepage"
+msgstr ""
+
+#: comments.php:24
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:27
+#, php-format
+msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:38
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:39
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:40
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:47
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:75
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:108 library/panel/theme-options.php:297
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions.php:110
+msgid "Shows widgets at Left side."
+msgstr ""
+
+#: functions.php:119 library/panel/theme-options.php:301
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:121
+msgid "Shows widgets at Right side."
+msgstr ""
+
+#: functions.php:130
+msgid "Footer"
+msgstr ""
+
+#: functions.php:132
+msgid "Shows widgets at footer."
+msgstr ""
+
+#: searchform.php:7
+msgid "Search"
+msgstr ""
+
+#: library/functions/functions.php:356 library/functions/functions.php:370
+msgid "Navigation"
+msgstr ""
+
+#: library/panel/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+
+#: library/panel/metaboxes.php:22
+msgid "Select layout for this specific Post only"
+msgstr ""
+
+#: library/panel/metaboxes.php:35
+msgid "Default Layout Set in"
+msgstr ""
+
+#: library/panel/metaboxes.php:35
+msgid "Theme Settings"
+msgstr ""
+
+#: library/panel/metaboxes.php:41
+msgid "No sidebar"
+msgstr ""
+
+#: library/panel/metaboxes.php:47
+msgid "No sidebar, Full Width"
+msgstr ""
+
+#: library/panel/metaboxes.php:53 library/panel/theme-options.php:293
+msgid "No Sidebar, One Column"
+msgstr ""
+
+#: library/panel/metaboxes.php:59
+msgid "Left sidebar"
+msgstr ""
+
+#: library/panel/metaboxes.php:65
+msgid "Right sidebar"
+msgstr ""
+
+#: library/panel/theme-options.php:92 library/panel/theme-options.php:93
+msgid "Theme Options"
+msgstr ""
+
+#: library/panel/theme-options.php:125
+msgid "Theme Options by"
+msgstr ""
+
+#: library/panel/theme-options.php:132
+msgid "Support"
+msgstr ""
+
+#: library/panel/theme-options.php:133
+msgid "Theme Instructions"
+msgstr ""
+
+#: library/panel/theme-options.php:134
+msgid "Facebook"
+msgstr ""
+
+#: library/panel/theme-options.php:135
+msgid "Twitter"
+msgstr ""
+
+#: library/panel/theme-options.php:150
+msgid "Settings saved."
+msgstr ""
+
+#: library/panel/theme-options.php:156
+msgid "Main Options"
+msgstr ""
+
+#: library/panel/theme-options.php:157
+msgid "Featured Slider"
+msgstr ""
+
+#: library/panel/theme-options.php:158
+msgid "Social Links"
+msgstr ""
+
+#: library/panel/theme-options.php:159
+msgid "Webmaster Tools"
+msgstr ""
+
+#: library/panel/theme-options.php:165
+msgid "Header Options"
+msgstr ""
+
+#: library/panel/theme-options.php:170 library/panel/theme-options.php:180
+msgid "Header Logo"
+msgstr ""
+
+#: library/panel/theme-options.php:177 library/panel/theme-options.php:230
+#: library/panel/theme-options.php:262
+msgid "Preview"
+msgstr ""
+
+#: library/panel/theme-options.php:185
+msgid "Show"
+msgstr ""
+
+#: library/panel/theme-options.php:188
+msgid "Header Logo Only"
+msgstr ""
+
+#: library/panel/theme-options.php:191
+msgid "Header Text Only"
+msgstr ""
+
+#: library/panel/theme-options.php:194
+msgid "Disable"
+msgstr ""
+
+#: library/panel/theme-options.php:199
+msgid "Change header image"
+msgstr ""
+
+#: library/panel/theme-options.php:212
+msgid "Favicon Options"
+msgstr ""
+
+#: library/panel/theme-options.php:217
+msgid "Disable Favicon"
+msgstr ""
+
+#: library/panel/theme-options.php:219 library/panel/theme-options.php:251
+#: library/panel/theme-options.php:456
+msgid "Check to disable"
+msgstr ""
+
+#: library/panel/theme-options.php:222
+msgid "Favicon URL"
+msgstr ""
+
+#: library/panel/theme-options.php:233
+msgid "favicon"
+msgstr ""
+
+#: library/panel/theme-options.php:244
+msgid "Web Clip Icon Options"
+msgstr ""
+
+#: library/panel/theme-options.php:249
+msgid "Disable Web Clip Icon"
+msgstr ""
+
+#: library/panel/theme-options.php:254
+msgid "Web Clip Icon URL"
+msgstr ""
+
+#: library/panel/theme-options.php:265
+msgid "webpage icon"
+msgstr ""
+
+#: library/panel/theme-options.php:276
+msgid "Layout Options"
+msgstr ""
+
+#: library/panel/theme-options.php:281
+msgid "Default Layout"
+msgstr ""
+
+#: library/panel/theme-options.php:285
+msgid "No Sidebar"
+msgstr ""
+
+#: library/panel/theme-options.php:289
+msgid "No Sidebar, Full Width"
+msgstr ""
+
+#: library/panel/theme-options.php:308
+msgid "Reset Layout"
+msgstr ""
+
+#: library/panel/theme-options.php:311
+msgid "Check to reset"
+msgstr ""
+
+#: library/panel/theme-options.php:321
+msgid "Custom Background"
+msgstr ""
+
+#: library/panel/theme-options.php:327
+msgid "Change theme background"
+msgstr ""
+
+#: library/panel/theme-options.php:340
+msgid "RSS URL"
+msgstr ""
+
+#: library/panel/theme-options.php:346
+msgid "Feed Redirect URL"
+msgstr ""
+
+#: library/panel/theme-options.php:359
+msgid "Homepage Post Options"
+msgstr ""
+
+#: library/panel/theme-options.php:365
+msgid "Homepage posts categories:"
+msgstr ""
+
+#: library/panel/theme-options.php:367
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on "
+"the front page."
+msgstr ""
+
+#: library/panel/theme-options.php:372
+msgid "--Disabled--"
+msgstr ""
+
+#: library/panel/theme-options.php:382
+msgid ""
+"You may select multiple categories by holding down the CTRL (Windows) or cmd "
+"(Mac)."
+msgstr ""
+
+#: library/panel/theme-options.php:391
+msgid "Custom CSS (Advanced)"
+msgstr ""
+
+#: library/panel/theme-options.php:396
+msgid "Enter your custom CSS styles."
+msgstr ""
+
+#: library/panel/theme-options.php:397
+msgid "This CSS will overwrite the CSS of style.css file."
+msgstr ""
+
+#: library/panel/theme-options.php:414
+msgid "Featured Post/Page Slider Options"
+msgstr ""
+
+#: library/panel/theme-options.php:418
+msgid "Exclude Slider post from Homepage posts?"
+msgstr ""
+
+#: library/panel/theme-options.php:420
+msgid "Check to exclude"
+msgstr ""
+
+#: library/panel/theme-options.php:424
+msgid "Number of Slides"
+msgstr ""
+
+#: library/panel/theme-options.php:429
+msgid "Featured Slide #"
+msgstr ""
+
+#: library/panel/theme-options.php:431
+msgid "Click Here To Edit"
+msgstr ""
+
+#: library/panel/theme-options.php:437
+msgid "How to use the featured slider?"
+msgstr ""
+
+#: library/panel/theme-options.php:440
+msgid ""
+"Add all the Post ID that you want to use in the featured slider. Post ID can "
+"be found at All Posts table in last column"
+msgstr ""
+
+#: library/panel/theme-options.php:441
+msgid ""
+"Featured Slider will show featured images, Title and excerpt of the "
+"respected added post IDs."
+msgstr ""
+
+#: library/panel/theme-options.php:442
+msgid "The recommended image size is"
+msgstr ""
+
+#: library/panel/theme-options.php:450
+msgid "Slider Options"
+msgstr ""
+
+#: library/panel/theme-options.php:454
+msgid "Disable Slider"
+msgstr ""
+
+#: library/panel/theme-options.php:460
+msgid "Transition Effect:"
+msgstr ""
+
+#: library/panel/theme-options.php:480 library/panel/theme-options.php:532
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: library/panel/theme-options.php:488
+msgid "Transition Delay"
+msgstr ""
+
+#: library/panel/theme-options.php:491 library/panel/theme-options.php:498
+msgid "second(s)"
+msgstr ""
+
+#: library/panel/theme-options.php:495
+msgid "Transition Length"
+msgstr ""
+
+#: library/panel/theme-options.php:549
+msgid "Site Verification"
+msgstr ""
+
+#: library/panel/theme-options.php:554
+msgid "Google Site Verification ID"
+msgstr ""
+
+#: library/panel/theme-options.php:555
+msgid "Enter your Google ID number only (HTML tag verifciation)"
+msgstr ""
+
+#: library/panel/theme-options.php:559
+msgid "Bing Site Verification ID"
+msgstr ""
+
+#: library/panel/theme-options.php:560
+msgid "Enter your Bing ID number only"
+msgstr ""
+
+#: library/panel/theme-options.php:570
+msgid "Analytics"
+msgstr ""
+
+#: library/panel/theme-options.php:575
+msgid "Code to display on Header"
+msgstr ""
+
+#: library/panel/theme-options.php:581
+msgid "Note: Enter your custom header script."
+msgstr ""
+
+#: library/panel/theme-options.php:584
+msgid "Code to display on Footer"
+msgstr ""
+
+#: library/panel/theme-options.php:591
+msgid "Note: Enter your custom footer script."
+msgstr ""
+
+#: library/structure/content-extensions.php:148
+#: library/structure/content-extensions.php:282
+#: library/structure/content-extensions.php:463
+#: library/structure/content-extensions.php:575
+#: library/structure/content-extensions.php:689
+msgid "No Comments"
+msgstr ""
+
+#: library/structure/content-extensions.php:148
+#: library/structure/content-extensions.php:282
+#: library/structure/content-extensions.php:463
+#: library/structure/content-extensions.php:575
+#: library/structure/content-extensions.php:689
+msgid "1 Comment"
+msgstr ""
+
+#: library/structure/content-extensions.php:148
+#: library/structure/content-extensions.php:282
+#: library/structure/content-extensions.php:463
+#: library/structure/content-extensions.php:575
+#: library/structure/content-extensions.php:689
+msgid "% Comments"
+msgstr ""
+
+#: library/structure/content-extensions.php:148
+#: library/structure/content-extensions.php:282
+#: library/structure/content-extensions.php:463
+#: library/structure/content-extensions.php:575
+#: library/structure/content-extensions.php:689
+msgid "Comments Off"
+msgstr ""
+
+#: library/structure/content-extensions.php:152
+#: library/structure/content-extensions.php:467
+#: library/structure/content-extensions.php:579
+#: library/structure/content-extensions.php:664
+msgid "Read more"
+msgstr ""
+
+#: library/structure/content-extensions.php:167
+#: library/structure/content-extensions.php:238
+#: library/structure/content-extensions.php:332
+#: library/structure/content-extensions.php:383
+#: library/structure/content-extensions.php:495
+#: library/structure/content-extensions.php:606
+#: library/structure/content-extensions.php:718
+msgid "No Posts Found."
+msgstr ""
+
+#: library/structure/content-extensions.php:207
+#: library/structure/content-extensions.php:301
+#: library/structure/content-extensions.php:667
+msgid "Pages:"
+msgstr ""
+
+#: library/structure/content-extensions.php:486
+#: library/structure/content-extensions.php:597
+#: library/structure/content-extensions.php:709
+#: library/structure/content-extensions.php:745
+#: library/structure/content-extensions.php:765
+msgid "&laquo; Previous"
+msgstr ""
+
+#: library/structure/content-extensions.php:487
+#: library/structure/content-extensions.php:598
+#: library/structure/content-extensions.php:710
+#: library/structure/content-extensions.php:746
+#: library/structure/content-extensions.php:766
+msgid "Next &raquo;"
+msgstr ""
+
+#: library/structure/content-extensions.php:810
+msgid "Pingback:"
+msgstr ""
+
+#: library/structure/content-extensions.php:810
+msgid "(Edit)"
+msgstr ""
+
+#: library/structure/content-extensions.php:825
+msgid "Post author"
+msgstr ""
+
+#: library/structure/content-extensions.php:831
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: library/structure/content-extensions.php:837
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: library/structure/content-extensions.php:842
+msgid "Edit"
+msgstr ""
+
+#: library/structure/content-extensions.php:846
+msgid "Reply"
+msgstr ""
+
+#: library/structure/footer-extensions.php:35
+msgid "Copyright &copy;"
+msgstr ""
+
+#: library/structure/footer-extensions.php:35
+msgid "Theme by"
+msgstr ""
+
+#: library/structure/footer-extensions.php:35
+msgid "Powered by"
+msgstr ""
+
+#: library/structure/header-extensions.php:75
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: library/structure/header-extensions.php:428
+msgid "Page NOT Found"
+msgstr ""
+
+#: library/structure/header-extensions.php:431
+msgid "Search Results"
+msgstr ""

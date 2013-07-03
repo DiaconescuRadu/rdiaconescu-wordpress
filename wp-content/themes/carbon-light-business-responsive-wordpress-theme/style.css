@@ -1,0 +1,21 @@
+/*
+Theme Name: Carbon Light - Business responsive WordPress theme
+Theme URI: 
+Author: OneTwoWeb Ltd.
+Author URI: http://onetwoweb.bg/en
+Description: Carbon Light is a fully responsive HTML5/CSS3  WordPress theme. Suitable for Business, Service, Portfolio websites. It has clean and minimalist design that is very easy to customize. It comes packed with a whole lot of code-snippets. <br /> Check out <a href="http://otwthemes.com/demos/carbon-wp-light/">Carbon light Demo site</a> to get an idea of how powerful this theme is. Full <a href="http://otwthemes.com/online-documentation-carbon-light-wordpress-theme/">online documentation here</a>. 
+Version: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-width, post-formats, translation-ready, full-width-template
+*/
+
+/*------------------------------------*\
+    MAIN - WP default styles
+\*------------------------------------*/
+
+.wp-caption { }
+.wp-caption-text { }
+.sticky css class { }
+.gallery-caption { }
+.bypostauthor { }

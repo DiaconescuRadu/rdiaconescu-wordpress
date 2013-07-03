@@ -1,0 +1,121 @@
+div#comments ol{
+    padding: 30px 0px 15px 0px;
+}
+div#comments ol,
+div#comments ul{
+    list-style: none;
+    margin: 0px;
+}
+
+div#comments ul{
+    background-image: url('../images/left.line.png');
+    background-repeat: repeat-y;
+    padding: 15px 0px 0px 83px;
+}
+
+div#comments ol li.comment{
+    background-image: url('../images/left.line.png');
+    background-repeat: repeat-y;
+    display: block;
+    padding-top: 15px;
+    padding-left: 83px;
+}
+div#comments ol li.comment:first-child{
+    padding-top: 0px;
+}
+div#comments ol li.comment div.comment-box{
+    border:1px solid #e6e6e6;
+    padding: 10px 15px 0px 15px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+div#comments ol li.comment div.comment-box header{
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+div#comments ol li.comment div.comment-box header img{
+    position: absolute;
+    margin: -10px 98px 10px -98px;
+}
+div#comments ol li.comment div.comment-box header span.arrow{
+    background-image: url('../images/left.arrow.png');
+    height: 12px;
+    position: absolute;
+    margin: 10px 38px 0px -38px;
+    width: 23px;
+}
+div#comments ol li.comment div.comment-box header span.comment-meta{
+    float: right;
+}
+div#comments ol li.comment div.comment-box header cite{
+    font-family: "Text Me One",sans-serif;
+    font-size: 18px;
+    color: #666666;
+}
+div#comments ol li.comment div.comment-box header time{
+    font-family: verdana,sans-serif;
+    font-size: 12px;
+    color: #888888;
+}
+div#comments ol li.comment div.comment-box header span.comment-replay{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-left: 20px;
+}
+div#comments ol li.comment div.comment-box header span.comment-replay a{
+    background-image: url("../images/comments.png");
+    background-position: 0px -16px;
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    margin: 4px 0px 0px 0px;
+    text-indent: 100px;
+    overflow: hidden;
+}
+div#comments ol li.comment div.comment-box header span.comment-replay a:hover{
+    background-position: 0px -32px;
+}
+
+div#comments ol li.comment div.comment-box p.comment-quote{
+    font-family: "Text Me One" ,sans-serif;
+    font-size: 16px;
+    color: #999999
+}
+
+div#comments div.pagination{
+    margin-top: 15px;
+}
+
+div#comments div#respond p.comment-notes{
+    font-family: "Text Me One",sans-serif;
+    color: #666666;
+}
+div#comments div#respond p.comment-form-author input[type="text"]{
+    background-image: url("../images/comment-form.author.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 35px;
+    padding: 3px 3px 3px 55px;
+}
+div#comments div#respond p.comment-form-email input[type="text"]{
+    background-image: url("../images/comment-form.email.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 35px;
+    padding: 3px 3px 3px 55px;
+}
+div#comments div#respond p.comment-form-url input[type="text"]{
+    background-image: url("../images/comment-form.url.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 35px;
+    padding: 3px 3px 3px 55px;
+}
+
+div#comments div#respond p.comment-form-comment textarea{
+    width: 98%;
+}

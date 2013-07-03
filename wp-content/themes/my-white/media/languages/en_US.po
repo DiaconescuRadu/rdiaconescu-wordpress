@@ -1,0 +1,793 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Add additional HTML + JS code ( ex: google analytic code )"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Add custom css"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+#: my-white/cfg/static.php:1
+msgid "Additional Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/static.php:1
+msgid "Additional Sidebar - is not used by default, but you can use it on different pages or posts, from individual page/post - myThemes settings."
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Additional custom sidebar"
+msgstr ""
+
+#. Text in echo
+#: my-white/front-page.php:64
+#: my-white/index.php:16
+msgid "Blog Page"
+msgstr ""
+
+#. Text in function
+#: my-white/archive.php:5
+msgid "Blog archives"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Branding"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Categories"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Choose File"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/templates/view/list-view.php:40
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Comment"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/templates/view/list-view.php:40
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Comments"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/pages.php:1
+msgid "Contact"
+msgstr ""
+
+#. Text in function
+#: my-white/archive.php:5
+msgid "Daily archives"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Default layout"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Default sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Disable"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Drop Settings"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Drop item"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_newsletter.php:37
+msgid "E-mail"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "E-mail ( required )"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Edit"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/underconstruction.php:1
+msgid "Email feed Subscription"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Enable"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Error - options were not changed. contact support from "
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Error, please select \"ico\" type media file"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "Error, the file could not moved to : "
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Facebook page or profile ( url )"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:103
+msgid "Facebook profile or page ( URL )"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "File uploader"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/underconstruction.php:1
+msgid "Fill with Google FeedBurner account ex : "
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:65
+msgid "Flickr ID"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:82
+msgid "Flickr Photos"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:82
+msgid "Flickr Photos Gallery"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/static.php:1
+msgid "Footer Menu"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Fourth Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+#: my-white/cfg/static.php:1
+msgid "Front Page Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/static.php:1
+msgid "Front Page Sidebar - is used by default on front page ( if not is set to show a page for front page )."
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Front page layout"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Front page sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/pages.php:1
+msgid "General Settings"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Google + profile ( url )"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:108
+msgid "Google + profile URL"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_newsletter.php:43
+msgid "Google FeedBurner ID"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_newsletter.php:1
+msgid "Google FeedBurner Newsletter"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/static.php:1
+msgid "Header base Menu"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "If not is set custom layout, will be used default layout."
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "If not is set front page layout, will be used default layout."
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "If not is set single page layout, will be used default layout."
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "If not is set single post layout, will be used default layout."
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:78
+msgid "Latest Photo"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Layout"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Leave a reply"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Log out of this account"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Log out?"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Logged in as"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Logo left margin ( px )"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Logo top margin ( px )"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+#: my-white/cfg/static.php:1
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Main Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/static.php:1
+msgid "Main Sidebar - is used by default for next templates: 404, Archive, Author, Category, Search and Tag."
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Main sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Meta Details"
+msgstr ""
+
+#. Text in function
+#: my-white/archive.php:5
+msgid "Monthly archives"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_newsletter.php:1
+msgid "Newsletter"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Nickname ( required )"
+msgstr ""
+
+#. Text in echo
+#: my-white/page.php:51
+#: my-white/search.php:16
+#: my-white/category.php:16
+#: my-white/tag.php:16
+#: my-white/archive.php:22
+#: my-white/author.php:65
+#: my-white/404.php:5
+#: my-white/single.php:58
+#: my-white/front-page.php:69
+#: my-white/index.php:24
+msgid "Not found results"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Not fount items"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:70
+msgid "Number of photos"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Off"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Others"
+msgstr ""
+
+#. Text in function
+#: my-white/page.php:28
+#: my-white/single.php:28
+#: my-white/front-page.php:47
+msgid "Pages"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:82
+msgid "Photo Gallery"
+msgstr ""
+
+#. Text in echo
+#: my-white/cfg/templates/view/under-construction.php:92
+msgid "Place your email adress here..."
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Please select 'ico' type media file. Make sure you allow uploading 'ico' type in General Settings -> Upload file types."
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_post_categories.php:1
+msgid "Post Categories"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+#: my-white/cfg/static.php:1
+msgid "Post Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/static.php:1
+msgid "Post Sidebar - is used by default for single post."
+msgstr ""
+
+#. Text in echo
+#: my-white/cfg/templates/view/list-view.php:34
+msgid "Posted by "
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Posts Count"
+msgstr ""
+
+#. Text in echo
+#: my-white/author.php:61
+msgid "Published"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:77
+msgid "Random Photo"
+msgstr ""
+
+#. Text in echo
+#: my-white/cfg/templates/view/list-view.php:18
+msgid "Read more about .."
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Related Posts"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Related by"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Related post ( use only for single template )"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Remove data from this field"
+msgstr ""
+
+#. Text in echo
+#: my-white/category.php:5
+msgid "Results for category"
+msgstr ""
+
+#. Text in echo
+#: my-white/tag.php:5
+msgid "Results for tag"
+msgstr ""
+
+#. Text in echo
+#: my-white/search.php:5
+msgid "Search results for"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Second Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Select Layout"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/underconstruction.php:1
+msgid "Select page to show on under construction template"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Select sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Set <strong>Facebook</strong> profile page <strong>URL</strong>"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Set <strong>Google +</strong> profile page <strong>URL</strong>"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Set <strong>Twitter</strong> profile page <strong>URL</strong>"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Set <strong>Vimeo</strong> profile page <strong>URL</strong>"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Set <strong>Youtube</strong> profile page <strong>URL</strong>"
+msgstr ""
+
+#. Text in echo
+#: my-white/single.php:40
+msgid "Share on Facebook"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:118
+msgid "Show RSS icon"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Show RSS icon in header"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Show title"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:75
+msgid "Showing Method"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Single page layout"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Single page sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Single post layout"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Single post sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Social"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:122
+msgid "Social icons"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:122
+msgid "Social icons from your accounts"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Submit Comment"
+msgstr ""
+
+#. Text in echo
+#: my-white/cfg/templates/view/under-construction.php:95
+msgid "Subscribe"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/sett.class.php:1
+msgid "Successful disabled option!"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/sett.class.php:1
+msgid "Successful enabled option!"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+msgid "Successful update options!"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "Tags"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/pages.php:1
+msgid "Theme Options"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Third Sidebar"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_post_categories.php:1
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+#: my-white/fw/plg/my_widgets/my_wdg_flickr.php:60
+#: my-white/fw/plg/my_widgets/my_wdg_newsletter.php:43
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Title"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Tracking code"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Twitter profile ( url )"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:98
+msgid "Twitter profile URL"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "Unable to write to directory %s. Is this directory writable by the server?"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "Undefined file type  : "
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/underconstruction.php:1
+msgid "Under Construction Settings"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/underconstruction.php:1
+msgid "Under construction page"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/ahtml.class.php:1
+#: my-white/fw/admin/main.php:1
+msgid "Update Settings"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "Upload"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "Upload error, try again."
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Upload your custom favicon"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/general.php:1
+msgid "Upload your custom logo"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_files/my_fl_upload.php:1
+msgid "Use attached file"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "Use custom layout"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_post_categories.php:1
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Use only for single template"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/settings/underconstruction.php:1
+msgid "Use under construction template"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/main.php:1
+msgid "Version"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Vimeo profile ( url )"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:93
+msgid "Vimeo profile URL"
+msgstr ""
+
+#. Text in echo
+#: my-white/page.php:55
+#: my-white/search.php:16
+#: my-white/category.php:16
+#: my-white/tag.php:16
+#: my-white/archive.php:22
+#: my-white/author.php:65
+#: my-white/404.php:14
+#: my-white/single.php:62
+#: my-white/front-page.php:69
+#: my-white/index.php:24
+msgid "We apologize but this page, post or resource does not exist or can not be found. Perhaps it is necessary to change the call method to this page, post or resource."
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Website"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_meta.php:1
+msgid "Writed by "
+msgstr ""
+
+#. Text in function
+#: my-white/archive.php:5
+msgid "Yearly archives"
+msgstr ""
+
+#. Text in function
+#: my-white/comments.php:1
+msgid "Your email address will not be published."
+msgstr ""
+
+#. Text in function
+#: my-white/fw/mytheme.class.php:196
+msgid "Youtube profile ( url )"
+msgstr ""
+
+#. Text in echo
+#: my-white/fw/plg/my_widgets/my_wdg_social.php:113
+msgid "Youtube profile URL"
+msgstr ""
+
+#. Text in echo
+#: my-white/author.php:61
+msgid "articles"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_posts.php:1
+msgid "comments for"
+msgstr ""
+
+#. Text in function
+#: my-white/cfg/admin/resources/boxes.php:1
+msgid "myThemes Settings"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/admin/main.php:1
+msgid "options has been updated successfully"
+msgstr ""
+
+#. Text in function
+#: my-white/fw/plg/my_widgets/my_wdg_newsletter.php:1
+msgid "subscribe with FeedBurner"
+msgstr ""
+
+#. Text in echo
+#: my-white/searchform.php:4
+msgid "type here..."
+msgstr ""

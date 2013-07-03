@@ -1,0 +1,201 @@
+#skin-switcher table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+#skin-switcher fieldset,img {
+	border:0;
+}
+#skin-switcher address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+#skin-switcher ol,ul {
+	list-style:none;
+}
+#skin-switcher caption,th {
+	text-align:left;
+}
+
+#skin-switcher q:before,#skin-switcher q:after {
+	content:'';
+}
+#skin-switcher abbr,#skin-switcher acronym { border:0;
+}
+
+#skin-switcher .wrapper {
+	width: 700px;
+	margin: 0 auto;
+	text-align: left;
+}
+#skin-switcher h1 {
+	font-size: 21px;
+	height: 47px;
+	line-height: 47px;
+	text-transform: uppercase;
+}
+#skin-switcher .navigationTabs {
+	height: 23px;
+	line-height: 23px;
+	border-bottom: 1px solid #ccc;
+}
+#skin-switcher .navigationTabs li {
+	float: left;
+	height: 23px;
+	line-height: 23px;
+	padding-right: 3px;
+}
+#skin-switcher .navigationTabs li a{
+	float: left;
+	dispaly: block;
+	height: 23px;
+	line-height: 23px;
+	padding: 0 10px;
+	overflow: hidden;
+	color: #52697E;
+	background-color: #eee;
+	position: relative;
+	text-decoration: none;
+}
+#skin-switcher .navigationTabs li a:hover {
+	background-color: #f0f0f0;
+}
+#skin-switcher .navigationTabs li a.active {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-bottom: 0px solid;
+}
+#skin-switcher .tabsContent {
+	border: 1px solid #ccc;
+	border-top: 0px solid;
+	width: 698px;
+	overflow: hidden;
+}
+#skin-switcher .tab {
+	padding: 16px;
+	display: none;
+}
+#skin-switcher .tab h2 {
+	font-weight: bold;
+	font-size: 16px;
+}
+#skin-switcher .tab h3 {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 20px;
+}
+#skin-switcher .tab p {
+	margin-top: 16px;
+	clear: both;
+}
+#skin-switcher .tab ul {
+	margin-top: 16px;
+	list-style: disc;
+}
+#skin-switcher .tab li {
+	margin: 10px 0 0 35px;
+}
+#skin-switcher .tab a {
+	color: #8FB0CF;
+}
+#skin-switcher .tab strong {
+	font-weight: bold;
+}
+#skin-switcher .tab pre {
+	font-size: 11px;
+	margin-top: 20px;
+	width: 668px;
+	overflow: auto;
+	clear: both;
+}
+#skin-switcher .tab table {
+	width: 100%;
+}
+#skin-switcher .tab table td {
+	padding: 6px 10px 6px 0;
+	vertical-align: top;
+}
+#skin-switcher .tab dt {
+	margin-top: 16px;
+}
+
+#skin-switcher #colorSelector {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	background: url(../images/select.png);
+}
+#skin-switcher #colorSelector div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/select.png) center;
+}
+#skin-switcher #colorSelector2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 36px;
+	height: 36px;
+	background: url(../images/select2.png);
+}
+#skin-switcher #colorSelector2 div {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: url(../images/select2.png) center;
+}
+#skin-switcher #colorpickerHolder2 {
+	top: 32px;
+	left: 0;
+	width: 356px;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+}
+#skin-switcher #colorpickerHolder2 .colorpicker {
+	background-image: url(../images/custom_background.png);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_hue div {
+	background-image: url(../images/custom_indic.gif);
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_hex {
+	background-image: url(../images/custom_hex.png);
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_rgb_r {
+	background-image: url(../images/custom_rgb_r.png);
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_rgb_g {
+	background-image: url(../images/custom_rgb_g.png);
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_rgb_b {
+	background-image: url(../images/custom_rgb_b.png);
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_hsb_s {
+	background-image: url(../images/custom_hsb_s.png);
+	display: none;
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_hsb_h {
+	background-image: url(../images/custom_hsb_h.png);
+	display: none;
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_hsb_b {
+	background-image: url(../images/custom_hsb_b.png);
+	display: none;
+}
+#skin-switcher #colorpickerHolder2 .colorpicker_submit {
+	background-image: url(../images/custom_submit.png);
+}
+#skin-switcher #colorpickerHolder2 .colorpicker input {
+	color: #778398;
+}
+#skin-switcher #customWidget {
+	position: relative;
+	height: 36px;
+}

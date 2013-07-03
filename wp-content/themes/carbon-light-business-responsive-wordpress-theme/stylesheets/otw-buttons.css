@@ -1,0 +1,173 @@
+/* Normal Buttons ---------------------- */
+.button {
+  background-color: #00aeef;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  color: white !important;
+  cursor: pointer;
+  display: inline-block !important;
+  font-family: "Open Sans Condensed", Arial, sans-serif;
+  font-size: ms(1);
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0 0 5px 0;
+  outline: none;
+  padding: 8px 16px 9px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.25)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.25));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.25));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.25));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.25));
+  background-repeat: repeat-x;
+  white-space: nowrap;
+  /* Hovers */
+  /* IE Filters for IE8 */
+  /* SVG + opacity for IE9 */
+  /* Sizes */
+  /* Radii */
+  /* Icon buttons */
+}
+.button:hover {
+  color: white;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.05)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05));
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(128, 128, 128, 0.6);
+}
+.button:active {
+  color: #ebebeb;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25) inset;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(128, 128, 128, 0.75);
+}
+.ie8 .button {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffffff', endColorstr='#40000000',GradientType=0 );
+}
+.ie8 .button:hover {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1affffff', endColorstr='#0d000000',GradientType=0 );
+}
+.ie8 .button:active {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1affffff', endColorstr='#66000000',GradientType=0 );
+}
+.ie9 .button {
+  position: relative;
+}
+.ie9 .button:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImczOTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMxMTExMTEiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2czOTEpIiAvPgo8L3N2Zz4=);
+}
+.ie9 .button:hover:after {
+  opacity: 0.05;
+}
+.ie9 .button:active:after {
+  opacity: 0.2;
+}
+.button.large {
+  font-size: ms(2);
+}
+.button.large img {
+  max-height: ms(2)1;
+}
+.button.medium {
+  font-size: ms(1);
+}
+.button.medium img {
+  max-height: ms(1)1;
+}
+.button.small {
+  font-size: ms(0);
+  padding: 5px 10px 6px;
+}
+.button.small img {
+  max-height: ms(0)1;
+}
+.button.tiny {
+  font-size: ms(0)-1;
+  padding: 4px 8px 5px;
+}
+.button.tiny img {
+  max-height: ms(0);
+}
+.button.expand {
+  width: 100%;
+  text-align: center;
+}
+.button.radius, .button.radius:after {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.button.round, .button.round:after {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+.button i {
+  display: block;
+  float: left;
+  margin: 1px 6px 0 0;
+}
+.button img {
+  margin-right: 8px;
+}
+.button.right-icon i {
+  float: right;
+  margin: 1px 0 0 6px;
+}
+.button.right-icon img {
+  float: right;
+  margin: 0 0 0 8px;
+}
+
+/* Don't use native buttons on iOS */
+input[type=submit].button, button.button {
+  -webkit-appearance: none;
+}
+
+/* Correct FF button padding */
+@-moz-document url-prefix() {
+  button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+
+  input[type="submit"].tiny.button {
+    padding: 2px 8px 3px;
+  }
+
+  input[type="submit"].small.button {
+    padding: 3px 10px 4px;
+  }
+
+  input[type="submit"].button, input[type=submit].medium.button {
+    padding: 6px 16px 7px;
+  }
+
+  input[type="submit"].large.button {
+    padding: 10px 24px 11px;
+  }
+}

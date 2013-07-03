@@ -1,0 +1,81 @@
+/*  
+Theme Name: my white
+Theme URI: http://mythem.es/item/my-white-free-wordpress-theme/
+Description: Free clean and creative WordPress theme developed by myThem.es. Theme features: custom colors, custom background, post formats, custom templates, custom logo, custom favicon; additional widgets: social, related posts, newsletter, flickr,  post meta and post categories.
+Version: 1.2.2
+Tags: red, blue, white, light, two-columns, right-sidebar, left-sidebar, fixed-width, theme-options, custom-background, custom-colors, custom-menu, featured-images, threaded-comments, holiday
+Author: myThem.es
+Author URI: http://mythem.es
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+My White Free WordPress Theme, Copyright 2010 myThem.es
+My White Free WordPress Theme is distributed under the terms of the GNU GPL
+
+                     ________________
+                    |_____    _______|
+     ___ ___ ___   __ __  |  |  __       ____   ___ ___ ___       ____   ____ 
+    |   |   |   | |_ |  | |  | |  |___  |  __| |   |   |   |     |  __| |  __|
+    |   |   |   |  | |  | |  | |  __  | |  __| |   |   |   |  _  |  __| |__  |
+    |___|___|___|   |  |  |__| |_ ||_ | |____| |___|___|___| |_| |____| |____|   
+                    |_|
+
+
+*/
+/* EXTERNAL IMPORTS GOOGLE FONTS */
+@import url(http://fonts.googleapis.com/css?family=Cuprum|Text+Me+One);
+
+/* LOCAL IMPORTS */
+@import url(media/css/my/reset.css);
+@import url(media/css/my/template.css);
+
+@import url(media/css/settings.css);
+@import url(media/css/button.css);
+@import url(media/css/icons.css);
+
+@import url(media/css/widget.css);
+@import url(media/css/blog.css);
+@import url(media/css/comments.css);
+@import url(media/css/forms.css);
+@import url(media/css/main.css);
+@import url(media/css/under-construction.css);
+
+
+/* WORDPRESS */
+.alignleft{
+    float:left;
+    margin:0px 25px 14px 0px;
+}
+.alignright{
+    float:right;
+    margin:0px 0px 14px 25px;
+}
+.aligncenter{
+    clear:both;
+    display: block;
+    margin-left:auto !important;
+    margin-right:auto !important;
+	text-align: center;
+	margin-bottom:15px;
+}
+
+.wp-caption,
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor{}
+
+/* MY THEMES CLASSES */
+.no-margin-top{
+    margin-top: 0px !important;
+}
+.no-margin-bottom{
+    margin-top: 0px !important;
+}
+.no-margin-right{
+    margin-right: 0px !important;
+}
+.no-margin-left{
+    margin-left: 0px !important;
+}

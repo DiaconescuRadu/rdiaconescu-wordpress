@@ -1,0 +1,71 @@
+[class*="social foundicon-"]:before {
+  font-family: "SocialFoundicons";
+}
+
+[class*="general foundicon-"]:before {
+  font-family: "GeneralFoundicons";
+}
+
+.otw-sc-services {
+  margin-bottom: 20px;
+}
+.otw-sc-services.with-left-icon i,
+.otw-sc-services.with-left-icon a > img {
+  position: absolute;
+}
+.otw-sc-services.with-left-icon div {
+  padding-left: 40px;
+}
+.otw-sc-services.with-left-icon.small i {
+  font-size: 32px;
+  line-height: 32px;
+}
+.otw-sc-services.with-left-icon.small div, .otw-sc-services.with-left-icon.small h3 {
+  padding-left: 48px;
+}
+.otw-sc-services.with-left-icon.small a > img {
+  max-height: 32px;
+}
+.otw-sc-services.with-left-icon.medium i {
+  font-size: 48px;
+  line-height: 48px;
+}
+.otw-sc-services.with-left-icon.medium div, .otw-sc-services.with-left-icon.medium h3 {
+  padding-left: 62px;
+}
+.otw-sc-services.with-left-icon.medium a > img {
+  max-height: 48px;
+}
+.otw-sc-services.with-left-icon.large i {
+  font-size: 64px;
+  line-height: 64px;
+}
+.otw-sc-services.with-left-icon.large div, .otw-sc-services.with-left-icon.large h3 {
+  padding-left: 76px;
+}
+.otw-sc-services.with-left-icon.large a > img {
+  max-height: 64px;
+}
+.otw-sc-services.with-center-icon.small i {
+  font-size: 32px;
+  line-height: 32px;
+}
+.otw-sc-services.with-center-icon.medium i {
+  font-size: 48px;
+  line-height: 48px;
+}
+.otw-sc-services.with-center-icon.large i {
+  font-size: 64px;
+  line-height: 64px;
+}
+.otw-sc-services.center {
+  text-align: center;
+}
+.otw-sc-services.center .image-content-text,
+.otw-sc-services.center .read-more {
+  text-align: left;
+}
+.otw-sc-services .titleseparator {
+  padding-top: 6px;
+  border-top: 1px solid #e0e0e0;
+}

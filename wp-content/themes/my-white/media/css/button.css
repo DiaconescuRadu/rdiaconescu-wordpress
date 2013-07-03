@@ -1,0 +1,109 @@
+/* ADDITIONAL */
+a.prev.page-numbers,
+a.next.page-numbers,
+button#bbp_topic_submit[type="submit"],
+input#ws-plugin--s2member-profile-submit[type="submit"],
+input#submit[type="submit"],
+button#user-submit[type="submit"],
+div.widget a[class*="tag-link-"],
+div#comments  p.form-submit input[type="submit"],
+div.widget_post_meta li.tags span,
+input[type="submit"],
+input[type="button"],
+button,
+.button{
+	display: inline-block;
+	line-height: 12px;
+	font-size: 12px;
+	padding:10px 30px 10px 30px;
+	margin:0px 0px 0px 0px;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+}
+
+a.next.page-numbers:hover,
+a.prev.page-numbers:hover,
+div.widget_post_meta li.tags span:hover,
+button#bbp_topic_submit[type="submit"]:hover,
+input#ws-plugin--s2member-profile-submit[type="submit"]:hover,
+input#submit[type="submit"]:hover,
+button#user-submit[type="submit"]:hover,
+div.widget a[class*="tag-link-"]:hover,
+div#comments  p.form-submit input[type="submit"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover{
+	cursor: pointer;
+}
+
+button#bbp_topic_submit[type="submit"],
+input#ws-plugin--s2member-profile-submit[type="submit"],
+div#comments  p.form-submit input[type="submit"],
+.button.large{
+	font-family: "Text Me One",sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	padding:13px 30px 13px 30px;
+}
+.button.large i{
+	margin-right: 15px;
+}
+.button.fix{
+	display: block;
+	height: 35px;
+	font-size: 12px;
+	line-height: 12px;
+	padding:10px 0px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+a.prev.page-numbers,
+a.next.page-numbers,
+div.widget_post_meta li.tags span,
+div.widget a[class*="tag-link-"],
+div.widget a[class*="tag-link-"],
+.button.small{
+	font-size: 14px !important;
+	padding:5px 15px;
+}
+
+/* SKINS */
+/* BLUE */
+input#ws-plugin--s2member-profile-submit[type="submit"],
+button#user-submit[type="submit"],
+a.prev.page-numbers,
+a.next.page-numbers,
+div.widget a[class*="tag-link-"],
+div#comments  p.form-submit input[type="submit"],
+div.widget_post_meta li.tags span,
+input[type="submit"],
+input[type="button"],
+button,
+.button{
+	color: #ffffff;
+	background-color:#1da0ff;
+}
+
+input#ws-plugin--s2member-profile-submit[type="submit"]:hover,
+button#user-submit[type="submit"]:hover,
+a.prev.page-numbers:hover,
+a.next.page-numbers:hover,
+div.widget a[class*="tag-link-"]:hover,
+div#comments  p.form-submit input[type="submit"]:hover,
+div.widget_post_meta li.tags span:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover{
+	color: #ffffff;
+	background-color:#1a80d7;
+}
