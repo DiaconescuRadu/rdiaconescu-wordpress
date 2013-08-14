@@ -646,11 +646,13 @@ endif;
 
         function responsive_js() {
 			$template_directory_uri = get_template_directory_uri();
+			$include_directory_uri = includes_url();
 			
 			// JS at the bottom for fast page loading. 
 			// except for Modernizr which enables HTML5 elements & feature detects.
 			wp_enqueue_script('modernizr', $template_directory_uri . '/core/js/responsive-modernizr.js', array('jquery'), '2.6.1', false);
-            wp_enqueue_script('responsive-scripts', $template_directory_uri . '/core/js/responsive-scripts.js', array('jquery'), '1.2.4', true);
+            wp_enqueue_script('responsive-scripts', $template_directory_uri . '/core/js/responsive-scripts.js', array('jquery'), '1.2.4', false);
+            wp_enqueue_script('carouFredSel', $template_directory_uri . '/core/js/jquery.carouFredSel-6.2.1.js', array('jquery'), '6.2.1', false);
         }
 
     }

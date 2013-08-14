@@ -27,6 +27,7 @@ if ( !defined('ABSPATH')) exit;
 <head>
 
 <meta charset="<?php bloginfo('charset'); ?>" />
+
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 <title><?php wp_title('&#124;', true, 'right'); ?></title>
@@ -56,7 +57,24 @@ if ( !defined('ABSPATH')) exit;
 					); 
 				?>
         <?php } ?>
-        
+
+        <?php wp_nav_menu(array(
+            'container'       => 'div',
+                'container_class'	=> 'main-nav',
+                'fallback_cb'	  =>  'responsive_fallback_menu',
+                'theme_location'  => 'header-menu')
+            ); 
+        ?>
+                
+        <?php if (has_nav_menu('sub-header-menu', 'responsive')) { ?>
+        <?php wp_nav_menu(array(
+            'container'       => '',
+            'menu_class'      => 'sub-header-menu',
+            'theme_location'  => 'sub-header-menu')
+            ); 
+        ?>
+        <?php } ?>
+       
     <?php responsive_in_header(); // header hook ?>
    
 	<?php if ( get_header_image() != '' ) : ?>
@@ -69,30 +87,37 @@ if ( !defined('ABSPATH')) exit;
 
     <?php if ( !get_header_image() ) : ?>
                 
-        <div id="logo">
+        <!--div id="logo">
             <span class="site-name"><a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></span>
             <span class="site-description"><?php bloginfo('description'); ?></span>
-        </div><!-- end of #logo -->  
-
+        </div--><!-- end of #logo -->  
+        
+        <div id="foo">
+            <img src="https://lh6.googleusercontent.com/-nAJ9bj5xZi8/UgqMiEJL1AI/AAAAAAAAPDg/aEa_QAK3A_4/w1598-h457-no/DSC_4958-DSC_4961.jpg">
+        </div>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    // Using default configuration
+                    $("#foo").carouFredSel() ({
+                    });
+                    
+                    // Using custom configuration
+                    /*$("#foo").carouFredSel({
+                        items               : 2,
+                        direction           : "up",
+                        scroll : {
+                            items           : 1,
+                            easing          : "elastic",
+                            duration        : 1000,                         
+                            pauseOnHover    : true
+                        }                   
+                    });*/ 
+                });
+            </script>
+ 
     <?php endif; // header image was removed (again) ?>
     
     <?php get_sidebar('top'); ?>
-				<?php wp_nav_menu(array(
-				    'container'       => 'div',
-						'container_class'	=> 'main-nav',
-						'fallback_cb'	  =>  'responsive_fallback_menu',
-						'theme_location'  => 'header-menu')
-					); 
-				?>
-                
-            <?php if (has_nav_menu('sub-header-menu', 'responsive')) { ?>
-	            <?php wp_nav_menu(array(
-				    'container'       => '',
-					'menu_class'      => 'sub-header-menu',
-					'theme_location'  => 'sub-header-menu')
-					); 
-				?>
-            <?php } ?>
 
 			<?php responsive_header_bottom(); // after header content hook ?>
  
