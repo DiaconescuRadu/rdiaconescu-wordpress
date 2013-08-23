@@ -2696,4 +2696,61 @@ BDO[DIR="rtl"] {
   }
 }
 
+/*
+ * Css needed for the carousel slider
+ */
+
+.html_carousel {
+    position: relative
+}
+.html_carousel div.slide {
+    position: relative;
+}   
+.html_carousel div.slide img {
+    width: 100%;
+    height: 100%;
+}
+.html_carousel div.slide div {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.html_carousel div.slide h4 {
+    font-size: 35px;
+    padding: 30px 0 0 100px;
+}
+.html_carousel div.slide p {
+    font-size: 16px;
+    padding: 0 0 30px 100px;
+}
+.html_carousel div.slide h4, .html_carousel div.slide p {
+    color: white;
+    margin: 0;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+a.prev, a.next {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 50%;
+}
+
+a.prev {            
+    background: url(core/icons/left.png) no-repeat transparent;
+    left: 30px;
+}
+a.next {            
+    background: url(core/icons/right.png) no-repeat transparent;
+    right: 30px;
+}
+a.next:hover,
+a.previous:hover {opacity:1;}
+
+a.prev span, a.next span {
+    display: none;
+}
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/

@@ -91,29 +91,7 @@ if ( !defined('ABSPATH')) exit;
             <span class="site-name"><a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></span>
             <span class="site-description"><?php bloginfo('description'); ?></span>
         </div--><!-- end of #logo -->  
-        
-        <div id="foo">
-            <img src="https://lh6.googleusercontent.com/-nAJ9bj5xZi8/UgqMiEJL1AI/AAAAAAAAPDg/aEa_QAK3A_4/w1598-h457-no/DSC_4958-DSC_4961.jpg">
-        </div>
-            <script type="text/javascript">
-                jQuery(document).ready(function($) {
-                    // Using default configuration
-                    $("#foo").carouFredSel() ({
-                    });
-                    
-                    // Using custom configuration
-                    /*$("#foo").carouFredSel({
-                        items               : 2,
-                        direction           : "up",
-                        scroll : {
-                            items           : 1,
-                            easing          : "elastic",
-                            duration        : 1000,                         
-                            pauseOnHover    : true
-                        }                   
-                    });*/ 
-                });
-            </script>
+
  
     <?php endif; // header image was removed (again) ?>
     
