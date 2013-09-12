@@ -653,6 +653,7 @@ endif;
 			wp_enqueue_script('modernizr', $template_directory_uri . '/core/js/responsive-modernizr.js', array('jquery'), '2.6.1', false);
             wp_enqueue_script('responsive-scripts', $template_directory_uri . '/core/js/responsive-scripts.js', array('jquery'), '1.2.4', false);
             wp_enqueue_script('carouFredSel', $template_directory_uri . '/core/js/jquery.carouFredSel-6.2.1.js', array('jquery'), '6.2.1', false);
+            wp_enqueue_script('masonry', $template_directory_uri . '/custom-scripts/masonry/masonry.pkgd.js', array('jquery'), '6.2.1', false);
         }
 
     }
@@ -886,4 +887,45 @@ function responsive_add_class( $classes ) {
 }
 
 add_filter( 'body_class','responsive_add_class' );
+
+/**
+* Adding my own variables to the query vars
+*/
+
+function add_query_vars($aVars) {
+    $aVars[] = "search"; // represents the name of the product category as shown in the URL
+    $aVars[] = "category"; // represents the name of the product category as shown in the URL
+    return $aVars;
+}
+ 
+// hook add_query_vars function into query_vars
+add_filter('query_vars', 'add_query_vars');
+
+/**
+* New rewrite rule for wordpress
+*/
+
+function add_rewrite_rules($aRules) {
+    $aNewRules = array('explore/search/([^/]+)/filter/([^/]*)/?$' => 'explore.php?pagename=explore&search=$matches[1]&category=$matches[2]+$matches[2]');
+    #$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
+    $aRules = $aNewRules + $aRules;
+    return $aRules;
+}
+ 
+// hook add_rewrite_rules function into rewrite_rules_array
+// this 
+add_filter('rewrite_rules_array', 'add_rewrite_rules');
+
+/**
+* Redirect for the search string
+*/
+
+function fb_change_search_url_rewrite() {
+    if ( ! empty( $_GET['search'] ) ) {
+        wp_redirect( home_url( "/explore/search/" ) . urlencode( get_query_var( 'search' ) ) . "/filter/" . urlencode (get_query_var( 'category')));
+        exit();
+    }   
+}
+add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
+
 ?>

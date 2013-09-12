@@ -691,7 +691,7 @@ form div {
 -------------------------------------------------------------- */
 #container {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1400px;
   padding: 0px 25px;
 }
 
@@ -1925,6 +1925,7 @@ img.attachment-thumbnail {
   display: block;
   margin: 15px auto;
   width: auto;
+  max-width: 400px;
 }
 
 /* =Buttons
@@ -2752,5 +2753,23 @@ a.previous:hover {opacity:1;}
 
 a.prev span, a.next span {
     display: none;
+}
+
+div.tile_img_container {
+    max-width : 400px;
+    position: relative;
+}
+
+.tile_img_container h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: white;
+}
+
+div.tile_cont {
+    height : 1200px;
 }
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
