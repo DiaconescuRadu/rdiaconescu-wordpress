@@ -2787,4 +2787,14 @@ div.placeholder {
     background-color : rgb(150, 150, 150);
     margin : 15px auto;
 }
+
+div.searchform {
+    width : 30%;
+    position : relative;
+}
+
+div.searchmode {
+    width : 35%;
+    position : relative;
+}
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/

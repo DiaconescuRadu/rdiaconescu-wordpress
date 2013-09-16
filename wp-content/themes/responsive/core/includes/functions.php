@@ -937,4 +937,23 @@ function fb_change_search_url_rewrite() {
 }
 add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
 
+/**
+* Creates unlinked list with categies inside the categories array
+*/
+
+function list_category_array($groupName, $categories, $new_url) {
+        echo '<div class="cat_container">';
+        echo '<h2>' . $groupName . '</h2>';
+        echo '<ul>';
+            foreach($categories as $category) {
+                if (strpos($cat_filter , $category->slug) !== false) {
+                    echo '<u>' . '<li><a href=' . $new_url . '>' . $category->name . '</a></li>'. '</u>';
+                } else {
+                   echo '<li><a href=' . $new_url . '/' . $category->slug . '>' . $category->name . '(' . $category
+->count . ')' . '</a></li>';
+                };
+            }
+        echo '</ul>';
+        echo '</div><!-- end of .col-940 -->';
+}
 ?>

@@ -34,12 +34,67 @@ get_header(); ?>
     });
 </script>
 
+<?php
+    /* Hardcoded arrays / variables for this page */
+    $categories = get_categories();
+    $slugCats = array();
+
+    foreach($categories as $cat) {
+        $slugCats[$cat->slug] = $cat;
+    }
+
+    $activitiesName = "ACTIVITIES";
+    /* chunk for activities */
+    $activitiesCats = array(
+        1 => $slugCats["alpinism"],
+        2 => $slugCats["alergat"],
+        3 => $slugCats["cu-bicla"],
+        4 => $slugCats["escalada"],
+        5 => $slugCats["catarat"],
+        6 => $slugCats["schi-de-tura"],
+        7 => $slugCats["schi-de-partie"],
+        8 => $slugCats["drumetii"],
+        #9 => $slugCats["concursuri"],
+        #10 => $slugCats["cicloturism"],
+    );
+
+    /* chunk for places */
+    $locationsName = "LOCATIONS";
+    $locationCats = array(
+        1 => $slugCats["bucegi"],
+        2 => $slugCats["baiului"],
+        3 => $slugCats["fagaras"],
+        4 => $slugCats["postavaru"],
+        5 => $slugCats["retezat"],
+        6 => $slugCats["mont-blanc"],
+        7 => $slugCats["ciucas"],
+        8 => $slugCats["drumetii"],
+        #9 => $slugCats["concursuri"],
+        #10 => $slugCats["cicloturism"],
+    );
+
+    /* chunk for rating */
+    $ratingsName = "RATINGS";
+    $ratingCats = array(
+        1 => $slugCats["one-star"],
+        2 => $slugCats["two-stars"],
+        3 => $slugCats["three-stars"],
+        4 => $slugCats["epic"],
+        #5 => $slugCats["concursuri"],
+        #6 => $slugCats["cicloturism"],
+    );
+
+
+?>
+
 
 <div id="content-full" class="grid col-940">
+    <div class="searchform">
 	<form method="get" id="searchform" action="<?php echo home_url( '/explore/' ); ?>">
 		<input type="text" class="field" name="search" id="s" placeholder="<?php esc_attr_e('search here &hellip;', 'responsive'); ?>" />
 		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e('Go', 'responsive'); ?>"  />
 	</form>
+    </div><!--end of the searchformdiv-->
 
     <?php 
 	global $wp_query;
@@ -63,45 +118,29 @@ get_header(); ?>
 
     $new_url = home_url( 'explore' ) . '/mode/' . $mode . '/search/' . $search_string . 'categories/' . $cat_filter;
 
-    echo '<pre>';
-    print_r($new_url);
-    echo '<br>';
-    print_r(str_replace( 'mode/int' , 'mode/reu' ,$new_url));
-    echo '<br>';
-     print_r($search);
-    echo '<br>';
-    print_r($cat_filter);
-    echo '</pre>';
+#    echo '<pre>';
+#    print_r($new_url);
+#    echo '<br>';
+#    print_r(str_replace( 'mode/int' , 'mode/reu' ,$new_url));
+#    echo '<br>';
+#     print_r($search);
+#    echo '<br>';
+#    print_r($cat_filter);
+#    echo '</pre>';
     
     /* adding two headings for the mode */
-    echo '<a href=' . str_replace( 'mode/reu' , 'mode/int' ,$new_url) . '>' . '<h3>Mode = INT </h3>' . '</a>';
-    echo '<a href=' . str_replace( 'mode/int' , 'mode/reu' ,$new_url) . '>' . '<h3>Mode = REU </h3>' . '</a>';
+    echo '<div class="searchmode">';
+    echo '<a href=' . str_replace( 'mode/reu' , 'mode/int' ,$new_url) . '>' . '<h5>Mode = INT </h5>' . '</a>';
+    echo '</div><!--end of the searchmode-->';
+    echo '<div class="searchmode">';
+    echo '<a href=' . str_replace( 'mode/int' , 'mode/reu' ,$new_url) . '>' . '<h5>Mode = REU </h5>' . '</a>';
+    echo '</div><!--end of the searchmode-->';
 
-
-    $categories = get_categories();
-    /* adding two headings for the mode */
-    echo '<pre>';
-    print_r($categories);
-    echo '</pre>';
-    
-
-    $categories_chunks = array_chunk($categories , 10);
 
     echo '<div class="grid col-940 cat_div" id="cat_div">';
-    foreach($categories_chunks as $category_chunk) {
-        echo '<div class="cat_container">';
-        echo '<ul>';
-            foreach($category_chunk as $category) {
-                if (strpos($cat_filter , $category->slug) !== false) {
-                    echo '<u>' . '<li><a href=' . $new_url . '>' . $category->name . '</li>' . '</u>';
-                } else {
-                   echo '<li><a href=' . $new_url . '/' . $category->slug . '>' . $category->name . '(' . $category
-->count . ')' . '</li>';
-                };
-            }
-        echo '</ul>';
-        echo '</div><!-- end of .col-940 -->';
-    }
+        list_category_array($activitiesName, $activitiesCats, $new_url);
+        list_category_array($locationsName, $locationCats, $new_url);
+        list_category_array($ratingsName, $ratingCats, $new_url);
 	echo '</div><!-- end of .col-940 -->';
 
 
