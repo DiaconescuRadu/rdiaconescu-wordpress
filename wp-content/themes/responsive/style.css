@@ -2772,4 +2772,19 @@ div.tile_img_container {
 div.tile_cont {
     height : 1200px;
 }
+
+div.cat_div {
+    height : 2000px;
+}
+
+div.cat_container {
+    max-width : 400px;
+    position: relative;
+}
+div.placeholder {
+    width : 400px;
+    height : 267px;
+    background-color : rgb(150, 150, 150);
+    margin : 15px auto;
+}
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/

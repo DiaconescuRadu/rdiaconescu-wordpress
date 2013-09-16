@@ -103,12 +103,18 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 	
 		<div class="grid col-940 tile_cont" id="img_container">
                 <?php
-                    $args = array( 'numberposts' => '11' );
+                    $args = array( 'numberposts' => '20' );
                     $recent_posts = wp_get_recent_posts( $args );
                     foreach( $recent_posts as $recent ){
                         echo '<div class="tile_img_container">';
                         echo '<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >';
-                        echo get_the_post_thumbnail($recent['ID'], 'large');
+                        if (has_post_thumbnail($recent['ID'])) {
+                            echo get_the_post_thumbnail($recent['ID'], 'large');
+                        }
+                        else {
+                            echo '<div class="placeholder">';
+                            echo '</div>';
+                        }
                         echo '</a>';
                         echo '<h2>' . $recent["post_title"] . '</h2>';
                         echo '</div>';

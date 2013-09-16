@@ -894,7 +894,8 @@ add_filter( 'body_class','responsive_add_class' );
 
 function add_query_vars($aVars) {
     $aVars[] = "search"; // represents the name of the product category as shown in the URL
-    $aVars[] = "category"; // represents the name of the product category as shown in the URL
+    $aVars[] = "categories"; // represents the name of the product category as shown in the URL
+    $aVars[] = "mode"; // represents the name of the product category as shown in the URL
     return $aVars;
 }
  
@@ -906,8 +907,16 @@ add_filter('query_vars', 'add_query_vars');
 */
 
 function add_rewrite_rules($aRules) {
-    $aNewRules = array('explore/search/([^/]+)/filter/([^/]*)/?$' => 'explore.php?pagename=explore&search=$matches[1]&category=$matches[2]+$matches[2]');
-    #$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
+    /*
+    * Custom rewrite rule sintax:
+    * explore/mode/search/[]/filter/[]/[]/[]
+    *
+    */
+    $aNewRules = array('explore/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
+            'explore/mode/([^/]+)/search/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&categories=$matches[2]' ,
+            'explore/mode/([^/]+)/search/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]',
+            'explore/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]');
+   #$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
     $aRules = $aNewRules + $aRules;
     return $aRules;
 }
@@ -921,8 +930,8 @@ add_filter('rewrite_rules_array', 'add_rewrite_rules');
 */
 
 function fb_change_search_url_rewrite() {
-    if ( ! empty( $_GET['search'] ) ) {
-        wp_redirect( home_url( "/explore/search/" ) . urlencode( get_query_var( 'search' ) ) . "/filter/" . urlencode (get_query_var( 'category')));
+    if ( isset( $_GET['search'] ) ) {
+        wp_redirect( home_url( "/explore/mode/int/search/" ) . urlencode( get_query_var( 'search' ) ) . "/categories/" . urlencode (get_query_var( 'categories')));
         exit();
     }   
 }
