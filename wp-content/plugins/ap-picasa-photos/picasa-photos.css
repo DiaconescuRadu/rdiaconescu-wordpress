@@ -1,0 +1,66 @@
+.divUser {
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+}
+
+
+.album {
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px;
+}
+
+.albumCoverImage {
+    max-width: 144px;
+    height: auto;
+    box-shadow: 2px 5px 6px 0px #888888;
+
+    cursor: pointer;
+}
+
+.albumTitle {
+    width: 144px;
+    word-wrap: break-word;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.image {
+    max-width: 144px;
+    max-height: 144px;
+    
+    border: 1px solid #888888;
+    cursor: pointer;
+}
+
+.imageContainer {
+    display: inline-block;
+    width: 144px;
+    max-height: 144px;
+    margin: 6px;
+    margin-left: 7px;
+    margin-right: 7px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+button.ButtonClass {
+    padding: 4px 6px;
+    border: 1 solid #0000FF;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #3333FF;
+    color: white;
+}
+
+button.ButtonClass:hover {
+    background: red;
+}
+
+button.ButtonClass:active {
+    background: green;
+}
