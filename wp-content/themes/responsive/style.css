@@ -2760,7 +2760,7 @@ div.tile_img_container {
     position: relative;
 }
 
-.tile_img_container h2 {
+h2.h2_img_container{
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     position: absolute;
@@ -2781,12 +2781,21 @@ div.cat_container {
     max-width : 400px;
     position: relative;
 }
+
 div.placeholder {
     width : 400px;
     height : 267px;
     background-color : rgb(150, 150, 150);
     margin : 15px auto;
 }
+
+div.placeholder_gallery {
+    width : 600px;
+    height : 430px;
+    background-color : rgb(150, 150, 150);
+    margin : 15px auto;
+}
+
 
 div.searchform {
     width : 30%;
@@ -2797,4 +2806,14 @@ div.searchmode {
     width : 35%;
     position : relative;
 }
+
+/* styles for the image gallery */
+div.gallery_container {
+}
+
+div.img_container {
+    max-width : 600px;
+    position: relative;
+}
+
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/

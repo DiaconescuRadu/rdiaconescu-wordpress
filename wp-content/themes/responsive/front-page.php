@@ -116,7 +116,7 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
                             echo '</div>';
                         }
                         echo '</a>';
-                        echo '<h2>' . $recent["post_title"] . '</h2>';
+                        echo '<h2 class="h2_img_container">' . $recent["post_title"] . '</h2>';
                         echo '</div>';
                     }
                 ?>
