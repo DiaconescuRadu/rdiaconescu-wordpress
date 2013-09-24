@@ -180,6 +180,9 @@ function twentythirteen_scripts_styles() {
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentythirteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentythirteen-style' ), '2013-07-18' );
 	wp_style_add_data( 'twentythirteen-ie', 'conditional', 'lt IE 9' );
+
+    // Load my javascript stuff
+    wp_enqueue_script('carouFredSel', get_template_directory_uri() . '/custom-js/jquery.carouFredSel-6.2.1.js', array('jquery'), '6.2.1', false);
 }
 add_action( 'wp_enqueue_scripts', 'twentythirteen_scripts_styles' );
 
@@ -524,3 +527,73 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+
+/**
+* Creates unlinked list with categies inside the categories array
+*/
+
+function list_category_array($groupName, $categories, $new_url) {
+        echo '<div class="cat_container">';
+        echo '<h2>' . $groupName . '</h2>';
+        echo '<ul>';
+            foreach($categories as $category) {
+                if (strpos($cat_filter , $category->slug) !== false) {
+                    echo '<u>' . '<li><a href=' . $new_url . '>' . $category->name . '</a></li>'. '</u>';
+                } else {
+                   echo '<li><a href=' . $new_url . '/' . $category->slug . '>' . $category->name . '(' . $category
+->count . ')' . '</a></li>';
+                };
+            }
+        echo '</ul>';
+        echo '</div><!-- end of .col-940 -->';
+}
+
+/**
+* Adding my own variables to the query vars
+*/
+
+function add_query_vars($aVars) {
+    $aVars[] = "search"; // represents the name of the product category as shown in the URL
+    $aVars[] = "categories"; // represents the name of the product category as shown in the URL
+    $aVars[] = "mode"; // represents the name of the product category as shown in the URL
+    return $aVars;
+}
+ 
+// hook add_query_vars function into query_vars
+add_filter('query_vars', 'add_query_vars');
+
+/**
+* New rewrite rule for wordpress
+*/
+
+function add_rewrite_rules($aRules) {
+    /*
+    * Custom rewrite rule sintax:
+    * explore/mode/search/[]/filter/[]/[]/[]
+    *
+    */
+    $aNewRules = array('explore/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
+            'explore/mode/([^/]+)/search/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&categories=$matches[2]' ,
+            'explore/mode/([^/]+)/search/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]',
+            'explore/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]');
+   #$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
+    $aRules = $aNewRules + $aRules;
+    return $aRules;
+}
+ 
+// hook add_rewrite_rules function into rewrite_rules_array
+// this 
+add_filter('rewrite_rules_array', 'add_rewrite_rules');
+
+/**
+* Redirect for the search string
+*/
+
+function fb_change_search_url_rewrite() {
+    if ( isset( $_GET['search'] ) ) {
+        wp_redirect( home_url( "/explore/mode/int/search/" ) . urlencode( get_query_var( 'search' ) ) . "/categories/" . urlencode (get_query_var( 'categories')));
+        exit();
+    }   
+}
+add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
+

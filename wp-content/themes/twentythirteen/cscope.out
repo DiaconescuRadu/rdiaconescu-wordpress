@@ -1,0 +1,8111 @@
+cscope 15 $HOME/rdiaconescu-wordpress/wp-content/themes/twentythirteen               0000058879
+	@404.php
+
+1 <?
+php
+
+
+10 
+g‘_h—d”
+(); ?>
+
+12 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+13 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+15 <
+h—d”
+ 
+şass
+="page-header">
+
+16 <
+h1
+ 
+şass
+="·ge-t™Ë"><?
+php
+ 
+_e
+Ğ'NÙhšg Found', 'tw’tythœ‹’' ); ?></
+	gh1
+>
+
+17 </
+	gh—d”
+>
+
+19 <
+div
+ 
+	gşass
+="page-wrapper">
+
+20 <
+div
+ 
+şass
+="page-content">
+
+21 <
+h2
+><?
+php
+ 
+_e
+Ğ'Thi i somewh©ƒmb¬¿ssšg, i¢&rsquo;ˆ™?', 'tw’tythœ‹’' ); ?></
+	gh2
+>
+
+22 <
+	gp
+><?
+php
+ 
+_e
+( 'It†ooks†ike‚othing was found‡this†ocation. Maybery‡ search?', 'twentythirteen' ); ?></p>
+
+24 <?
+php
+ 
+g‘_£¬ch_fÜm
+(); ?>
+
+25 </
+	gdiv
+><!-- .
+	g·ge
+-
+	gcÚ‹Á
+ -->
+
+26 </
+	gdiv
+><!-- .
+	g·ge
+-
+	gw¿µ”
+ -->
+
+28 </
+	gdiv
+><!-- #content -->
+
+29 </
+	gdiv
+><!-- #primary -->
+
+31 <?
+php
+ 
+g‘_foÙ”
+(); ?>
+
+	@archive.php
+
+1 <?
+php
+
+
+20 
+g‘_h—d”
+(); ?>
+
+22 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+23 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+25 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+26 <
+h—d”
+ 
+şass
+="archive-header">
+
+27 <
+h1
+ 
+şass
+="¬chive-t™Ë"><?
+php
+
+
+28 iàĞ
+	$is_day
+() ) :
+
+29 
+	`´štf
+Ğ
+	`__
+Ğ'Day Archives: %s', 'tw’tythœ‹’' ), 
+	`g‘_the_d©e
+() );
+
+30 
+	`–£if
+ ( 
+	$is_mÚth
+() ) :
+
+31 
+	`´štf
+Ğ
+	`__
+Ğ'MÚthly Archives: %s', 'tw’tythœ‹’' ), 
+	`g‘_the_d©e
+Ğ
+	`_x
+( 'F Y', 'monthly‡rchives date format', 'twentythirteen' ) ) );
+
+32 
+	`–£if
+ ( 
+	$is_y—r
+() ) :
+
+33 
+	`´štf
+Ğ
+	`__
+Ğ'Y—¾y Archives: %s', 'tw’tythœ‹’' ), 
+	`g‘_the_d©e
+Ğ
+	`_x
+( 'Y', 'yearly‡rchives date format', 'twentythirteen' ) ) );
+
+35 
+	`_e
+( 'Archives', 'twentythirteen' );
+
+36 
+’dif
+;
+
+37 ?></
+h1
+>
+
+38 </
+h—d”
+><!-- .
+¬chive
+-header -->
+
+40 <?
+php
+ ?>
+
+41 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+42 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+43 <?
+php
+ 
+’dwhe
+; ?>
+
+45 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+47 <?
+php
+ : ?>
+
+48 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+49 <?
+php
+ 
+’dif
+; ?>
+
+51 </
+div
+><!-- #content -->
+
+52 </
+div
+><!-- #primary -->
+
+54 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+55 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@author-bio.php
+
+1 <?
+	gphp
+
+
+11 <
+div
+ 
+	gşass
+="author-info">
+
+12 <
+div
+ 
+şass
+="author-avatar">
+
+13 <?
+php
+ 
+echo
+ 
+g‘_av©¬
+Ğ
+g‘_the_authÜ_m‘a
+Ğ'u£r_ema' ), 
+­¶y_f‹rs
+( 'twentythirteen_author_bio_avatar_size', 74 ) ); ?>
+
+14 </
+	gdiv
+><!-- .
+	gauthÜ
+-
+	gav©¬
+ -->
+
+15 <
+div
+ 
+	gşass
+="author-description">
+
+16 <
+h2
+ 
+şass
+="authÜ-t™Ë"><?
+php
+ 
+´štf
+Ğ
+__
+Ğ'Abouˆ%s', 'tw’tythœ‹’' ), 
+g‘_the_authÜ
+(è); ?></
+	gh2
+>
+
+17 <
+p
+ 
+	gşass
+="author-bio">
+
+18 <?
+php
+ 
+the_authÜ_m‘a
+( 'description' ); ?>
+
+19 <
+a
+ 
+	gşass
+="authÜ-lšk" 
+h»f
+="<?ph°echØesc_u¾Ğg‘_authÜ_po¡s_u¾Ğg‘_the_authÜ_m‘aĞ'ID' ) ) ); ?>" 
+»l
+="author">
+
+20 <?
+php
+ 
+´štf
+Ğ
+__
+Ğ'V›w‡Î…o¡ by % <¥ª cÏss="m‘a-Çv">&¿¼;</¥ª>', 'tw’tythœ‹’' ), 
+g‘_the_authÜ
+() ); ?>
+
+21 </
+	ga
+>
+
+22 </
+	gp
+>
+
+23 </
+	gdiv
+><!-- .
+	gauthÜ
+-
+	gdesütiÚ
+ -->
+
+24 </
+	gdiv
+><!-- .
+	gauthÜ
+-
+	gšfo
+ -->
+
+	@author.php
+
+1 <?
+php
+
+
+12 
+g‘_h—d”
+(); ?>
+
+14 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+15 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+17 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+19 <?
+php
+
+
+26 
+	`the_po¡
+();
+
+29 <
+h—d”
+ 
+şass
+="archive-header">
+
+30 <
+h1
+ 
+şass
+="¬chive-t™Ë"><?
+php
+ 
+	`´štf
+Ğ
+	`__
+Ğ'AÎ…o¡ by %s', 'tw’tythœ‹’' ), '<¥ª cÏss="vÿrd"><¨şass="u¾ fÀn" h»f="' . 
+	`esc_u¾
+Ğ
+	`g‘_authÜ_po¡s_u¾
+Ğ
+	`g‘_the_authÜ_m‘a
+Ğ'ID' ) ) ) . '"™Ë="' . 
+	`esc_©Œ
+Ğ
+	`g‘_the_authÜ
+() ) . '"„el="me">' . get_the_author() . '</a></span>' ); ?></h1>
+
+31 </
+h—d”
+><!-- .
+¬chive
+-header -->
+
+33 <?
+php
+
+
+38 
+	`»wšd_po¡s
+();
+
+41 <?
+php
+ iàĞ
+	`g‘_the_authÜ_m‘a
+( 'description' ) ) : ?>
+
+42 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+43 <?
+php
+ 
+’dif
+; ?>
+
+45 <?
+php
+ ?>
+
+46 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+47 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+48 <?
+php
+ 
+’dwhe
+; ?>
+
+50 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+52 <?
+php
+ : ?>
+
+53 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+54 <?
+php
+ 
+’dif
+; ?>
+
+56 </
+div
+><!-- #content -->
+
+57 </
+div
+><!-- #primary -->
+
+59 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+60 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@category.php
+
+1 <?
+php
+
+
+12 
+g‘_h—d”
+(); ?>
+
+14 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+15 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+17 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+18 <
+h—d”
+ 
+şass
+="archive-header">
+
+19 <
+h1
+ 
+şass
+="¬chive-t™Ë"><?
+php
+ 
+	`´štf
+Ğ
+	`__
+Ğ'C©egÜy Archives: %s', 'tw’tythœ‹’' ), 
+	`sšgË_ÿt_t™Ë
+Ğ'', 
+çl£
+ ) ); ?></h1>
+
+21 <?
+php
+ iàĞ
+	$ÿ‹gÜy_desütiÚ
+() ) :
+
+22 <
+div
+ 
+şass
+="¬chive-m‘a"><?
+php
+ 
+echo
+ 
+	`ÿ‹gÜy_desütiÚ
+(); ?></div>
+
+23 <?
+php
+ 
+’dif
+; ?>
+
+24 </
+h—d”
+><!-- .
+¬chive
+-header -->
+
+26 <?
+php
+ ?>
+
+27 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+28 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+29 <?
+php
+ 
+’dwhe
+; ?>
+
+31 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+33 <?
+php
+ : ?>
+
+34 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+35 <?
+php
+ 
+’dif
+; ?>
+
+37 </
+div
+><!-- #content -->
+
+38 </
+div
+><!-- #primary -->
+
+40 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+41 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@comments.php
+
+1 <?
+php
+
+
+16 iàĞ
+	$po¡_·sswÜd_»quœed
+() )
+
+20 <
+div
+ 
+id
+="comm’ts" 
+şass
+="comments-area">
+
+22 <?
+php
+ iàĞ
+	$have_comm’ts
+() ) : ?>
+
+23 <
+h2
+ 
+şass
+="comments-title">
+
+24 <?
+php
+
+
+25 
+	`´štf
+Ğ
+	`_nx
+Ğ'OÃhoughˆÚ &ldquo;%2$s&rdquo;', '%1$ thought Ú &ldquo;%2$s&rdquo;', 
+	`g‘_comm’ts_numb”
+(), 'commentsitle', 'twentythirteen' ),
+
+26 
+	`numb”_fÜm©_i18n
+Ğ
+	`g‘_comm’ts_numb”
+(è), '<¥ª>' . 
+	`g‘_the_t™Ë
+() . '</span>' );
+
+28 </
+h2
+>
+
+30 <
+Ş
+ 
+şass
+="comment-list">
+
+31 <?
+php
+
+
+32 
+	`wp_li¡_comm’ts
+Ğ
+	`¬¿y
+(
+
+34 'shÜt_pšg' => 
+Œue
+,
+
+38 </
+Ş
+><!-- .
+comm’t
+-
+li¡
+ -->
+
+40 <?
+php
+
+
+42 iàĞ
+	`g‘_comm’t_·ges_couÁ
+(è> 1 && 
+	`g‘_İtiÚ
+( 'page_comments' ) ) :
+
+44 <
+Çv
+ 
+şass
+="Çvig©iÚ comm’t-Çvig©iÚ" 
+rŞe
+="navigation">
+
+45 <
+h1
+ 
+şass
+="sü“n-»ad”-‹xˆ£ùiÚ-h—dšg"><?
+php
+ 
+	`_e
+( 'Comment‚avigation', 'twentythirteen' ); ?></h1>
+
+46 <
+div
+ 
+şass
+="Çv-´evious"><?
+php
+ 
+	`´evious_comm’ts_lšk
+Ğ
+	`__
+( '&larr; Older Comments', 'twentythirteen' ) ); ?></div>
+
+47 <
+div
+ 
+şass
+="Çv-Ãxt"><?
+php
+ 
+	`Ãxt_comm’ts_lšk
+Ğ
+	`__
+( 'Newer Comments &rarr;', 'twentythirteen' ) ); ?></div>
+
+48 </
+Çv
+><!-- .
+comm’t
+-
+Çvig©iÚ
+ -->
+
+49 <?
+php
+ 
+’dif
+;
+
+51 <?
+php
+ iàĞ! 
+	`comm’ts_İ’
+(è&& 
+	$g‘_comm’ts_numb”
+() ) : ?>
+
+52 <
+p
+ 
+şass
+="no-comm’ts"><?
+php
+ 
+	`_e
+( 'Comments‡re closed.' , 'twentythirteen' ); ?></p>
+
+53 <?
+php
+ 
+’dif
+; ?>
+
+55 <?
+php
+ 
+’dif
+;
+
+57 <?
+php
+ 
+	`comm’t_fÜm
+(); ?>
+
+59 </
+div
+><!-- #comments -->
+
+	@content-aside.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+div
+ 
+	gşass
+="entry-content">
+
+13 <?
+php
+ 
+the_cÚ‹Á
+Ğ
+__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+14 <?
+php
+ 
+wp_lšk_·ges
+Ğ
+¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+15 </
+	gdiv
+><!-- .
+	g’Œy
+-
+	gcÚ‹Á
+ -->
+
+17 <
+foÙ”
+ 
+	gşass
+="entry-meta">
+
+18 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+19 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+20 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+22 <?
+php
+ iàĞ
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+23 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+24 <?
+php
+ 
+’dif
+; ?>
+
+26 <?
+php
+ : ?>
+
+27 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_d©e
+(); ?>
+
+28 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+29 <?
+php
+ 
+’dif
+;
+
+30 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+31 </
+¬tişe
+><!-- #post -->
+
+	@content-audio.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+13 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+14 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+15 <?
+php
+ : ?>
+
+16 <
+h1
+ 
+şass
+="entry-title">
+
+17 <
+a
+ 
+h»f
+="<?ph°the_³rm®šk(); ?>" 
+»l
+="bookm¬k"><?
+php
+ 
+	`the_t™Ë
+(); ?></a>
+
+18 </
+h1
+>
+
+19 <?
+php
+ 
+’dif
+;
+
+20 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+22 <
+div
+ 
+şass
+="entry-content">
+
+23 <
+div
+ 
+şass
+="audio-content">
+
+24 <?
+php
+ 
+	`the_cÚ‹Á
+Ğ
+	`__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+25 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+26 </
+div
+><!-- .
+audio
+-
+cÚ‹Á
+ -->
+
+27 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+29 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+30 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+31 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+33 <?
+php
+ iàĞ
+	`is_sšgË
+(è&& 
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+34 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+35 <?
+php
+ 
+’dif
+; ?>
+
+36 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+37 </
+¬tişe
+><!-- #post -->
+
+	@content-chat.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+13 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+14 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+15 <?
+php
+ : ?>
+
+16 <
+h1
+ 
+şass
+="entry-title">
+
+17 <
+a
+ 
+h»f
+="<?ph°the_³rm®šk(); ?>" 
+»l
+="bookm¬k"><?
+php
+ 
+	`the_t™Ë
+(); ?></a>
+
+18 </
+h1
+>
+
+19 <?
+php
+ 
+’dif
+;
+
+20 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+22 <
+div
+ 
+şass
+="entry-content">
+
+23 <?
+php
+ 
+	`the_cÚ‹Á
+(); ?>
+
+24 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+25 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+27 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+28 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+29 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+30 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+31 </
+¬tişe
+><!-- #post -->
+
+	@content-gallery.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+13 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+14 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+15 <?
+php
+ : ?>
+
+16 <
+h1
+ 
+şass
+="entry-title">
+
+17 <
+a
+ 
+h»f
+="<?ph°the_³rm®šk(); ?>" 
+»l
+="bookm¬k"><?
+php
+ 
+	`the_t™Ë
+(); ?></a>
+
+18 </
+h1
+>
+
+19 <?
+php
+ 
+’dif
+;
+
+20 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+22 <
+div
+ 
+şass
+="entry-content">
+
+23 <?
+php
+ iàĞ
+	`is_sšgË
+(è|| ! 
+	$g‘_po¡_g®Ëry
+() ) : ?>
+
+24 <?
+php
+ 
+	`the_cÚ‹Á
+Ğ
+	`__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+25 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+26 <?
+php
+ : ?>
+
+27 <?
+php
+ 
+echo
+ 
+	`g‘_po¡_g®Ëry
+(); ?>
+
+28 <?
+php
+ 
+’dif
+;
+
+29 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+31 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+32 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+34 <?
+php
+ iàĞ
+	`comm’ts_İ’
+(è&& ! 
+	$is_sšgË
+() ) : ?>
+
+35 <
+¥ª
+ 
+şass
+="comments-link">
+
+36 <?
+php
+ 
+	`comm’ts_pİup_lšk
+Ğ'<¥ª cÏss="Ëave-»¶y">' . 
+	`__
+( 'Leave‡ comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View‡ll % comments', 'twentythirteen' ) ); ?>
+
+37 </
+¥ª
+><!-- .
+comm’ts
+-
+lšk
+ -->
+
+38 <?
+php
+ 
+’dif
+;
+
+39 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+41 <?
+php
+ iàĞ
+	`is_sšgË
+(è&& 
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+42 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+43 <?
+php
+ 
+’dif
+; ?>
+
+44 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+45 </
+¬tişe
+><!-- #post -->
+
+	@content-image.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+13 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+14 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+15 <?
+php
+ : ?>
+
+16 <
+h1
+ 
+şass
+="entry-title">
+
+17 <
+a
+ 
+h»f
+="<?ph°the_³rm®šk(); ?>" 
+»l
+="bookm¬k"><?
+php
+ 
+	`the_t™Ë
+(); ?></a>
+
+18 </
+h1
+>
+
+19 <?
+php
+ 
+’dif
+;
+
+20 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+22 <
+div
+ 
+şass
+="entry-content">
+
+23 <?
+php
+ 
+	`the_cÚ‹Á
+Ğ
+	`__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+24 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+25 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+27 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+28 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+30 <?
+php
+ iàĞ
+	`comm’ts_İ’
+(è&& ! 
+	$is_sšgË
+() ) : ?>
+
+31 <
+¥ª
+ 
+şass
+="comments-link">
+
+32 <?
+php
+ 
+	`comm’ts_pİup_lšk
+Ğ'<¥ª cÏss="Ëave-»¶y">' . 
+	`__
+( 'Leave‡ comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View‡ll % comments', 'twentythirteen' ) ); ?>
+
+33 </
+¥ª
+><!-- .
+comm’ts
+-
+lšk
+ -->
+
+34 <?
+php
+ 
+’dif
+;
+
+35 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+37 <?
+php
+ iàĞ
+	`is_sšgË
+(è&& 
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+38 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+39 <?
+php
+ 
+’dif
+; ?>
+
+40 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+41 </
+¬tişe
+><!-- #post -->
+
+	@content-link.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+13 <
+h1
+ 
+şass
+="entry-title">
+
+14 <
+a
+ 
+h»f
+="<?ph°echØesc_u¾Ğtw’tythœ‹’_g‘_lšk_u¾(è); ?>"><?
+php
+ 
+the_t™Ë
+(); ?></
+	ga
+>
+
+15 </
+	gh1
+>
+
+17 <
+div
+ 
+	gşass
+="entry-meta">
+
+18 <?
+php
+ 
+tw’tythœ‹’_’Œy_d©e
+(); ?>
+
+19 <?
+php
+ 
+ed™_po¡_lšk
+Ğ
+__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+20 </
+	gdiv
+><!-- .
+	g’Œy
+-
+	gm‘a
+ -->
+
+21 </
+	gh—d”
+><!-- .
+	g’Œy
+-header -->
+
+23 <
+div
+ 
+	gşass
+="entry-content">
+
+24 <?
+php
+ 
+the_cÚ‹Á
+Ğ
+__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+25 <?
+php
+ 
+wp_lšk_·ges
+Ğ
+¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+26 </
+	gdiv
+><!-- .
+	g’Œy
+-
+	gcÚ‹Á
+ -->
+
+28 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+29 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+30 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+31 <?
+php
+ iàĞ
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+32 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+33 <?
+php
+ 
+’dif
+; ?>
+
+34 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+35 <?
+php
+ 
+’dif
+;
+
+36 </
+¬tişe
+><!-- #post -->
+
+	@content-none.php
+
+1 <?
+	gphp
+
+
+11 <
+h—d”
+ 
+	gşass
+="page-header">
+
+12 <
+h1
+ 
+şass
+="·ge-t™Ë"><?
+php
+ 
+_e
+Ğ'NÙhšg Found', 'tw’tythœ‹’' ); ?></
+	gh1
+>
+
+13 </
+	gh—d”
+>
+
+15 <
+div
+ 
+	gşass
+="page-content">
+
+16 <?
+php
+ iàĞ
+is_home
+(è&& 
+cu¼’t_u£r_ÿn
+( 'publish_posts' ) ) : ?>
+
+18 <
+p
+><?
+php
+ 
+´štf
+Ğ
+__
+Ğ'R—dyØpublish you¸fœ¡…o¡? <¨h»f="%1$s">G‘ s¹ed h”e</a>.', 'tw’tythœ‹’' ), 
+admš_u¾
+Ğ'po¡-Ãw.php' ) ); ?></
+	gp
+>
+
+20 <?
+php
+ 
+–£if
+ ( 
+	$is_£¬ch
+() ) : ?>
+
+22 <
+p
+><?
+php
+ 
+	`_e
+( 'Sorry, but‚othing matched your searcherms. Pleasery‡gain with different keywords.', 'twentythirteen' ); ?></p>
+
+23 <?
+php
+ 
+	`g‘_£¬ch_fÜm
+(); ?>
+
+25 <?
+php
+ : ?>
+
+27 <
+p
+><?
+php
+ 
+	`_e
+( 'It seems we can&rsquo;t find what you&rsquo;re†ooking for. Perhaps searching can help.', 'twentythirteen' ); ?></p>
+
+28 <?
+php
+ 
+	`g‘_£¬ch_fÜm
+(); ?>
+
+30 <?
+php
+ 
+’dif
+; ?>
+
+31 </
+div
+><!-- .
+·ge
+-
+cÚ‹Á
+ -->
+
+	@content-quote.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+div
+ 
+	gşass
+="entry-content">
+
+13 <?
+php
+ 
+the_cÚ‹Á
+Ğ
+__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+14 <?
+php
+ 
+wp_lšk_·ges
+Ğ
+¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+15 </
+	gdiv
+><!-- .
+	g’Œy
+-
+	gcÚ‹Á
+ -->
+
+17 <
+foÙ”
+ 
+	gşass
+="entry-meta">
+
+18 <?
+php
+ 
+tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+20 <?
+php
+ iàĞ
+comm’ts_İ’
+(è&& ! 
+	$is_sšgË
+() ) : ?>
+
+21 <
+¥ª
+ 
+şass
+="comments-link">
+
+22 <?
+php
+ 
+	`comm’ts_pİup_lšk
+Ğ'<¥ª cÏss="Ëave-»¶y">' . 
+	`__
+( 'Leave‡ comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View‡ll % comments', 'twentythirteen' ) ); ?>
+
+23 </
+¥ª
+><!-- .
+comm’ts
+-
+lšk
+ -->
+
+24 <?
+php
+ 
+’dif
+;
+
+25 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+26 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+27 </
+¬tişe
+><!-- #post -->
+
+	@content-status.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+div
+ 
+	gşass
+="entry-content">
+
+13 <?
+php
+ 
+the_cÚ‹Á
+Ğ
+__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+14 <?
+php
+ 
+wp_lšk_·ges
+Ğ
+¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+15 </
+	gdiv
+><!-- .
+	g’Œy
+-
+	gcÚ‹Á
+ -->
+
+17 <
+foÙ”
+ 
+	gşass
+="entry-meta">
+
+18 <?
+php
+ 
+tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+19 <?
+php
+ 
+ed™_po¡_lšk
+Ğ
+__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+21 <?
+php
+ iàĞ
+is_sšgË
+(è&& 
+g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+22 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+23 <?
+php
+ 
+’dif
+; ?>
+
+24 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+25 </
+¬tişe
+><!-- #post -->
+
+	@content-video.php
+
+1 <?
+	gphp
+
+
+11 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+12 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+13 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+14 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+15 <?
+php
+ : ?>
+
+16 <
+h1
+ 
+şass
+="entry-title">
+
+17 <
+a
+ 
+h»f
+="<?ph°the_³rm®šk(); ?>" 
+»l
+="bookm¬k"><?
+php
+ 
+	`the_t™Ë
+(); ?></a>
+
+18 </
+h1
+>
+
+19 <?
+php
+ 
+’dif
+;
+
+20 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+22 <
+div
+ 
+şass
+="entry-content">
+
+23 <?
+php
+ 
+	`the_cÚ‹Á
+Ğ
+	`__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+24 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+25 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+27 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+28 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+30 <?
+php
+ iàĞ
+	`comm’ts_İ’
+(è&& ! 
+	$is_sšgË
+() ) : ?>
+
+31 <
+¥ª
+ 
+şass
+="comments-link">
+
+32 <?
+php
+ 
+	`comm’ts_pİup_lšk
+Ğ'<¥ª cÏss="Ëave-»¶y">' . 
+	`__
+( 'Leave‡ comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View‡ll % comments', 'twentythirteen' ) ); ?>
+
+33 </
+¥ª
+><!-- .
+comm’ts
+-
+lšk
+ -->
+
+34 <?
+php
+ 
+’dif
+;
+
+35 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+37 <?
+php
+ iàĞ
+	`is_sšgË
+(è&& 
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+38 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+39 <?
+php
+ 
+’dif
+; ?>
+
+40 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+41 </
+¬tişe
+><!-- #post -->
+
+	@content.php
+
+1 <?
+	gphp
+
+
+10 <
+¬tişe
+ 
+	gid
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+(); ?>>
+
+11 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+12 <?
+php
+ iàĞ
+has_po¡_thumbÇ
+(è&& ! 
+	$po¡_·sswÜd_»quœed
+() ) : ?>
+
+13 <
+div
+ 
+şass
+="entry-thumbnail">
+
+14 <?
+php
+ 
+	`the_po¡_thumbÇ
+(); ?>
+
+15 </
+div
+>
+
+16 <?
+php
+ 
+’dif
+; ?>
+
+18 <?
+php
+ iàĞ
+	$is_sšgË
+() ) : ?>
+
+19 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+20 <?
+php
+ : ?>
+
+21 <
+h1
+ 
+şass
+="entry-title">
+
+22 <
+a
+ 
+h»f
+="<?ph°the_³rm®šk(); ?>" 
+»l
+="bookm¬k"><?
+php
+ 
+	`the_t™Ë
+(); ?></a>
+
+23 </
+h1
+>
+
+24 <?
+php
+ 
+’dif
+;
+
+26 <
+div
+ 
+şass
+="entry-meta">
+
+27 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+28 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+29 </
+div
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+30 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+32 <?
+php
+ iàĞ
+	$is_£¬ch
+() ) :
+
+33 <
+div
+ 
+şass
+="entry-summary">
+
+34 <?
+php
+ 
+	`the_exû½t
+(); ?>
+
+35 </
+div
+><!-- .
+’Œy
+-
+summ¬y
+ -->
+
+36 <?
+php
+ : ?>
+
+37 <
+div
+ 
+şass
+="entry-content">
+
+38 <?
+php
+ 
+	`the_cÚ‹Á
+Ğ
+	`__
+( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+
+39 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+40 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+41 <?
+php
+ 
+’dif
+; ?>
+
+43 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+44 <?
+php
+ iàĞ
+	`comm’ts_İ’
+(è&& ! 
+	$is_sšgË
+() ) : ?>
+
+45 <
+div
+ 
+şass
+="comments-link">
+
+46 <?
+php
+ 
+	`comm’ts_pİup_lšk
+Ğ'<¥ª cÏss="Ëave-»¶y">' . 
+	`__
+( 'Leave‡ comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View‡ll % comments', 'twentythirteen' ) ); ?>
+
+47 </
+div
+><!-- .
+comm’ts
+-
+lšk
+ -->
+
+48 <?
+php
+ 
+’dif
+;
+
+50 <?
+php
+ iàĞ
+	`is_sšgË
+(è&& 
+	`g‘_the_authÜ_m‘a
+Ğ'desütiÚ' ) && 
+	$is_muÉi_authÜ
+() ) : ?>
+
+51 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'author-bio' ); ?>
+
+52 <?
+php
+ 
+’dif
+; ?>
+
+53 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+54 </
+¬tişe
+><!-- #post -->
+
+	@explore.php
+
+1 <?
+php
+
+
+4 iàĞ!
+defšed
+('ABSPATH')è
+	gex™
+;
+
+22 
+g‘_h—d”
+(); ?>
+
+24 <
+süt
+ 
+	gty³
+="text/javascript">
+
+25 
+jQu”y
+(
+docum’t
+).
+»ady
+(
+	$funùiÚ
+(
+$
+) {
+
+26 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#ÿt_div').
+	`masÚry
+({
+
+27 
+cŞumnWidth
+: 420,
+
+28 
+™emS–eùÜ
+: '.cat_container'
+
+30 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#img_cÚš”').
+	`masÚry
+({
+
+31 
+cŞumnWidth
+: 420,
+
+32 
+™emS–eùÜ
+: '.tile_img_container'
+
+34 
+	}
+});
+
+35 </
+	gsüt
+>
+
+37 <?
+php
+
+
+39 
+	g$ÿ‹gÜ›s
+ = 
+g‘_ÿ‹gÜ›s
+();
+
+40 
+	g$¦ugC©s
+ = 
+¬¿y
+();
+
+42 
+	$fÜ—ch
+(
+$ÿ‹gÜ›s
+ 
+as
+ 
+$ÿt
+) {
+
+43 
+$¦ugC©s
+[
+$ÿt
+->
+¦ug
+] = $cat;
+
+44 
+	}
+}
+
+46 
+	g$aùiv™›sName
+ = "ACTIVITIES";
+
+48 
+	g$aùiv™›sC©s
+ = 
+¬¿y
+(
+
+49 1 => 
+$¦ugC©s
+["alpinism"],
+
+50 2 => 
+$¦ugC©s
+["alergat"],
+
+51 3 => 
+$¦ugC©s
+["cu-bicla"],
+
+52 4 => 
+$¦ugC©s
+["escalada"],
+
+53 5 => 
+$¦ugC©s
+["catarat"],
+
+54 6 => 
+$¦ugC©s
+["schi-de-tura"],
+
+55 7 => 
+$¦ugC©s
+["schi-de-partie"],
+
+56 8 => 
+$¦ugC©s
+["drumetii"],
+
+57 #9 => 
+$¦ugC©s
+["concursuri"],
+
+58 #10 => 
+$¦ugC©s
+["cicloturism"],
+
+62 
+	g$loÿtiÚsName
+ = "LOCATIONS";
+
+63 
+	g$loÿtiÚC©s
+ = 
+¬¿y
+(
+
+64 1 => 
+$¦ugC©s
+["bucegi"],
+
+65 2 => 
+$¦ugC©s
+["baiului"],
+
+66 3 => 
+$¦ugC©s
+["fagaras"],
+
+67 4 => 
+$¦ugC©s
+["postavaru"],
+
+68 5 => 
+$¦ugC©s
+["retezat"],
+
+69 6 => 
+$¦ugC©s
+["mont-blanc"],
+
+70 7 => 
+$¦ugC©s
+["ciucas"],
+
+71 8 => 
+$¦ugC©s
+["drumetii"],
+
+72 #9 => 
+$¦ugC©s
+["concursuri"],
+
+73 #10 => 
+$¦ugC©s
+["cicloturism"],
+
+77 
+	g$¿tšgsName
+ = "RATINGS";
+
+78 
+	g$¿tšgC©s
+ = 
+¬¿y
+(
+
+79 1 => 
+$¦ugC©s
+["one-star"],
+
+80 2 => 
+$¦ugC©s
+["two-stars"],
+
+81 3 => 
+$¦ugC©s
+["three-stars"],
+
+82 4 => 
+$¦ugC©s
+["epic"],
+
+83 #5 => 
+$¦ugC©s
+["concursuri"],
+
+84 #6 => 
+$¦ugC©s
+["cicloturism"],
+
+91 <
+div
+ 
+	gid
+="cÚ‹Á-fuÎ" 
+şass
+="grid col-940">
+
+92 <
+div
+ 
+şass
+="searchform">
+
+93 <
+fÜm
+ 
+m‘hod
+="g‘" 
+id
+="£¬chfÜm" 
+aùiÚ
+="<?phpƒcho home_url( '/explore/' ); ?>">
+
+94 <
+šput
+ 
+ty³
+="‹xt" 
+şass
+="f›ld" 
+Çme
+="£¬ch" 
+id
+="s" 
+¶aûhŞd”
+="<?phpƒsc_attr_e('search here &hellip;', 'responsive'); ?>" />
+
+95 <
+šput
+ 
+ty³
+="subm™" 
+şass
+="subm™" 
+Çme
+="subm™" 
+id
+="£¬chsubm™" 
+v®ue
+="<?phpƒsc_attr_e('Go', 'responsive'); ?>" />
+
+96 </
+fÜm
+>
+
+97 </
+div
+><!--
+’d
+ 
+of
+ 
+the
+ 
+£¬chfÜmdiv
+-->
+
+99 <?
+php
+
+
+100 
+glob®
+ 
+$wp_qu”y
+;
+
+102 
+	g$£¬ch
+ = 
+g‘_qu”y_v¬
+('search');
+
+103 
+	g$ÿt_f‹r
+ = 
+g‘_qu”y_v¬
+('categories');
+
+104 
+	g$mode
+ = 
+g‘_qu”y_v¬
+('mode');
+
+105 
+	g$ÿt_Çme
+ = 
+¡r_»¶aû
+('/', ',', 
+g‘_qu”y_v¬
+('categories'));
+
+107 ià(
+	$em±y
+(
+$mode
+)) {
+
+108 
+$mode
+ = 'int';
+
+109 
+	}
+}
+
+113 iàĞ!
+	$em±y
+(
+$£¬ch
+)) {
+
+114 
+$£¬ch_¡ršg
+ = 
+$£¬ch
+ . '/';
+
+115 
+	}
+} {
+
+116 
+	g$£¬ch_¡ršg
+ = 
+$£¬ch
+;
+
+119 
+	g$Ãw_u¾
+ = 
+home_u¾
+Ğ'ex¶Üe' ) . '/mode/' . 
+$mode
+ . '/£¬ch/' . 
+$£¬ch_¡ršg
+ . 'ÿ‹gÜ›s/' . 
+$ÿt_f‹r
+;
+
+122 #´št_r(
+$Ãw_u¾
+);
+
+124 #´št_r(
+¡r_»¶aû
+Ğ'mode/št' , 'mode/»u' ,
+$Ãw_u¾
+));
+
+126 #´št_r(
+$£¬ch
+);
+
+128 #´št_r(
+$ÿt_f‹r
+);
+
+132 
+	gecho
+ '<div class="searchmode">';
+
+133 
+	gecho
+ '<¨h»f=' . 
+¡r_»¶aû
+Ğ'mode/»u' , 'mode/št' ,
+$Ãw_u¾
+) . '>' . '<h5>Mode = INT </h5>' . '</a>';
+
+134 
+	gecho
+ '</div><!--end ofhe searchmode-->';
+
+135 
+	gecho
+ '<div class="searchmode">';
+
+136 
+	gecho
+ '<¨h»f=' . 
+¡r_»¶aû
+Ğ'mode/št' , 'mode/»u' ,
+$Ãw_u¾
+) . '>' . '<h5>Mode = REU </h5>' . '</a>';
+
+137 
+	gecho
+ '</div><!--end ofhe searchmode-->';
+
+140 
+	gecho
+ '<div class="grid col-940 cat_div" id="cat_div">';
+
+141 
+li¡_ÿ‹gÜy_¬¿y
+(
+$aùiv™›sName
+, 
+$aùiv™›sC©s
+, 
+$Ãw_u¾
+);
+
+142 
+li¡_ÿ‹gÜy_¬¿y
+(
+$loÿtiÚsName
+, 
+$loÿtiÚC©s
+, 
+$Ãw_u¾
+);
+
+143 
+li¡_ÿ‹gÜy_¬¿y
+(
+$¿tšgsName
+, 
+$¿tšgC©s
+, 
+$Ãw_u¾
+);
+
+144 
+	gecho
+ '</div><!--ƒnd of .col-940 -->';
+
+147 
+	g$blog_qu”y
+ = 
+Ãw
+ 
+WP_Qu”y
+Ğ
+¬¿y
+Ğ'po¡_ty³' => 'po¡', '·ged' => 
+$·ged
+ , 'ÿ‹gÜy_Çme' => 
+$ÿt_Çme
+, '£¬ch' => 
+$£¬ch
+));
+
+148 
+	g$‹mp_qu”y
+ = 
+$wp_qu”y
+;
+
+149 
+	g$wp_qu”y
+ = 
+nuÎ
+;
+
+150 
+	g$wp_qu”y
+ = 
+$blog_qu”y
+;
+
+152 
+	gecho
+ '<h3>Found ' . 
+	g$blog_qu”y
+->
+	gfound_po¡s
+ . '</h3>';
+
+154 iàĞ
+	g$blog_qu”y
+->
+	$have_po¡s
+() ) :
+
+156 
+echo
+ '<div class="grid col-940ile_cont" id="img_container">';
+
+157  
+$blog_qu”y
+->
+	$have_po¡s
+(èè: 
+$blog_qu”y
+->
+	`the_po¡
+();
+
+160 <?
+php
+
+
+161 
+echo
+ '<div class="tile_img_container">';
+
+162 
+echo
+ '<¨h»f="' . 
+	`g‘_³rm®šk
+(è. '"™Ë="Look '.
+	`g‘_the_t™Ë
+().'" >';
+
+163 ià(
+	$has_po¡_thumbÇ
+()) {
+
+164 
+echo
+ 
+	`g‘_the_po¡_thumbÇ
+();
+
+165 
+	}
+}
+
+167 
+	gecho
+ '<div class="placeholder">';
+
+168 
+	gecho
+ '</div>';
+
+170 
+	gecho
+ '</a>';
+
+171 
+	gecho
+ '<h2 cÏss="h2_img_cÚš”">' . 
+g‘_the_t™Ë
+() . '</h2>';
+
+172 
+	gecho
+ '</div>';
+
+174 <?
+php
+
+
+175 
+	g’dwhe
+;
+
+176 
+	gecho
+ '</div><!--ƒnd of .col-940 -->';
+
+178 iàĞ
+	g$wp_qu”y
+->
+	gmax_num_·ges
+ > 1 ) :
+
+180 <
+div
+ 
+şass
+="navigation">
+
+181 <
+div
+ 
+şass
+="´evious"><?
+php
+ 
+Ãxt_po¡s_lšk
+Ğ
+__
+Ğ'&#8249; Old”…o¡s', '»¥Úsive' ), 
+$wp_qu”y
+->
+max_num_·ges
+ ); ?></
+	gdiv
+>
+
+182 <
+div
+ 
+	gşass
+="Ãxt"><?
+php
+ 
+´evious_po¡s_lšk
+Ğ
+__
+Ğ'New”…o¡ &#8250;', '»¥Úsive' ), 
+$wp_qu”y
+->
+max_num_·ges
+ ); ?></
+	gdiv
+>
+
+183 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ .
+	gÇvig©iÚ
+ -->
+
+184 <?
+php
+
+
+185 
+	g’dif
+;
+
+189 
+g‘_‹m¶©e_·¹
+( 'loop-no-posts' );
+
+191 
+	g’dif
+;
+
+192 
+	g$wp_qu”y
+ = 
+$‹mp_qu”y
+;
+
+193 
+wp_»£t_po¡d©a
+();
+
+197 <!-- 
+addšg
+ 
+some
+ 
+‹¡
+ 
+	gcheckboxes
+ -->
+
+198 <!--
+fÜm
+ 
+	gaùiÚ
+="">
+
+199 <
+šput
+ 
+ty³
+="checkbox" 
+Çme
+="vehişe" 
+v®ue
+="Bike">
+I
+ 
+have
+ 
+a
+ 
+bike
+<
+br
+>
+
+200 <
+šput
+ 
+ty³
+="checkbox" 
+Çme
+="vehişe" 
+v®ue
+="C¬">
+I
+ 
+have
+ 
+a
+ 
+ÿr
+
+
+201 </
+fÜm
+-->
+
+203 <!--?
+php
+
+
+204 
+$ÿ‹gÜ›s
+ = 
+g‘_ÿ‹gÜ›s
+();
+
+205 
+	g$£·¿tÜ
+ = ' ';
+
+206 
+	g$ouut
+ = '';
+
+207 if(
+	g$ÿ‹gÜ›s
+){
+
+208 
+fÜ—ch
+(
+$ÿ‹gÜ›s
+ 
+as
+ 
+$ÿ‹gÜy
+) {
+
+209 
+	g$ouut
+ .ğ'<p><¨h»f="'.
+g‘_ÿ‹gÜy_lšk
+Ğ
+$ÿ‹gÜy
+->
+‹rm_id
+ ).'"™Ë="' . 
+esc_©Œ
+Ğ
+¥rštf
+Ğ
+__
+Ğ"V›w‡Î…o¡ š %s" ), $ÿ‹gÜy->
+Çme
+ ) ) . '">'.
+	g$ÿ‹gÜy
+->
+	gÿt_Çme
+.'</a></p>'.
+	g$£·¿tÜ
+;
+
+211 
+echo
+ 
+Œim
+(
+$ouut
+, 
+$£·¿tÜ
+);
+
+217 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ #cÚ‹Á-
+	gfuÎ
+ -->
+
+219 <?
+php
+ 
+g‘_foÙ”
+(); ?>
+
+	@footer.php
+
+1 <?
+	gphp
+
+
+14 </
+	gdiv
+><!-- #main -->
+
+15 <
+foÙ”
+ 
+	gid
+="cŞİhÚ" 
+şass
+="s™e-foÙ”" 
+rŞe
+="contentinfo">
+
+16 <?
+php
+ 
+g‘_sideb¬
+( 'main' ); ?>
+
+18 <
+div
+ 
+	gşass
+="site-info">
+
+19 <?
+php
+ 
+do_aùiÚ
+( 'twentythirteen_credits' ); ?>
+
+20 <
+a
+ 
+	gh»f
+="<?ph°echØesc_u¾Ğ__Ğ'h‰p://wÜd´ess.Üg/', 'tw’tythœ‹’' ) ); ?>" 
+t™Ë
+="<?ph°esc_©Œ_eĞ'SemªtiøP”sÚ® Publishšg PÏtfÜm', 'tw’tythœ‹’' ); ?>"><?
+php
+ 
+´štf
+Ğ
+__
+Ğ'Proudly…ow”ed by %s', 'tw’tythœ‹’' ), 'WÜdP»ss' ); ?></
+	ga
+>
+
+21 </
+	gdiv
+><!-- .
+	gs™e
+-
+	gšfo
+ -->
+
+22 </
+	gfoÙ”
+><!-- #colophon -->
+
+23 </
+	gdiv
+><!-- #page -->
+
+25 <?
+php
+ 
+wp_foÙ”
+(); ?>
+
+26 </
+	gbody
+>
+
+27 </
+	ghtml
+>
+
+	@front-page-resposive.php
+
+1 <?
+php
+
+
+4 iàĞ!
+defšed
+('ABSPATH')è
+	gex™
+;
+
+25 <
+div
+ 
+	gid
+="ã©u»d" 
+şass
+="grid col-940">
+
+27 <
+div
+ 
+şass
+="html_carousel">
+
+28 <
+div
+ 
+id
+="foo2">
+
+29 <
+div
+ 
+şass
+="slide">
+
+30 <
+img
+ 
+¤c
+="<?ph°echØcÚ‹Á_u¾()?>/u¶ßds/h—d”_¦id”_images/DSC_5482.jpg" 
+®t
+="carousel 1"/>
+
+31 <
+div
+>
+
+32 <
+h4
+>
+Text
+ 
+•ic
+ 1</h4>
+
+33 <
+p
+>
+Desü›»
+ 
+‹xt
+ 
+•ic
+ 1</p>
+
+34 </
+div
+>
+
+35 </
+div
+>
+
+36 <
+div
+ 
+şass
+="slide">
+
+37 <
+img
+ 
+¤c
+="<?ph°echØcÚ‹Á_u¾()?>/u¶ßds/h—d”_¦id”_images/DSC_5522.jpg" 
+®t
+="carousel 2"/>
+
+38 <
+div
+>
+
+39 <
+h4
+>
+Text
+ 
+•ic
+ 2</h4>
+
+40 <
+p
+>
+Desü›»
+ 
+‹xt
+ 
+•ic
+ 2</p>
+
+41 </
+div
+>
+
+42 </
+div
+>
+
+43 </
+div
+>
+
+44 <
+a
+ 
+şass
+="´ev" 
+id
+="foo2_´ev" 
+h»f
+="#"><
+¥ª
+>
+´ev
+</span></a>
+
+45 <
+a
+ 
+şass
+="Ãxt" 
+id
+="foo2_Ãxt" 
+h»f
+="#"><
+¥ª
+>
+Ãxt
+</span></a>
+
+46 <
+div
+ 
+şass
+="clearfix"></div>
+
+47 </
+div
+>
+
+49 <
+süt
+ 
+ty³
+="text/javascript">
+
+50 
+jQu”y
+(
+docum’t
+).
+»ady
+(
+	$funùiÚ
+(
+$
+) {
+
+51 
+	`$
+("#foo2").
+	`ÿrouF»dS–
+({
+
+52 
+»¥Úsive
+ : 
+Œue
+,
+
+53 
+süŞl
+ : {
+
+54 
+fx
+ : "crossfade",
+
+55 
+—sšg
+ : "linear",
+
+56 
+du¿tiÚ
+ : 750
+
+58 
+™ems
+ : {
+
+59 
+width
+ : 1400,
+
+60 
+height
+ : 467,
+
+61 
+visibË
+ : 1
+
+63 
+´ev
+ : "#foo2_prev",
+
+64 
+Ãxt
+ : "#foo2_next"
+
+71 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#img_cÚš”').
+	`masÚry
+({
+
+72 
+cŞumnWidth
+: 420,
+
+73 
+™emS–eùÜ
+: '.tile_img_container'
+
+75 
+	}
+});
+
+76 </
+	gsüt
+>
+
+78 <
+div
+ 
+	gşass
+="grid cŞ-940e_cÚt" 
+id
+="img_container">
+
+79 <?
+php
+
+
+80 
+$¬gs
+ = 
+¬¿y
+( 'numberposts' => '20' );
+
+81 
+	g$»ûÁ_po¡s
+ = 
+wp_g‘_»ûÁ_po¡s
+Ğ
+$¬gs
+ );
+
+82 
+	$fÜ—ch
+Ğ
+$»ûÁ_po¡s
+ 
+as
+ 
+$»ûÁ
+ ){
+
+83 
+echo
+ '<div class="tile_img_container">';
+
+84 
+echo
+ '<¨h»f="' . 
+	`g‘_³rm®šk
+(
+$»ûÁ
+["ID"]è. '"™Ë="Look '.
+	`esc_©Œ
+($recent["post_title"]).'" >';
+
+85 ià(
+	`has_po¡_thumbÇ
+(
+$»ûÁ
+['ID'])) {
+
+86 
+echo
+ 
+	`g‘_the_po¡_thumbÇ
+(
+$»ûÁ
+['ID'], 'large');
+
+89 
+echo
+ '<div class="placeholder">';
+
+90 
+echo
+ '</div>';
+
+92 
+echo
+ '</a>';
+
+93 
+echo
+ '<h2 cÏss="h2_img_cÚš”">' . 
+$»ûÁ
+["post_title"] . '</h2>';
+
+94 
+echo
+ '</div>';
+
+95 
+	}
+}
+
+97 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ .
+	gcŞ
+-940 -->
+
+98 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ #featured -->
+
+100 <?
+php
+
+
+101 
+g‘_sideb¬
+('home');
+
+102 
+g‘_foÙ”
+();
+
+	@functions.php
+
+1 <?
+php
+
+
+31 iàĞ! 
+is£t
+Ğ
+$cÚ‹Á_width
+ ) )
+
+32 
+	g$cÚ‹Á_width
+ = 604;
+
+37 
+»quœe
+ 
+g‘_‹m¶©e_dœeùÜy
+() . '/inc/custom-header.php';
+
+42 iàĞ
+v”siÚ_com·»
+Ğ
+$GLOBALS
+['wp_version'], '3.6-alpha', '<' ) )
+
+43 
+»quœe
+ 
+g‘_‹m¶©e_dœeùÜy
+() . '/inc/back-compat.php';
+
+60 
+funùiÚ
+ 
+	$tw’tythœ‹’_£tup
+() {
+
+69 
+	`lßd_theme_‹xtdomaš
+Ğ'tw’tythœ‹’', 
+	`g‘_‹m¶©e_dœeùÜy
+() . '/languages' );
+
+75 
+	`add_ed™Ü_¡yË
+Ğ
+	`¬¿y
+Ğ'css/ed™Ü-¡yË.css', 'fÚts/g’”icÚs.css', 
+	`tw’tythœ‹’_fÚts_u¾
+() ) );
+
+78 
+	`add_theme_suµÜt
+( 'automatic-feed-links' );
+
+82 
+	`add_theme_suµÜt
+Ğ'html5', 
+	`¬¿y
+( 'search-form', 'comment-form', 'comment-list' ) );
+
+88 
+	`add_theme_suµÜt
+Ğ'po¡-fÜm©s', 
+	`¬¿y
+(
+
+93 
+	`»gi¡”_Çv_m’u
+Ğ'´im¬y', 
+	`__
+( 'Navigation Menu', 'twentythirteen' ) );
+
+99 
+	`add_theme_suµÜt
+( 'post-thumbnails' );
+
+100 
+	`£t_po¡_thumbÇ_size
+Ğ604, 270, 
+Œue
+ );
+
+103 
+	`add_f‹r
+( 'use_default_gallery_style', '__return_false' );
+
+104 
+	}
+}
+
+105 
+add_aùiÚ
+( 'after_setup_theme', 'twentythirteen_setup' );
+
+117 
+funùiÚ
+ 
+	$tw’tythœ‹’_fÚts_u¾
+() {
+
+118 
+$fÚts_u¾
+ = '';
+
+124 
+$sourû_§ns_´o
+ = 
+	`_x
+( 'on', 'Source Sans Pro font: on or off', 'twentythirteen' );
+
+130 
+$b™‹r
+ = 
+	`_x
+( 'on', 'Bitter font: on or off', 'twentythirteen' );
+
+132 iàĞ'off' !=ğ
+$sourû_§ns_´o
+ || 'off' !=ğ
+$b™‹r
+ ) {
+
+133 
+$fÚt_çm›s
+ = 
+	`¬¿y
+();
+
+135 iàĞ'off' !=ğ
+$sourû_§ns_´o
+ )
+
+136 
+$fÚt_çm›s
+[] = 'Source Sans Pro:300,400,700,300italic,400italic,700italic';
+
+138 iàĞ'off' !=ğ
+$b™‹r
+ )
+
+139 
+$fÚt_çm›s
+[] = 'Bitter:400,700';
+
+141 
+$qu”y_¬gs
+ = 
+	`¬¿y
+(
+
+142 'çmy' => 
+	`u¾’code
+Ğ
+	`im¶ode
+Ğ'|', 
+$fÚt_çm›s
+ ) ),
+
+143 'sub£t' => 
+	`u¾’code
+( 'latin,latin-ext' ),
+
+145 
+$fÚts_u¾
+ = 
+	`add_qu”y_¬g
+Ğ
+$qu”y_¬gs
+, "//fonts.googleapis.com/css" );
+
+148  
+$fÚts_u¾
+;
+
+149 
+	}
+}
+
+158 
+funùiÚ
+ 
+	$tw’tythœ‹’_süts_¡yËs
+() {
+
+161 iàĞ
+	`is_sšguÏr
+(è&& 
+	`comm’ts_İ’
+(è&& 
+	`g‘_İtiÚ
+( 'thread_comments' ) )
+
+162 
+	`wp_’queue_süt
+( 'comment-reply' );
+
+165 iàĞ
+	`is_aùive_sideb¬
+( 'sidebar-1' ) )
+
+166 
+	`wp_’queue_süt
+( 'jquery-masonry' );
+
+169 
+	`wp_’queue_süt
+Ğ'tw’tythœ‹’-süt', 
+	`g‘_‹m¶©e_dœeùÜy_uri
+(è. '/js/funùiÚs.js', 
+	`¬¿y
+Ğ'jqu”y' ), '2013-07-18', 
+Œue
+ );
+
+172 
+	`wp_’queue_¡yË
+Ğ'tw’tythœ‹’-fÚts', 
+	`tw’tythœ‹’_fÚts_u¾
+(), 
+	`¬¿y
+(), 
+nuÎ
+ );
+
+175 
+	`wp_’queue_¡yË
+Ğ'g’”icÚs', 
+	`g‘_‹m¶©e_dœeùÜy_uri
+(è. '/fÚts/g’”icÚs.css', 
+	`¬¿y
+(), '2.09' );
+
+178 
+	`wp_’queue_¡yË
+Ğ'tw’tythœ‹’-¡yË', 
+	`g‘_¡yËsh“t_uri
+(), 
+	`¬¿y
+(), '2013-07-18' );
+
+181 
+	`wp_’queue_¡yË
+Ğ'tw’tythœ‹’-›', 
+	`g‘_‹m¶©e_dœeùÜy_uri
+(è. '/css/›.css', 
+	`¬¿y
+( 'twentythirteen-style' ), '2013-07-18' );
+
+182 
+	`wp_¡yË_add_d©a
+( 'twentythirteen-ie', 'conditional', 'lt IE 9' );
+
+185 
+	`wp_’queue_süt
+('ÿrouF»dS–', 
+	`g‘_‹m¶©e_dœeùÜy_uri
+(è. '/cu¡om-js/jqu”y.ÿrouF»dS–-6.2.1.js', 
+	`¬¿y
+('jqu”y'), '6.2.1', 
+çl£
+);
+
+186 
+	}
+}
+
+187 
+add_aùiÚ
+( 'wp_enqueue_scripts', 'twentythirteen_scripts_styles' );
+
+199 
+funùiÚ
+ 
+	$tw’tythœ‹’_wp_t™Ë
+Ğ
+$t™Ë
+, 
+$£p
+ ) {
+
+200 
+glob®
+ 
+$·ged
+, 
+$·ge
+;
+
+202 iàĞ
+	`is_ãed
+() )
+
+203  
+$t™Ë
+;
+
+206 
+$t™Ë
+ .ğ
+	`g‘_blogšfo
+( 'name' );
+
+209 
+$s™e_desütiÚ
+ = 
+	`g‘_blogšfo
+( 'description', 'display' );
+
+210 iàĞ
+$s™e_desütiÚ
+ && ( 
+	`is_home
+(è|| 
+	`is_äÚt_·ge
+() ) )
+
+211 
+$t™Ë
+ = "$title $sep $site_description";
+
+214 iàĞ
+$·ged
+ >ğ2 || 
+$·ge
+ >= 2 )
+
+215 
+$t™Ë
+ = "$t™Ë $£°" . 
+	`¥rštf
+Ğ
+	`__
+Ğ'Pag%s', 'tw’tythœ‹’' ), 
+	`max
+Ğ
+$·ged
+, 
+$·ge
+ ) );
+
+217  
+$t™Ë
+;
+
+218 
+	}
+}
+
+219 
+add_f‹r
+( 'wp_title', 'twentythirteen_wp_title', 10, 2 );
+
+228 
+funùiÚ
+ 
+	$tw’tythœ‹’_widg‘s_š™
+() {
+
+229 
+	`»gi¡”_sideb¬
+Ğ
+	`¬¿y
+(
+
+230 'Çme' => 
+	`__
+( 'Main Widget Area', 'twentythirteen' ),
+
+232 'desütiÚ' => 
+	`__
+( 'Appears inhe footer section ofhe site.', 'twentythirteen' ),
+
+239 
+	`»gi¡”_sideb¬
+Ğ
+	`¬¿y
+(
+
+240 'Çme' => 
+	`__
+( 'Secondary Widget Area', 'twentythirteen' ),
+
+242 'desütiÚ' => 
+	`__
+( 'Appears on…osts‡nd…ages inhe sidebar.', 'twentythirteen' ),
+
+248 
+	}
+}
+
+249 
+add_aùiÚ
+( 'widgets_init', 'twentythirteen_widgets_init' );
+
+251 iàĞ! 
+funùiÚ_exi¡s
+( 'twentythirteen_paging_nav' ) ) :
+
+259 
+funùiÚ
+ 
+	$tw’tythœ‹’_·gšg_Çv
+() {
+
+260 
+glob®
+ 
+$wp_qu”y
+;
+
+263 iàĞ
+$wp_qu”y
+->
+max_num_·ges
+ < 2 )
+
+266 <
+Çv
+ 
+şass
+="Çvig©iÚ…agšg-Çvig©iÚ" 
+rŞe
+="navigation">
+
+267 <
+h1
+ 
+şass
+="sü“n-»ad”-‹xt"><?
+php
+ 
+	`_e
+( 'Posts‚avigation', 'twentythirteen' ); ?></h1>
+
+268 <
+div
+ 
+şass
+="nav-links">
+
+270 <?
+php
+ iàĞ
+	`g‘_Ãxt_po¡s_lšk
+() ) : ?>
+
+271 <
+div
+ 
+şass
+="Çv-´evious"><?
+php
+ 
+	`Ãxt_po¡s_lšk
+Ğ
+	`__
+( '<span class="meta-nav">&larr;</span> Older…osts', 'twentythirteen' ) ); ?></div>
+
+272 <?
+php
+ 
+’dif
+; ?>
+
+274 <?
+php
+ iàĞ
+	`g‘_´evious_po¡s_lšk
+() ) : ?>
+
+275 <
+div
+ 
+şass
+="Çv-Ãxt"><?
+php
+ 
+	`´evious_po¡s_lšk
+Ğ
+	`__
+( 'Newer…osts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
+
+276 <?
+php
+ 
+’dif
+; ?>
+
+278 </
+div
+><!-- .
+Çv
+-
+lšks
+ -->
+
+279 </
+Çv
+><!-- .
+Çvig©iÚ
+ -->
+
+280 <?
+php
+
+
+281 
+	}
+}
+
+282 
+	g’dif
+;
+
+284 iàĞ! 
+funùiÚ_exi¡s
+( 'twentythirteen_post_nav' ) ) :
+
+292 
+funùiÚ
+ 
+	$tw’tythœ‹’_po¡_Çv
+() {
+
+293 
+glob®
+ 
+$po¡
+;
+
+296 
+$´evious
+ = ( 
+	`is_©chm’t
+(èè? 
+	`g‘_po¡
+Ğ
+$po¡
+->
+po¡_·»Á
+ ) : 
+	`g‘_adjaûÁ_po¡
+Ğ
+çl£
+, '', 
+Œue
+ );
+
+297 
+$Ãxt
+ = 
+	`g‘_adjaûÁ_po¡
+Ğ
+çl£
+, '', false );
+
+299 iàĞ! 
+$Ãxt
+ && ! 
+$´evious
+ )
+
+302 <
+Çv
+ 
+şass
+="Çvig©iÚ…o¡-Çvig©iÚ" 
+rŞe
+="navigation">
+
+303 <
+h1
+ 
+şass
+="sü“n-»ad”-‹xt"><?
+php
+ 
+	`_e
+( 'Post‚avigation', 'twentythirteen' ); ?></h1>
+
+304 <
+div
+ 
+şass
+="nav-links">
+
+306 <?
+php
+ 
+	`´evious_po¡_lšk
+Ğ'%lšk', 
+	`_x
+( '<span class="meta-nav">&larr;</span> %title', 'Previous…ost†ink', 'twentythirteen' ) ); ?>
+
+307 <?
+php
+ 
+	`Ãxt_po¡_lšk
+Ğ'%lšk', 
+	`_x
+( '%title <span class="meta-nav">&rarr;</span>', 'Next…ost†ink', 'twentythirteen' ) ); ?>
+
+309 </
+div
+><!-- .
+Çv
+-
+lšks
+ -->
+
+310 </
+Çv
+><!-- .
+Çvig©iÚ
+ -->
+
+311 <?
+php
+
+
+312 
+	}
+}
+
+313 
+	g’dif
+;
+
+315 iàĞ! 
+funùiÚ_exi¡s
+( 'twentythirteen_entry_meta' ) ) :
+
+325 
+funùiÚ
+ 
+	$tw’tythœ‹’_’Œy_m‘a
+() {
+
+326 iàĞ
+	`is_¡icky
+(è&& 
+	`is_home
+(è&& ! 
+	`is_·ged
+() )
+
+327 
+echo
+ '<¥ª cÏss="ã©u»d-po¡">' . 
+	`__
+( 'Sticky', 'twentythirteen' ) . '</span>';
+
+329 iàĞ! 
+	`has_po¡_fÜm©
+Ğ'lšk' ) && 'po¡' =ğ
+	`g‘_po¡_ty³
+() )
+
+330 
+	`tw’tythœ‹’_’Œy_d©e
+();
+
+333 
+$ÿ‹gÜ›s_li¡
+ = 
+	`g‘_the_ÿ‹gÜy_li¡
+Ğ
+	`__
+( ', ', 'twentythirteen' ) );
+
+334 iàĞ
+$ÿ‹gÜ›s_li¡
+ ) {
+
+335 
+echo
+ '<¥ª cÏss="ÿ‹gÜ›s-lšks">' . 
+$ÿ‹gÜ›s_li¡
+ . '</span>';
+
+339 
+$g_li¡
+ = 
+	`g‘_the_g_li¡
+Ğ'', 
+	`__
+( ', ', 'twentythirteen' ) );
+
+340 iàĞ
+$g_li¡
+ ) {
+
+341 
+echo
+ '<¥ª cÏss="gs-lšks">' . 
+$g_li¡
+ . '</span>';
+
+345 iàĞ'po¡' =ğ
+	`g‘_po¡_ty³
+() ) {
+
+346 
+	`´štf
+( '<span class="author vcard"><a class="url fn‚" href="%1$s"itle="%2$s"„el="author">%3$s</a></span>',
+
+347 
+	`esc_u¾
+Ğ
+	`g‘_authÜ_po¡s_u¾
+Ğ
+	`g‘_the_authÜ_m‘a
+( 'ID' ) ) ),
+
+348 
+	`esc_©Œ
+Ğ
+	`¥rštf
+Ğ
+	`__
+Ğ'V›w‡Î…o¡ by %s', 'tw’tythœ‹’' ), 
+	`g‘_the_authÜ
+() ) ),
+
+349 
+	`g‘_the_authÜ
+()
+
+352 
+	}
+}
+
+353 
+	g’dif
+;
+
+355 iàĞ! 
+funùiÚ_exi¡s
+( 'twentythirteen_entry_date' ) ) :
+
+366 
+funùiÚ
+ 
+	$tw’tythœ‹’_’Œy_d©e
+Ğ
+$echo
+ = 
+Œue
+ ) {
+
+367 iàĞ
+	`has_po¡_fÜm©
+Ğ
+	`¬¿y
+( 'chat', 'status' ) ) )
+
+368 
+$fÜm©_´efix
+ = 
+	`_x
+( '%1$s on %2$s', '1:…ost format‚ame. 2: date', 'twentythirteen' );
+
+370 
+$fÜm©_´efix
+ = '%2$s';
+
+372 
+$d©e
+ = 
+	`¥rštf
+( '<span class="date"><a href="%1$s"itle="%2$s"„el="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>',
+
+373 
+	`esc_u¾
+Ğ
+	`g‘_³rm®šk
+() ),
+
+374 
+	`esc_©Œ
+Ğ
+	`¥rštf
+Ğ
+	`__
+Ğ'P”m®škØ%s', 'tw’tythœ‹’' ), 
+	`the_t™Ë_©Œibu‹
+( 'echo=0' ) ) ),
+
+375 
+	`esc_©Œ
+Ğ
+	`g‘_the_d©e
+( 'c' ) ),
+
+376 
+	`esc_html
+Ğ
+	`¥rštf
+Ğ
+$fÜm©_´efix
+, 
+	`g‘_po¡_fÜm©_¡ršg
+Ğ
+	`g‘_po¡_fÜm©
+(è), 
+	`g‘_the_d©e
+() ) )
+
+379 iàĞ
+$echo
+ )
+
+380 
+echo
+ 
+$d©e
+;
+
+382  
+$d©e
+;
+
+383 
+	}
+}
+
+384 
+	g’dif
+;
+
+386 iàĞ! 
+funùiÚ_exi¡s
+( 'twentythirteen_the_attached_image' ) ) :
+
+394 
+funùiÚ
+ 
+	$tw’tythœ‹’_the_©ched_image
+() {
+
+395 
+$po¡
+ = 
+	`g‘_po¡
+();
+
+396 
+$©chm’t_size
+ = 
+	`­¶y_f‹rs
+Ğ'tw’tythœ‹’_©chm’t_size', 
+	`¬¿y
+( 724, 724 ) );
+
+397 
+$Ãxt_©chm’t_u¾
+ = 
+	`wp_g‘_©chm’t_u¾
+();
+
+405 
+$©chm’t_ids
+ = 
+	`g‘_po¡s
+Ğ
+	`¬¿y
+(
+
+406 'po¡_·»Á' => 
+$po¡
+->
+po¡_·»Á
+,
+
+417 iàĞ
+	`couÁ
+Ğ
+$©chm’t_ids
+ ) > 1 ) {
+
+418 
+	`fÜ—ch
+ ( 
+$©chm’t_ids
+ 
+as
+ 
+$©chm’t_id
+ ) {
+
+419 iàĞ
+$©chm’t_id
+ =ğ
+$po¡
+->
+ID
+ ) {
+
+420 
+$Ãxt_id
+ = 
+	`cu¼’t
+Ğ
+$©chm’t_ids
+ );
+
+426 iàĞ
+$Ãxt_id
+ )
+
+427 
+$Ãxt_©chm’t_u¾
+ = 
+	`g‘_©chm’t_lšk
+Ğ
+$Ãxt_id
+ );
+
+431 
+$Ãxt_©chm’t_u¾
+ = 
+	`g‘_©chm’t_lšk
+Ğ
+	`¬¿y_shiá
+Ğ
+$©chm’t_ids
+ ) );
+
+434 
+	`´štf
+( '<a href="%1$s"itle="%2$s"„el="attachment">%3$s</a>',
+
+435 
+	`esc_u¾
+Ğ
+$Ãxt_©chm’t_u¾
+ ),
+
+436 
+	`the_t™Ë_©Œibu‹
+Ğ
+	`¬¿y
+Ğ'echo' => 
+çl£
+ ) ),
+
+437 
+	`wp_g‘_©chm’t_image
+Ğ
+$po¡
+->
+ID
+, 
+$©chm’t_size
+ )
+
+439 
+	}
+}
+
+440 
+	g’dif
+;
+
+454 
+funùiÚ
+ 
+	$tw’tythœ‹’_g‘_lšk_u¾
+() {
+
+455 
+$cÚ‹Á
+ = 
+	`g‘_the_cÚ‹Á
+();
+
+456 
+$has_u¾
+ = 
+	`g‘_u¾_š_cÚ‹Á
+Ğ
+$cÚ‹Á
+ );
+
+458  ( 
+$has_u¾
+ ) ? $has_u¾ : 
+	`­¶y_f‹rs
+Ğ'the_³rm®šk', 
+	`g‘_³rm®šk
+() );
+
+459 
+	}
+}
+
+474 
+funùiÚ
+ 
+	$tw’tythœ‹’_body_şass
+Ğ
+$şas£s
+ ) {
+
+475 iàĞ! 
+	`is_muÉi_authÜ
+() )
+
+476 
+$şas£s
+[] = 'single-author';
+
+478 iàĞ
+	`is_aùive_sideb¬
+Ğ'sideb¬-2' ) && ! 
+	`is_©chm’t
+(è&& ! 
+	`is_404
+() )
+
+479 
+$şas£s
+[] = 'sidebar';
+
+481 iàĞ! 
+	`g‘_İtiÚ
+( 'show_avatars' ) )
+
+482 
+$şas£s
+[] = 'no-avatars';
+
+484  
+$şas£s
+;
+
+485 
+	}
+}
+
+486 
+add_f‹r
+( 'body_class', 'twentythirteen_body_class' );
+
+495 
+funùiÚ
+ 
+	$tw’tythœ‹’_cÚ‹Á_width
+() {
+
+496 
+glob®
+ 
+$cÚ‹Á_width
+;
+
+498 iàĞ
+	`is_©chm’t
+() )
+
+499 
+$cÚ‹Á_width
+ = 724;
+
+500 
+	`–£if
+ ( 
+	`has_po¡_fÜm©
+( 'audio' ) )
+
+501 
+$cÚ‹Á_width
+ = 484;
+
+502 
+	}
+}
+
+503 
+add_aùiÚ
+( 'template_redirect', 'twentythirteen_content_width' );
+
+513 
+funùiÚ
+ 
+	$tw’tythœ‹’_cu¡omize_»gi¡”
+Ğ
+$wp_cu¡omize
+ ) {
+
+514 
+$wp_cu¡omize
+->
+	`g‘_£‰šg
+Ğ'blogÇme' )->
+Œª¥Üt
+ = 'postMessage';
+
+515 
+$wp_cu¡omize
+->
+	`g‘_£‰šg
+Ğ'blogdesütiÚ' )->
+Œª¥Üt
+ = 'postMessage';
+
+516 
+$wp_cu¡omize
+->
+	`g‘_£‰šg
+Ğ'h—d”_‹xtcŞÜ' )->
+Œª¥Üt
+ = 'postMessage';
+
+517 
+	}
+}
+
+518 
+add_aùiÚ
+( 'customize_register', 'twentythirteen_customize_register' );
+
+526 
+funùiÚ
+ 
+	$tw’tythœ‹’_cu¡omize_´ev›w_js
+() {
+
+527 
+	`wp_’queue_süt
+Ğ'tw’tythœ‹’-cu¡omiz”', 
+	`g‘_‹m¶©e_dœeùÜy_uri
+(è. '/js/theme-cu¡omiz”.js', 
+	`¬¿y
+Ğ'cu¡omize-´ev›w' ), '20130226', 
+Œue
+ );
+
+528 
+	}
+}
+
+529 
+add_aùiÚ
+( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+
+	@gallery-main.php
+
+1 <?
+php
+
+
+4 iàĞ!
+defšed
+('ABSPATH')è
+	gex™
+;
+
+21 
+g‘_h—d”
+(); ?>
+
+23 <
+süt
+ 
+	gty³
+="text/javascript">
+
+24 
+jQu”y
+(
+docum’t
+).
+»ady
+(
+	$funùiÚ
+(
+$
+) {
+
+25 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#g®Ëry_cÚš”').
+	`masÚry
+({
+
+26 
+cŞumnWidth
+: 620,
+
+27 
+™emS–eùÜ
+: '.img_container'
+
+29 
+	}
+});
+
+31 </
+	gsüt
+>
+
+34 <
+div
+ 
+	gid
+="cÚ‹Á" 
+şass
+="<?phpƒcho implode( ' ',„esponsive_get_content_classes() ); ?>">
+
+35 <
+div
+ 
+şass
+="grid cŞ-940e_cÚt" 
+id
+="gallery_container">
+
+36 <?
+php
+
+
+38 
+echo
+ '<div class="img_container">';
+
+39 
+	gecho
+ '<a href="mountains"itle="Look…ostitle" >';
+
+40 
+	gecho
+ '<div class="placeholder_gallery">';
+
+41 
+	gecho
+ '</div>';
+
+42 
+	gecho
+ '</a>';
+
+43 
+	gecho
+ '<h2 class="h2_img_container">Mountains</h2>';
+
+44 
+	gecho
+ '</div>';
+
+46 
+	gecho
+ '<div class="img_container">';
+
+47 
+	gecho
+ '<a href="climbing"itle="Look…ostitle" >';
+
+48 
+	gecho
+ '<div class="placeholder_gallery">';
+
+49 
+	gecho
+ '</div>';
+
+50 
+	gecho
+ '</a>';
+
+51 
+	gecho
+ '<h2 class="h2_img_container">Climbing</h2>';
+
+52 
+	gecho
+ '</div>';
+
+54 
+	gecho
+ '<div class="img_container">';
+
+55 
+	gecho
+ '<a href="biking"itle="Look…ostitle" >';
+
+56 
+	gecho
+ '<div class="placeholder_gallery">';
+
+57 
+	gecho
+ '</div>';
+
+58 
+	gecho
+ '</a>';
+
+59 
+	gecho
+ '<h2 class="h2_img_container">Biking</h2>';
+
+60 
+	gecho
+ '</div>';
+
+62 
+	gecho
+ '<div class="img_container">';
+
+63 
+	gecho
+ '<a href="people"itle="Look…ostitle" >';
+
+64 
+	gecho
+ '<div class="placeholder_gallery">';
+
+65 
+	gecho
+ '</div>';
+
+66 
+	gecho
+ '</a>';
+
+67 
+	gecho
+ '<h2 class="h2_img_container">People</h2>';
+
+68 
+	gecho
+ '</div>';
+
+70 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ .
+	gcŞ
+-940 -->
+
+71 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ #content -->
+
+73 <?
+php
+ 
+g‘_sideb¬
+(); ?>
+
+74 <?
+php
+ 
+g‘_foÙ”
+(); ?>
+
+	@gallery.php
+
+1 <?
+php
+
+
+4 iàĞ!
+defšed
+('ABSPATH')è
+	gex™
+;
+
+21 
+g‘_h—d”
+(); ?>
+
+23 <
+süt
+ 
+	gty³
+="text/javascript">
+
+24 
+jQu”y
+(
+docum’t
+).
+»ady
+(
+	$funùiÚ
+(
+$
+) {
+
+25 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#g®Ëry_cÚš”').
+	`masÚry
+({
+
+26 
+cŞumnWidth
+: 620,
+
+27 
+™emS–eùÜ
+: '.img_container'
+
+29 
+	}
+});
+
+31 </
+	gsüt
+>
+
+34 <
+div
+ 
+	gid
+="cÚ‹Á" 
+şass
+="<?phpƒcho implode( ' ',„esponsive_get_content_classes() ); ?>">
+
+36 <?
+php
+ ià(
+	$have_po¡s
+()) : ?>
+
+38 <?
+php
+ 
+	$have_po¡s
+()è: 
+	`the_po¡
+(); ?>
+
+40 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'loop-header' ); ?>
+
+42 <?
+php
+ 
+	`»¥Úsive_’Œy_befÜe
+(); ?>
+
+43 <
+div
+ 
+id
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+	`po¡_şass
+(); ?>>
+
+44 <?
+php
+ 
+	`»¥Úsive_’Œy_tİ
+(); ?>
+
+46 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'post-meta-page' ); ?>
+
+48 <
+div
+ 
+şass
+="po¡-’Œy" 
+id
+="post-entry">
+
+49 <?
+php
+ 
+	`the_cÚ‹Á
+(
+	`__
+('Read more &#8250;', 'responsive')); ?>
+
+50 <?
+php
+ 
+	`wp_lšk_·ges
+(
+	`¬¿y
+('befÜe' => '<div cÏss="·gš©iÚ">' . 
+	`__
+('Pages:', 'responsive'), 'after' => '</div>')); ?>
+
+51 </
+div
+><!-- 
+’d
+ 
+of
+ .
+po¡
+-
+’Œy
+ -->
+
+53 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'post-data' ); ?>
+
+55 <?
+php
+ 
+	`»¥Úsive_’Œy_bÙtom
+(); ?>
+
+56 </
+div
+><!-- 
+’d
+ 
+of
+ #po¡-<?
+php
+ 
+	`the_ID
+(); ?> -->
+
+57 <?
+php
+ 
+	`»¥Úsive_’Œy_aá”
+(); ?>
+
+59 <?
+php
+ 
+	`»¥Úsive_comm’ts_befÜe
+(); ?>
+
+60 <?
+php
+ 
+	`comm’ts_‹m¶©e
+Ğ'', 
+Œue
+ ); ?>
+
+61 <?
+php
+ 
+	`»¥Úsive_comm’ts_aá”
+(); ?>
+
+63 <?
+php
+
+
+64 
+’dwhe
+;
+
+66 
+	`g‘_‹m¶©e_·¹
+( 'loop-nav' );
+
+70 
+	`g‘_‹m¶©e_·¹
+( 'loop-no-posts' );
+
+72 
+’dif
+;
+
+75 </
+div
+><!-- 
+’d
+ 
+of
+ #content -->
+
+77 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+78 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@header.php
+
+1 <?
+	gphp
+
+
+11 ?><!
+DOCTYPE
+ 
+	ghtml
+>
+
+12 <!--[
+IE
+ 7]>
+
+13 <
+html
+ 
+	gşass
+="› ie7" <?
+php
+ 
+Ïnguage_©Œibu‹s
+(); ?>>
+
+14 <![
+’dif
+]-->
+
+15 <!--[
+IE
+ 8]>
+
+16 <
+html
+ 
+	gşass
+="› ie8" <?
+php
+ 
+Ïnguage_©Œibu‹s
+(); ?>>
+
+17 <![
+’dif
+]-->
+
+18 <!--[!(
+IE
+ 7) | !(IE 8) ]><!-->
+
+19 <
+	ghtml
+ <?
+php
+ 
+Ïnguage_©Œibu‹s
+(); ?>>
+
+20 <!--<![
+’dif
+]-->
+
+21 <
+	gh—d
+>
+
+22 <
+m‘a
+ 
+	gch¬£t
+="<?php bloginfo( 'charset' ); ?>">
+
+23 <
+m‘a
+ 
+Çme
+="v›wpÜt" 
+cÚ‹Á
+="width=device-width">
+
+24 <
+t™Ë
+><?
+php
+ 
+wp_t™Ë
+Ğ'|', 
+Œue
+, 'right' ); ?></
+	gt™Ë
+>
+
+25 <
+lšk
+ 
+	g»l
+="´ofe" 
+h»f
+="http://gmpg.org/xfn/11">
+
+26 <
+lšk
+ 
+»l
+="pšgback" 
+h»f
+="<?php bloginfo( 'pingback_url' ); ?>">
+
+27 <!--[
+É
+ 
+IE
+ 9]>
+
+28 <
+süt
+ 
+¤c
+="<?phpƒcho get_template_directory_uri(); ?>/js/html5.js"></script>
+
+29 <![
+’dif
+]-->
+
+30 <?
+php
+ 
+wp_h—d
+(); ?>
+
+31 </
+	gh—d
+>
+
+33 <
+	gbody
+ <?
+php
+ 
+body_şass
+(); ?>>
+
+34 <
+div
+ 
+	gid
+="·ge" 
+şass
+="hfeed site">
+
+35 <
+h—d”
+ 
+id
+="ma¡h—d" 
+şass
+="s™e-h—d”" 
+rŞe
+="banner">
+
+36 <
+a
+ 
+şass
+="home-lšk" 
+h»f
+="<?ph°echØesc_u¾Ğhome_u¾Ğ'/' ) ); ?>" 
+t™Ë
+="<?ph°echØesc_©ŒĞg‘_blogšfoĞ'Çme', 'di¥Ïy' ) ); ?>" 
+»l
+="home">
+
+37 <
+h1
+ 
+şass
+="s™e-t™Ë"><?
+php
+ 
+blogšfo
+Ğ'Çme' ); ?></
+	gh1
+>
+
+38 <
+h2
+ 
+	gşass
+="s™e-desütiÚ"><?
+php
+ 
+blogšfo
+Ğ'desütiÚ' ); ?></
+	gh2
+>
+
+39 </
+	ga
+>
+
+41 <
+div
+ 
+	gid
+="Çvb¬" 
+şass
+="navbar">
+
+42 <
+Çv
+ 
+id
+="s™e-Çvig©iÚ" 
+şass
+="Çvig©iÚ maš-Çvig©iÚ" 
+rŞe
+="navigation">
+
+43 <
+h3
+ 
+şass
+="m’u-toggË"><?
+php
+ 
+_e
+Ğ'M’u', 'tw’tythœ‹’' ); ?></
+	gh3
+>
+
+44 <
+a
+ 
+	gşass
+="sü“n-»ad”-‹xˆsk-lšk" 
+h»f
+="#cÚ‹Á" 
+t™Ë
+="<?ph°esc_©Œ_eĞ'SkØcÚ‹Á', 'tw’tythœ‹’' ); ?>"><?
+php
+ 
+_e
+Ğ'SkØcÚ‹Á', 'tw’tythœ‹’' ); ?></
+	ga
+>
+
+45 <?
+php
+ 
+wp_Çv_m’u
+Ğ
+¬¿y
+( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+
+46 <?
+php
+ 
+g‘_£¬ch_fÜm
+(); ?>
+
+47 </
+	gÇv
+><!-- #s™e-
+	gÇvig©iÚ
+ -->
+
+48 </
+	gdiv
+><!-- #navbar -->
+
+49 </
+	gh—d”
+><!-- #masthead -->
+
+51 <
+div
+ 
+	gid
+="maš" 
+şass
+="site-main">
+
+	@image.php
+
+1 <?
+php
+
+
+12 
+g‘_h—d”
+(); ?>
+
+14 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+15 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+16 <
+¬tişe
+ 
+id
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+po¡_şass
+( 'image-attachment' ); ?>>
+
+17 <
+h—d”
+ 
+	gşass
+="entry-header">
+
+18 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+the_t™Ë
+(); ?></
+	gh1
+>
+
+20 <
+div
+ 
+	gşass
+="entry-meta">
+
+21 <?
+php
+
+
+22 
+$published_‹xt
+ = 
+__
+( '<span class="attachment-meta">Published on <time class="entry-date" datetime="%1$s">%2$s</time> in <a href="%3$s"itle="Returno %4$s"„el="gallery">%5$s</a></span>', 'twentythirteen' );
+
+23 
+	g$po¡_t™Ë
+ = 
+g‘_the_t™Ë
+Ğ
+$po¡
+->
+po¡_·»Á
+ );
+
+24 iàĞ
+em±y
+Ğ
+$po¡_t™Ë
+ ) || 0 =ğ
+$po¡
+->
+po¡_·»Á
+ )
+
+25 
+$published_‹xt
+ = '<span class="attachment-meta"><time class="entry-date" datetime="%1$s">%2$s</time></span>';
+
+27 
+´štf
+Ğ
+$published_‹xt
+,
+
+28 
+esc_©Œ
+Ğ
+g‘_the_d©e
+( 'c' ) ),
+
+29 
+esc_html
+Ğ
+g‘_the_d©e
+() ),
+
+30 
+esc_u¾
+Ğ
+g‘_³rm®šk
+Ğ
+$po¡
+->
+po¡_·»Á
+ ) ),
+
+31 
+esc_©Œ
+Ğ
+¡r_gs
+Ğ
+$po¡_t™Ë
+ ) ),
+
+32 
+$po¡_t™Ë
+
+
+35 
+	g$m‘ad©a
+ = 
+wp_g‘_©chm’t_m‘ad©a
+();
+
+36 
+´štf
+( '<span class="attachment-meta full-size-link"><a href="%1$s"itle="%2$s">%3$s (%4$s &times; %5$s)</a></span>',
+
+37 
+esc_u¾
+Ğ
+wp_g‘_©chm’t_u¾
+() ),
+
+38 
+esc_©Œ__
+( 'Linko full-size image', 'twentythirteen' ),
+
+39 
+__
+( 'Full„esolution', 'twentythirteen' ),
+
+40 
+$m‘ad©a
+['width'],
+
+41 
+$m‘ad©a
+['height']
+
+44 
+ed™_po¡_lšk
+Ğ
+__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' );
+
+46 </
+	gdiv
+><!-- .
+	g’Œy
+-
+	gm‘a
+ -->
+
+47 </
+	gh—d”
+><!-- .
+	g’Œy
+-header -->
+
+49 <
+div
+ 
+	gşass
+="entry-content">
+
+50 <
+Çv
+ 
+id
+="image-Çvig©iÚ" 
+şass
+="Çvig©iÚ image-Çvig©iÚ" 
+rŞe
+="navigation">
+
+51 <
+¥ª
+ 
+şass
+="Çv-´evious"><?
+php
+ 
+´evious_image_lšk
+Ğ
+çl£
+, 
+__
+Ğ'<¥ª cÏss="m‘a-Çv">&Ï¼;</¥ª> P»vious', 'tw’tythœ‹’' ) ); ?></
+	g¥ª
+>
+
+52 <
+¥ª
+ 
+	gşass
+="Çv-Ãxt"><?
+php
+ 
+Ãxt_image_lšk
+Ğ
+çl£
+, 
+__
+Ğ'Nexˆ<¥ª cÏss="m‘a-Çv">&¿¼;</¥ª>', 'tw’tythœ‹’' ) ); ?></
+	g¥ª
+>
+
+53 </
+	gÇv
+><!-- #image-
+	gÇvig©iÚ
+ -->
+
+55 <
+div
+ 
+	gşass
+="entry-attachment">
+
+56 <
+div
+ 
+şass
+="attachment">
+
+57 <?
+php
+ 
+tw’tythœ‹’_the_©ched_image
+(); ?>
+
+59 <?
+php
+ iàĞ
+	$has_exû½t
+() ) : ?>
+
+60 <
+div
+ 
+şass
+="entry-caption">
+
+61 <?
+php
+ 
+	`the_exû½t
+(); ?>
+
+62 </
+div
+>
+
+63 <?
+php
+ 
+’dif
+; ?>
+
+64 </
+div
+><!-- .
+©chm’t
+ -->
+
+65 </
+div
+><!-- .
+’Œy
+-
+©chm’t
+ -->
+
+67 <?
+php
+ iàĞ! 
+	`em±y
+Ğ
+$po¡
+->
+po¡_cÚ‹Á
+ ) ) : ?>
+
+68 <
+div
+ 
+şass
+="entry-description">
+
+69 <?
+php
+ 
+	`the_cÚ‹Á
+(); ?>
+
+70 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks">' . 
+	`__
+( 'Pages:', 'twentythirteen' ), 'after' => '</div>' ) ); ?>
+
+71 </
+div
+><!-- .
+’Œy
+-
+desütiÚ
+ -->
+
+72 <?
+php
+ 
+’dif
+; ?>
+
+74 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+75 </
+¬tişe
+><!-- #post -->
+
+77 <?
+php
+ 
+	`comm’ts_‹m¶©e
+(); ?>
+
+79 </
+div
+><!-- #content -->
+
+80 </
+div
+><!-- #primary -->
+
+82 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@inc/back-compat.php
+
+1 <?
+php
+
+
+22 
+funùiÚ
+ 
+	$tw’tythœ‹’_sw™ch_theme
+() {
+
+23 
+	`sw™ch_theme
+Ğ
+WP_DEFAULT_THEME
+, WP_DEFAULT_THEME );
+
+24 
+	`un£t
+Ğ
+$_GET
+['activated'] );
+
+25 
+	`add_aùiÚ
+( 'admin_notices', 'twentythirteen_upgrade_notice' );
+
+26 
+	}
+}
+
+27 
+add_aùiÚ
+( 'after_switch_theme', 'twentythirteen_switch_theme' );
+
+37 
+funùiÚ
+ 
+	$tw’tythœ‹’_upg¿de_nÙiû
+() {
+
+38 
+$mes§ge
+ = 
+	`¥rštf
+Ğ
+	`__
+Ğ'Tw’ty Thœ‹’„equœe ©†—¡ WÜdP»s v”siÚ 3.6. You‡»„uÂšg v”siÚ %s. PËa£ upg¿dªdry‡gaš.', 'tw’tythœ‹’' ), 
+$GLOBALS
+['wp_version'] );
+
+39 
+	`´štf
+Ğ'<div cÏss="”rÜ"><p>%s</p></div>', 
+$mes§ge
+ );
+
+40 
+	}
+}
+
+49 
+funùiÚ
+ 
+	$tw’tythœ‹’_cu¡omize
+() {
+
+50 
+	`wp_d›
+Ğ
+	`¥rštf
+Ğ
+	`__
+Ğ'Tw’ty Thœ‹’„equœe ©†—¡ WÜdP»s v”siÚ 3.6. You‡»„uÂšg v”siÚ %s. PËa£ upg¿dªdry‡gaš.', 'tw’tythœ‹’' ), 
+$GLOBALS
+['wp_v”siÚ'] ), '', 
+	`¬¿y
+(
+
+51 'back_lšk' => 
+Œue
+,
+
+53 
+	}
+}
+
+54 
+add_aùiÚ
+( 'load-customize.php', 'twentythirteen_customize' );
+
+63 
+funùiÚ
+ 
+	$tw’tythœ‹’_´ev›w
+() {
+
+64 iàĞ
+	`is£t
+Ğ
+$_GET
+['preview'] ) ) {
+
+65 
+	`wp_d›
+Ğ
+	`¥rštf
+Ğ
+	`__
+Ğ'Tw’ty Thœ‹’„equœe ©†—¡ WÜdP»s v”siÚ 3.6. You‡»„uÂšg v”siÚ %s. PËa£ upg¿dªdry‡gaš.', 'tw’tythœ‹’' ), 
+$GLOBALS
+['wp_version'] ) );
+
+67 
+	}
+}
+
+68 
+add_aùiÚ
+( 'template_redirect', 'twentythirteen_preview' );
+
+	@inc/custom-header.php
+
+1 <?
+php
+
+
+22 
+funùiÚ
+ 
+	$tw’tythœ‹’_cu¡om_h—d”_£tup
+() {
+
+23 
+$¬gs
+ = 
+	`¬¿y
+(
+
+38 
+	`add_theme_suµÜt
+Ğ'cu¡om-h—d”', 
+$¬gs
+ );
+
+44 
+	`»gi¡”_deçuÉ_h—d”s
+Ğ
+	`¬¿y
+(
+
+45 'cœşe' => 
+	`¬¿y
+(
+
+48 'desütiÚ' => 
+	`_x
+( 'Circle', 'header image description', 'twentythirteen' )
+
+50 'dŸmÚd' => 
+	`¬¿y
+(
+
+53 'desütiÚ' => 
+	`_x
+( 'Diamond', 'header image description', 'twentythirteen' )
+
+55 '¡¬' => 
+	`¬¿y
+(
+
+58 'desütiÚ' => 
+	`_x
+( 'Star', 'header image description', 'twentythirteen' )
+
+61 
+	}
+}
+
+62 
+add_aùiÚ
+( 'after_setup_theme', 'twentythirteen_custom_header_setup' );
+
+69 
+funùiÚ
+ 
+	$tw’tythœ‹’_cu¡om_h—d”_fÚts
+() {
+
+71 
+	`wp_’queue_¡yË
+Ğ'tw’tythœ‹’-fÚts', 
+	`tw’tythœ‹’_fÚts_u¾
+(), 
+	`¬¿y
+(), 
+nuÎ
+ );
+
+74 
+	`wp_’queue_¡yË
+Ğ'g’”icÚs', 
+	`g‘_‹m¶©e_dœeùÜy_uri
+(è. '/fÚts/g’”icÚs.css', 
+	`¬¿y
+(), '2.09' );
+
+75 
+	}
+}
+
+76 
+add_aùiÚ
+( 'admin_print_styles-appearance_page_custom-header', 'twentythirteen_custom_header_fonts' );
+
+85 
+funùiÚ
+ 
+	$tw’tythœ‹’_h—d”_¡yË
+() {
+
+86 
+$h—d”_image
+ = 
+	`g‘_h—d”_image
+();
+
+87 
+$‹xt_cŞÜ
+ = 
+	`g‘_h—d”_‹xtcŞÜ
+();
+
+90 iàĞ
+	`em±y
+Ğ
+$h—d”_image
+ ) && 
+$‹xt_cŞÜ
+ =ğ
+	`g‘_theme_suµÜt
+( 'custom-header', 'default-text-color' ) )
+
+95 <
+¡yË
+ 
+ty³
+="‹xt/css" 
+id
+="twentythirteen-header-css">
+
+96 <?
+php
+
+
+97 iàĞ! 
+	`em±y
+Ğ
+$h—d”_image
+ ) ) :
+
+99 .
+s™e
+-
+h—d”
+ {
+
+100 
+background
+: 
+	`u¾
+(<?
+php
+ 
+	`h—d”_image
+(); ?>è
+no
+-
+»³©
+ 
+süŞl
+ 
+tİ
+;
+
+101 
+background
+-
+size
+: 1600
+px
+‡uto;
+
+103 <?
+php
+
+
+104 
+’dif
+;
+
+107 iàĞ! 
+	`di¥Ïy_h—d”_‹xt
+() ) :
+
+109 .
+s™e
+-
+t™Ë
+,
+
+110 .
+s™e
+-
+desütiÚ
+ {
+
+111 
+pos™iÚ
+: 
+absŞu‹
+;
+
+112 
+ş
+: 
+	`»ù
+(1
+px
+ 1px 1px 1px);
+
+113 
+ş
+: 
+	`»ù
+(1
+px
+, 1px, 1px, 1px);
+
+115 <?
+php
+
+
+116 iàĞ
+	`em±y
+Ğ
+$h—d”_image
+ ) ) :
+
+118 .
+s™e
+-
+h—d”
+ .
+home
+-
+lšk
+ {
+
+119 
+mš
+-
+height
+: 0;
+
+121 <?
+php
+
+
+122 
+’dif
+;
+
+125 
+	`–£if
+ ( 
+$‹xt_cŞÜ
+ !ğ
+	`g‘_theme_suµÜt
+( 'custom-header', 'default-text-color' ) ) :
+
+127 .
+s™e
+-
+t™Ë
+,
+
+128 .
+s™e
+-
+desütiÚ
+ {
+
+129 
+cŞÜ
+: #<?
+php
+ 
+echo
+ 
+	`esc_©Œ
+Ğ
+$‹xt_cŞÜ
+ ); ?>;
+
+131 <?
+php
+ 
+’dif
+; ?>
+
+132 </
+¡yË
+>
+
+133 <?
+php
+
+
+134 
+	}
+}
+
+141 
+funùiÚ
+ 
+	$tw’tythœ‹’_admš_h—d”_¡yË
+() {
+
+142 
+$h—d”_image
+ = 
+	`g‘_h—d”_image
+();
+
+144 <
+¡yË
+ 
+ty³
+="‹xt/css" 
+id
+="twentythirteen-admin-header-css">
+
+145 .
+­³¬ªû_·ge_cu¡om
+-
+h—d”
+ #headimg {
+
+146 
+bÜd”
+: 
+nÚe
+;
+
+147 -
+webk™
+-
+box
+-
+sizšg
+: 
+bÜd”
+-box;
+
+148 -
+moz
+-
+box
+-
+sizšg
+: 
+bÜd”
+-box;
+
+149 
+box
+-
+sizšg
+: 
+bÜd”
+-box;
+
+150 <?
+php
+
+
+151 iàĞ! 
+	`em±y
+Ğ
+$h—d”_image
+ ) ) {
+
+152 
+echo
+ 'background: u¾(' . 
+	`esc_u¾
+Ğ
+$h—d”_image
+ ) . ')‚o-repeat scrollop; background-size: 1600px‡uto;';
+
+154 
+·ddšg
+: 0 20
+px
+;
+
+156 #h—dimg .
+home
+-
+lšk
+ {
+
+157 -
+webk™
+-
+box
+-
+sizšg
+: 
+bÜd”
+-box;
+
+158 -
+moz
+-
+box
+-
+sizšg
+: 
+bÜd”
+-box;
+
+159 
+box
+-
+sizšg
+: 
+bÜd”
+-box;
+
+160 
+m¬gš
+: 0‡uto;
+
+161 
+max
+-
+width
+: 1040
+px
+;
+
+162 <?
+php
+
+
+163 iàĞ! 
+	`em±y
+Ğ
+$h—d”_image
+ ) || 
+	`di¥Ïy_h—d”_‹xt
+() ) {
+
+164 
+echo
+ 'min-height: 230px;';
+
+166 
+width
+: 100%;
+
+168 <?
+php
+ iàĞ! 
+	`di¥Ïy_h—d”_‹xt
+() ) : ?>
+
+169 #h—dimg 
+h1
+,
+
+170 #h—dimg 
+h2
+ {
+
+171 
+pos™iÚ
+: 
+absŞu‹
+ !
+impÜÁ
+;
+
+172 
+ş
+: 
+	`»ù
+(1
+px
+ 1px 1px 1px);
+
+173 
+ş
+: 
+	`»ù
+(1
+px
+, 1px, 1px, 1px);
+
+175 <?
+php
+ 
+’dif
+; ?>
+
+176 #h—dimg 
+h1
+ {
+
+177 
+fÚt
+: 
+bŞd
+ 60
+px
+/1 
+B™‹r
+, 
+GeÜgŸ
+, 
+£rif
+;
+
+178 
+m¬gš
+: 0;
+
+179 
+·ddšg
+: 58
+px
+ 0 10px;
+
+181 #h—dimg 
+h1
+ 
+a
+ {
+
+182 
+‹xt
+-
+decÜ©iÚ
+: 
+nÚe
+;
+
+184 #h—dimg 
+h1
+ 
+a
+:
+hov”
+ {
+
+185 
+‹xt
+-
+decÜ©iÚ
+: 
+und”lše
+;
+
+187 #h—dimg 
+h2
+ {
+
+188 
+fÚt
+: 200 
+™®ic
+ 24
+px
+ "Sourû Sª Pro", 
+H–v‘iÿ
+, 
+§ns
+-
+£rif
+;
+
+189 
+m¬gš
+: 0;
+
+190 
+‹xt
+-
+shadow
+: 
+nÚe
+;
+
+192 .-
+h—d”
+ 
+img
+ {
+
+193 
+max
+-
+width
+: 230
+px
+;
+
+194 
+width
+:‡uto;
+
+196 </
+¡yË
+>
+
+197 <?
+php
+
+
+198 
+	}
+}
+
+206 
+funùiÚ
+ 
+	$tw’tythœ‹’_admš_h—d”_image
+() {
+
+208 <
+div
+ 
+id
+="h—dimg" 
+¡yË
+="background: url(<?php header_image(); ?>)‚o-repeat scrollop; background-size: 1600px‡uto;">
+
+209 <?
+php
+ 
+$¡yË
+ = ' styË="cŞÜ:#' . 
+	`g‘_h—d”_‹xtcŞÜ
+() . ';"'; ?>
+
+210 <
+div
+ 
+şass
+="home-link">
+
+211 <
+h1
+ 
+şass
+="di¥Ïyšg-h—d”-‹xt"><
+a
+ 
+id
+="Çme"<?
+php
+ 
+echo
+ 
+$¡yË
+; ?> 
+Úşick
+="»tuº f®£;" 
+h»f
+="#"><?ph°
+	`blogšfo
+( 'name' ); ?></a></h1>
+
+212 <
+h2
+ 
+id
+="desc" 
+şass
+="di¥Ïyšg-h—d”-‹xt"<?
+php
+ 
+echo
+ 
+$¡yË
+; ?>><?ph°
+	`blogšfo
+( 'description' ); ?></h2>
+
+213 </
+div
+>
+
+214 </
+div
+>
+
+215 <?
+php
+ 
+	}
+}
+
+	@index.php
+
+1 <?
+php
+
+
+17 
+g‘_h—d”
+(); ?>
+
+19 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+20 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+21 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+23 <?
+php
+ ?>
+
+24 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+25 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+26 <?
+php
+ 
+’dwhe
+; ?>
+
+28 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+30 <?
+php
+ : ?>
+
+31 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+32 <?
+php
+ 
+’dif
+; ?>
+
+34 </
+div
+><!-- #content -->
+
+35 </
+div
+><!-- #primary -->
+
+37 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+38 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@page.php
+
+1 <?
+php
+
+
+14 
+g‘_h—d”
+(); ?>
+
+16 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+17 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+19 <?
+php
+ ?>
+
+20 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+22 <
+¬tişe
+ 
+id
+="po¡-<?ph°the_ID(); ?>" <?
+php
+ 
+	`po¡_şass
+(); ?>>
+
+23 <
+h—d”
+ 
+şass
+="entry-header">
+
+24 <?
+php
+ iàĞ
+	`has_po¡_thumbÇ
+(è&& ! 
+	$po¡_·sswÜd_»quœed
+() ) : ?>
+
+25 <
+div
+ 
+şass
+="entry-thumbnail">
+
+26 <?
+php
+ 
+	`the_po¡_thumbÇ
+(); ?>
+
+27 </
+div
+>
+
+28 <?
+php
+ 
+’dif
+; ?>
+
+30 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+31 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+33 <
+div
+ 
+şass
+="entry-content">
+
+34 <?
+php
+ 
+	`the_cÚ‹Á
+(); ?>
+
+35 <?
+php
+ 
+	`wp_lšk_·ges
+Ğ
+	`¬¿y
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
+	`__
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+36 </
+div
+><!-- .
+’Œy
+-
+cÚ‹Á
+ -->
+
+38 <
+foÙ”
+ 
+şass
+="entry-meta">
+
+39 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+40 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+41 </
+¬tişe
+><!-- #post -->
+
+43 <?
+php
+ 
+	`comm’ts_‹m¶©e
+(); ?>
+
+44 <?
+php
+ 
+’dwhe
+; ?>
+
+46 </
+div
+><!-- #content -->
+
+47 </
+div
+><!-- #primary -->
+
+49 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+50 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@search.php
+
+1 <?
+php
+
+
+10 
+g‘_h—d”
+(); ?>
+
+12 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+13 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+15 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+17 <
+h—d”
+ 
+şass
+="page-header">
+
+18 <
+h1
+ 
+şass
+="·ge-t™Ë"><?
+php
+ 
+	`´štf
+Ğ
+	`__
+Ğ'S—rch ResuÉ fÜ: %s', 'tw’tythœ‹’' ), 
+	`g‘_£¬ch_qu”y
+() ); ?></h1>
+
+19 </
+h—d”
+>
+
+21 <?
+php
+ ?>
+
+22 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+23 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+24 <?
+php
+ 
+’dwhe
+; ?>
+
+26 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+28 <?
+php
+ : ?>
+
+29 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+30 <?
+php
+ 
+’dif
+; ?>
+
+32 </
+div
+><!-- #content -->
+
+33 </
+div
+><!-- #primary -->
+
+35 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+36 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@sidebar-main.php
+
+1 <?
+php
+
+
+12 iàĞ
+is_aùive_sideb¬
+( 'sidebar-1' ) ) : ?>
+
+13 <
+div
+ 
+id
+="£cÚd¬y" 
+şass
+="sideb¬-cÚš”" 
+rŞe
+="complementary">
+
+14 <
+div
+ 
+şass
+="widget-area">
+
+15 <?
+php
+ 
+dyÇmic_sideb¬
+( 'sidebar-1' ); ?>
+
+16 </
+	gdiv
+><!-- .
+	gwidg‘
+-
+	g¬—
+ -->
+
+17 </
+	gdiv
+><!-- #secondary -->
+
+18 <?
+php
+ 
+	g’dif
+; ?>
+
+	@sidebar.php
+
+1 <?
+php
+
+
+12 iàĞ
+is_aùive_sideb¬
+( 'sidebar-2' ) ) : ?>
+
+13 <
+div
+ 
+id
+="‹¹Ÿry" 
+şass
+="sideb¬-cÚš”" 
+rŞe
+="complementary">
+
+14 <
+div
+ 
+şass
+="sidebar-inner">
+
+15 <
+div
+ 
+şass
+="widget-area">
+
+16 <?
+php
+ 
+dyÇmic_sideb¬
+( 'sidebar-2' ); ?>
+
+17 </
+	gdiv
+><!-- .
+	gwidg‘
+-
+	g¬—
+ -->
+
+18 </
+	gdiv
+><!-- .
+	gsideb¬
+-
+	gšÃr
+ -->
+
+19 </
+	gdiv
+><!-- #tertiary -->
+
+20 <?
+php
+ 
+	g’dif
+; ?>
+
+	@single.php
+
+1 <?
+php
+
+
+10 
+g‘_h—d”
+(); ?>
+
+12 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+13 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+15 <?
+php
+ ?>
+
+16 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+18 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+19 <?
+php
+ 
+	`tw’tythœ‹’_po¡_Çv
+(); ?>
+
+20 <?
+php
+ 
+	`comm’ts_‹m¶©e
+(); ?>
+
+22 <?
+php
+ 
+’dwhe
+; ?>
+
+24 </
+div
+><!-- #content -->
+
+25 </
+div
+><!-- #primary -->
+
+27 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+28 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@tag.php
+
+1 <?
+php
+
+
+14 
+g‘_h—d”
+(); ?>
+
+16 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+17 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+19 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+20 <
+h—d”
+ 
+şass
+="archive-header">
+
+21 <
+h1
+ 
+şass
+="¬chive-t™Ë"><?
+php
+ 
+	`´štf
+Ğ
+	`__
+Ğ'Tag Archives: %s', 'tw’tythœ‹’' ), 
+	`sšgË_g_t™Ë
+Ğ'', 
+çl£
+ ) ); ?></h1>
+
+23 <?
+php
+ iàĞ
+	$g_desütiÚ
+() ) :
+
+24 <
+div
+ 
+şass
+="¬chive-m‘a"><?
+php
+ 
+echo
+ 
+	`g_desütiÚ
+(); ?></div>
+
+25 <?
+php
+ 
+’dif
+; ?>
+
+26 </
+h—d”
+><!-- .
+¬chive
+-header -->
+
+28 <?
+php
+ ?>
+
+29 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+30 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+31 <?
+php
+ 
+’dwhe
+; ?>
+
+33 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+35 <?
+php
+ : ?>
+
+36 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+37 <?
+php
+ 
+’dif
+; ?>
+
+39 </
+div
+><!-- #content -->
+
+40 </
+div
+><!-- #primary -->
+
+42 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+43 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@taxonomy-post_format.php
+
+1 <?
+php
+
+
+16 
+g‘_h—d”
+(); ?>
+
+18 <
+div
+ 
+	gid
+="´im¬y" 
+şass
+="content-area">
+
+19 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+21 <?
+php
+ iàĞ
+	$have_po¡s
+() ) : ?>
+
+22 <
+h—d”
+ 
+şass
+="archive-header">
+
+23 <
+h1
+ 
+şass
+="¬chive-t™Ë"><?
+php
+ 
+	`´štf
+Ğ
+	`__
+Ğ'% Archives', 'tw’tythœ‹’' ), '<¥ª>' . 
+	`g‘_po¡_fÜm©_¡ršg
+Ğ
+	`g‘_po¡_fÜm©
+() ) . '</span>' ); ?></h1>
+
+24 </
+h—d”
+><!-- .
+¬chive
+-header -->
+
+26 <?
+php
+ ?>
+
+27 <?
+php
+  
+	$have_po¡s
+(èè: 
+	`the_po¡
+(); ?>
+
+28 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+Ğ'cÚ‹Á', 
+	`g‘_po¡_fÜm©
+() ); ?>
+
+29 <?
+php
+ 
+’dwhe
+; ?>
+
+31 <?
+php
+ 
+	`tw’tythœ‹’_·gšg_Çv
+(); ?>
+
+33 <?
+php
+ : ?>
+
+34 <?
+php
+ 
+	`g‘_‹m¶©e_·¹
+( 'content', 'none' ); ?>
+
+35 <?
+php
+ 
+’dif
+; ?>
+
+37 </
+div
+><!-- #content -->
+
+38 </
+div
+><!-- #primary -->
+
+40 <?
+php
+ 
+	`g‘_sideb¬
+(); ?>
+
+41 <?
+php
+ 
+	`g‘_foÙ”
+(); ?>
+
+	@
+1
+.
+1
+/usr/include
+35
+521
+404.php
+archive.php
+author-bio.php
+author.php
+category.php
+comments.php
+content-aside.php
+content-audio.php
+content-chat.php
+content-gallery.php
+content-image.php
+content-link.php
+content-none.php
+content-quote.php
+content-status.php
+content-video.php
+content.php
+explore.php
+footer.php
+front-page-resposive.php
+functions.php
+gallery-main.php
+gallery.php
+header.php
+image.php
+inc/back-compat.php
+inc/custom-header.php
+index.php
+page.php
+search.php
+sidebar-main.php
+sidebar.php
+single.php
+tag.php
+taxonomy-post_format.php
