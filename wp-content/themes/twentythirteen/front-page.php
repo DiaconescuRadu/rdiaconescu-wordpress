@@ -10,22 +10,22 @@
 get_header(); ?>
         <script type="text/javascript">
             jQuery(document).ready(function($) {
-                $("#foo2").carouFredSel({
+                $(window).load(function(){ $('#foo2').carouFredSel({
                     responsive  : true,
+                    width       : 1200,
                     scroll      : {
                         fx          : "crossfade",
                         easing      : "linear",
                         duration    : 1500
                     },
                     items       : {
-                        width       : 1400,
-                        height      : 467,
+                        width       : 1300,
+                        height      : 431,
                         visible     : 1
                     },
                     prev : "#foo2_prev",
                     next : "#foo2_next"
-
-                });
+                }); });
                 $(window).load(function(){ $('#img_container').masonry({
                      columnWidth: 420,
                      itemSelector: '.tile_img_container',

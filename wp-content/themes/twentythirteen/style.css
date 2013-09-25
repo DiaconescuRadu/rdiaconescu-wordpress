@@ -764,7 +764,7 @@ img.wp-smiley,
  */
 
 .site {
-	background-color: #fff;
+	background-color: #111;
 	border-left: 1px solid #f2f2f2;
 	border-right: 1px solid #f2f2f2;
 	margin: 0 auto;
@@ -875,7 +875,6 @@ div.nav-menu > ul {
 .nav-menu .sub-menu,
 .nav-menu .children {
 	background-color: #220e10;
-	border: 2px solid #f7f5e7;
 	border-top: 0;
 	display: none;
 	padding: 0;
@@ -3157,9 +3156,14 @@ div.placeholder {
 }
 
 /* styling for the slider */
+
+
 .html_carousel {
-    position: relative
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
 }
+
 .html_carousel div.slide {
     position: relative;
 }   

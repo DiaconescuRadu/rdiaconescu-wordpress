@@ -169,7 +169,7 @@ get_header(); ?>
                         echo '</div>';
                     }
                     echo '</a>';
-                    echo '<h2 class="h2_img_container">' . get_the_title() . '</h2>';
+                    echo '<h3 class="h_img_container">' . get_the_title() . '</h3>';
                     echo '</div>';
                     ?>
                 <?php 
