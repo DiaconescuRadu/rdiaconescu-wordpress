@@ -58,27 +58,67 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
             <br>
-            <div class="masonry" id="img_container">
-                <?php
-                    $args = array( 'numberposts' => '20' );
-                    $recent_posts = wp_get_recent_posts( $args );
-                    foreach( $recent_posts as $recent ){
-                        echo '<div class="tile_img_container">';
-                        echo '<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >';
-                        if (has_post_thumbnail($recent['ID'])) {
-                            echo get_the_post_thumbnail($recent['ID'], 'large');
-                        }
-                        else {
-                            echo '<div class="placeholder">';
-                            echo '</div>';
-                        }
-                        echo '</a>';
-                        echo '<h4 class="h_img_container">' . $recent["post_title"] . '</h4>';
+            <?php
+            $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 12));
+            $temp_query = $wp_query;
+            $wp_query = null;
+            $wp_query = $blog_query;
+            if ( $blog_query->have_posts() ) :
+
+                echo '<div class="tile_cont" id="img_container">';
+                    while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
+                        ?>
+
+                    <?php
+                    echo '<div class="tile_img_container">';
+                    echo '<a href="' . get_permalink() . '" >';
+                    if (has_post_thumbnail()) {
+                        echo get_the_post_thumbnail();
+                    }
+                    else {
+                        echo '<div class="placeholder">';
                         echo '</div>';
                     }
-                ?>
-            </div>
-		</div><!-- #content -->
+                    echo '</a>';?>
+
+                    <?php
+                    echo '<h5 class="small_margin">' . get_the_title() . '</h5>';?>
+                    <div class="entry-meta">
+                        <?php twentythirteen_entry_meta(); ?>
+                        <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+                    </div><!-- .entry-meta -->
+                    <div class="entry-summary">
+                        <?php the_excerpt(); ?>
+                    </div><!-- .entry-summary -->
+
+                    <?php
+                    echo '</div>';
+                    ?>
+ 
+               <?php 
+                endwhile;
+                echo '</div><!-- end of .col-940 -->';
+
+                if (  $wp_query->max_num_pages > 1 ) : 
+                    ?>
+                    <div class="navigation">
+                        <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
+                        <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
+                    </div><!-- end of .navigation -->
+                    <?php 
+                endif;
+
+            else : 
+
+                get_template_part( 'loop-no-posts' ); 
+
+            endif; 
+            $wp_query = $temp_query;
+            wp_reset_postdata();
+            ?>  
+
+
+        </div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

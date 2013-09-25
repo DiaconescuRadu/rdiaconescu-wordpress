@@ -89,7 +89,8 @@ if ( !defined('ABSPATH')) exit;
                             echo '<div class="placeholder">';
                             echo '</div>';
                         }
-                        echo '</a>';
+                        echo '</a>';?>
+                        <?php                       
                         echo '<h2 class="h2_img_container">' . $recent["post_title"] . '</h2>';
                         echo '</div>';
                     }

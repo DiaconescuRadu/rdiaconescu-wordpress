@@ -3138,7 +3138,7 @@ div.placeholder {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     color: white;
 }
 
@@ -3153,6 +3153,7 @@ div.placeholder {
 
 .tile_img_container {
     width: 400px;
+    margin: 1px;
 }
 
 /* styling for the slider */
@@ -3162,6 +3163,7 @@ div.placeholder {
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
+    display: none;
 }
 
 .html_carousel div.slide {
@@ -3218,4 +3220,9 @@ a.prev span, a.next span {
 .html_carousel {
     position: relative
 }
+/* styles for the masonry part */
+.small_margin {
+    margin: 10px 0;
+}
+
 }
