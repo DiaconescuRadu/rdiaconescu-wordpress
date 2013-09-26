@@ -89,7 +89,7 @@ get_header(); ?>
 
 <div id="main" class="site-main">
     <div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content html_carousel" role="main">
             <div class="searchform">
             <form method="get" id="searchform" action="<?php echo home_url( '/explore/' ); ?>">
                 <input type="text" class="field" name="search" id="s" placeholder="<?php esc_attr_e('search here &hellip;', 'responsive'); ?>" />
@@ -105,6 +105,14 @@ get_header(); ?>
             $mode = get_query_var('mode');
             $cat_name = str_replace('/', ',', get_query_var('categories'));
 
+            /* enhancement needed for older / newer posts , removing the paged/x from the end*/
+            if (strpos($cat_filter , 'page') !== false) {
+                $cat_array = explode ('/', $cat_filter);
+                $paged = array_pop($cat_array);
+                array_pop($cat_array);
+                $cat_filter = implode ('/', $cat_array);
+            }
+
             if (empty($mode)) {
                 $mode = 'int';
             }
@@ -119,24 +127,30 @@ get_header(); ?>
 
             $new_url = home_url( 'explore' ) . '/mode/' . $mode . '/search/' . $search_string . 'categories/' . $cat_filter;
 
-        #    echo '<pre>';
-        #    print_r($new_url);
-        #    echo '<br>';
-        #    print_r(str_replace( 'mode/int' , 'mode/reu' ,$new_url));
-        #    echo '<br>';
-        #     print_r($search);
-        #    echo '<br>';
-        #    print_r($cat_filter);
-        #    echo '</pre>';
+            #echo '<pre>';
+            #print_r($search);
+            #echo '<br>';
+            #print_r(str_replace( 'mode/int' , 'mode/reu' ,$new_url));
+            #echo '<br>';
+            #print_r($search);
+            #echo '<br>';
+            #print_r($cat_filter);
+            #echo '</pre>';
             
             /* adding two headings for the mode */
-            echo '<div class="searchmode">';
-            echo '<a href=' . str_replace( 'mode/reu' , 'mode/int' ,$new_url) . '>' . '<h5>Mode = INT </h5>' . '</a>';
-            echo '</div><!--end of the searchmode-->';
-            echo '<div class="searchmode">';
-            echo '<a href=' . str_replace( 'mode/int' , 'mode/reu' ,$new_url) . '>' . '<h5>Mode = REU </h5>' . '</a>';
-            echo '</div><!--end of the searchmode-->';
-
+            echo '<a href=' . str_replace( 'mode/reu' , 'mode/int' ,$new_url) . '>';?>
+            <div class="circle_container">
+                <div id="circle" class="red"></div>
+                <div id="circle" class="green" style="left:35px;"></div>
+            </div>
+            </a>
+            
+            <?php echo '<a href=' . str_replace( 'mode/int' , 'mode/reu' ,$new_url) . '>';?>
+            <div class="circle_container">
+                <div id="circle" class="red"></div>
+                <div id="circle" class="red" style="left:35px;"></div>
+            </div>
+            </a><br><?php
 
             echo '<div class="grid col-940 cat_div" id="cat_div">';
                 list_category_array($activitiesName, $activitiesCats, $new_url);
@@ -144,43 +158,53 @@ get_header(); ?>
                 list_category_array($ratingsName, $ratingCats, $new_url);
             echo '</div><!-- end of .col-940 -->';
 
-
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'category_name' => $cat_name, 'search' => $search));
             $temp_query = $wp_query;
             $wp_query = null;
             $wp_query = $blog_query;
-            
-            echo '<h3>Found ' . $blog_query->found_posts . '</h3>';
-
             if ( $blog_query->have_posts() ) :
 
-                echo '<div class="grid col-940 tile_cont" id="img_container">';
+                echo '<div class="tile_cont" id="img_container">';
                     while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
                         ?>
 
                     <?php
                     echo '<div class="tile_img_container">';
-                    echo '<a href="' . get_permalink() . '" title="Look '.get_the_title().'" >';
+                    echo '<a href="' . get_permalink() . '" >';
                     if (has_post_thumbnail()) {
-                        echo get_the_post_thumbnail();
+                        echo the_post_thumbnail('large');
                     }
                     else {
                         echo '<div class="placeholder">';
                         echo '</div>';
                     }
-                    echo '</a>';
-                    echo '<h3 class="h_img_container">' . get_the_title() . '</h3>';
+                    echo '</a>';?>
+
+                    <?php
+                    echo '<a class="no_decoration" href="' . get_permalink() . '" >';
+                    echo '<h5 class="small_margin">' . get_the_title() . '</h5>';
+                    echo '</a>';?>
+                    <div class="entry-meta">
+                        <?php twentythirteen_entry_meta(); ?>
+                        <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+                    </div><!-- .entry-meta -->
+                    <div class="entry-summary">
+                        <?php the_excerpt(); ?>
+                    </div><!-- .entry-summary -->
+
+                    <?php
                     echo '</div>';
                     ?>
-                <?php 
+ 
+               <?php 
                 endwhile;
                 echo '</div><!-- end of .col-940 -->';
 
                 if (  $wp_query->max_num_pages > 1 ) : 
                     ?>
-                    <div class="navigation">
-                        <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
-                        <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
+                    <div class="navigation html_carousel">
+                        <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
+                        <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
                     </div><!-- end of .navigation -->
                     <?php 
                 endif;

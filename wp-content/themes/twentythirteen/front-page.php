@@ -73,7 +73,7 @@ get_header(); ?>
                     echo '<div class="tile_img_container">';
                     echo '<a href="' . get_permalink() . '" >';
                     if (has_post_thumbnail()) {
-                        echo get_the_post_thumbnail();
+                        echo the_post_thumbnail('large');
                     }
                     else {
                         echo '<div class="placeholder">';
@@ -82,7 +82,9 @@ get_header(); ?>
                     echo '</a>';?>
 
                     <?php
-                    echo '<h5 class="small_margin">' . get_the_title() . '</h5>';?>
+                    echo '<a class="no_decoration" href="' . get_permalink() . '" >';
+                    echo '<h5 class="small_margin">' . get_the_title() . '</h5>';
+                    echo '</a>';?>
                     <div class="entry-meta">
                         <?php twentythirteen_entry_meta(); ?>
                         <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
@@ -101,9 +103,9 @@ get_header(); ?>
 
                 if (  $wp_query->max_num_pages > 1 ) : 
                     ?>
-                    <div class="navigation">
-                        <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
-                        <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
+                    <div class="navigation html_carousel">
+                        <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
+                        <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
                     </div><!-- end of .navigation -->
                     <?php 
                 endif;

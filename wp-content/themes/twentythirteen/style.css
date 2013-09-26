@@ -860,7 +860,7 @@ div.nav-menu > ul {
 .nav-menu li a {
 	color: #141412;
 	display: block;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
@@ -868,6 +868,8 @@ div.nav-menu > ul {
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover {
+    transition:background-color 1s;
+    -webkit-transition:background-color 1s;
 	background-color: #220e10;
 	color: #fff;
 }
@@ -879,7 +881,6 @@ div.nav-menu > ul {
 	display: none;
 	padding: 0;
 	position: absolute;
-	left: -2px;
 	z-index: 99999;
 }
 
@@ -3152,10 +3153,15 @@ div.placeholder {
 }
 
 .tile_img_container {
-    width: 400px;
-    margin: 1px;
+    width: 420px;
+    padding: 10px;
 }
 
+.tile_img_container:hover {
+    background-color: #dddddd;
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+}
 /* styling for the slider */
 
 
@@ -3163,7 +3169,6 @@ div.placeholder {
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
-    display: none;
 }
 
 .html_carousel div.slide {
@@ -3223,6 +3228,59 @@ a.prev span, a.next span {
 /* styles for the masonry part */
 .small_margin {
     margin: 10px 0;
+}
+
+a.no_decoration {
+    color: #141412;
+}
+
+a.no_decoration:hover {
+    text-decoration: none;
+}
+
+/* styles for the older/newer posts */
+
+div.older_posts {
+    float: left;
+    font-size: 20px;
+}
+
+div.newer_posts {
+    float: right;
+    font-size: 20px;
+}
+
+#circle {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; 
+}
+
+#circle.red {
+    background-color: #bc360a;
+    opacity: 0.6;
+    position: absolute;
+}
+
+#circle.green {
+    background-color: #220e10;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.circle_container {
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    height: 70px;
+}
+
+.circle_container:hover {
+    background-color: #dddddd;
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
 }
 
 }
