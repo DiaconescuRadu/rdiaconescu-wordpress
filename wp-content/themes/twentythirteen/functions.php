@@ -675,3 +675,41 @@ function fb_change_search_url_rewrite() {
 }
 add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
 
+/*
+ * Removing unwanted things from the posts this should all be replaced inside the posts
+ */
+// Replaces all <div> in the_content with <p>
+function clear_replacedivopen($content){
+    return str_replace("<div>","<p>", $content);
+}
+add_filter('the_content', 'clear_replacedivopen');
+
+// Replaces all </div> in the_content with </p>
+function clear_replacedivclose($content){
+    return str_replace("</div>","</p>", $content);
+}
+add_filter('the_content', 'clear_replacedivclose');
+
+// Clears all empty <p></p> in the_content()
+function clear_emptyp($content){
+    return str_replace("<p></p>","", $content);
+}
+add_filter('the_content', 'clear_emptyp');
+
+// Clears all empty <p></p> in the_content()
+function replace_image_size($content){
+    return str_replace("s640","s800", $content);
+}
+add_filter('the_content', 'replace_image_size');
+
+// Clears all empty <p></p> in the_content()
+function replace_image_width($content){
+    return ereg_replace("width=\"[0-9][0-9][0-9]\"","", $content);
+}
+add_filter('the_content', 'replace_image_width');
+
+// Clears all empty <p></p> in the_content()
+function replace_image_height($content){
+    return ereg_replace("height=\"[0-9][0-9][0-9]\"","style=\"margin-left:auto;margin-right:auto;display:block;\"", $content);
+}
+add_filter('the_content', 'replace_image_height');

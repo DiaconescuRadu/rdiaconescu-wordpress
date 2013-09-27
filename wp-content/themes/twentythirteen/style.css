@@ -200,7 +200,7 @@ mark {
 }
 
 p {
-	margin: 0 0 24px;
+	margin: 0 auto 24px;
 }
 
 code,
@@ -439,7 +439,7 @@ th {
 }
 
 td {
-	padding: 0px 10px 5px 0;
+/*	padding: 0px 10px 5px 0;*/
 }
 
 del {
@@ -972,8 +972,12 @@ ul.nav-menu li:hover > ul,
 .entry-summary,
 .entry-meta {
 	margin: 0 auto;
-	max-width: 804px;
+	max-width: 800px;
 	width: 100%;
+}
+
+.entry-meta {
+    max-width: 800px;
 }
 
 .large-header {
