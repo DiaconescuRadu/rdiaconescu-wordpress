@@ -24,11 +24,11 @@ get_header(); ?>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(window).load(function(){ $('#cat_div').masonry({
-                 columnWidth: 420,
+                 columnWidth: 325,
                  itemSelector: '.cat_container'
             }); });
         $(window).load(function(){ $('#img_container').masonry({
-             columnWidth: 420,
+             columnWidth: 433,
              itemSelector: '.tile_img_container'
         }); });
     });
@@ -43,7 +43,7 @@ get_header(); ?>
         $slugCats[$cat->slug] = $cat;
     }
 
-    $activitiesName = "ACTIVITIES";
+    $activitiesName = "Activities";
     /* chunk for activities */
     $activitiesCats = array(
         1 => $slugCats["alpinism"],
@@ -59,7 +59,7 @@ get_header(); ?>
     );
 
     /* chunk for places */
-    $locationsName = "LOCATIONS";
+    $locationsName = "Locations";
     $locationCats = array(
         1 => $slugCats["bucegi"],
         2 => $slugCats["baiului"],
@@ -74,7 +74,7 @@ get_header(); ?>
     );
 
     /* chunk for rating */
-    $ratingsName = "RATINGS";
+    $ratingsName = "Ratings";
     $ratingCats = array(
         1 => $slugCats["one-star"],
         2 => $slugCats["two-stars"],
@@ -90,13 +90,6 @@ get_header(); ?>
 <div id="main" class="site-main">
     <div id="primary" class="content-area">
 		<div id="content" class="site-content html_carousel" role="main">
-            <div class="searchform">
-            <form method="get" id="searchform" action="<?php echo home_url( '/explore/' ); ?>">
-                <input type="text" class="field" name="search" id="s" placeholder="<?php esc_attr_e('search here &hellip;', 'responsive'); ?>" />
-                <input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e('Go', 'responsive'); ?>"  />
-            </form>
-            </div><!--end of the searchformdiv-->
-
             <?php 
             global $wp_query;
 
@@ -113,10 +106,17 @@ get_header(); ?>
                 $cat_filter = implode ('/', $cat_array);
             }
 
+            /* mode processing, and setting the class properly */
             if (empty($mode)) {
-                $mode = 'int';
+                $mode = 'reu';
             }
-
+            /*
+            if (strpos($mode , 'int') !== false) {
+                $highlighted_intersection = "highlighted";
+            } else {
+                $highlighted_reunion = "highlighted";
+            }
+            */
             /* constructing the link url */
 
             if ( !empty($search)) {
@@ -138,83 +138,61 @@ get_header(); ?>
             #echo '</pre>';
             
             /* adding two headings for the mode */
-            echo '<a href=' . str_replace( 'mode/reu' , 'mode/int' ,$new_url) . '>';?>
-            <div class="circle_container">
-                <div id="circle" class="red"></div>
-                <div id="circle" class="green" style="left:35px;"></div>
-            </div>
-            </a>
-            
-            <?php echo '<a href=' . str_replace( 'mode/int' , 'mode/reu' ,$new_url) . '>';?>
-            <div class="circle_container">
-                <div id="circle" class="red"></div>
-                <div id="circle" class="red" style="left:35px;"></div>
-            </div>
-            </a><br><?php
+            ?>
+            <i><h3 class="text-center"> Making the needle in the haystack a bit easier to find. </h3></i>
+            <div class="horizontalRule"></div>
+            <div class="cat_div" id="cat_div">
+                <div class="cat_container tweaking">
+                    <div class="searchform div-center">
+                    <form role="search" method="get" class="search-form" action="<?php echo home_url( '/explore/' ); ?>">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="search" title="Search for:" />
+                        </label>
+                        <input type="submit" class="search-submit" value="Search" />
+                    </form>
+                    </div><!--end of the searchformdiv-->
+                    
+                    <i><h4 class="text-center"> Search mode </h4></i>
 
-            echo '<div class="grid col-940 cat_div" id="cat_div">';
+                    <a href="<?php echo str_replace( 'mode/int' , 'mode/reu' ,$new_url)?>">
+                    <div class="circle_container">
+                        <div id="circle" class="red" style="left:30px;opacity:1"></div>
+                        <div id="circle" class="red" style="left:65px;opacity:1"></div>
+                        <div class="circle-text" style="top:70px;left:45px"><i><p>Reunion</p></i></div>
+                    </div>
+                    </a>
+                    
+                    <a href="<?php echo str_replace( 'mode/reu' , 'mode/int' ,$new_url)?>">
+                    <div class="circle_container">
+                        <div id="circle" class="red" style="left:30px;"></div>
+                        <div id="circle" class="red" style="left:65px;"></div>
+                        <div class="circle-text" style="top:70px;left:30px"><i><p>Intersection</p></i></div>
+                    </div>
+                    </a><br>
+                </div>
+
+            <?php
                 list_category_array($activitiesName, $activitiesCats, $new_url);
                 list_category_array($locationsName, $locationCats, $new_url);
                 list_category_array($ratingsName, $ratingCats, $new_url);
-            echo '</div><!-- end of .col-940 -->';
+            ?>
+            </div><!--cat_div-->
+            <div class="horizontalRule"></div>
 
-            $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'category_name' => $cat_name, 'search' => $search));
-            $temp_query = $wp_query;
-            $wp_query = null;
-            $wp_query = $blog_query;
-            if ( $blog_query->have_posts() ) :
-
-                echo '<div class="tile_cont" id="img_container">';
-                    while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
-                        ?>
-
-                    <?php
-                    echo '<div class="tile_img_container">';
-                    echo '<a href="' . get_permalink() . '" >';
-                    if (has_post_thumbnail()) {
-                        echo the_post_thumbnail('large');
-                    }
-                    else {
-                        echo '<div class="placeholder">';
-                        echo '</div>';
-                    }
-                    echo '</a>';?>
-
-                    <?php
-                    echo '<a class="no_decoration" href="' . get_permalink() . '" >';
-                    echo '<h5 class="small_margin">' . get_the_title() . '</h5>';
-                    echo '</a>';?>
-                    <div class="entry-meta">
-                        <?php twentythirteen_entry_meta(); ?>
-                        <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
-                    </div><!-- .entry-meta -->
-                    <div class="entry-summary">
-                        <?php the_excerpt(); ?>
-                    </div><!-- .entry-summary -->
-
-                    <?php
-                    echo '</div>';
-                    ?>
- 
-               <?php 
-                endwhile;
-                echo '</div><!-- end of .col-940 -->';
-
-                if (  $wp_query->max_num_pages > 1 ) : 
-                    ?>
-                    <div class="navigation html_carousel">
-                        <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
-                        <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
-                    </div><!-- end of .navigation -->
-                    <?php 
-                endif;
-
-            else : 
-
-                get_template_part( 'loop-no-posts' ); 
-
-            endif; 
-            $wp_query = $temp_query;
+            <?php
+            if (strpos($mode , 'reu') !== false || empty($cat_name)) {
+                $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
+            } else {
+                $cat_id_array = get_category_and($cat_name);
+                $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category__and' => $cat_id_array, 'search' => $search));
+            }
+            
+            if ($blog_query->found_posts !== 0) {
+                list_posts($blog_query);
+            } else {
+                echo '<i><h3 class="text-center">Found no results, extend your search</h3></i>';
+            }
             wp_reset_postdata();
             ?>  
 </div>

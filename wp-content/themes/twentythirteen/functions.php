@@ -97,7 +97,7 @@ function twentythirteen_setup() {
 	 * "standard" posts and pages.
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 604, 270, true );
+	set_post_thumbnail_size( 1600, 1200, true );
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
@@ -534,18 +534,96 @@ add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
 
 function list_category_array($groupName, $categories, $new_url) {
         echo '<div class="cat_container">';
-        echo '<h2>' . $groupName . '</h2>';
-        echo '<ul>';
+        echo '<i><h4 class="ul_heading">' . $groupName . '</h4></i>';
+        echo '<ul class="no_style">';
             foreach($categories as $category) {
-                if (strpos($cat_filter , $category->slug) !== false) {
-                    echo '<u>' . '<li><a href=' . $new_url . '>' . $category->name . '</a></li>'. '</u>';
+                if (strpos($new_url , $category->slug) !== false) {
+                   echo '<li class="checkbox checked"><a href=' . str_replace($category->slug, '', $new_url) . '>' . $category->name .  '(' . $category->count . ')' . '</a></li>';
                 } else {
-                   echo '<li><a href=' . $new_url . '/' . $category->slug . '>' . $category->name . '(' . $category
-->count . ')' . '</a></li>';
+                   echo '<li class="checkbox empty"><a href=' . $new_url . '/' . $category->slug . '>' . $category->name . '(' . $category->count . ')' . '</a></li>';
                 };
             }
         echo '</ul>';
         echo '</div><!-- end of .col-940 -->';
+}
+
+/* function list posts */
+
+function list_posts($blog_query, $wp_query) {
+   if ( $blog_query->have_posts() ) :
+
+        echo '<div class="tile_cont" id="img_container">';
+            while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
+                ?>
+
+            <?php
+            echo '<div class="tile_img_container">';
+            echo '<a href="' . get_permalink() . '" >';
+            if (has_post_thumbnail()) {
+                echo the_post_thumbnail('large');
+            }
+            else {
+                echo '<div class="placeholder">';
+                echo '</div>';
+            }
+            echo '</a>';?>
+
+            <?php
+            echo '<a class="no_decoration" href="' . get_permalink() . '" >';
+            echo '<h5 class="small_margin">' . get_the_title() . '</h5>';
+            echo '</a>';?>
+            <div class="entry-meta">
+                <?php twentythirteen_entry_meta(); ?>
+                <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+            </div><!-- .entry-meta -->
+            <div class="entry-summary">
+                <?php the_excerpt(); ?>
+            </div><!-- .entry-summary -->
+
+            <?php
+            echo '</div>';
+            ?>
+
+   <?php 
+    endwhile;
+    echo '</div><!-- end of .col-940 -->';
+
+    if (  $blog_query->max_num_pages > 1 ) : 
+        ?>
+        <div class="navigation html_carousel">
+            <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $blog_query->max_num_pages ); ?></div>
+            <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $blog_query->max_num_pages ); ?></div>
+        </div><!-- end of .navigation -->
+        <?php 
+    endif;
+
+else : 
+
+    get_template_part( 'loop-no-posts' ); 
+
+endif; 
+}
+
+/*
+ * Function used to transform category_name to category_and
+ */
+
+function get_category_and($cat_name) {
+    $categories = get_categories();
+    $slugCats = array();
+
+    foreach($categories as $cat) {
+        $slugCats[$cat->slug] = $cat;
+    }
+
+    $cat_name_array = explode(',' , $cat_name);
+    $cat_id_array = array();
+
+    foreach($cat_name_array as $cat) {
+        $cat_id_array[] = $slugCats[$cat]->cat_ID; 
+    }
+
+    return $cat_id_array;
 }
 
 /**
@@ -553,12 +631,12 @@ function list_category_array($groupName, $categories, $new_url) {
 */
 
 function add_query_vars($aVars) {
-    $aVars[] = "search"; // represents the name of the product category as shown in the URL
-    $aVars[] = "categories"; // represents the name of the product category as shown in the URL
-    $aVars[] = "mode"; // represents the name of the product category as shown in the URL
-    return $aVars;
+$aVars[] = "search"; // represents the name of the product category as shown in the URL
+$aVars[] = "categories"; // represents the name of the product category as shown in the URL
+$aVars[] = "mode"; // represents the name of the product category as shown in the URL
+return $aVars;
 }
- 
+
 // hook add_query_vars function into query_vars
 add_filter('query_vars', 'add_query_vars');
 
@@ -567,18 +645,18 @@ add_filter('query_vars', 'add_query_vars');
 */
 
 function add_rewrite_rules($aRules) {
-    /*
-    * Custom rewrite rule sintax:
-    * explore/mode/search/[]/filter/[]/[]/[]
-    *
-    */
-    $aNewRules = array('explore/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
-            'explore/mode/([^/]+)/search/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&categories=$matches[2]' ,
-            'explore/mode/([^/]+)/search/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]',
-            'explore/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]');
-   #$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
-    $aRules = $aNewRules + $aRules;
-    return $aRules;
+/*
+* Custom rewrite rule sintax:
+* explore/mode/search/[]/filter/[]/[]/[]
+*
+*/
+$aNewRules = array('explore/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
+        'explore/mode/([^/]+)/search/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&categories=$matches[2]' ,
+        'explore/mode/([^/]+)/search/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]',
+        'explore/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]');
+#$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
+$aRules = $aNewRules + $aRules;
+return $aRules;
 }
  
 // hook add_rewrite_rules function into rewrite_rules_array

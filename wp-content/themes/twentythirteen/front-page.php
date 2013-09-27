@@ -57,69 +57,13 @@ get_header(); ?>
                 <a class="next" id="foo2_next" href="#"><span>next</span></a>
                 <div class="clearfix"></div>
             </div>
-            <br>
+            <div class="horizontalRule html_carousel"></div>
+            <i><h3 class="text-center">Recent adventures</h3></i>
             <?php
-            $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 12));
-            $temp_query = $wp_query;
-            $wp_query = null;
-            $wp_query = $blog_query;
-            if ( $blog_query->have_posts() ) :
-
-                echo '<div class="tile_cont" id="img_container">';
-                    while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
-                        ?>
-
-                    <?php
-                    echo '<div class="tile_img_container">';
-                    echo '<a href="' . get_permalink() . '" >';
-                    if (has_post_thumbnail()) {
-                        echo the_post_thumbnail('large');
-                    }
-                    else {
-                        echo '<div class="placeholder">';
-                        echo '</div>';
-                    }
-                    echo '</a>';?>
-
-                    <?php
-                    echo '<a class="no_decoration" href="' . get_permalink() . '" >';
-                    echo '<h5 class="small_margin">' . get_the_title() . '</h5>';
-                    echo '</a>';?>
-                    <div class="entry-meta">
-                        <?php twentythirteen_entry_meta(); ?>
-                        <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
-                    </div><!-- .entry-meta -->
-                    <div class="entry-summary">
-                        <?php the_excerpt(); ?>
-                    </div><!-- .entry-summary -->
-
-                    <?php
-                    echo '</div>';
-                    ?>
- 
-               <?php 
-                endwhile;
-                echo '</div><!-- end of .col-940 -->';
-
-                if (  $wp_query->max_num_pages > 1 ) : 
-                    ?>
-                    <div class="navigation html_carousel">
-                        <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $wp_query->max_num_pages ); ?></div>
-                        <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $wp_query->max_num_pages ); ?></div>
-                    </div><!-- end of .navigation -->
-                    <?php 
-                endif;
-
-            else : 
-
-                get_template_part( 'loop-no-posts' ); 
-
-            endif; 
-            $wp_query = $temp_query;
+            $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
+            list_posts($blog_query);
             wp_reset_postdata();
             ?>  
-
-
         </div><!-- #content -->
 	</div><!-- #primary -->
 
