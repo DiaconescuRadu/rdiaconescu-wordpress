@@ -31,11 +31,11 @@ get_header(); ?>
 
 </script>
 
-
 <div id="main" class="site-main">
     <div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-            <p> this is where the data is beeing displayed </p>
+		<div id="content" class="site-content site_content" role="main">
+            <i><h3 class="text-center">Best photos of the past years.</h3></i>
+            <div class="horizontalRule"></div>
             <div class="masonry_container masonry" id="masonry_container">
                     <!-- Montains -->
                     <div class="img_container">
@@ -43,7 +43,7 @@ get_header(); ?>
                             <div class="placeholder_gallery">
                             </div>
                         </a>
-                        <h2 class="h2_img_container">Mountains</h2>
+                        <h5 class="center_title">Mountains</h5>
                     </div>
                     <!-- Climbing -->
                     <div class="img_container">
@@ -51,7 +51,7 @@ get_header(); ?>
                             <div class="placeholder_gallery">
                             </div>
                         </a>
-                        <h2 class="h2_img_container">Climbing</h2>
+                        <h5 class="center_title">Climbing</h5>
                     </div>
                     <!-- Bikeing -->
                     <div class="img_container">
@@ -59,7 +59,7 @@ get_header(); ?>
                             <div class="placeholder_gallery">
                             </div>
                         </a>
-                        <h2 class="h2_img_container">Biking</h2>
+                        <h5 class="center_title">Biking</h5>
                     </div>
                     <!-- People -->
                     <div class="img_container">
@@ -67,7 +67,7 @@ get_header(); ?>
                             <div class="placeholder_gallery">
                             </div>
                         </a>
-                        <h2 class="h2_img_container">People</h2>
+                        <h5 class="center_title">Cities</h5>
                     </div>
             </div><!-- end of .col-940 -->
         </div><!-- end of #content -->

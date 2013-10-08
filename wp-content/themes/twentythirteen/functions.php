@@ -590,7 +590,7 @@ function list_posts($blog_query, $wp_query) {
 
     if (  $blog_query->max_num_pages > 1 ) : 
         ?>
-        <div class="navigation html_carousel">
+        <div class="navigation site_content">
             <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $blog_query->max_num_pages ); ?></div>
             <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $blog_query->max_num_pages ); ?></div>
         </div><!-- end of .navigation -->

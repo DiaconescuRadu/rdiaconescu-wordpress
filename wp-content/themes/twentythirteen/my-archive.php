@@ -23,9 +23,9 @@ get_header(); ?>
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {
-        $(window).load(function(){ $('#cat_div').masonry({
-                 columnWidth: 325,
-                 itemSelector: '.cat_container'
+        $(window).load(function(){ $('#month_div').masonry({
+                 columnWidth: 425,
+                 itemSelector: '.month_container'
             }); });
     });
 </script>
@@ -35,24 +35,29 @@ get_header(); ?>
 
 <div id="main" class="site-main">
     <div id="primary" class="content-area">
-		<div id="content" class="site-content html_carousel" role="main">
-            </div><!--cat_div-->
-            <div class="horizontalRule"></div>
-
+		<div id="content" class="site-content site_content" role="main">
             <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 500));
-            
-            echo 'found ' . $blog_query->post_count;
+            echo '<i><h3 class="text-center"> Overview: ' . $blog_query->post_count . ' adventures , ' . $blog_query->post_count * 2 . ' days spent outside</h3></i>';
+            echo '<div class="horizontalRule"></div>';
+            echo '<div id="month_div">';
             if ( $blog_query->have_posts() ) :
                 while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
                     $currentMonth = get_the_date('m');
                     if (empty($prevMonth) || $currentMonth != $prevMonth) {
-                        echo '<h5>' . get_the_date( 'M') . ' ' . get_the_date('Y') . '</h5>';
+                        /* ending of the previous list */
+                        if (!empty($prevMonth)) {
+                            $endingUL = '</ul></div>';
+                        }
+                        echo $endingUL . '<div class="month_container"><h5 class="ul_heading">' . get_the_date( 'F') . ', ' . get_the_date('Y') . '</h5><ul class="no_style">';
                     } 
-                    echo '<a href=' . get_permaling . '<p>' . get_the_title() . '</p></a>'; 
+                    echo '<li>' .  '<a href="' . get_permalink() . '">' . get_the_date('j, M - ') .get_the_title() . '</a></li>'; 
                     $prevMonth = $currentMonth;
                 endwhile;
+                /* ending of the last list */
+                echo '</ul></div>';
             endif;
+            echo '</div>';
                
             wp_reset_postdata();
             ?>  

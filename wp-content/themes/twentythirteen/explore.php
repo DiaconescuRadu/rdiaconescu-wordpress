@@ -89,7 +89,7 @@ get_header(); ?>
 
 <div id="main" class="site-main">
     <div id="primary" class="content-area">
-		<div id="content" class="site-content html_carousel" role="main">
+		<div id="content" class="site-content site_content" role="main">
             <?php 
             global $wp_query;
 

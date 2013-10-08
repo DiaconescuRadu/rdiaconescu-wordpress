@@ -3129,6 +3129,12 @@ footer.entry-meta {
 	}
 }
 
+/* custom stiles added for my theme */
+div.site_content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 /* adding my own custom styles */
 div.placeholder_gallery {
     width : 600px;
@@ -3161,6 +3167,10 @@ div.placeholder {
     width: 300px;
 }
 
+.month_container {
+    width: 400px;
+}
+
 .tile_img_container {
     width: 420px;
     padding: 10px;
@@ -3173,11 +3183,8 @@ div.placeholder {
 }
 /* styling for the slider */
 
-
 .html_carousel {
     position: relative;
-    max-width: 1300px;
-    margin: 0 auto;
 }
 
 .html_carousel div.slide {
@@ -3367,6 +3374,16 @@ div.searchform {
 
 div.tweaking {
     margin : 10px
+}
+
+blockquote.side_blockquote {
+    width : 30%;
+    float : right;
+}
+
+.center_title {
+    text-align: center;
+    margin: 5px 0 25px 0;
 }
 
 }

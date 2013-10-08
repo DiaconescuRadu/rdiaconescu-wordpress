@@ -1,4 +1,4 @@
-cscope 15 $HOME/rdiaconescu-wordpress/wp-content/themes/twentythirteen               0000058879
+cscope 15 $HOME/rdiaconescu-wordpress/wp-content/themes/twentythirteen               0000169610
 	@404.php
 
 1 <?
@@ -2499,7 +2499,7 @@ po¡_şass
 h—d”
  
 	gşass
-="entry-header">
+="large-header">
 
 12 <?
 php
@@ -2530,6 +2530,12 @@ php
  
 ’dif
 ; ?>
+
+17 <
+div
+ 
+şass
+="entry-header">
 
 18 <?
 php
@@ -2608,30 +2614,38 @@ m‘a
  -->
 
 30 </
-h—d”
+div
 ><!-- .
 ’Œy
+-
+h—d”
+ -->
+
+31 </
+h—d”
+><!-- .
+Ïrge
 -header -->
 
-32 <?
+33 <?
 php
  iàĞ
 	$is_£¬ch
 () ) :
 
-33 <
+34 <
 div
  
 şass
 ="entry-summary">
 
-34 <?
+35 <?
 php
  
 	`the_exû½t
 (); ?>
 
-35 </
+36 </
 div
 ><!-- .
 ’Œy
@@ -2639,17 +2653,17 @@ div
 summ¬y
  -->
 
-36 <?
+37 <?
 php
  : ?>
 
-37 <
+38 <
 div
  
 şass
 ="entry-content">
 
-38 <?
+39 <?
 php
  
 	`the_cÚ‹Á
@@ -2657,7 +2671,7 @@ php
 	`__
 ( 'Continue„eading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
 
-39 <?
+40 <?
 php
  
 	`wp_lšk_·ges
@@ -2667,7 +2681,7 @@ php
 	`__
 ( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 
-40 </
+41 </
 div
 ><!-- .
 ’Œy
@@ -2675,19 +2689,19 @@ div
 cÚ‹Á
  -->
 
-41 <?
+42 <?
 php
  
 ’dif
 ; ?>
 
-43 <
+44 <
 foÙ”
  
 şass
 ="entry-meta">
 
-44 <?
+45 <?
 php
  iàĞ
 	`comm’ts_İ’
@@ -2695,13 +2709,13 @@ php
 	$is_sšgË
 () ) : ?>
 
-45 <
+46 <
 div
  
 şass
 ="comments-link">
 
-46 <?
+47 <?
 php
  
 	`comm’ts_pİup_lšk
@@ -2709,7 +2723,7 @@ php
 	`__
 ( 'Leave‡ comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View‡ll % comments', 'twentythirteen' ) ); ?>
 
-47 </
+48 </
 div
 ><!-- .
 comm’ts
@@ -2717,13 +2731,13 @@ comm’ts
 lšk
  -->
 
-48 <?
+49 <?
 php
  
 ’dif
 ;
 
-50 <?
+51 <?
 php
  iàĞ
 	`is_sšgË
@@ -2733,19 +2747,19 @@ php
 	$is_muÉi_authÜ
 () ) : ?>
 
-51 <?
+52 <?
 php
  
 	`g‘_‹m¶©e_·¹
 ( 'author-bio' ); ?>
 
-52 <?
+53 <?
 php
  
 ’dif
 ; ?>
 
-53 </
+54 </
 foÙ”
 ><!-- .
 ’Œy
@@ -2753,9 +2767,3583 @@ foÙ”
 m‘a
  -->
 
-54 </
+55 </
 ¬tişe
 ><!-- #post -->
+
+	@css/editor-style.css
+
+28 
+	ghtml
+ .
+	gmûCÚ‹ÁBody
+ {
+
+29 
+	gfÚt
+-
+	gsize
+: 100%;
+
+30 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+33 
+	gbody
+ {
+
+34 
+	gcŞÜ
+: #141412;
+
+35 
+	gfÚt
+-
+	gçmy
+: "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+36 
+	glše
+-
+	gheight
+: 1.5;
+
+37 
+	g‹xt
+-
+	g»nd”šg
+: 
+İtimizeLegib™y
+;
+
+38 
+	gv”tiÿl
+-
+	g®ign
+: 
+ba£lše
+;
+
+47 
+	gh1
+,
+
+48 
+	gh2
+,
+
+49 
+	gh3
+,
+
+50 
+	gh4
+,
+
+51 
+	gh5
+,
+
+52 
+	gh6
+ {
+
+53 
+	gş—r
+: 
+bÙh
+;
+
+54 
+	gfÚt
+-
+	gçmy
+: 
+B™‹r
+, 
+	gGeÜgŸ
+, 
+	g£rif
+;
+
+55 
+	glše
+-
+	gheight
+: 1.3;
+
+58 
+	gh1
+ {
+
+59 
+	gfÚt
+-
+	gsize
+: 48
+px
+;
+
+60 
+	gm¬gš
+: 33
+px
+ 0;
+
+63 
+	gh2
+ {
+
+64 
+	gfÚt
+-
+	gsize
+: 30
+px
+;
+
+65 
+	gm¬gš
+: 25
+px
+ 0;
+
+68 
+	gh3
+ {
+
+69 
+	gfÚt
+-
+	gsize
+: 22
+px
+;
+
+70 
+	gm¬gš
+: 22
+px
+ 0;
+
+73 
+	gh4
+ {
+
+74 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+75 
+	gm¬gš
+: 25
+px
+ 0;
+
+78 
+	gh5
+ {
+
+79 
+	gfÚt
+-
+	gsize
+: 18
+px
+;
+
+80 
+	gm¬gš
+: 30
+px
+ 0;
+
+83 
+	gh6
+ {
+
+84 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+85 
+	gm¬gš
+: 36
+px
+ 0;
+
+88 
+	ghr
+ {
+
+89 
+	gbackground
+: 
+u¾
+(../
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+ 
+ûÁ”
+ 
+tİ
+;
+
+90 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+91 
+	gbÜd”
+: 0;
+
+92 
+	gheight
+: 1
+px
+;
+
+93 
+	gm¬gš
+: 0 0 24
+px
+;
+
+102 
+	gp
+ {
+
+103 
+	gm¬gš
+: 0 0 24
+px
+;
+
+106 
+	gŞ
+,
+
+107 
+	gul
+ {
+
+108 
+	gm¬gš
+: 16
+px
+ 0;
+
+109 
+	g·ddšg
+: 0 0 0 40
+px
+;
+
+112 
+	gul
+ {
+
+113 
+	gli¡
+-
+	g¡yË
+-
+	gty³
+: 
+squ¬e
+;
+
+116 
+	gŞ
+ {
+
+117 
+	gli¡
+-
+	g¡yË
+: 
+decim®
+ 
+outside
+;
+
+120 
+	gli
+ > 
+	gul
+,
+
+121 
+	gli
+ > 
+	gŞ
+ {
+
+122 
+	gm¬gš
+: 0;
+
+125 
+	gdl
+ {
+
+126 
+	gm¬gš
+: 0 20
+px
+;
+
+129 
+	gdt
+ {
+
+130 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+133 
+	gdd
+ {
+
+134 
+	gm¬gš
+: 0 0 20
+px
+;
+
+137 
+	g¡rÚg
+ {
+
+138 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+141 
+	gcode
+,
+
+142 
+	gkbd
+,
+
+143 
+	g´e
+,
+
+144 
+	g§mp
+ {
+
+145 
+	gfÚt
+-
+	gçmy
+: 
+mÚo¥aû
+, 
+	g£rif
+;
+
+146 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+149 
+	g´e
+ {
+
+150 
+	gbackground
+: #f5f5f5;
+
+151 
+	gcŞÜ
+: #666;
+
+152 
+	gfÚt
+-
+	gçmy
+: 
+mÚo¥aû
+;
+
+153 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+154 
+	gm¬gš
+: 20
+px
+ 0;
+
+155 
+	gov”æow
+:‡uto;
+
+156 
+	g·ddšg
+: 20
+px
+;
+
+157 
+	gwh™e
+-
+	g¥aû
+: 
+´e
+;
+
+158 
+	gwh™e
+-
+	g¥aû
+: 
+´e
+-
+w¿p
+;
+
+159 
+	gwÜd
+-
+	gw¿p
+: -
+wÜd
+;
+
+162 
+	gblockquÙe
+,
+
+163 
+	gq
+ {
+
+164 
+	gquÙes
+: 
+nÚe
+;
+
+167 
+	gblockquÙe
+:
+befÜe
+,
+
+168 
+	gblockquÙe
+:
+aá”
+,
+
+169 
+	gq
+:
+befÜe
+,
+
+170 
+	gq
+:
+aá”
+ {
+
+171 
+cÚ‹Á
+: "";
+
+172 
+	gcÚ‹Á
+: 
+nÚe
+;
+
+175 
+	gblockquÙe
+ {
+
+176 
+	gfÚt
+-
+	gsize
+: 24
+px
+;
+
+177 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+178 
+	gfÚt
+-
+	gweight
+: 300;
+
+179 
+	gm¬gš
+: 24
+px
+ 40px;
+
+182 
+blockquÙe
+ 
+	gblockquÙe
+ {
+
+183 
+	gm¬gš
+-
+	gright
+: 0;
+
+186 
+blockquÙe
+ 
+	gc™e
+,
+
+187 
+blockquÙe
+ 
+	gsm®l
+ {
+
+188 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+189 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+190 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+uµ”ÿ£
+;
+
+193 
+	gc™e
+ {
+
+194 
+	gbÜd”
+-
+	gbÙtom
+: 0;
+
+197 
+	gabbr
+[
+t™Ë
+] {
+
+198 
+	gbÜd”
+-
+	gbÙtom
+: 1
+px
+ 
+dÙ‹d
+;
+
+201 
+	gadd»ss
+ {
+
+202 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+203 
+	gm¬gš
+: 0 0 24
+px
+;
+
+206 
+	gd–
+ {
+
+207 
+	gcŞÜ
+: #333;
+
+210 
+	gšs
+ {
+
+211 
+	gbackground
+: #fff9c0;
+
+212 
+	gbÜd”
+: 
+nÚe
+;
+
+213 
+	gcŞÜ
+: #333;
+
+214 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+217 
+	gsub
+,
+
+218 
+	gsup
+ {
+
+219 
+	gfÚt
+-
+	gsize
+: 75%;
+
+220 
+	glše
+-
+	gheight
+: 0;
+
+221 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+222 
+	gv”tiÿl
+-
+	g®ign
+: 
+ba£lše
+;
+
+225 
+	gsup
+ {
+
+226 
+	gtİ
+: -0.5e
+m
+;
+
+229 
+	gsub
+ {
+
+230 
+	gbÙtom
+: -0.25e
+m
+;
+
+239 
+	ga
+ {
+
+240 
+	gcŞÜ
+: #ca3c08;
+
+241 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+244 
+	ga
+:
+vis™ed
+ {
+
+245 
+cŞÜ
+: #ac0404;
+
+248 
+	ga
+:
+focus
+ {
+
+249 
+ouše
+: 
+thš
+ 
+dÙ‹d
+;
+
+252 
+	ga
+:
+aùive
+,
+
+253 
+	ga
+:
+hov”
+ {
+
+254 
+cŞÜ
+: #ea9629;
+
+255 
+	gouše
+: 0;
+
+258 
+	ga
+:
+hov”
+ {
+
+259 
+‹xt
+-
+decÜ©iÚ
+: 
+und”lše
+;
+
+268 .
+	g®igÆeá
+ {
+
+269 : 
+Ëá
+;
+
+270 
+	gm¬gš
+: 5
+px
+ 20px 5px 0;
+
+273 .
+	g®igÄight
+ {
+
+274 : 
+right
+;
+
+275 
+	gm¬gš
+: 5
+px
+ 0 5px 20px;
+
+278 .
+	g®ignûÁ”
+ {
+
+279 
+	gdi¥Ïy
+: 
+block
+;
+
+280 
+	gm¬gš
+: 5
+px
+‡uto;
+
+283 
+	gimg
+.
+	g®igÂÚe
+ {
+
+284 
+	gm¬gš
+: 5
+px
+ 0;
+
+293 
+	gbË
+ {
+
+294 
+	gbÜd”
+-
+	gbÙtom
+: 1
+px
+ 
+sŞid
+ #ededed;
+
+295 
+	gbÜd”
+-
+	gcŞÏp£
+: 
+cŞÏp£
+;
+
+296 
+	gbÜd”
+-
+	g¥acšg
+: 0;
+
+297 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+298 
+	glše
+-
+	gheight
+: 2;
+
+299 
+	gm¬gš
+: 0 0 20
+px
+;
+
+300 
+	gwidth
+: 100%;
+
+303 
+	gÿ±iÚ
+,
+
+304 
+	gth
+,
+
+305 
+	gtd
+ {
+
+306 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+307 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+310 
+	gÿ±iÚ
+ {
+
+311 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+312 
+	gm¬gš
+: 20
+px
+ 0;
+
+315 
+	gth
+ {
+
+316 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+317 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+uµ”ÿ£
+;
+
+320 
+	gtd
+ {
+
+321 
+	gbÜd”
+-
+	gtİ
+: 1
+px
+ 
+sŞid
+ #ededed;
+
+322 
+	g·ddšg
+: 6
+px
+ 10px 6px 0;
+
+331 
+	gimg
+ {
+
+332 
+	gheight
+:‡uto;
+
+333 
+	gmax
+-
+	gwidth
+: 100%;
+
+334 
+	gv”tiÿl
+-
+	g®ign
+: 
+middË
+;
+
+337 .
+	gwp
+-
+	gÿ±iÚ
+ {
+
+338 
+	gbackground
+: 
+Œª¥¬’t
+;
+
+339 
+	gbÜd”
+: 
+nÚe
+;
+
+340 
+	gm¬gš
+: 0;
+
+341 
+	g·ddšg
+: 0;
+
+342 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+345 .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+346 
+	gm¬gš
+: 5
+px
+ 10px 5px 0;
+
+349 .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+350 
+	gm¬gš
+: 5
+px
+ 0 5px 10px;
+
+353 .
+	gwp
+-
+	gÿ±iÚ
+-
+	gdt
+ {
+
+354 
+	gm¬gš
+: 0;
+
+357 .
+	gwp
+-
+	gÿ±iÚ
+ .wp-ÿ±iÚ-
+	g‹xt
+,
+
+358 .
+	gwp
+-
+	gÿ±iÚ
+-
+	gdd
+ {
+
+359 
+	gcŞÜ
+: #220e10;
+
+360 
+	gfÚt
+-
+	gsize
+: 18
+px
+;
+
+361 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+362 
+	gfÚt
+-
+	gweight
+: 300;
+
+363 
+	glše
+-
+	gheight
+: 1.5;
+
+364 
+	gm¬gš
+-
+	gbÙtom
+: 24
+px
+;
+
+365 
+	g·ddšg
+: 0;
+
+368 .
+	gmûTemp
+ + 
+	gul
+,
+
+369 .
+	gmûTemp
+ + 
+	gŞ
+ {
+
+370 
+	gli¡
+-
+	g¡yË
+-
+	gpos™iÚ
+: 
+šside
+;
+
+380 .
+	gpo¡
+-
+	gfÜm©
+-
+	gaside
+ {
+
+381 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+384 .
+	gpo¡
+-
+	gfÜm©
+-
+aside
+ 
+	gblockquÙe
+ {
+
+385 
+	gfÚt
+-
+	gsize
+: 100%;
+
+386 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+389 .
+	gpo¡
+-
+	gfÜm©
+-
+aside
+ 
+	gc™e
+ {
+
+390 
+	gfÚt
+-
+	gsize
+: 100%;
+
+391 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+nÚe
+;
+
+394 .
+	gpo¡
+-
+	gfÜm©
+-
+aside
+ 
+	gc™e
+:
+befÜe
+ {
+
+395 
+cÚ‹Á
+: "\2014";
+
+396 
+	gm¬gš
+-
+	gright
+: 5
+px
+;
+
+400 .
+	gpo¡
+-
+	gfÜm©
+-
+	gaudio
+ {
+
+401 
+	gbackground
+-
+	gcŞÜ
+: #db572f;
+
+404 .
+	gpo¡
+-
+	gfÜm©
+-
+audio
+ 
+	ga
+ {
+
+405 
+	gcŞÜ
+: #fbfaf3;
+
+408 .
+	gpo¡
+-
+	gfÜm©
+-
+	gaudio
+:
+befÜe
+ {
+
+409 
+background
+: 
+u¾
+(../
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+-
+y
+ 85
+px
+ 0;
+
+410 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+411 
+	gcÚ‹Á
+: "\f109";
+
+412 
+	gdi¥Ïy
+: 
+block
+;
+
+413 : 
+Ëá
+;
+
+414 
+	gfÚt
+-
+	gçmy
+: 
+G’”icÚs
+;
+
+415 
+	gfÚt
+-
+	gsize
+: 64
+px
+;
+
+416 -
+	gwebk™
+-
+	gfÚt
+-
+	gsmoÙhšg
+: 
+ªtŸlŸ£d
+;
+
+417 
+	gheight
+: 100%;
+
+418 
+	glše
+-
+	gheight
+: 1;
+
+419 
+	gwidth
+: 120
+px
+;
+
+423 .
+	gpo¡
+-
+	gfÜm©
+-
+	gch©
+ {
+
+424 
+	gbackground
+-
+	gcŞÜ
+: #eadaa6;
+
+427 .
+	gpo¡
+-
+	gfÜm©
+-
+ch©
+ 
+	ga
+ {
+
+428 
+	gcŞÜ
+: #722d19;
+
+432 .
+	gpo¡
+-
+	gfÜm©
+-
+	gg®Ëry
+ {
+
+433 
+	gbackground
+-
+	gcŞÜ
+: #fbca3c;
+
+436 .
+	gpo¡
+-
+	gfÜm©
+-
+g®Ëry
+ 
+	ga
+ {
+
+437 
+	gcŞÜ
+: #722d19;
+
+443 .
+	gpo¡
+-
+	gfÜm©
+-
+	glšk
+ {
+
+444 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+448 .
+	gpo¡
+-
+	gfÜm©
+-
+	gquÙe
+ {
+
+449 
+	gbackground
+-
+	gcŞÜ
+: #210d10;
+
+450 
+	gcŞÜ
+: #f7f5e7;
+
+453 .
+	gpo¡
+-
+	gfÜm©
+-
+quÙe
+ 
+	ga
+ {
+
+454 
+	gcŞÜ
+: #e63f2a;
+
+457 .
+	gpo¡
+-
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+ {
+
+458 
+	gfÚt
+-
+	gsize
+: 28
+px
+;
+
+459 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+460 
+	gfÚt
+-
+	gweight
+: 300;
+
+461 
+	gm¬gš
+: 0;
+
+462 
+	g·ddšg
+-
+	gËá
+: 75
+px
+;
+
+463 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+466 .
+	gpo¡
+-
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+:
+befÜe
+ {
+
+467 
+cÚ‹Á
+: '\201C';
+
+468 
+	gfÚt
+-
+	gsize
+: 140
+px
+;
+
+469 
+	gfÚt
+-
+	gweight
+: 400;
+
+470 
+	glše
+-
+	gheight
+: .8;
+
+471 
+	g·ddšg
+-
+	gright
+: 25
+px
+;
+
+472 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+473 
+	gËá
+: -15
+px
+;
+
+474 
+	gtİ
+: -3
+px
+;
+
+477 .
+	gpo¡
+-
+	gfÜm©
+-
+quÙe
+ 
+blockquÙe
+ 
+	gsm®l
+,
+
+478 .
+	gpo¡
+-
+	gfÜm©
+-
+quÙe
+ 
+blockquÙe
+ 
+	gc™e
+ {
+
+479 
+	gdi¥Ïy
+: 
+block
+;
+
+480 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+483 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+c™e
+ 
+	ga
+ {
+
+484 
+	gbÜd”
+-
+	gbÙtom
+: 1
+px
+ 
+dÙ‹d
+ #fff;
+
+485 
+	gcŞÜ
+: #fff;
+
+488 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+c™e
+ 
+	ga
+:
+hov”
+ {
+
+489 
+‹xt
+-
+decÜ©iÚ
+: 
+nÚe
+;
+
+494 .
+	gpo¡
+-
+	gfÜm©
+-
+	g¡©us
+ {
+
+495 
+	gbackground
+-
+	gcŞÜ
+: #722d19;
+
+496 
+	gcŞÜ
+: #f7f5e7;
+
+497 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+498 
+	gfÚt
+-
+	gweight
+: 300;
+
+499 
+	g·ddšg
+: 0;
+
+500 
+	g·ddšg
+-
+	gËá
+: 35
+px
+;
+
+503 .
+	gpo¡
+-
+	gfÜm©
+-
+	g¡©us
+.
+	gmûCÚ‹ÁBody
+ {
+
+504 
+	gfÚt
+-
+	gsize
+: 24
+px
+;
+
+507 .
+	gpo¡
+-
+	gfÜm©
+-
+	g¡©us
+:
+befÜe
+ {
+
+508 
+background
+: 
+u¾
+(../
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+-
+y
+ 
+Ëá
+ 
+bÙtom
+;
+
+509 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+510 
+	gcÚ‹Á
+: "";
+
+511 
+	gdi¥Ïy
+: 
+block
+;
+
+512 : 
+Ëá
+;
+
+513 
+	gheight
+: 100%;
+
+514 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+515 
+	gËá
+: -30
+px
+;
+
+516 
+	gwidth
+: 1
+px
+;
+
+519 .
+	gpo¡
+-
+	gfÜm©
+-
+	g¡©us
+ > 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+520 
+background
+-
+cŞÜ
+: 
+rgba
+(0, 0, 0, 0.65);
+
+521 
+	gcÚ‹Á
+: "";
+
+522 
+	gheight
+: 3
+px
+;
+
+523 
+	gwidth
+: 13
+px
+;
+
+524 
+	gm¬gš
+-
+	gtİ
+: 13
+px
+;
+
+525 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+526 
+	gËá
+: 9
+px
+;
+
+529 .
+	gpo¡
+-
+	gfÜm©
+-
+¡©us
+ 
+	ga
+ {
+
+530 
+	gcŞÜ
+: #eadaa6;
+
+534 .
+	gpo¡
+-
+	gfÜm©
+-
+	gvideo
+ {
+
+535 
+	gbackground
+-
+	gcŞÜ
+: #db572f;
+
+538 .
+	gpo¡
+-
+	gfÜm©
+-
+video
+ 
+	ga
+ {
+
+539 
+	gcŞÜ
+: #fbfaf3;
+
+548 
+	ghtml
+ .
+	gmûCÚ‹ÁBody
+.
+	g¹l
+ {
+
+549 
+	gdœeùiÚ
+: 
+¹l
+;
+
+550 
+	gunicode
+-
+	gbidi
+: 
+embed
+;
+
+553 .
+¹l
+ 
+	gŞ
+,
+
+554 .
+¹l
+ 
+	gul
+ {
+
+555 
+	g·ddšg
+: 0 40
+px
+ 0 0;
+
+558 .
+	g¹l
+ .
+	gwp
+-
+	gÿ±iÚ
+,
+
+559 .
+¹l
+ 
+Œ
+ 
+	gth
+ {
+
+560 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+563 .
+¹l
+ 
+	gtd
+ {
+
+564 
+	g·ddšg
+: 6
+px
+ 0 6px 10px;
+
+565 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+568 .
+¹l
+ 
+blockquÙe
+ 
+	gblockquÙe
+ {
+
+569 
+	gm¬gš
+-
+	gËá
+: 0;
+
+570 
+	gm¬gš
+-
+	gright
+: 24
+px
+;
+
+573 .
+	g¹l
+.
+	gpo¡
+-
+	gfÜm©
+-
+	gaudio
+:
+befÜe
+,
+
+574 .
+	g¹l
+.
+	gpo¡
+-
+	gfÜm©
+-
+	g¡©us
+:
+befÜe
+,
+
+575 .
+	g¹l
+.
+	gpo¡
+-
+	gfÜm©
+-
+	g¡©us
+ > 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+576 
+background
+: 
+nÚe
+;
+
+577 
+	gcÚ‹Á
+: 
+nÚe
+;
+
+	@css/ie.css
+
+5 .
+	gs™e
+ {
+
+6 
+	gmš
+-
+	gwidth
+: 1040
+px
+;
+
+9 .
+	gg’”icÚ
+:
+befÜe
+:
+hov”
+,
+
+10 .
+	gm’u
+-
+	gtoggË
+:
+aá”
+:
+hov”
+,
+
+11 .
+d©e
+ 
+	ga
+:
+befÜe
+:
+hov”
+,
+
+12 .
+	g’Œy
+-
+	gm‘a
+ .
+authÜ
+ 
+	ga
+:
+befÜe
+:
+hov”
+,
+
+13 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+:
+hov”
+,
+
+14 .
+	gcomm’ts
+-
+lšk
+ 
+	ga
+:
+befÜe
+:
+hov”
+,
+
+15 .
+	ggs
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+:
+hov”
+,
+
+16 .
+	gÿ‹gÜ›s
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+:
+hov”
+,
+
+17 .
+	ged™
+-
+	glšk
+ > 
+	ga
+:
+befÜe
+:
+hov”
+,
+
+18 .
+	g©chm’t
+-
+	gm‘a
+:
+befÜe
+:
+hov”
+,
+
+19 .
+	g©chm’t
+-
+m‘a
+ 
+	ga
+:
+befÜe
+:
+hov”
+,
+
+20 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+:
+befÜe
+:
+hov”
+,
+
+21 .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+:
+befÜe
+:
+hov”
+,
+
+22 .
+	gcomm’t
+-
+	g»¶y
+-
+t™Ë
+ 
+sm®l
+ 
+	ga
+:
+befÜe
+:
+hov”
+,
+
+23 .
+	gbypo¡authÜ
+ > .
+	gcomm’t
+-
+	gbody
+ .
+	gâ
+:
+befÜe
+:
+hov”
+ {
+
+24 
+‹xt
+-
+decÜ©iÚ
+: 
+nÚe
+;
+
+27 .
+	gÇv
+-
+	gm’u
+ .
+	gsub
+-
+m’u
+ 
+	gul
+,
+
+28 .
+	gÇv
+-
+	gm’u
+ .
+chd»n
+ 
+	gul
+ {
+
+29 
+	gËá
+: 100%;
+
+32 .
+	gs™e
+-
+	gh—d”
+ .
+	ghome
+-
+	glšk
+ {
+
+33 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+36 .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gfÜm
+ [
+ty³
+="search"],
+
+37 .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gfÜm
+ [
+ty³
+="text"] {
+
+38 
+·ddšg
+-
+tİ
+: 6
+px
+;
+
+41 
+	gimg
+.
+	g®igÄight
+ {
+
+42 
+	gm¬gš
+-
+	gright
+: 0;
+
+45 
+	gimg
+.
+	g®igÆeá
+ {
+
+46 
+	gm¬gš
+-
+	gËá
+: 0;
+
+49 .
+	gs™e
+-
+	gmaš
+ .
+	gsideb¬
+-
+	gšÃr
+ {
+
+50 
+	gwidth
+: 1040
+px
+;
+
+53 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+54 
+	gm¬gš
+-
+	gright
+: 60
+px
+;
+
+57 .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gsize
+-
+	gfuÎ
+ {
+
+58 
+	gm¬gš
+: 0;
+
+59 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+62 .
+	gg®Ëry
+-
+	gcŞumns
+-1 .g®Ëry-
+	g™em
+,
+
+63 .
+	gg®Ëry
+-
+	gcŞumns
+-2 .g®Ëry-
+	g™em
+,
+
+64 .
+	gg®Ëry
+-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+ {
+
+65 
+	gmax
+-
+	gwidth
+: 
+nÚe
+;
+
+68 .
+g®Ëry
+ 
+	gimg
+ {
+
+69 
+	gwidth
+:‡uto;
+
+72 .
+	gg®Ëry
+-
+	gÿ±iÚ
+ {
+
+73 
+	gbackground
+: #000;
+
+74 
+	gf‹r
+: 
+®pha
+(
+İac™y
+=0);
+
+77 .
+	gg®Ëry
+-
+	g™em
+:
+hov”
+ .
+g®Ëry
+-
+ÿ±iÚ
+ {
+
+78 
+f‹r
+: 
+®pha
+(
+İac™y
+=70);
+
+81 .
+	gcomm’t
+ {
+
+82 
+	gş—r
+: 
+bÙh
+;
+
+85 .
+	gcomm’t
+-
+	gm‘a
+,
+
+86 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+87 .
+	gcomm’t
+-
+	gli¡
+ .
+	g»¶y
+ {
+
+88 
+	gwidth
+: 480
+px
+;
+
+91 .
+	gd•th
+-2 .
+	gcomm’t
+-
+	gm‘a
+,
+
+92 .
+	gd•th
+-2 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+93 .
+	gcomm’t
+-
+	gli¡
+ .
+	gd•th
+-2 .
+	g»¶y
+ {
+
+94 
+	gwidth
+: 460
+px
+;
+
+97 .
+	gd•th
+-3 .
+	gcomm’t
+-
+	gm‘a
+,
+
+98 .
+	gd•th
+-3 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+99 .
+	gcomm’t
+-
+	gli¡
+ .
+	gd•th
+-3 .
+	g»¶y
+ {
+
+100 
+	gwidth
+: 440
+px
+;
+
+103 .
+	gd•th
+-4 .
+	gcomm’t
+-
+	gm‘a
+,
+
+104 .
+	gd•th
+-4 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+105 .
+	gcomm’t
+-
+	gli¡
+ .
+	gd•th
+-4 .
+	g»¶y
+ {
+
+106 
+	gwidth
+: 420
+px
+;
+
+109 .
+	gd•th
+-5 .
+	gcomm’t
+-
+	gm‘a
+,
+
+110 .
+	gd•th
+-5 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+111 .
+	gcomm’t
+-
+	gli¡
+ .
+	gd•th
+-5 .
+	g»¶y
+ {
+
+112 
+	gwidth
+: 400
+px
+;
+
+115 .
+	gcomm’t
+-
+	gm‘a
+ {
+
+116 
+	gm¬gš
+-
+	gbÙtom
+: 0;
+
+119 .
+	gwidg‘
+ {
+
+120 
+	gbackground
+: #f7f5e7;
+
+123 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+ {
+
+124 
+	gbackground
+: 
+nÚe
+;
+
+128 .
+	g›8
+ .
+	gs™e
+ {
+
+129 
+	gbÜd”
+: 0;
+
+132 .
+›8
+ 
+	gimg
+.
+	gsize
+-
+	gfuÎ
+,
+
+133 .
+›8
+ 
+	gimg
+.
+	gsize
+-
+	gÏrge
+ {
+
+134 
+	gheight
+:‡uto;
+
+135 
+	gwidth
+:‡uto;
+
+138 .
+	g›8
+ .
+	gsideb¬
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+139 .
+	g›8
+ .
+	gsideb¬
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+140 .
+	g›8
+ .
+	gsideb¬
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+141 .
+	g›8
+ .
+	gsideb¬
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+142 
+	gmax
+-
+	gwidth
+: 724
+px
+;
+
+145 .
+	g›8
+ .
+	gauthÜ
+-
+	gšfo
+ {
+
+146 
+	gm¬gš
+-
+	gËá
+: 0;
+
+149 .
+	g›8
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ .
+	gm‘a
+-nav {
+
+150 
+	g·ddšg
+: 5
+px
+ 0 8px;
+
+151 
+	gwidth
+: 40
+px
+;
+
+154 .
+	g›8
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+155 
+	glše
+-
+	gheight
+: 1;
+
+158 .
+	g›8
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+159 .
+	g›8
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+160 
+cÚ‹Á
+: 
+nÚe
+;
+
+163 .
+	g›8
+ .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+164 
+	gm¬gš
+-
+	gright
+: 0;
+
+168 .
+›7
+ 
+	gaudio
+,
+
+169 .
+›7
+ 
+	gÿnvas
+,
+
+170 .
+›7
+ 
+	gvideo
+ {
+
+171 
+	gdi¥Ïy
+: 
+šlše
+;
+
+172 
+	gzoom
+: 1;
+
+175 .
+›7
+ 
+	gËg’d
+ {
+
+176 
+	gm¬gš
+-
+	gËá
+: -7
+px
+;
+
+179 .
+›7
+ 
+	gbu‰Ú
+,
+
+180 .
+›7
+ 
+	gšput
+,
+
+181 .
+›7
+ 
+	g£Ëù
+,
+
+182 .
+›7
+ 
+	g‹x»a
+ {
+
+183 
+	gv”tiÿl
+-
+	g®ign
+: 
+middË
+;
+
+186 .
+›7
+ 
+	gbu‰Ú
+,
+
+187 .
+›7
+ 
+	gšput
+[
+ty³
+="button"],
+
+188 .
+›7
+ 
+	gšput
+[
+ty³
+="reset"],
+
+189 .
+›7
+ 
+	gšput
+[
+ty³
+="submit"] {
+
+190 
+ov”æow
+: 
+visibË
+;
+
+193 .
+›7
+ 
+	gšput
+[
+ty³
+="checkbox"],
+
+194 .
+›7
+ 
+	gšput
+[
+ty³
+="radio"] {
+
+195 
+height
+: 13
+px
+;
+
+196 
+	gwidth
+: 13
+px
+;
+
+199 .
+	g›7
+ .
+	gsü“n
+-
+	g»ad”
+-
+	g‹xt
+ {
+
+200 
+	gş
+: 
+»ù
+(1
+px
+ 1px 1px 1px);
+
+203 .
+	g›7
+ .
+	gs™e
+-
+	gh—d”
+ {
+
+204 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+205 
+	gz
+-
+	gšdex
+: 1;
+
+208 .
+	g›7
+ .
+	gmaš
+-
+	gÇvig©iÚ
+ {
+
+209 
+	gmax
+-
+	gwidth
+: 930
+px
+;
+
+210 
+	g·ddšg
+-
+	gright
+: 150
+px
+;
+
+213 .
+	g›7
+ .
+	gÇv
+-
+m’u
+ 
+li
+ 
+	ga
+,
+
+214 .
+	g›7
+ .
+	gÇv
+-
+m’u
+ 
+	gli
+ {
+
+215 
+	gdi¥Ïy
+: 
+block
+;
+
+216 : 
+Ëá
+;
+
+219 .
+	g›7
+ .
+	gÇv
+-
+m’u
+ 
+	gul
+ {
+
+220 
+	gtİ
+: 40
+px
+;
+
+223 .
+	g›7
+ .
+	gÇv
+-
+m’u
+ 
+li
+ 
+ul
+ 
+	gul
+ {
+
+224 
+	gËá
+: 100%;
+
+225 
+	gtİ
+: 0;
+
+228 .
+	g›7
+ .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gfÜm
+ [
+ty³
+="search"],
+
+229 .
+	g›7
+ .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gfÜm
+ [
+ty³
+="text"] {
+
+230 
+background
+-
+cŞÜ
+: #fff;
+
+231 
+	gbÜd”
+: 2
+px
+ 
+sŞid
+ #c3c0ab;
+
+232 
+	gcursÜ
+: 
+‹xt
+;
+
+233 
+	gheight
+: 28
+px
+;
+
+234 
+	gouše
+: 0;
+
+235 
+	gwidth
+: 150
+px
+;
+
+238 .
+	g›7
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+239 .
+	g›7
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+240 .
+	g›7
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+241 .
+	g›7
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+242 
+	gwidth
+: 604
+px
+;
+
+245 .
+	g›7
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+246 .
+	g›7
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+247 
+	g·ddšg
+-
+	gËá
+: 60
+px
+;
+
+250 .
+	g›7
+ .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+251 .
+	g›7
+ .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+252 
+	g·ddšg
+-
+	gËá
+: 60
+px
+;
+
+255 .
+	g›7
+ .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+256 .
+	g›7
+ .
+	gsideb¬
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+257 
+	gwidth
+: 604
+px
+;
+
+260 .
+	g›7
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gm‘a
+-
+	gÇv
+ {
+
+261 
+	g·ddšg
+: 0 0 10
+px
+;
+
+262 
+	gv”tiÿl
+-
+	g®ign
+: 
+middË
+;
+
+263 
+	gwidth
+: 40
+px
+;
+
+266 .
+	g›7
+ .
+	gcomm’ts
+-
+	gt™Ë
+,
+
+267 .
+	g›7
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+268 .
+	g›7
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+,
+
+269 .
+	g›7
+ .
+	gcomm’t
+-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+ {
+
+270 
+	gwidth
+: 604
+px
+;
+
+273 .
+	g›7
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+274 
+	gmax
+-
+	gwidth
+: 
+nÚe
+;
+
+275 
+	gËá
+:‡uto;
+
+279 .
+	g¹l
+ .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+280 .
+	g¹l
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+:
+befÜe
+,
+
+281 .
+	g¹l
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	glogš
+:
+befÜe
+ {
+
+282 -
+ms
+-
+f‹r
+: "FlipH";
+
+283 
+	gf‹r
+: 
+FlH
+;
 
 	@explore.php
 
@@ -2805,7 +6393,7 @@ wšdow
 
 27 
 cŞumnWidth
-: 420,
+: 325,
 
 28 
 ™emS–eùÜ
@@ -2825,7 +6413,7 @@ wšdow
 
 31 
 cŞumnWidth
-: 420,
+: 433,
 
 32 
 ™emS–eùÜ
@@ -2879,7 +6467,7 @@ $ÿt
 
 46 
 	g$aùiv™›sName
- = "ACTIVITIES";
+ = "Activities";
 
 48 
 	g$aùiv™›sC©s
@@ -2929,7 +6517,7 @@ $¦ugC©s
 
 62 
 	g$loÿtiÚsName
- = "LOCATIONS";
+ = "Locations";
 
 63 
 	g$loÿtiÚC©s
@@ -2979,7 +6567,7 @@ $¦ugC©s
 
 77 
 	g$¿tšgsName
- = "RATINGS";
+ = "Ratings";
 
 78 
 	g$¿tšgC©s
@@ -3011,103 +6599,61 @@ $¦ugC©s
 $¦ugC©s
 ["cicloturism"],
 
-91 <
+90 <
 div
  
 	gid
-="cÚ‹Á-fuÎ" 
+="maš" 
 şass
-="grid col-940">
+="site-main">
+
+91 <
+div
+ 
+id
+="´im¬y" 
+şass
+="content-area">
 
 92 <
 div
  
-şass
-="searchform">
-
-93 <
-fÜm
- 
-m‘hod
-="g‘" 
 id
-="£¬chfÜm" 
-aùiÚ
-="<?phpƒcho home_url( '/explore/' ); ?>">
-
-94 <
-šput
- 
-ty³
-="‹xt" 
+="cÚ‹Á" 
 şass
-="f›ld" 
-Çme
-="£¬ch" 
-id
-="s" 
-¶aûhŞd”
-="<?phpƒsc_attr_e('search here &hellip;', 'responsive'); ?>" />
+="s™e-cÚ‹Á html_ÿrou£l" 
+rŞe
+="main">
 
-95 <
-šput
- 
-ty³
-="subm™" 
-şass
-="subm™" 
-Çme
-="subm™" 
-id
-="£¬chsubm™" 
-v®ue
-="<?phpƒsc_attr_e('Go', 'responsive'); ?>" />
-
-96 </
-fÜm
->
-
-97 </
-div
-><!--
-’d
- 
-of
- 
-the
- 
-£¬chfÜmdiv
--->
-
-99 <?
+93 <?
 php
 
 
-100 
+94 
 glob®
  
 $wp_qu”y
 ;
 
-102 
+96 
 	g$£¬ch
  = 
 g‘_qu”y_v¬
 ('search');
 
-103 
+97 
 	g$ÿt_f‹r
  = 
 g‘_qu”y_v¬
 ('categories');
 
-104 
+98 
 	g$mode
  = 
 g‘_qu”y_v¬
 ('mode');
 
-105 
+99 
 	g$ÿt_Çme
  = 
 ¡r_»¶aû
@@ -3115,43 +6661,81 @@ g‘_qu”y_v¬
 g‘_qu”y_v¬
 ('categories'));
 
-107 ià(
+102 ià(
+¡½os
+(
+$ÿt_f‹r
+ , '·ge'è!=ğ
+çl£
+) {
+
+103 
+$ÿt_¬¿y
+ = 
+ex¶ode
+ ('/', 
+$ÿt_f‹r
+);
+
+104 
+	g$·ged
+ = 
+¬¿y_pİ
+(
+$ÿt_¬¿y
+);
+
+105 
+¬¿y_pİ
+(
+$ÿt_¬¿y
+);
+
+106 
+	g$ÿt_f‹r
+ = 
+im¶ode
+ ('/', 
+$ÿt_¬¿y
+);
+
+110 ià(
 	$em±y
 (
 $mode
 )) {
 
-108 
+111 
 $mode
- = 'int';
+ = 'reu';
 
-109 
+112 
 	}
 }
 
-113 iàĞ!
+122 iàĞ!
 	$em±y
 (
 $£¬ch
 )) {
 
-114 
+123 
 $£¬ch_¡ršg
  = 
 $£¬ch
  . '/';
 
-115 
+124 
 	}
 } {
 
-116 
+125 
 	g$£¬ch_¡ršg
  = 
 $£¬ch
 ;
 
-119 
+128 
 	g$Ãw_u¾
  = 
 home_u¾
@@ -3163,61 +6747,281 @@ $£¬ch_¡ršg
 $ÿt_f‹r
 ;
 
-122 #´št_r(
-$Ãw_u¾
+131 #´št_r(
+$£¬ch
 );
 
-124 #´št_r(
+133 #´št_r(
 ¡r_»¶aû
 Ğ'mode/št' , 'mode/»u' ,
 $Ãw_u¾
 ));
 
-126 #´št_r(
+135 #´št_r(
 $£¬ch
 );
 
-128 #´št_r(
+137 #´št_r(
 $ÿt_f‹r
 );
 
-132 
-	gecho
- '<div class="searchmode">';
+142 <
+	gi
+><
+h3
+ 
+	gşass
+="‹xt-ûÁ”"> 
+Makšg
+ 
+the
+ 
+ÃedË
+ 
+š
+h
+hay¡ack
+ 
+a
+ 
+b™
+ 
+—s›r
+ 
+to
+ 
+fšd
+. </h3></
+i
+>
 
-133 
-	gecho
- '<¨h»f=' . 
-¡r_»¶aû
-Ğ'mode/»u' , 'mode/št' ,
-$Ãw_u¾
-) . '>' . '<h5>Mode = INT </h5>' . '</a>';
+143 <
+div
+ 
+şass
+="horizontalRule"></div>
 
-134 
-	gecho
- '</div><!--end ofhe searchmode-->';
+144 <
+div
+ 
+şass
+="ÿt_div" 
+id
+="cat_div">
 
-135 
-	gecho
- '<div class="searchmode">';
+145 <
+div
+ 
+şass
+="cat_containerweaking">
 
-136 
-	gecho
- '<¨h»f=' . 
-¡r_»¶aû
-Ğ'mode/št' , 'mode/»u' ,
-$Ãw_u¾
-) . '>' . '<h5>Mode = REU </h5>' . '</a>';
+146 <
+div
+ 
+şass
+="searchform div-center">
 
-137 
-	gecho
- '</div><!--end ofhe searchmode-->';
+147 <
+fÜm
+ 
+rŞe
+="£¬ch" 
+m‘hod
+="g‘" 
+şass
+="£¬ch-fÜm" 
+aùiÚ
+="<?phpƒcho home_url( '/explore/' ); ?>">
 
-140 
-	gecho
- '<div class="grid col-940 cat_div" id="cat_div">';
+148 <
+Ïb–
+>
 
-141 
+149 <
+¥ª
+ 
+şass
+="sü“n-»ad”-‹xt">
+S—rch
+ :</span>
+
+150 <
+šput
+ 
+ty³
+="£¬ch" 
+şass
+="£¬ch-f›ld" 
+¶aûhŞd”
+="S—rch â€¦" 
+v®ue
+="" 
+Çme
+="£¬ch" 
+t™Ë
+="Search for:" />
+
+151 </
+Ïb–
+>
+
+152 <
+šput
+ 
+ty³
+="subm™" 
+şass
+="£¬ch-subm™" 
+v®ue
+="Search" />
+
+153 </
+fÜm
+>
+
+154 </
+div
+><!--
+’d
+ 
+of
+ 
+the
+ 
+£¬chfÜmdiv
+-->
+
+156 <
+i
+><
+h4
+ 
+şass
+="‹xt-ûÁ”"> 
+S—rch
+ 
+mode
+ </h4></i>
+
+158 <
+a
+ 
+h»f
+="<?phpƒcho str_replace( 'mode/int' , 'mode/reu' ,$new_url)?>">
+
+159 <
+div
+ 
+şass
+="circle_container">
+
+160 <
+div
+ 
+id
+="cœşe" 
+şass
+="»d" 
+¡yË
+="left:30px;opacity:1"></div>
+
+161 <
+div
+ 
+id
+="cœşe" 
+şass
+="»d" 
+¡yË
+="left:65px;opacity:1"></div>
+
+162 <
+div
+ 
+şass
+="cœşe-‹xt" 
+¡yË
+="tİ:70px;Ëá:45px"><
+i
+><
+p
+>
+ReuniÚ
+</p></i></div>
+
+163 </
+div
+>
+
+164 </
+a
+>
+
+166 <
+a
+ 
+h»f
+="<?phpƒcho str_replace( 'mode/reu' , 'mode/int' ,$new_url)?>">
+
+167 <
+div
+ 
+şass
+="circle_container">
+
+168 <
+div
+ 
+id
+="cœşe" 
+şass
+="»d" 
+¡yË
+="left:30px;"></div>
+
+169 <
+div
+ 
+id
+="cœşe" 
+şass
+="»d" 
+¡yË
+="left:65px;"></div>
+
+170 <
+div
+ 
+şass
+="cœşe-‹xt" 
+¡yË
+="tİ:70px;Ëá:30px"><
+i
+><
+p
+>
+IÁ”£ùiÚ
+</p></i></div>
+
+171 </
+div
+>
+
+172 </
+a
+><
+br
+>
+
+173 </
+div
+>
+
+175 <?
+php
+
+
+176 
 li¡_ÿ‹gÜy_¬¿y
 (
 $aùiv™›sName
@@ -3227,7 +7031,7 @@ $aùiv™›sC©s
 $Ãw_u¾
 );
 
-142 
+177 
 li¡_ÿ‹gÜy_¬¿y
 (
 $loÿtiÚsName
@@ -3237,7 +7041,7 @@ $loÿtiÚC©s
 $Ãw_u¾
 );
 
-143 
+178 
 li¡_ÿ‹gÜy_¬¿y
 (
 $¿tšgsName
@@ -3247,11 +7051,63 @@ $¿tšgC©s
 $Ãw_u¾
 );
 
-144 
-	gecho
- '</div><!--ƒnd of .col-940 -->';
+180 </
+	gdiv
+><!--
+	gÿt_div
+-->
 
-147 
+181 <
+div
+ 
+	gşass
+="horizontalRule"></div>
+
+183 <?
+php
+
+
+184 ià(
+¡½os
+(
+$mode
+ , '»u'è!=ğ
+çl£
+ || 
+	$em±y
+(
+$ÿt_Çme
+)) {
+
+185 
+$blog_qu”y
+ = 
+Ãw
+ 
+	`WP_Qu”y
+Ğ
+	`¬¿y
+Ğ'po¡_ty³' => 'po¡', '·ged' => 
+$·ged
+ , 'po¡s_³r_·ge' => 9, 'ÿ‹gÜy_Çme' => 
+$ÿt_Çme
+, '£¬ch' => 
+$£¬ch
+));
+
+186 
+	}
+} {
+
+187 
+	g$ÿt_id_¬¿y
+ = 
+g‘_ÿ‹gÜy_ªd
+(
+$ÿt_Çme
+);
+
+188 
 	g$blog_qu”y
  = 
 Ãw
@@ -3261,331 +7117,41 @@ WP_Qu”y
 ¬¿y
 Ğ'po¡_ty³' => 'po¡', '·ged' => 
 $·ged
- , 'ÿ‹gÜy_Çme' => 
-$ÿt_Çme
+ , 'po¡s_³r_·ge' => 9, 'ÿ‹gÜy__ªd' => 
+$ÿt_id_¬¿y
 , '£¬ch' => 
 $£¬ch
 ));
 
-148 
-	g$‹mp_qu”y
- = 
-$wp_qu”y
-;
-
-149 
-	g$wp_qu”y
- = 
-nuÎ
-;
-
-150 
-	g$wp_qu”y
- = 
-$blog_qu”y
-;
-
-152 
-	gecho
- '<h3>Found ' . 
+191 ià(
 	g$blog_qu”y
 ->
 	gfound_po¡s
- . '</h3>';
-
-154 iàĞ
-	g$blog_qu”y
-->
-	$have_po¡s
-() ) :
-
-156 
-echo
- '<div class="grid col-940ile_cont" id="img_container">';
-
-157  
-$blog_qu”y
-->
-	$have_po¡s
-(èè: 
-$blog_qu”y
-->
-	`the_po¡
-();
-
-160 <?
-php
-
-
-161 
-echo
- '<div class="tile_img_container">';
-
-162 
-echo
- '<¨h»f="' . 
-	`g‘_³rm®šk
-(è. '"™Ë="Look '.
-	`g‘_the_t™Ë
-().'" >';
-
-163 ià(
-	$has_po¡_thumbÇ
-()) {
-
-164 
-echo
- 
-	`g‘_the_po¡_thumbÇ
-();
-
-165 
-	}
-}
-
-167 
-	gecho
- '<div class="placeholder">';
-
-168 
-	gecho
- '</div>';
-
-170 
-	gecho
- '</a>';
-
-171 
-	gecho
- '<h2 cÏss="h2_img_cÚš”">' . 
-g‘_the_t™Ë
-() . '</h2>';
-
-172 
-	gecho
- '</div>';
-
-174 <?
-php
-
-
-175 
-	g’dwhe
-;
-
-176 
-	gecho
- '</div><!--ƒnd of .col-940 -->';
-
-178 iàĞ
-	g$wp_qu”y
-->
-	gmax_num_·ges
- > 1 ) :
-
-180 <
-div
- 
-şass
-="navigation">
-
-181 <
-div
- 
-şass
-="´evious"><?
-php
- 
-Ãxt_po¡s_lšk
-Ğ
-__
-Ğ'&#8249; Old”…o¡s', '»¥Úsive' ), 
-$wp_qu”y
-->
-max_num_·ges
- ); ?></
-	gdiv
->
-
-182 <
-div
- 
-	gşass
-="Ãxt"><?
-php
- 
-´evious_po¡s_lšk
-Ğ
-__
-Ğ'New”…o¡ &#8250;', '»¥Úsive' ), 
-$wp_qu”y
-->
-max_num_·ges
- ); ?></
-	gdiv
->
-
-183 </
-	gdiv
-><!-- 
-’d
- 
-	gof
- .
-	gÇvig©iÚ
- -->
-
-184 <?
-php
-
-
-185 
-	g’dif
-;
-
-189 
-g‘_‹m¶©e_·¹
-( 'loop-no-posts' );
-
-191 
-	g’dif
-;
+ !== 0) {
 
 192 
-	g$wp_qu”y
- = 
-$‹mp_qu”y
-;
+li¡_po¡s
+(
+$blog_qu”y
+);
 
-193 
+194 
+	gecho
+ '<i><h3 class="text-center">Found‚o„esults,ƒxtend your search</h3></i>';
+
+196 
 wp_»£t_po¡d©a
 ();
 
-197 <!-- 
-addšg
- 
-some
- 
-‹¡
- 
-	gcheckboxes
- -->
-
-198 <!--
-fÜm
- 
-	gaùiÚ
-="">
-
-199 <
-šput
- 
-ty³
-="checkbox" 
-Çme
-="vehişe" 
-v®ue
-="Bike">
-I
- 
-have
- 
-a
- 
-bike
-<
-br
+198 </
+	gdiv
 >
 
-200 <
-šput
- 
-ty³
-="checkbox" 
-Çme
-="vehişe" 
-v®ue
-="C¬">
-I
- 
-have
- 
-a
- 
-ÿr
+199 </
+	gdiv
+>
 
-
-201 </
-fÜm
--->
-
-203 <!--?
-php
-
-
-204 
-$ÿ‹gÜ›s
- = 
-g‘_ÿ‹gÜ›s
-();
-
-205 
-	g$£·¿tÜ
- = ' ';
-
-206 
-	g$ouut
- = '';
-
-207 if(
-	g$ÿ‹gÜ›s
-){
-
-208 
-fÜ—ch
-(
-$ÿ‹gÜ›s
- 
-as
- 
-$ÿ‹gÜy
-) {
-
-209 
-	g$ouut
- .ğ'<p><¨h»f="'.
-g‘_ÿ‹gÜy_lšk
-Ğ
-$ÿ‹gÜy
-->
-‹rm_id
- ).'"™Ë="' . 
-esc_©Œ
-Ğ
-¥rštf
-Ğ
-__
-Ğ"V›w‡Î…o¡ š %s" ), $ÿ‹gÜy->
-Çme
- ) ) . '">'.
-	g$ÿ‹gÜy
-->
-	gÿt_Çme
-.'</a></p>'.
-	g$£·¿tÜ
-;
-
-211 
-echo
- 
-Œim
-(
-$ouut
-, 
-$£·¿tÜ
-);
-
-217 </
+200 </
 	gdiv
 ><!-- 
 ’d
@@ -3595,11 +7161,1173 @@ $£·¿tÜ
 	gfuÎ
  -->
 
-219 <?
+202 <?
 php
  
 g‘_foÙ”
 (); ?>
+
+	@fonts/genericons.css
+
+11 @
+	gfÚt
+-
+	gçû
+ {
+
+12 
+	gfÚt
+-
+	gçmy
+: 'Genericons';
+
+13 
+	g¤c
+: 
+u¾
+('genericons-regular-webfont.eot');
+
+16 @
+	gfÚt
+-
+	gçû
+ {
+
+17 
+	gfÚt
+-
+	gçmy
+: 'Genericons';
+
+18 
+	g¤c
+: 
+u¾
+(
+d©a
+:
+­¶iÿtiÚ
+/
+x
+-
+fÚt
+-
+woff
+;
+ch¬£t
+=
+utf
+-8;
+ba£64
+,
+d09GRgABAAAAAC98ABEAAAAATZgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABgAAAABwAAAAÿBk2X0dERUYAAAGcAAAAHQAAACAAjwAET1MvMgAAAbwAAABCAAAAYFFçIFjbWFwAAACAAAAAIcAAAGayK6UdGN2dCAAAAKIAAAABgAAAAYAfwEJZnBnbQAAApAAAAGxAAACZVO0L6dnYXNwAAAERAAAAAgAAAAI
+
+
+19 
+u¾
+('g’”icÚs-»guÏr-webfÚt.‰f'è
+fÜm©
+('truetype'),
+
+20 
+u¾
+('g’”icÚs-»guÏr-webfÚt.svg#g’”icÚ¤eguÏr'è
+fÜm©
+('svg');
+
+21 
+fÚt
+-
+weight
+: 
+nÜm®
+;
+
+22 
+fÚt
+-
+¡yË
+: 
+nÜm®
+;
+
+29 [
+şass
+*="genericon"] {
+
+30 
+di¥Ïy
+: 
+šlše
+-
+block
+;
+
+31 
+width
+: 16
+px
+;
+
+32 
+height
+: 16
+px
+;
+
+33 -
+webk™
+-
+fÚt
+-
+smoÙhšg
+: 
+ªtŸlŸ£d
+;
+
+34 
+fÚt
+-
+size
+: 16
+px
+;
+
+35 
+lše
+-
+height
+: 1;
+
+36 
+fÚt
+-
+çmy
+: 'Genericons';
+
+37 
+‹xt
+-
+decÜ©iÚ
+: 
+šh”™
+;
+
+38 
+fÚt
+-
+weight
+: 
+nÜm®
+;
+
+39 
+fÚt
+-
+¡yË
+: 
+nÜm®
+;
+
+40 
+v”tiÿl
+-
+®ign
+: 
+tİ
+;
+
+44 [
+şass
+*="genericon"] {
+
+45 *
+ov”æow
+:‡uto;
+
+46 *
+zoom
+: 1;
+
+47 *
+di¥Ïy
+: 
+šlše
+;
+
+55 .
+g’”icÚ
+-
+¡ªd¬d
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f100'; }
+
+56 .
+g’”icÚ
+-
+aside
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f101'; }
+
+57 .
+g’”icÚ
+-
+image
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f102'; }
+
+58 .
+g’”icÚ
+-
+g®Ëry
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f103'; }
+
+59 .
+g’”icÚ
+-
+video
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f104'; }
+
+60 .
+g’”icÚ
+-
+¡©us
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f105'; }
+
+61 .
+g’”icÚ
+-
+quÙe
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f106'; }
+
+62 .
+g’”icÚ
+-
+lšk
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f107'; }
+
+63 .
+g’”icÚ
+-
+ch©
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f108'; }
+
+64 .
+g’”icÚ
+-
+audio
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f109'; }
+
+67 .
+g’”icÚ
+-
+g™hub
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f200'; }
+
+68 .
+g’”icÚ
+-
+dribbbË
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f201'; }
+
+69 .
+g’”icÚ
+-
+tw™‹r
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f202'; }
+
+70 .
+g’”icÚ
+-
+çûbook
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f203'; }
+
+71 .
+g’”icÚ
+-
+çûbook
+-
+®t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f204'; }
+
+72 .
+g’”icÚ
+-
+wÜd´ess
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f205'; }
+
+73 .
+g’”icÚ
+-
+googË¶us
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f206'; }
+
+74 .
+g’”icÚ
+-
+lškedš
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f207'; }
+
+75 .
+g’”icÚ
+-
+lškedš
+-
+®t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f208'; }
+
+76 .
+g’”icÚ
+-
+pš‹»¡
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f209'; }
+
+77 .
+g’”icÚ
+-
+pš‹»¡
+-
+®t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f210'; }
+
+78 .
+g’”icÚ
+-
+æickr
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f211'; }
+
+79 .
+g’”icÚ
+-
+vimeo
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f212'; }
+
+80 .
+g’”icÚ
+-
+youtube
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f213'; }
+
+81 .
+g’”icÚ
+-
+tumbÌ
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f214'; }
+
+82 .
+g’”icÚ
+-
+š¡ag¿m
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f215'; }
+
+83 .
+g’”icÚ
+-
+cod•’
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f216'; }
+
+86 .
+g’”icÚ
+-
+comm’t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f300'; }
+
+87 .
+g’”icÚ
+-
+ÿ‹gÜy
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f301'; }
+
+88 .
+g’”icÚ
+-
+g
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f302'; }
+
+89 .
+g’”icÚ
+-
+time
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f303'; }
+
+90 .
+g’”icÚ
+-
+u£r
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f304'; }
+
+91 .
+g’”icÚ
+-
+day
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f305'; }
+
+92 .
+g’”icÚ
+-
+w“k
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f306'; }
+
+93 .
+g’”icÚ
+-
+mÚth
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f307'; }
+
+94 .
+g’”icÚ
+-
+pšÃd
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f308'; }
+
+97 .
+g’”icÚ
+-
+£¬ch
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f400'; }
+
+98 .
+g’”icÚ
+-
+unzoom
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f401'; }
+
+99 .
+g’”icÚ
+-
+zoom
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f402'; }
+
+100 .
+g’”icÚ
+-
+show
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f403'; }
+
+101 .
+g’”icÚ
+-
+hide
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f404'; }
+
+102 .
+g’”icÚ
+-
+şo£
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f405'; }
+
+103 .
+g’”icÚ
+-
+şo£
+-
+®t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f406'; }
+
+104 .
+g’”icÚ
+-
+Œash
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f407'; }
+
+105 .
+g’”icÚ
+-
+¡¬
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f408'; }
+
+106 .
+g’”icÚ
+-
+home
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f409'; }
+
+107 .
+g’”icÚ
+-
+ma
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f410'; }
+
+108 .
+g’”icÚ
+-
+ed™
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f411'; }
+
+109 .
+g’”icÚ
+-
+»¶y
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f412'; }
+
+110 .
+g’”icÚ
+-
+ãed
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f413'; }
+
+111 .
+g’”icÚ
+-
+w¬nšg
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f414'; }
+
+112 .
+g’”icÚ
+-
+sh¬e
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f415'; }
+
+113 .
+g’”icÚ
+-
+©chm’t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f416'; }
+
+114 .
+g’”icÚ
+-
+loÿtiÚ
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f417'; }
+
+115 .
+g’”icÚ
+-
+checkm¬k
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f418'; }
+
+116 .
+g’”icÚ
+-
+m’u
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f419'; }
+
+117 .
+g’”icÚ
+-
+tİ
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f420'; }
+
+118 .
+g’”icÚ
+-
+mšimize
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f421'; }
+
+119 .
+g’”icÚ
+-
+maximize
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f422'; }
+
+120 .
+g’”icÚ
+-404:
+befÜe
+ { 
+cÚ‹Á
+: '\f423'; }
+
+121 .
+g’”icÚ
+-
+¥am
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f424'; }
+
+122 .
+g’”icÚ
+-
+summ¬y
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f425'; }
+
+123 .
+g’”icÚ
+-
+şoud
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f426'; }
+
+124 .
+g’”icÚ
+-
+key
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f427'; }
+
+125 .
+g’”icÚ
+-
+dÙ
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f428'; }
+
+126 .
+g’”icÚ
+-
+Ãxt
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f429'; }
+
+127 .
+g’”icÚ
+-
+´evious
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f430'; }
+
+128 .
+g’”icÚ
+-
+ex·nd
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f431'; }
+
+129 .
+g’”icÚ
+-
+cŞÏp£
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f432'; }
+
+130 .
+g’”icÚ
+-
+drİdown
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f433'; }
+
+131 .
+g’”icÚ
+-
+drİdown
+-
+Ëá
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f434'; }
+
+132 .
+g’”icÚ
+-
+tİ
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f435'; }
+
+133 .
+g’”icÚ
+-
+d¿ggabË
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f436'; }
+
+134 .
+g’”icÚ
+-
+phÚe
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f437'; }
+
+135 .
+g’”icÚ
+-
+£nd
+-
+to
+-
+phÚe
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f438'; }
+
+136 .
+g’”icÚ
+-
+¶ugš
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f439'; }
+
+137 .
+g’”icÚ
+-
+şoud
+-
+dowÆßd
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f440'; }
+
+138 .
+g’”icÚ
+-
+şoud
+-
+u¶ßd
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f441'; }
+
+139 .
+g’”icÚ
+-
+ex‹º®
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f442'; }
+
+140 .
+g’”icÚ
+-
+docum’t
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f443'; }
+
+141 .
+g’”icÚ
+-
+book
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f444'; }
+
+142 .
+g’”icÚ
+-
+cog
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f445'; }
+
+143 .
+g’”icÚ
+-
+uÇµrove
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f446'; }
+
+144 .
+g’”icÚ
+-
+ÿ¹
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f447'; }
+
+145 .
+g’”icÚ
+-
+·u£
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f448'; }
+
+146 .
+g’”icÚ
+-
+¡İ
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f449'; }
+
+147 .
+g’”icÚ
+-
+sk
+-
+back
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f450'; }
+
+148 .
+g’”icÚ
+-
+sk
+-
+ah—d
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f451'; }
+
+149 .
+g’”icÚ
+-
+¶ay
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f452'; }
+
+150 .
+g’”icÚ
+-
+bËt
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f453'; }
+
+151 .
+g’”icÚ
+-
+£nd
+-
+to
+-
+bËt
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f454'; }
+
+154 .
+g’”icÚ
+-
+u·¼ow
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f500'; }
+
+155 .
+g’”icÚ
+-
+righ¼ow
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f501'; }
+
+156 .
+g’”icÚ
+-
+dowÇ¼ow
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f502'; }
+
+157 .
+g’”icÚ
+-
+Ëá¬row
+:
+befÜe
+ { 
+cÚ‹Á
+: '\f503'; }
 
 	@footer.php
 
@@ -3685,45 +8413,167 @@ wp_foÙ”
 	ghtml
 >
 
-	@front-page-resposive.php
+	@front-page.php
 
 1 <?
 php
 
 
-4 iàĞ!
-defšed
-('ABSPATH')è
-	gex™
-;
+10 
+g‘_h—d”
+(); ?>
 
-25 <
+11 <
+süt
+ 
+	gty³
+="text/javascript">
+
+12 
+jQu”y
+(
+docum’t
+).
+»ady
+(
+	$funùiÚ
+(
+$
+) {
+
+13 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#foo2').
+	`ÿrouF»dS–
+({
+
+14 
+»¥Úsive
+ : 
+Œue
+,
+
+15 
+width
+ : 1200,
+
+16 
+süŞl
+ : {
+
+17 
+fx
+ : "crossfade",
+
+18 
+—sšg
+ : "linear",
+
+19 
+du¿tiÚ
+ : 1500
+
+21 
+™ems
+ : {
+
+22 
+width
+ : 1300,
+
+23 
+height
+ : 431,
+
+24 
+visibË
+ : 1
+
+26 
+´ev
+ : "#foo2_prev",
+
+27 
+Ãxt
+ : "#foo2_next"
+
+29 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#img_cÚš”').
+	`masÚry
+({
+
+30 
+cŞumnWidth
+: 420,
+
+31 
+™emS–eùÜ
+: '.tile_img_container',
+
+32 
+isF™Width
+: 
+Œue
+
+
+34 
+	}
+});
+
+35 </
+	gsüt
+>
+
+37 <
 div
  
 	gid
-="ã©u»d" 
+="´im¬y" 
 şass
-="grid col-940">
+="content-area">
 
-27 <
+38 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+39 <
 div
  
 şass
 ="html_carousel">
 
-28 <
+40 <
 div
  
 id
 ="foo2">
 
-29 <
+41 <
 div
  
 şass
 ="slide">
 
-30 <
+42 <
 img
  
 ¤c
@@ -3731,11 +8581,11 @@ img
 ®t
 ="carousel 1"/>
 
-31 <
+43 <
 div
 >
 
-32 <
+44 <
 h4
 >
 Text
@@ -3743,7 +8593,7 @@ Text
 •ic
  1</h4>
 
-33 <
+45 <
 p
 >
 Desü›»
@@ -3753,21 +8603,21 @@ Desü›»
 •ic
  1</p>
 
-34 </
+46 </
 div
 >
 
-35 </
+47 </
 div
 >
 
-36 <
+48 <
 div
  
 şass
 ="slide">
 
-37 <
+49 <
 img
  
 ¤c
@@ -3775,11 +8625,11 @@ img
 ®t
 ="carousel 2"/>
 
-38 <
+50 <
 div
 >
 
-39 <
+51 <
 h4
 >
 Text
@@ -3787,7 +8637,7 @@ Text
 •ic
  2</h4>
 
-40 <
+52 <
 p
 >
 Desü›»
@@ -3797,19 +8647,19 @@ Desü›»
 •ic
  2</p>
 
-41 </
+53 </
 div
 >
 
-42 </
+54 </
 div
 >
 
-43 </
+55 </
 div
 >
 
-44 <
+56 <
 a
  
 şass
@@ -3823,7 +8673,7 @@ h»f
 ´ev
 </span></a>
 
-45 <
+57 <
 a
  
 şass
@@ -3837,233 +8687,83 @@ h»f
 Ãxt
 </span></a>
 
-46 <
+58 <
 div
  
 şass
 ="clearfix"></div>
 
-47 </
+59 </
 div
 >
 
-49 <
-süt
+60 <
+div
  
-ty³
-="text/javascript">
+şass
+="horizontalRule html_carousel"></div>
 
-50 
-jQu”y
-(
-docum’t
-).
-»ady
-(
-	$funùiÚ
-(
-$
-) {
+61 <
+i
+><
+h3
+ 
+şass
+="‹xt-ûÁ”">
+ReûÁ
+ 
+adv’tu»s
+</h3></i>
 
-51 
-	`$
-("#foo2").
-	`ÿrouF»dS–
-({
+62 <?
+php
 
-52 
-»¥Úsive
- : 
-Œue
-,
-
-53 
-süŞl
- : {
-
-54 
-fx
- : "crossfade",
-
-55 
-—sšg
- : "linear",
-
-56 
-du¿tiÚ
- : 750
-
-58 
-™ems
- : {
-
-59 
-width
- : 1400,
-
-60 
-height
- : 467,
-
-61 
-visibË
- : 1
 
 63 
-´ev
- : "#foo2_prev",
+$blog_qu”y
+ = 
+Ãw
+ 
+WP_Qu”y
+Ğ
+¬¿y
+Ğ'po¡_ty³' => 'po¡', '·ged' => 
+$·ged
+ , 'po¡s_³r_·ge' => 9, 'ÿ‹gÜy_Çme' => 
+$ÿt_Çme
+, '£¬ch' => 
+$£¬ch
+));
 
 64 
-Ãxt
- : "#foo2_next"
-
-71 
-	`$
+li¡_po¡s
 (
-wšdow
-).
-	`lßd
-(
-	`funùiÚ
-(){ $('#img_cÚš”').
-	`masÚry
-({
+$blog_qu”y
+);
 
-72 
-cŞumnWidth
-: 420,
-
-73 
-™emS–eùÜ
-: '.tile_img_container'
-
-75 
-	}
-});
-
-76 </
-	gsüt
->
-
-78 <
-div
- 
-	gşass
-="grid cŞ-940e_cÚt" 
-id
-="img_container">
-
-79 <?
-php
-
-
-80 
-$¬gs
- = 
-¬¿y
-( 'numberposts' => '20' );
-
-81 
-	g$»ûÁ_po¡s
- = 
-wp_g‘_»ûÁ_po¡s
-Ğ
-$¬gs
- );
-
-82 
-	$fÜ—ch
-Ğ
-$»ûÁ_po¡s
- 
-as
- 
-$»ûÁ
- ){
-
-83 
-echo
- '<div class="tile_img_container">';
-
-84 
-echo
- '<¨h»f="' . 
-	`g‘_³rm®šk
-(
-$»ûÁ
-["ID"]è. '"™Ë="Look '.
-	`esc_©Œ
-($recent["post_title"]).'" >';
-
-85 ià(
-	`has_po¡_thumbÇ
-(
-$»ûÁ
-['ID'])) {
-
-86 
-echo
- 
-	`g‘_the_po¡_thumbÇ
-(
-$»ûÁ
-['ID'], 'large');
-
-89 
-echo
- '<div class="placeholder">';
-
-90 
-echo
- '</div>';
-
-92 
-echo
- '</a>';
-
-93 
-echo
- '<h2 cÏss="h2_img_cÚš”">' . 
-$»ûÁ
-["post_title"] . '</h2>';
-
-94 
-echo
- '</div>';
-
-95 
-	}
-}
-
-97 </
-	gdiv
-><!-- 
-’d
- 
-	gof
- .
-	gcŞ
--940 -->
-
-98 </
-	gdiv
-><!-- 
-’d
- 
-	gof
- #featured -->
-
-100 <?
-php
-
-
-101 
-g‘_sideb¬
-('home');
-
-102 
-g‘_foÙ”
+65 
+wp_»£t_po¡d©a
 ();
+
+67 </
+	gdiv
+><!-- #content -->
+
+68 </
+	gdiv
+><!-- #primary -->
+
+70 <?
+php
+ 
+g‘_sideb¬
+(); ?>
+
+71 <?
+php
+ 
+g‘_foÙ”
+(); ?>
 
 	@functions.php
 
@@ -4147,7 +8847,7 @@ funùiÚ
 
 100 
 	`£t_po¡_thumbÇ_size
-Ğ604, 270, 
+Ğ1300, 800, 
 Œue
  );
 
@@ -5215,6 +9915,636 @@ funùiÚ
 add_aùiÚ
 ( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
 
+535 
+funùiÚ
+ 
+	$li¡_ÿ‹gÜy_¬¿y
+(
+$groupName
+, 
+$ÿ‹gÜ›s
+, 
+$Ãw_u¾
+) {
+
+536 
+echo
+ '<div class="cat_container">';
+
+537 
+echo
+ '<i><h4 cÏss="ul_h—dšg">' . 
+$groupName
+ . '</h4></i>';
+
+538 
+echo
+ '<ul class="no_style">';
+
+539 
+	`fÜ—ch
+(
+$ÿ‹gÜ›s
+ 
+as
+ 
+$ÿ‹gÜy
+) {
+
+540 ià(
+	`¡½os
+(
+$Ãw_u¾
+ , 
+$ÿ‹gÜy
+->
+¦ug
+è!=ğ
+çl£
+) {
+
+541 
+echo
+ '<l˜şass="checkbox checked"><¨h»f=' . 
+	`¡r_»¶aû
+(
+$ÿ‹gÜy
+->
+¦ug
+, '', 
+$Ãw_u¾
+è. '>' . $ÿ‹gÜy->
+Çme
+ . '(' . $ÿ‹gÜy->
+couÁ
+ . ')' . '</a></li>';
+
+543 
+echo
+ '<l˜şass="checkboxƒm±y"><¨h»f=' . 
+$Ãw_u¾
+ . '/' . 
+$ÿ‹gÜy
+->
+¦ug
+ . '>' . $ÿ‹gÜy->
+Çme
+ . '(' . $ÿ‹gÜy->
+couÁ
+ . ')' . '</a></li>';
+
+546 
+echo
+ '</ul>';
+
+547 
+echo
+ '</div><!--ƒnd of .col-940 -->';
+
+548 
+	}
+}
+
+552 
+funùiÚ
+ 
+	$li¡_po¡s
+(
+$blog_qu”y
+, 
+$wp_qu”y
+) {
+
+553 iàĞ
+$blog_qu”y
+->
+	`have_po¡s
+() ) :
+
+555 
+echo
+ '<div class="tile_cont" id="img_container">';
+
+556  
+$blog_qu”y
+->
+	`have_po¡s
+(èè: $blog_qu”y->
+	`the_po¡
+();
+
+559 <?
+php
+
+
+560 
+echo
+ '<div class="tile_img_container">';
+
+561 
+echo
+ '<¨h»f="' . 
+	`g‘_³rm®šk
+() . '" >';
+
+562 ià(
+	`has_po¡_thumbÇ
+()) {
+
+563 
+echo
+ 
+	`the_po¡_thumbÇ
+('large');
+
+566 
+echo
+ '<div class="placeholder">';
+
+567 
+echo
+ '</div>';
+
+569 
+echo
+ '</a>';?>
+
+571 <?
+php
+
+
+572 
+echo
+ '<¨şass="no_decÜ©iÚ" h»f="' . 
+	`g‘_³rm®šk
+() . '" >';
+
+573 
+echo
+ '<h5 cÏss="sm®l_m¬gš">' . 
+	`g‘_the_t™Ë
+() . '</h5>';
+
+574 
+echo
+ '</a>';?>
+
+575 <
+div
+ 
+şass
+="entry-meta">
+
+576 <?
+php
+ 
+	`tw’tythœ‹’_’Œy_m‘a
+(); ?>
+
+577 <?
+php
+ 
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+578 </
+div
+><!-- .
+’Œy
+-
+m‘a
+ -->
+
+579 <
+div
+ 
+şass
+="entry-summary">
+
+580 <?
+php
+ 
+	`the_exû½t
+(); ?>
+
+581 </
+div
+><!-- .
+’Œy
+-
+summ¬y
+ -->
+
+583 <?
+php
+
+
+584 
+echo
+ '</div>';
+
+587 <?
+php
+
+
+588 
+’dwhe
+;
+
+589 
+echo
+ '</div><!--ƒnd of .col-940 -->';
+
+591 iàĞ
+$blog_qu”y
+->
+max_num_·ges
+ > 1 ) :
+
+593 <
+div
+ 
+şass
+="navigation html_carousel">
+
+594 <
+div
+ 
+şass
+="´eviou Şd”_po¡s"><?
+php
+ 
+	`Ãxt_po¡s_lšk
+Ğ
+	`__
+Ğ'&#8249; Old”…o¡s', '»¥Úsive' ), 
+$blog_qu”y
+->
+max_num_·ges
+ ); ?></div>
+
+595 <
+div
+ 
+şass
+="ÃxˆÃw”_po¡s"><?
+php
+ 
+	`´evious_po¡s_lšk
+Ğ
+	`__
+Ğ'New”…o¡ &#8250;', '»¥Úsive' ), 
+$blog_qu”y
+->
+max_num_·ges
+ ); ?></div>
+
+596 </
+div
+><!-- 
+’d
+ 
+of
+ .
+Çvig©iÚ
+ -->
+
+597 <?
+php
+
+
+598 
+’dif
+;
+
+602 
+	`g‘_‹m¶©e_·¹
+( 'loop-no-posts' );
+
+604 
+’dif
+;
+
+605 
+	}
+}
+
+611 
+funùiÚ
+ 
+	$g‘_ÿ‹gÜy_ªd
+(
+$ÿt_Çme
+) {
+
+612 
+$ÿ‹gÜ›s
+ = 
+	`g‘_ÿ‹gÜ›s
+();
+
+613 
+$¦ugC©s
+ = 
+	`¬¿y
+();
+
+615 
+	`fÜ—ch
+(
+$ÿ‹gÜ›s
+ 
+as
+ 
+$ÿt
+) {
+
+616 
+$¦ugC©s
+[
+$ÿt
+->
+¦ug
+] = $cat;
+
+619 
+$ÿt_Çme_¬¿y
+ = 
+	`ex¶ode
+(',' , 
+$ÿt_Çme
+);
+
+620 
+$ÿt_id_¬¿y
+ = 
+	`¬¿y
+();
+
+622 
+	`fÜ—ch
+(
+$ÿt_Çme_¬¿y
+ 
+as
+ 
+$ÿt
+) {
+
+623 
+$ÿt_id_¬¿y
+[] = 
+$¦ugC©s
+[
+$ÿt
+]->
+ÿt_ID
+;
+
+626  
+$ÿt_id_¬¿y
+;
+
+627 
+	}
+}
+
+633 
+funùiÚ
+ 
+	$add_qu”y_v¬s
+(
+$aV¬s
+) {
+
+634 
+$aV¬s
+[] = "search";
+
+635 
+$aV¬s
+[] = "categories";
+
+636 
+$aV¬s
+[] = "mode";
+
+637  
+$aV¬s
+;
+
+638 
+	}
+}
+
+641 
+add_f‹r
+('query_vars', 'add_query_vars');
+
+647 
+funùiÚ
+ 
+	$add_»wr™e_ruËs
+(
+$aRuËs
+) {
+
+653 
+$aNewRuËs
+ = 
+	`¬¿y
+('explore/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
+
+657 #$aNewRuË ğ
+	`¬¿y
+('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
+
+658 
+$aRuËs
+ = 
+$aNewRuËs
+ + $aRules;
+
+659  
+$aRuËs
+;
+
+660 
+	}
+}
+
+664 
+add_f‹r
+('rewrite_rules_array', 'add_rewrite_rules');
+
+670 
+funùiÚ
+ 
+	$fb_chªge_£¬ch_u¾_»wr™e
+() {
+
+671 iàĞ
+	`is£t
+Ğ
+$_GET
+['search'] ) ) {
+
+672 
+	`wp_»dœeù
+Ğ
+	`home_u¾
+Ğ"/ex¶Üe/mode/št/£¬ch/" ) . 
+	`u¾’code
+Ğ
+	`g‘_qu”y_v¬
+( 'search' ) ) . "/categories/" . urlencode (get_query_var( 'categories')));
+
+673 
+	`ex™
+();
+
+675 
+	}
+}
+
+676 
+add_aùiÚ
+( 'template_redirect', 'fb_change_search_url_rewrite' );
+
+682 
+funùiÚ
+ 
+	$ş—r_»¶aûdivİ’
+(
+$cÚ‹Á
+){
+
+683  
+	`¡r_»¶aû
+("<div>","<p>", 
+$cÚ‹Á
+);
+
+684 
+	}
+}
+
+685 
+add_f‹r
+('the_content', 'clear_replacedivopen');
+
+688 
+funùiÚ
+ 
+	$ş—r_»¶aûdivşo£
+(
+$cÚ‹Á
+){
+
+689  
+	`¡r_»¶aû
+("</div>","</p>", 
+$cÚ‹Á
+);
+
+690 
+	}
+}
+
+691 
+add_f‹r
+('the_content', 'clear_replacedivclose');
+
+694 
+funùiÚ
+ 
+	$ş—r_em±yp
+(
+$cÚ‹Á
+){
+
+695  
+	`¡r_»¶aû
+("<p></p>","", 
+$cÚ‹Á
+);
+
+696 
+	}
+}
+
+697 
+add_f‹r
+('the_content', 'clear_emptyp');
+
+700 
+funùiÚ
+ 
+	$»¶aû_image_size
+(
+$cÚ‹Á
+){
+
+701  
+	`¡r_»¶aû
+("s640","s800", 
+$cÚ‹Á
+);
+
+702 
+	}
+}
+
+703 
+add_f‹r
+('the_content', 'replace_image_size');
+
+706 
+funùiÚ
+ 
+	$»¶aû_image_width
+(
+$cÚ‹Á
+){
+
+707  
+	`”eg_»¶aû
+("width=\"[0-9][0-9][0-9]\"","", 
+$cÚ‹Á
+);
+
+708 
+	}
+}
+
+709 
+add_f‹r
+('the_content', 'replace_image_width');
+
+712 
+funùiÚ
+ 
+	$»¶aû_image_height
+(
+$cÚ‹Á
+){
+
+713  
+	`”eg_»¶aû
+("height=\"[0-9][0-9][0-9]\"","¡yË=\"m¬gš-Ëá:auto;m¬gš-right:auto;di¥Ïy:block;\"", 
+$cÚ‹Á
+);
+
+714 
+	}
+}
+
+715 
+add_f‹r
+('the_content', 'replace_image_height');
+
 	@gallery-main.php
 
 1 <?
@@ -5257,7 +10587,7 @@ wšdow
 	`lßd
 (
 	`funùiÚ
-(){ $('#g®Ëry_cÚš”').
+(){ $('#masÚry_cÚš”').
 	`masÚry
 ({
 
@@ -5267,173 +10597,285 @@ cŞumnWidth
 
 27 
 ™emS–eùÜ
-: '.img_container'
+: '.img_container',
 
-29 
+28 
+isF™Width
+: 
+Œue
+
+
+30 
 	}
 });
 
-31 </
+32 </
 	gsüt
 >
-
-34 <
-div
- 
-	gid
-="cÚ‹Á" 
-şass
-="<?phpƒcho implode( ' ',„esponsive_get_content_classes() ); ?>">
 
 35 <
 div
  
+	gid
+="maš" 
 şass
-="grid cŞ-940e_cÚt" 
-id
-="gallery_container">
+="site-main">
 
-36 <?
-php
-
-
-38 
-echo
- '<div class="img_container">';
-
-39 
-	gecho
- '<a href="mountains"itle="Look…ostitle" >';
-
-40 
-	gecho
- '<div class="placeholder_gallery">';
-
-41 
-	gecho
- '</div>';
-
-42 
-	gecho
- '</a>';
-
-43 
-	gecho
- '<h2 class="h2_img_container">Mountains</h2>';
-
-44 
-	gecho
- '</div>';
-
-46 
-	gecho
- '<div class="img_container">';
-
-47 
-	gecho
- '<a href="climbing"itle="Look…ostitle" >';
-
-48 
-	gecho
- '<div class="placeholder_gallery">';
-
-49 
-	gecho
- '</div>';
-
-50 
-	gecho
- '</a>';
-
-51 
-	gecho
- '<h2 class="h2_img_container">Climbing</h2>';
-
-52 
-	gecho
- '</div>';
-
-54 
-	gecho
- '<div class="img_container">';
-
-55 
-	gecho
- '<a href="biking"itle="Look…ostitle" >';
-
-56 
-	gecho
- '<div class="placeholder_gallery">';
-
-57 
-	gecho
- '</div>';
-
-58 
-	gecho
- '</a>';
-
-59 
-	gecho
- '<h2 class="h2_img_container">Biking</h2>';
-
-60 
-	gecho
- '</div>';
-
-62 
-	gecho
- '<div class="img_container">';
-
-63 
-	gecho
- '<a href="people"itle="Look…ostitle" >';
-
-64 
-	gecho
- '<div class="placeholder_gallery">';
-
-65 
-	gecho
- '</div>';
-
-66 
-	gecho
- '</a>';
-
-67 
-	gecho
- '<h2 class="h2_img_container">People</h2>';
-
-68 
-	gecho
- '</div>';
-
-70 </
-	gdiv
-><!-- 
-’d
+36 <
+div
  
-	gof
- .
-	gcŞ
--940 -->
+id
+="´im¬y" 
+şass
+="content-area">
+
+37 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á" 
+rŞe
+="main">
+
+38 <
+p
+> 
+this
+ 
+is
+ 
+wh”e
+ 
+the
+ 
+d©a
+ i 
+b“šg
+ 
+di¥Ïyed
+ </p>
+
+39 <
+div
+ 
+şass
+="masÚry_cÚš” masÚry" 
+id
+="masonry_container">
+
+40 <!-- 
+MÚšs
+ -->
+
+41 <
+div
+ 
+şass
+="img_container">
+
+42 <
+a
+ 
+h»f
+="mouÁašs" 
+t™Ë
+="Look…ostitle" >
+
+43 <
+div
+ 
+şass
+="placeholder_gallery">
+
+44 </
+div
+>
+
+45 </
+a
+>
+
+46 <
+h2
+ 
+şass
+="h2_img_cÚš”">
+MouÁašs
+</h2>
+
+47 </
+div
+>
+
+48 <!-- 
+Climbšg
+ -->
+
+49 <
+div
+ 
+şass
+="img_container">
+
+50 <
+a
+ 
+h»f
+="şimbšg" 
+t™Ë
+="Look…ostitle" >
+
+51 <
+div
+ 
+şass
+="placeholder_gallery">
+
+52 </
+div
+>
+
+53 </
+a
+>
+
+54 <
+h2
+ 
+şass
+="h2_img_cÚš”">
+Climbšg
+</h2>
+
+55 </
+div
+>
+
+56 <!-- 
+Bikešg
+ -->
+
+57 <
+div
+ 
+şass
+="img_container">
+
+58 <
+a
+ 
+h»f
+="bikšg" 
+t™Ë
+="Look…ostitle" >
+
+59 <
+div
+ 
+şass
+="placeholder_gallery">
+
+60 </
+div
+>
+
+61 </
+a
+>
+
+62 <
+h2
+ 
+şass
+="h2_img_cÚš”">
+Bikšg
+</h2>
+
+63 </
+div
+>
+
+64 <!-- 
+PeİË
+ -->
+
+65 <
+div
+ 
+şass
+="img_container">
+
+66 <
+a
+ 
+h»f
+="³İË" 
+t™Ë
+="Look…ostitle" >
+
+67 <
+div
+ 
+şass
+="placeholder_gallery">
+
+68 </
+div
+>
+
+69 </
+a
+>
+
+70 <
+h2
+ 
+şass
+="h2_img_cÚš”">
+PeİË
+</h2>
 
 71 </
-	gdiv
+div
+>
+
+72 </
+div
 ><!-- 
 ’d
  
-	gof
+of
+ .
+cŞ
+-940 -->
+
+73 </
+div
+><!-- 
+’d
+ 
+of
  #content -->
 
-73 <?
-php
+74 </
+div
+><!-- 
+’d
  
-g‘_sideb¬
-(); ?>
+of
+ #content -->
 
-74 <?
+75 </
+div
+><!-- 
+’d
+ 
+of
+ #content -->
+
+76 <?
 php
  
 g‘_foÙ”
@@ -5501,42 +10943,38 @@ cŞumnWidth
 	gsüt
 >
 
-34 <
+33 <
 div
  
 	gid
+="´im¬y" 
+şass
+="content-area">
+
+34 <
+div
+ 
+id
 ="cÚ‹Á" 
 şass
-="<?phpƒcho implode( ' ',„esponsive_get_content_classes() ); ?>">
+="s™e-cÚ‹Á" 
+rŞe
+="main">
 
 36 <?
 php
- ià(
-	$have_po¡s
-()) : ?>
+ ?>
 
-38 <?
+37 <?
 php
- 
+  
 	$have_po¡s
-()è: 
+(èè: 
 	`the_po¡
 (); ?>
 
-40 <?
-php
- 
-	`g‘_‹m¶©e_·¹
-( 'loop-header' ); ?>
-
-42 <?
-php
- 
-	`»¥Úsive_’Œy_befÜe
-(); ?>
-
-43 <
-div
+39 <
+¬tişe
  
 id
 ="po¡-<?ph°the_ID(); ?>" <?
@@ -5545,141 +10983,141 @@ php
 	`po¡_şass
 (); ?>>
 
-44 <?
-php
+40 <
+h—d”
  
-	`»¥Úsive_’Œy_tİ
-(); ?>
+şass
+="entry-header">
 
-46 <?
+41 <?
 php
- 
-	`g‘_‹m¶©e_·¹
-( 'post-meta-page' ); ?>
+ iàĞ
+	`has_po¡_thumbÇ
+(è&& ! 
+	$po¡_·sswÜd_»quœed
+() ) : ?>
 
-48 <
+42 <
 div
  
 şass
-="po¡-’Œy" 
-id
-="post-entry">
+="entry-thumbnail">
 
-49 <?
+43 <?
+php
+ 
+	`the_po¡_thumbÇ
+(); ?>
+
+44 </
+div
+>
+
+45 <?
+php
+ 
+’dif
+; ?>
+
+47 <
+h1
+ 
+şass
+="’Œy-t™Ë"><?
+php
+ 
+	`the_t™Ë
+(); ?></h1>
+
+48 </
+h—d”
+><!-- .
+’Œy
+-header -->
+
+50 <
+div
+ 
+şass
+="entry-content">
+
+51 <?
 php
  
 	`the_cÚ‹Á
-(
-	`__
-('Read more &#8250;', 'responsive')); ?>
+(); ?>
 
-50 <?
+52 <?
 php
  
 	`wp_lšk_·ges
-(
+Ğ
 	`¬¿y
-('befÜe' => '<div cÏss="·gš©iÚ">' . 
+Ğ'befÜe' => '<div cÏss="·ge-lšks"><¥ª cÏss="·ge-lšks-t™Ë">' . 
 	`__
-('Pages:', 'responsive'), 'after' => '</div>')); ?>
+( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 
-51 </
+53 </
 div
-><!-- 
-’d
- 
-of
- .
-po¡
--
+><!-- .
 ’Œy
+-
+cÚ‹Á
  -->
 
-53 <?
-php
+55 <
+foÙ”
  
-	`g‘_‹m¶©e_·¹
-( 'post-data' ); ?>
+şass
+="entry-meta">
 
-55 <?
+56 <?
 php
  
-	`»¥Úsive_’Œy_bÙtom
-(); ?>
+	`ed™_po¡_lšk
+Ğ
+	`__
+( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 
-56 </
-div
-><!-- 
-’d
- 
-of
- #po¡-<?
-php
- 
-	`the_ID
-(); ?> -->
+57 </
+foÙ”
+><!-- .
+’Œy
+-
+m‘a
+ -->
 
-57 <?
-php
- 
-	`»¥Úsive_’Œy_aá”
-(); ?>
-
-59 <?
-php
- 
-	`»¥Úsive_comm’ts_befÜe
-(); ?>
+58 </
+¬tişe
+><!-- #post -->
 
 60 <?
 php
  
 	`comm’ts_‹m¶©e
-Ğ'', 
-Œue
- ); ?>
+(); ?>
 
 61 <?
 php
  
-	`»¥Úsive_comm’ts_aá”
-(); ?>
-
-63 <?
-php
-
-
-64 
 ’dwhe
-;
+; ?>
 
-66 
-	`g‘_‹m¶©e_·¹
-( 'loop-nav' );
-
-70 
-	`g‘_‹m¶©e_·¹
-( 'loop-no-posts' );
-
-72 
-’dif
-;
-
-75 </
+63 </
 div
-><!-- 
-’d
- 
-of
- #content -->
+><!-- #content -->
 
-77 <?
+64 </
+div
+><!-- #primary -->
+
+66 <?
 php
  
 	`g‘_sideb¬
 (); ?>
 
-78 <?
+67 <?
 php
  
 	`g‘_foÙ”
@@ -7267,6 +12705,240 @@ php
 	`g‘_foÙ”
 (); ?>
 
+	@my-archive.php
+
+1 <?
+php
+
+
+4 iàĞ!
+defšed
+('ABSPATH')è
+	gex™
+;
+
+22 
+g‘_h—d”
+(); ?>
+
+24 <
+süt
+ 
+	gty³
+="text/javascript">
+
+25 
+jQu”y
+(
+docum’t
+).
+»ady
+(
+	$funùiÚ
+(
+$
+) {
+
+26 
+	`$
+(
+wšdow
+).
+	`lßd
+(
+	`funùiÚ
+(){ $('#mÚth_div').
+	`masÚry
+({
+
+27 
+cŞumnWidth
+: 425,
+
+28 
+™emS–eùÜ
+: '.month_container'
+
+30 
+	}
+});
+
+31 </
+	gsüt
+>
+
+33 <?
+	gphp
+
+
+36 <
+div
+ 
+	gid
+="maš" 
+şass
+="site-main">
+
+37 <
+div
+ 
+id
+="´im¬y" 
+şass
+="content-area">
+
+38 <
+div
+ 
+id
+="cÚ‹Á" 
+şass
+="s™e-cÚ‹Á html_ÿrou£l" 
+rŞe
+="main">
+
+39 <?
+php
+
+
+40 
+$blog_qu”y
+ = 
+Ãw
+ 
+WP_Qu”y
+Ğ
+¬¿y
+( 'post_type' => 'post', 'posts_per_page' => 500));
+
+41 
+	gecho
+ '<i><h3 cÏss="‹xt-ûÁ”"> Ov”v›w: ' . 
+	g$blog_qu”y
+->
+	gpo¡_couÁ
+ . '‡dventures , ' . $blog_query->post_count * 2 . ' days spent outside</h3></i>';
+
+42 
+	gecho
+ '<div class="horizontalRule"></div>';
+
+43 
+	gecho
+ '<div id="month_div">';
+
+44 iàĞ
+	g$blog_qu”y
+->
+	$have_po¡s
+() ) :
+
+45  
+$blog_qu”y
+->
+	$have_po¡s
+(èè: 
+$blog_qu”y
+->
+	`the_po¡
+();
+
+46 
+$cu¼’tMÚth
+ = 
+	`g‘_the_d©e
+('m');
+
+47 ià(
+	`em±y
+(
+$´evMÚth
+è|| 
+$cu¼’tMÚth
+ != $prevMonth) {
+
+49 ià(!
+	`em±y
+(
+$´evMÚth
+)) {
+
+50 
+$’dšgUL
+ = '</ul></div>';
+
+52 
+echo
+ 
+$’dšgUL
+ . '<div cÏss="mÚth_cÚš”"><h5 cÏss="ul_h—dšg">' . 
+	`g‘_the_d©e
+( 'F') . ', ' . get_the_date('Y') . '</h5><ul class="no_style">';
+
+53 
+	}
+}
+
+54 
+	gecho
+ '<li>' . '<¨h»f="' . 
+g‘_³rm®šk
+(è. '">' . 
+g‘_the_d©e
+('j, M - 'è.
+g‘_the_t™Ë
+() . '</a></li>';
+
+55 
+	g$´evMÚth
+ = 
+$cu¼’tMÚth
+;
+
+56 
+	g’dwhe
+;
+
+58 
+	gecho
+ '</ul></div>';
+
+59 
+	g’dif
+;
+
+60 
+	gecho
+ '</div>';
+
+62 
+wp_»£t_po¡d©a
+();
+
+64 </
+	gdiv
+>
+
+65 </
+	gdiv
+>
+
+66 </
+	gdiv
+><!-- 
+’d
+ 
+	gof
+ #cÚ‹Á-
+	gfuÎ
+ -->
+
+68 <?
+php
+ 
+g‘_foÙ”
+(); ?>
+
 	@page.php
 
 1 <?
@@ -7456,6 +13128,3152 @@ php
  
 	`g‘_foÙ”
 (); ?>
+
+	@rtl.css
+
+41 
+	gbody
+ {
+
+42 
+	gdœeùiÚ
+: 
+¹l
+;
+
+43 
+	gunicode
+-
+	gbidi
+: 
+embed
+;
+
+46 
+	ga
+ {
+
+47 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+50 
+blockquÙe
+ 
+	gblockquÙe
+ {
+
+51 
+	gm¬gš
+-
+	gËá
+: 0;
+
+52 
+	gm¬gš
+-
+	gright
+: 24
+px
+;
+
+55 
+	gm’u
+,
+
+56 
+	gŞ
+,
+
+57 
+	gul
+ {
+
+58 
+	g·ddšg
+: 0 40
+px
+ 0 0;
+
+61 
+	gÿ±iÚ
+,
+
+62 
+	gth
+,
+
+63 
+	gtd
+ {
+
+64 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+67 
+	gtd
+ {
+
+68 
+	g·ddšg
+-
+	gËá
+: 10
+px
+;
+
+69 
+	g·ddšg
+-
+	gright
+: 0;
+
+72 .
+	gassi¡ive
+-
+	g‹xt
+:
+focus
+ {
+
+73 
+Ëá
+:‡uto;
+
+74 
+	gright
+: 5
+px
+;
+
+88 .
+	gs™e
+-
+	gh—d”
+ > 
+	ga
+:
+fœ¡
+-
+chd
+ {
+
+89 
+di¥Ïy
+: 
+šh”™
+;
+
+92 .
+	gs™e
+-
+	gdesütiÚ
+ {
+
+93 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+103 
+	gul
+.
+	gÇv
+-
+	gm’u
+,
+
+104 
+	gdiv
+.
+	gÇv
+-
+	gm’u
+ > 
+	gul
+ {
+
+105 
+	gm¬gš
+: 0 -20
+px
+ 0 0;
+
+106 
+	g·ddšg
+: 0 0 0 40
+px
+;
+
+109 .
+	gÇv
+-
+	gm’u
+ .
+	gsub
+-menu,
+
+110 .
+	gÇv
+-
+	gm’u
+ .
+	gchd»n
+ {
+
+111 : 
+right
+;
+
+112 
+	gËá
+:‡uto;
+
+113 
+	gright
+: -2
+px
+;
+
+116 .
+	gÇv
+-
+	gm’u
+ .
+	gsub
+-
+m’u
+ 
+	gul
+,
+
+117 .
+	gÇv
+-
+	gm’u
+ .
+chd»n
+ 
+	gul
+ {
+
+118 
+	gbÜd”
+-
+	gËá
+: 2
+px
+ 
+sŞid
+ #f7f5e7;
+
+119 
+	gbÜd”
+-
+	gright
+: 0;
+
+120 
+	gËá
+:‡uto;
+
+121 
+	gright
+: 100%;
+
+124 .
+	gmaš
+-
+	gÇvig©iÚ
+ .
+	g£¬ch
+-
+	gfÜm
+ {
+
+125 
+	gËá
+: 0;
+
+126 
+	gright
+:‡uto;
+
+129 .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gf›ld
+ {
+
+130 
+	gbackground
+-
+	gpos™iÚ
+: 98% 
+ûÁ”
+;
+
+131 
+	g·ddšg
+: 0 34
+px
+ 0 0;
+
+134 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t_·ge_™em
+ > 
+	ga
+,
+
+135 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t_·ge_ªû¡Ü
+ > 
+	ga
+,
+
+136 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t
+-m’u-
+	g™em
+ > 
+	ga
+,
+
+137 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t
+-m’u-
+	gªû¡Ü
+ > 
+	ga
+ {
+
+138 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+141 .
+	gm’u
+-
+	gtoggË
+ {
+
+142 
+	g·ddšg
+-
+	gËá
+: 0;
+
+143 
+	g·ddšg
+-
+	gright
+: 20
+px
+;
+
+152 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+153 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+154 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+155 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+156 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+157 
+	g·ddšg
+-
+	gright
+: 60
+px
+;
+
+166 .
+	g’Œy
+-
+	gm‘a
+ > 
+	g¥ª
+ {
+
+167 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+168 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+171 .
+	g’Œy
+-
+	gm‘a
+ > 
+	g¥ª
+:
+Ï¡
+-
+chd
+ {
+
+172 
+m¬gš
+-
+Ëá
+: 0;
+
+173 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+176 .
+	gã©u»d
+-
+	gpo¡
+:
+befÜe
+ {
+
+177 
+m¬gš
+-
+Ëá
+: 2
+px
+;
+
+178 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+181 .
+	g’Œy
+-
+	gm‘a
+ .
+d©e
+ 
+	ga
+:
+befÜe
+ {
+
+182 
+m¬gš
+-
+Ëá
+: 2
+px
+;
+
+185 .
+	gcomm’ts
+-
+lšk
+ 
+	ga
+:
+befÜe
+ {
+
+186 
+m¬gš
+-
+Ëá
+: 2
+px
+;
+
+187 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+190 .
+	ggs
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+191 
+m¬gš
+-
+Ëá
+: 2
+px
+;
+
+194 .
+	ged™
+-
+lšk
+ 
+	ga
+:
+befÜe
+ {
+
+195 
+m¬gš
+-
+Ëá
+: 2
+px
+;
+
+198 .
+	g·ge
+-
+	glšks
+ .·ge-lšks-
+	gt™Ë
+ {
+
+199 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+200 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+208 .
+	gg®Ëry
+ {
+
+209 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+210 
+	gm¬gš
+-
+	gright
+: -4
+px
+;
+
+213 .
+	gg®Ëry
+-
+	g™em
+ {
+
+214 : 
+right
+;
+
+215 
+	gm¬gš
+: 0 0 4
+px
+ 4px;
+
+218 .
+	gg®Ëry
+-
+™em
+ 
+	ga
+ {
+
+219 
+	gdi¥Ïy
+: 
+šlše
+;
+
+228 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+ {
+
+229 
+	gdi¥Ïy
+: 
+šlše
+;
+
+232 .
+	gfÜm©
+-
+aside
+ 
+	gc™e
+:
+befÜe
+ {
+
+233 
+cÚ‹Á
+: 
+nÜm®
+;
+
+234 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+237 .
+	gfÜm©
+-
+aside
+ 
+	gc™e
+:
+aá”
+ {
+
+238 
+cÚ‹Á
+: "\2014";
+
+239 
+	gm¬gš
+-
+	gËá
+: 5
+px
+;
+
+242 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+ {
+
+243 : 
+right
+;
+
+244 -
+	gwebk™
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+245 -
+	gmoz
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+246 -
+	gms
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+247 -
+	go
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+248 
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+251 .
+	gfÜm©
+-
+	gaudio
+ .audio-
+	gcÚ‹Á
+ {
+
+252 
+	gbackground
+-
+	gpos™iÚ
+: 
+right
+ 
+tİ
+;
+
+253 : 
+Ëá
+;
+
+254 
+	g·ddšg
+-
+	gËá
+: 0;
+
+255 
+	g·ddšg
+-
+	gright
+: 35
+px
+;
+
+258 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gm‘a
+ .
+d©e
+ 
+	ga
+:
+befÜe
+ {
+
+259 
+m¬gš
+-
+Ëá
+: 4
+px
+;
+
+260 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+263 .
+	gfÜm©
+-
+	gimage
+ .
+	gwp
+-
+	gÿ±iÚ
+-
+	g‹xt
+ {
+
+264 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+267 .
+	gfÜm©
+-
+	glšk
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+268 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+269 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+272 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+273 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+274 
+	g·ddšg
+-
+	gËá
+: 0;
+
+275 
+	g·ddšg
+-
+	gright
+: 35
+px
+;
+
+278 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+279 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+280 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+281 
+	g·ddšg
+-
+	gright
+: 95
+px
+;
+
+284 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+285 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+286 
+Ëá
+:‡uto;
+
+287 
+	gright
+: 10
+px
+;
+
+290 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+291 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+292 
+Ëá
+:‡uto;
+
+293 
+	gright
+: 70
+px
+;
+
+296 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+297 
+Ëá
+:‡uto;
+
+298 
+	gright
+: 4
+px
+;
+
+301 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+302 
+Ëá
+:‡uto;
+
+303 
+	gright
+: 64
+px
+;
+
+306 .
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+ {
+
+307 
+	g·ddšg
+-
+	gËá
+: 0;
+
+308 
+	g·ddšg
+-
+	gright
+: 75
+px
+;
+
+311 .
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+:
+befÜe
+ {
+
+312 
+cÚ‹Á
+: '\201D';
+
+313 
+	g·ddšg
+-
+	gËá
+: 25
+px
+;
+
+314 
+	g·ddšg
+-
+	gright
+: 0;
+
+315 
+	gËá
+:‡uto;
+
+316 
+	gright
+: -15
+px
+;
+
+325 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+326 : 
+right
+;
+
+329 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gt™Ë
+:
+befÜe
+ {
+
+330 
+m¬gš
+-
+Ëá
+: 10
+px
+;
+
+331 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+334 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+335 : 
+Ëá
+;
+
+338 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ {
+
+339 
+	gËá
+:‡uto;
+
+340 
+	gright
+: 0;
+
+343 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+344 
+	gËá
+: 0;
+
+345 
+	gright
+:‡uto;
+
+348 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gÿ±iÚ
+ {
+
+349 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+358 .
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ {
+
+359 : 
+right
+;
+
+362 .
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+363 : 
+Ëá
+;
+
+366 .
+	gsideb¬
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+367 .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+368 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+369 
+	g·ddšg
+-
+	gright
+: 60
+px
+;
+
+372 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ .
+	gm‘a
+-nav {
+
+373 
+	gm¬gš
+-
+	gËá
+: 10
+px
+;
+
+374 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+377 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ .
+	gm‘a
+-nav {
+
+378 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+379 
+	gm¬gš
+-
+	gright
+: 10
+px
+;
+
+382 .
+	gpo¡
+-
+Çvig©iÚ
+ 
+	ga
+[
+»l
+="next"] {
+
+383 : 
+Ëá
+;
+
+384 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+393 .
+	gauthÜ
+-
+	gšfo
+ {
+
+394 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+397 .
+	gauthÜ
+.
+	gsideb¬
+ .authÜ-
+	gšfo
+ {
+
+398 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+399 
+	g·ddšg
+-
+	gright
+: 60
+px
+;
+
+402 .
+	gauthÜ
+-
+	gav©¬
+ .avatar {
+
+403 : 
+right
+;
+
+404 
+	gm¬gš
+: 0 0 30
+px
+ 30px;
+
+407 .
+	gauthÜ
+-
+	glšk
+ {
+
+408 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+409 
+	gm¬gš
+-
+	gright
+: 2
+px
+;
+
+418 .
+	gsideb¬
+ .
+	g¬chive
+-
+	gm‘a
+ {
+
+419 
+	g·ddšg
+-
+	gËá
+: 316
+px
+;
+
+420 
+	g·ddšg
+-
+	gright
+: 0;
+
+429 .
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+ {
+
+430 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+431 
+	g·ddšg
+-
+	gright
+: 60
+px
+;
+
+439 .
+	gsideb¬
+ .
+	gcomm’ts
+-
+	gt™Ë
+,
+
+440 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+441 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+,
+
+442 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gÇvig©iÚ
+,
+
+443 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+ {
+
+444 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+445 
+	g·ddšg
+-
+	gright
+: 60
+px
+;
+
+448 .
+	gcomm’t
+-
+	gli¡
+ .
+	gchd»n
+ {
+
+449 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+450 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+453 .
+	gcomm’t
+-
+	gauthÜ
+ {
+
+454 : 
+right
+;
+
+455 
+	gm¬gš
+-
+	gËá
+: 50
+px
+;
+
+456 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+459 .
+	gcomm’t
+-
+	gli¡
+ .
+	ged™
+-
+	glšk
+ {
+
+460 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+461 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+464 .
+	gcomm’t
+-
+	gm‘ad©a
+,
+
+465 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+466 .
+	gcomm’t
+-
+	gli¡
+ .
+	g»¶y
+,
+
+467 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+ {
+
+468 : 
+Ëá
+;
+
+471 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+:
+befÜe
+ {
+
+472 
+m¬gš
+-
+Ëá
+: 5
+px
+;
+
+473 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+476 .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+:
+befÜe
+,
+
+477 .
+	gcomm’t
+-
+	g»¶y
+-
+	glogš
+:
+befÜe
+ {
+
+478 
+m¬gš
+-
+Ëá
+: 3
+px
+;
+
+479 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+480 -
+	gwebk™
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+481 -
+	gmoz
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+482 -
+	gms
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+483 -
+	go
+-
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+484 
+	gŒªsfÜm
+: 
+sÿËX
+(-1);
+
+487 .
+	gcomm’t
+-
+	g»¶y
+-
+t™Ë
+ 
+sm®l
+ 
+	ga
+ {
+
+488 : 
+Ëá
+;
+
+491 .
+	gcomm’t
+-
+	gfÜm
+ [="author"],
+
+492 .
+	gcomm’t
+-
+	gfÜm
+ [="email"],
+
+493 .
+	gcomm’t
+-
+	gfÜm
+ [="url"],
+
+494 .
+	gcomm’t
+-
+	gfÜm
+ [="comment"] {
+
+495 : 
+right
+;
+
+498 .
+	gfÜm
+-
+	g®lowed
+-
+gs
+ 
+	gcode
+ {
+
+499 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+500 
+	gm¬gš
+-
+	gright
+: 3
+px
+;
+
+503 .
+	gsideb¬
+ .
+	gno
+-
+	gcomm’ts
+ {
+
+504 
+	g·ddšg
+-
+	gËá
+: 376
+px
+;
+
+505 
+	g·ddšg
+-
+	gright
+: 60
+px
+;
+
+514 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+515 : 
+Ëá
+;
+
+518 .
+	gwidg‘
+-
+¬—
+ 
+	ga
+ {
+
+519 
+	gmax
+-
+	gwidth
+: 100%;
+
+528 .
+	gwidg‘
+ .widg‘-
+	gt™Ë
+ {
+
+529 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+532 .
+widg‘
+ 
+	gli
+ > 
+	gul
+,
+
+533 .
+widg‘
+ 
+	gli
+ > 
+	gŞ
+ {
+
+534 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+535 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+543 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+,
+
+544 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ {
+
+545 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+547 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+548 
+	gËá
+:‡uto;
+
+549 
+	gright
+: -158
+px
+;
+
+552 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+ {
+
+553 : 
+right
+;
+
+554 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+555 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+558 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+:
+Áh
+-
+of
+-
+ty³
+(4),
+
+559 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+:
+Áh
+-
+of
+-
+	$ty³
+(3) {
+
+560 
+m¬gš
+-
+Ëá
+: 0;
+
+561 
+m¬gš
+-
+right
+:‡uto;
+
+562 
+	}
+}
+
+570 @
+medŸ
+ (
+max
+-
+width
+: 1069
+px
+) {
+
+571 
+ul
+.
+Çv
+-
+m’u
+,
+
+572 
+	gdiv
+.
+	gÇv
+-
+	gm’u
+ > 
+	gul
+ {
+
+573 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+574 
+	gm¬gš
+-
+	gright
+: 0;
+
+577 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gh—d”
+,
+
+578 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	gsize
+-
+	gfuÎ
+,
+
+579 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	gimage
+ .
+	gwp
+-
+	gÿ±iÚ
+:
+fœ¡
+-
+chd
+ .
+wp
+-
+ÿ±iÚ
+-
+‹xt
+ {
+
+580 
+m¬gš
+-
+right
+:‡uto;
+
+583 .
+	gmaš
+-
+	gÇvig©iÚ
+ .
+	g£¬ch
+-
+	gfÜm
+ {
+
+584 
+	gËá
+: 20
+px
+;
+
+585 
+	gright
+:‡uto;
+
+588 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+589 
+	gm¬gš
+-
+	gËá
+: 60
+px
+;
+
+590 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+594 @
+medŸ
+ (
+max
+-
+width
+: 999
+px
+) {
+
+595 .
+sideb¬
+ .
+’Œy
+-
+h—d”
+,
+
+596 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+597 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+598 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gm‘a
+,
+
+599 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+600 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+,
+
+601 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gÇvig©iÚ
+,
+
+602 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+,
+
+603 .
+	gsideb¬
+ .
+	gã©u»d
+-
+	gg®Ëry
+,
+
+604 .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+605 .
+	gauthÜ
+.
+	gsideb¬
+ .authÜ-
+	gšfo
+,
+
+606 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+607 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+608 
+	g·ddšg
+-
+	gËá
+: 0;
+
+609 
+	g·ddšg
+-
+	gright
+: 0;
+
+612 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+613 : 
+nÚe
+;
+
+614 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+617 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+618 : 
+right
+;
+
+619 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+622 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+623 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+624 
+	g·ddšg
+-
+	gËá
+: 0;
+
+625 
+	g·ddšg
+-
+	gright
+: 35
+px
+;
+
+628 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+629 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+630 
+Ëá
+:‡uto;
+
+631 
+	gright
+: 10
+px
+;
+
+634 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+635 
+Ëá
+:‡uto;
+
+636 
+	gright
+: 4
+px
+;
+
+639 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+640 
+	gËá
+:‡uto;
+
+641 
+	gright
+: 0;
+
+644 .
+	gsideb¬
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+645 
+	g·ddšg
+: 0 60
+px
+;
+
+649 @
+medŸ
+ (
+max
+-
+width
+: 767
+px
+) {
+
+650 .
+fÜm©
+-
+image
+ .
+’Œy
+-
+cÚ‹Á
+ 
+img
+:
+fœ¡
+-
+of
+-
+ty³
+,
+
+651 .
+	gfÜm©
+-
+	gimage
+ .
+	gwp
+-
+	gÿ±iÚ
+:
+fœ¡
+-
+chd
+ .
+wp
+-
+ÿ±iÚ
+-
+‹xt
+ {
+
+652 
+m¬gš
+-
+right
+:‡uto;
+
+656 @
+medŸ
+ (
+max
+-
+width
+: 643
+px
+) {
+
+657 .
+sideb¬
+ .
+’Œy
+-
+h—d”
+,
+
+658 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+659 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+660 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gm‘a
+,
+
+661 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+662 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gÇvig©iÚ
+,
+
+663 .
+	gsideb¬
+ .
+	gã©u»d
+-
+	gg®Ëry
+,
+
+664 .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+665 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+666 
+	g·ddšg
+-
+	gËá
+: 20
+px
+;
+
+667 
+	g·ddšg
+-
+	gright
+: 20
+px
+;
+
+670 #cÚ‹Á .
+fÜm©
+-
+¡©us
+ .
+’Œy
+-
+cÚ‹Á
+,
+
+671 #cÚ‹Á .
+fÜm©
+-
+¡©us
+ .
+’Œy
+-
+m‘
+ {
+
+672 
+	g·ddšg
+-
+	gËá
+: 0;
+
+673 
+	g·ddšg
+-
+	gright
+: 35
+px
+;
+
+676 .
+	gm’u
+-
+	gtoggË
+:
+aá”
+ {
+
+677 
+·ddšg
+-
+Ëá
+: 0;
+
+678 
+	g·ddšg
+-
+	gright
+: 8
+px
+;
+
+681 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+	gm’u
+,
+
+682 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+	gm’u
+ > 
+	gul
+ {
+
+683 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+684 
+	gm¬gš
+-
+	gright
+: 0;
+
+687 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+m’u
+ 
+	gli
+ > 
+	gul
+ {
+
+688 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+689 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+690 
+	gright
+:‡uto;
+
+693 #cÚ‹Á .
+ã©u»d
+-
+g®Ëry
+ {
+
+694 
+	g·ddšg
+-
+	gËá
+: 0;
+
+695 
+	g·ddšg
+-
+	gright
+: 24
+px
+;
+
+698 .
+	gg®Ëry
+-
+	gcŞumns
+-1 .g®Ëry-
+	g™em
+ {
+
+699 
+	gm¬gš
+-
+	gËá
+: 0;
+
+700 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+703 .
+	gcomm’t
+-
+	gauthÜ
+ {
+
+704 
+	gm¬gš
+-
+	gËá
+: 30
+px
+;
+
+705 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+708 .
+	gfÜm©
+-
+	gaudio
+ .audio-
+	gcÚ‹Á
+ {
+
+709 
+	gbackground
+: 
+nÚe
+;
+
+710 : 
+nÚe
+;
+
+711 
+	g·ddšg
+-
+	gËá
+: 0;
+
+712 
+	g·ddšg
+-
+	gright
+: 0;
+
+715 .
+	gg®Ëry
+-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(3
+n
+) {
+
+716 
+m¬gš
+-
+Ëá
+: 4
+px
+;
+
+717 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+721 @
+medŸ
+ (
+max
+-
+width
+: 359
+px
+) {
+
+722 .
+g®Ëry
+ {
+
+723 
+m¬gš
+-
+Ëá
+:‡uto;
+
+724 
+	gm¬gš
+-
+	gright
+: 0;
+
+727 .
+	gg®Ëry
+ .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(
+ev’
+) {
+
+728 
+m¬gš
+-
+Ëá
+: 0;
+
+729 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+732 .
+	gg®Ëry
+ .g®Ëry-
+	g™em
+,
+
+733 .
+	gg®Ëry
+.g®Ëry-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(
+ev’
+),
+
+734 .
+	gg®Ëry
+-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(3
+n
+),
+
+735 .
+	gg®Ëry
+-
+	gcŞumns
+-5 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(5
+n
+),
+
+736 .
+	gg®Ëry
+-
+	gcŞumns
+-7 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(7
+n
+),
+
+737 .
+	gg®Ëry
+-
+	gcŞumns
+-9 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(9
+n
+) {
+
+738 
+m¬gš
+-
+Ëá
+: 4
+px
+;
+
+739 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+742 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gav©¬
+ {
+
+743 
+	gm¬gš
+-
+	gËá
+: 5
+px
+;
+
+744 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+754 @
+medŸ
+ 
+	g´št
+ {
+
+755 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÆeá
+,
+
+756 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+757 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+758 
+	gm¬gš
+-
+	gright
+: 0;
+
+761 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÄight
+,
+
+762 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+763 
+	gm¬gš
+-
+	gËá
+: 0;
+
+764 
+	gm¬gš
+-
+	gright
+:‡uto;
 
 	@search.php
 
@@ -7783,6 +16601,15482 @@ php
 	`g‘_foÙ”
 (); ?>
 
+	@style.css
+
+61 -
+	gwebk™
+-
+	gbox
+-
+	gsizšg
+: 
+bÜd”
+-
+box
+;
+
+62 -
+	gmoz
+-
+	gbox
+-
+	gsizšg
+: 
+bÜd”
+-
+box
+;
+
+63 
+	gbox
+-
+	gsizšg
+: 
+bÜd”
+-
+box
+;
+
+66 
+	g¬tişe
+,
+
+67 
+	gaside
+,
+
+68 
+	gd‘as
+,
+
+69 
+	gfigÿ±iÚ
+,
+
+70 
+	gfigu»
+,
+
+71 
+	gfoÙ”
+,
+
+72 
+	gh—d”
+,
+
+73 
+	gÇv
+,
+
+74 
+	g£ùiÚ
+,
+
+75 
+	gsumm¬y
+ {
+
+76 
+	gdi¥Ïy
+: 
+block
+;
+
+79 
+	gaudio
+,
+
+80 
+	gÿnvas
+,
+
+81 
+	gvideo
+ {
+
+82 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+85 
+	gaudio
+:
+	$nÙ
+([
+cÚŒŞs
+]) {
+
+86 
+di¥Ïy
+: 
+nÚe
+;
+
+87 
+height
+: 0;
+
+88 
+	}
+}
+
+90 [
+hidd’
+] {
+
+91 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+94 
+	ghtml
+ {
+
+95 
+	gfÚt
+-
+	gsize
+: 100%;
+
+96 
+	gov”æow
+-
+	gy
+: 
+süŞl
+;
+
+97 -
+	gwebk™
+-
+	g‹xt
+-
+	gsize
+-
+	gadju¡
+: 100%;
+
+98 -
+	gms
+-
+	g‹xt
+-
+	gsize
+-
+	gadju¡
+: 100%;
+
+101 
+	ghtml
+,
+
+102 
+	gbu‰Ú
+,
+
+103 
+	gšput
+,
+
+104 
+	g£Ëù
+,
+
+105 
+	g‹x»a
+ {
+
+106 
+	gfÚt
+-
+	gçmy
+: "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+109 
+	gbody
+ {
+
+110 
+	gcŞÜ
+: #141412;
+
+111 
+	glše
+-
+	gheight
+: 1.5;
+
+112 
+	gm¬gš
+: 0;
+
+115 
+	ga
+ {
+
+116 
+	gcŞÜ
+: #ca3c08;
+
+117 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+120 
+	ga
+:
+vis™ed
+ {
+
+121 
+cŞÜ
+: #ac0404;
+
+124 
+	ga
+:
+focus
+ {
+
+125 
+ouše
+: 
+thš
+ 
+dÙ‹d
+;
+
+128 
+	ga
+:
+aùive
+,
+
+129 
+	ga
+:
+hov”
+ {
+
+130 
+cŞÜ
+: #ea9629;
+
+131 
+	gouše
+: 0;
+
+134 
+	ga
+:
+hov”
+ {
+
+135 
+‹xt
+-
+decÜ©iÚ
+: 
+und”lše
+;
+
+138 
+	gh1
+,
+
+139 
+	gh2
+,
+
+140 
+	gh3
+,
+
+141 
+	gh4
+,
+
+142 
+	gh5
+,
+
+143 
+	gh6
+ {
+
+144 
+	gş—r
+: 
+bÙh
+;
+
+145 
+	gfÚt
+-
+	gçmy
+: 
+B™‹r
+, 
+	gGeÜgŸ
+, 
+	g£rif
+;
+
+146 
+	glše
+-
+	gheight
+: 1.3;
+
+149 
+	gh1
+ {
+
+150 
+	gfÚt
+-
+	gsize
+: 48
+px
+;
+
+151 
+	gm¬gš
+: 33
+px
+ 0;
+
+154 
+	gh2
+ {
+
+155 
+	gfÚt
+-
+	gsize
+: 30
+px
+;
+
+156 
+	gm¬gš
+: 25
+px
+ 0;
+
+159 
+	gh3
+ {
+
+160 
+	gfÚt
+-
+	gsize
+: 22
+px
+;
+
+161 
+	gm¬gš
+: 22
+px
+ 0;
+
+164 
+	gh4
+ {
+
+165 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+166 
+	gm¬gš
+: 25
+px
+ 0;
+
+169 
+	gh5
+ {
+
+170 
+	gfÚt
+-
+	gsize
+: 18
+px
+;
+
+171 
+	gm¬gš
+: 30
+px
+ 0;
+
+174 
+	gh6
+ {
+
+175 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+176 
+	gm¬gš
+: 36
+px
+ 0;
+
+179 
+	gadd»ss
+ {
+
+180 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+181 
+	gm¬gš
+: 0 0 24
+px
+;
+
+184 
+	gabbr
+[
+t™Ë
+] {
+
+185 
+	gbÜd”
+-
+	gbÙtom
+: 1
+px
+ 
+dÙ‹d
+;
+
+188 
+	gb
+,
+
+189 
+	g¡rÚg
+ {
+
+190 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+193 
+	gdâ
+ {
+
+194 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+197 
+	gm¬k
+ {
+
+198 
+	gbackground
+: #ff0;
+
+199 
+	gcŞÜ
+: #000;
+
+202 
+	gp
+ {
+
+203 
+	gm¬gš
+: 0‡utØ24
+px
+;
+
+206 
+	gcode
+,
+
+207 
+	gkbd
+,
+
+208 
+	g´e
+,
+
+209 
+	g§mp
+ {
+
+210 
+	gfÚt
+-
+	gçmy
+: 
+mÚo¥aû
+, 
+	g£rif
+;
+
+211 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+212 -
+	gwebk™
+-
+	ghyph’s
+: 
+nÚe
+;
+
+213 -
+	gmoz
+-
+	ghyph’s
+: 
+nÚe
+;
+
+214 -
+	gms
+-
+	ghyph’s
+: 
+nÚe
+;
+
+215 
+	ghyph’s
+: 
+nÚe
+;
+
+218 
+	g´e
+ {
+
+219 
+	gbackground
+: #f5f5f5;
+
+220 
+	gcŞÜ
+: #666;
+
+221 
+	gfÚt
+-
+	gçmy
+: 
+mÚo¥aû
+;
+
+222 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+223 
+	gm¬gš
+: 20
+px
+ 0;
+
+224 
+	gov”æow
+:‡uto;
+
+225 
+	g·ddšg
+: 20
+px
+;
+
+226 
+	gwh™e
+-
+	g¥aû
+: 
+´e
+;
+
+227 
+	gwh™e
+-
+	g¥aû
+: 
+´e
+-
+w¿p
+;
+
+228 
+	gwÜd
+-
+	gw¿p
+: -
+wÜd
+;
+
+231 
+	gblockquÙe
+,
+
+232 
+	gq
+ {
+
+233 -
+	gwebk™
+-
+	ghyph’s
+: 
+nÚe
+;
+
+234 -
+	gmoz
+-
+	ghyph’s
+: 
+nÚe
+;
+
+235 -
+	gms
+-
+	ghyph’s
+: 
+nÚe
+;
+
+236 
+	ghyph’s
+: 
+nÚe
+;
+
+237 
+	gquÙes
+: 
+nÚe
+;
+
+240 
+	gblockquÙe
+:
+befÜe
+,
+
+241 
+	gblockquÙe
+:
+aá”
+,
+
+242 
+	gq
+:
+befÜe
+,
+
+243 
+	gq
+:
+aá”
+ {
+
+244 
+cÚ‹Á
+: "";
+
+245 
+	gcÚ‹Á
+: 
+nÚe
+;
+
+248 
+	gblockquÙe
+ {
+
+249 
+	gfÚt
+-
+	gsize
+: 18
+px
+;
+
+250 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+251 
+	gfÚt
+-
+	gweight
+: 300;
+
+252 
+	gm¬gš
+: 24
+px
+ 40px;
+
+255 
+blockquÙe
+ 
+	gblockquÙe
+ {
+
+256 
+	gm¬gš
+-
+	gright
+: 0;
+
+259 
+blockquÙe
+ 
+	gc™e
+,
+
+260 
+blockquÙe
+ 
+	gsm®l
+ {
+
+261 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+262 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+263 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+uµ”ÿ£
+;
+
+266 
+blockquÙe
+ 
+	gem
+,
+
+267 
+blockquÙe
+ 
+	gi
+ {
+
+268 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+269 
+	gfÚt
+-
+	gweight
+: 300;
+
+272 
+blockquÙe
+ 
+	g¡rÚg
+,
+
+273 
+blockquÙe
+ 
+	gb
+ {
+
+274 
+	gfÚt
+-
+	gweight
+: 400;
+
+277 
+	gsm®l
+ {
+
+278 
+	gfÚt
+-
+	gsize
+: 
+sm®Ër
+;
+
+281 
+	gsub
+,
+
+282 
+	gsup
+ {
+
+283 
+	gfÚt
+-
+	gsize
+: 75%;
+
+284 
+	glše
+-
+	gheight
+: 0;
+
+285 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+286 
+	gv”tiÿl
+-
+	g®ign
+: 
+ba£lše
+;
+
+289 
+	gsup
+ {
+
+290 
+	gtİ
+: -0.5e
+m
+;
+
+293 
+	gsub
+ {
+
+294 
+	gbÙtom
+: -0.25e
+m
+;
+
+297 
+	gdl
+ {
+
+298 
+	gm¬gš
+: 0 20
+px
+;
+
+301 
+	gdt
+ {
+
+302 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+305 
+	gdd
+ {
+
+306 
+	gm¬gš
+: 0 0 20
+px
+;
+
+309 
+	gm’u
+,
+
+310 
+	gŞ
+,
+
+311 
+	gul
+ {
+
+312 
+	gm¬gš
+: 16
+px
+ 0;
+
+313 
+	g·ddšg
+: 0 0 0 40
+px
+;
+
+316 
+	gul
+ {
+
+317 
+	gli¡
+-
+	g¡yË
+-
+	gty³
+: 
+squ¬e
+;
+
+320 
+Çv
+ 
+	gul
+,
+
+321 
+Çv
+ 
+	gŞ
+ {
+
+322 
+	gli¡
+-
+	g¡yË
+: 
+nÚe
+;
+
+323 
+	gli¡
+-
+	g¡yË
+-
+	gimage
+: 
+nÚe
+;
+
+326 
+	gli
+ > 
+	gul
+,
+
+327 
+	gli
+ > 
+	gŞ
+ {
+
+328 
+	gm¬gš
+: 0;
+
+331 
+	gimg
+ {
+
+332 -
+	gms
+-
+	gš‹½Ş©iÚ
+-
+	gmode
+: 
+bicubic
+;
+
+333 
+	gbÜd”
+: 0;
+
+334 
+	gv”tiÿl
+-
+	g®ign
+: 
+middË
+;
+
+337 
+	gsvg
+:
+nÙ
+(:
+roÙ
+) {
+
+338 
+ov”æow
+: 
+hidd’
+;
+
+341 
+	gfigu»
+ {
+
+342 
+	gm¬gš
+: 0;
+
+345 
+	gfÜm
+ {
+
+346 
+	gm¬gš
+: 0;
+
+349 
+	gf›ld£t
+ {
+
+350 
+	gbÜd”
+: 1
+px
+ 
+sŞid
+ #c0c0c0;
+
+351 
+	gm¬gš
+: 0 2
+px
+;
+
+352 
+	g·ddšg
+: 0.35e
+m
+ 0.625em 0.75em;
+
+355 
+	gËg’d
+ {
+
+356 
+	gbÜd”
+: 0;
+
+357 
+	g·ddšg
+: 0;
+
+358 
+	gwh™e
+-
+	g¥aû
+: 
+nÜm®
+;
+
+361 
+	gbu‰Ú
+,
+
+362 
+	gšput
+,
+
+363 
+	g£Ëù
+,
+
+364 
+	g‹x»a
+ {
+
+365 
+	gfÚt
+-
+	gsize
+: 100%;
+
+366 
+	gm¬gš
+: 0;
+
+367 
+	gmax
+-
+	gwidth
+: 100%;
+
+368 
+	gv”tiÿl
+-
+	g®ign
+: 
+ba£lše
+;
+
+371 
+	gbu‰Ú
+,
+
+372 
+	gšput
+ {
+
+373 
+	glše
+-
+	gheight
+: 
+nÜm®
+;
+
+376 
+	gbu‰Ú
+,
+
+377 
+html
+ 
+	gšput
+[
+ty³
+="button"],
+
+378 
+	gšput
+[
+ty³
+="reset"],
+
+379 
+	gšput
+[
+ty³
+="submit"] {
+
+380 -
+webk™
+-
+­³¬ªû
+: 
+bu‰Ú
+;
+
+381 
+	gcursÜ
+: 
+poš‹r
+;
+
+384 
+	gbu‰Ú
+[
+di§bËd
+],
+
+385 
+	gšput
+[
+di§bËd
+] {
+
+386 
+	gcursÜ
+: ;
+
+389 
+	gšput
+[
+ty³
+="checkbox"],
+
+390 
+	gšput
+[
+ty³
+="radio"] {
+
+391 
+·ddšg
+: 0;
+
+394 
+	gšput
+[
+ty³
+="search"] {
+
+395 -
+webk™
+-
+­³¬ªû
+: 
+‹xtf›ld
+;
+
+396 
+	g·ddšg
+-
+	gright
+: 2
+px
+;
+
+397 
+	gwidth
+: 270
+px
+;
+
+400 
+	gšput
+[
+ty³
+="£¬ch"]::-
+webk™
+-
+£¬ch
+-
+decÜ©iÚ
+ {
+
+401 -
+webk™
+-
+­³¬ªû
+: 
+nÚe
+;
+
+404 
+	gbu‰Ú
+::-
+moz
+-
+focus
+-
+šÃr
+,
+
+405 
+	gšput
+::-
+moz
+-
+focus
+-
+šÃr
+ {
+
+406 
+bÜd”
+: 0;
+
+407 
+	g·ddšg
+: 0;
+
+410 
+	g‹x»a
+ {
+
+411 
+	gov”æow
+:‡uto;
+
+412 
+	gv”tiÿl
+-
+	g®ign
+: 
+tİ
+;
+
+415 
+	gbË
+ {
+
+416 
+	gbÜd”
+-
+	gcŞÏp£
+: 
+cŞÏp£
+;
+
+417 
+	gbÜd”
+-
+	g¥acšg
+: 0;
+
+418 
+	gfÚt
+-
+	gsize
+: 90%;
+
+419 
+	glše
+-
+	gheight
+: 2;
+
+420 
+	gm¬gš
+: 0 0 20
+px
+;
+
+421 
+	gwidth
+: 100%;
+
+424 
+	gÿ±iÚ
+,
+
+425 
+	gth
+,
+
+426 
+	gtd
+ {
+
+427 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+428 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+431 
+	gÿ±iÚ
+ {
+
+432 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+433 
+	gm¬gš
+: 20
+px
+ 0;
+
+436 
+	gth
+ {
+
+437 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+438 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+uµ”ÿ£
+;
+
+441 
+	gtd
+ {
+
+445 
+	gd–
+ {
+
+446 
+	gcŞÜ
+: #333;
+
+449 
+	gšs
+ {
+
+450 
+	gbackground
+: #fff9c0;
+
+451 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+454 
+	ghr
+ {
+
+455 
+	gbackground
+: 
+u¾
+(
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+ 
+ûÁ”
+ 
+tİ
+;
+
+456 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+457 
+	gbÜd”
+: 0;
+
+458 
+	gheight
+: 1
+px
+;
+
+459 
+	gm¬gš
+: 0 0 24
+px
+;
+
+468 .
+	gg’”icÚ
+:
+befÜe
+,
+
+469 .
+	gm’u
+-
+	gtoggË
+:
+aá”
+,
+
+470 .
+	gã©u»d
+-
+	gpo¡
+:
+befÜe
+,
+
+471 .
+d©e
+ 
+	ga
+:
+befÜe
+,
+
+472 .
+	g’Œy
+-
+	gm‘a
+ .
+authÜ
+ 
+	ga
+:
+befÜe
+,
+
+473 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+474 .
+	gcomm’ts
+-
+lšk
+ 
+	ga
+:
+befÜe
+,
+
+475 .
+	ggs
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+,
+
+476 .
+	gÿ‹gÜ›s
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+,
+
+477 .
+	ged™
+-
+lšk
+ 
+	ga
+:
+befÜe
+,
+
+478 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gt™Ë
+:
+befÜe
+,
+
+479 .
+	g©chm’t
+-
+	gm‘a
+:
+befÜe
+,
+
+480 .
+	g©chm’t
+-
+m‘a
+ 
+	ga
+:
+befÜe
+,
+
+481 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+:
+befÜe
+,
+
+482 .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+:
+befÜe
+,
+
+483 .
+	gcomm’t
+-
+	g»¶y
+-
+	glogš
+:
+befÜe
+,
+
+484 .
+	gcomm’t
+-
+	g»¶y
+-
+t™Ë
+ 
+sm®l
+ 
+	ga
+:
+befÜe
+,
+
+485 .
+	gbypo¡authÜ
+ > .
+	gcomm’t
+-
+	gbody
+ .
+	gâ
+:
+befÜe
+,
+
+486 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+:
+befÜe
+ {
+
+487 -
+webk™
+-
+fÚt
+-
+smoÙhšg
+: 
+ªtŸlŸ£d
+;
+
+488 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+489 
+	gfÚt
+: 
+nÜm®
+ 16
+px
+/1 
+G’”icÚs
+;
+
+490 
+	gv”tiÿl
+-
+	g®ign
+: 
+‹xt
+-
+bÙtom
+;
+
+494 .
+	gş—r
+:
+aá”
+,
+
+495 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+:
+aá”
+,
+
+496 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+:
+aá”
+,
+
+497 .
+	g’Œy
+-
+	gcÚ‹Á
+:
+aá”
+,
+
+498 .
+	g·ge
+-
+	gcÚ‹Á
+:
+aá”
+,
+
+499 .
+	gÇvig©iÚ
+:
+aá”
+,
+
+500 .
+	gÇv
+-
+	glšks
+:
+aá”
+,
+
+501 .
+	gg®Ëry
+:
+aá”
+,
+
+502 .
+	gcomm’t
+-
+	gfÜm
+-
+	gauthÜ
+:
+aá”
+,
+
+503 .
+	gcomm’t
+-
+	gfÜm
+-
+	gema
+:
+aá”
+,
+
+504 .
+	gcomm’t
+-
+	gfÜm
+-
+	gu¾
+:
+aá”
+,
+
+505 .
+	gcomm’t
+-
+	gbody
+:
+aá”
+ {
+
+506 
+ş—r
+: 
+bÙh
+;
+
+509 .
+	gş—r
+:
+befÜe
+,
+
+510 .
+	gş—r
+:
+aá”
+,
+
+511 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+:
+befÜe
+,
+
+512 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+:
+aá”
+,
+
+513 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+:
+befÜe
+,
+
+514 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+:
+aá”
+,
+
+515 .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+516 .
+	g’Œy
+-
+	gcÚ‹Á
+:
+aá”
+,
+
+517 .
+	g·ge
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+518 .
+	g·ge
+-
+	gcÚ‹Á
+:
+aá”
+,
+
+519 .
+	gÇvig©iÚ
+:
+befÜe
+,
+
+520 .
+	gÇvig©iÚ
+:
+aá”
+,
+
+521 .
+	gÇv
+-
+	glšks
+:
+befÜe
+,
+
+522 .
+	gÇv
+-
+	glšks
+:
+aá”
+,
+
+523 .
+	gg®Ëry
+:
+befÜe
+,
+
+524 .
+	gg®Ëry
+:
+aá”
+,
+
+525 .
+	gcomm’t
+-
+	gfÜm
+-
+	gauthÜ
+:
+befÜe
+,
+
+526 .
+	gcomm’t
+-
+	gfÜm
+-
+	gauthÜ
+:
+aá”
+,
+
+527 .
+	gcomm’t
+-
+	gfÜm
+-
+	gema
+:
+befÜe
+,
+
+528 .
+	gcomm’t
+-
+	gfÜm
+-
+	gema
+:
+aá”
+,
+
+529 .
+	gcomm’t
+-
+	gfÜm
+-
+	gu¾
+:
+befÜe
+,
+
+530 .
+	gcomm’t
+-
+	gfÜm
+-
+	gu¾
+:
+aá”
+,
+
+531 .
+	gcomm’t
+-
+	gbody
+:
+befÜe
+,
+
+532 .
+	gcomm’t
+-
+	gbody
+:
+aá”
+ {
+
+533 
+cÚ‹Á
+: "";
+
+534 
+	gdi¥Ïy
+: 
+bË
+;
+
+538 .
+	gsü“n
+-
+	g»ad”
+-
+	g‹xt
+ {
+
+539 
+	gş
+: 
+»ù
+(1
+px
+, 1px, 1px, 1px);
+
+540 
+	gpos™iÚ
+: 
+absŞu‹
+ !
+impÜÁ
+;
+
+543 .
+	gsü“n
+-
+	g»ad”
+-
+	g‹xt
+:
+focus
+ {
+
+544 
+background
+-
+cŞÜ
+: #f1f1f1;
+
+545 
+	gbÜd”
+-
+	g¿dius
+: 3
+px
+;
+
+546 
+	gbox
+-
+	gshadow
+: 0 0 2
+px
+ 2px 
+rgba
+(0, 0, 0, 0.6);
+
+547 
+	gş
+:‡utØ!
+impÜÁ
+;
+
+548 
+	gcŞÜ
+: #21759b;
+
+549 
+	gdi¥Ïy
+: 
+block
+;
+
+550 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+551 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+552 
+	gheight
+:‡uto;
+
+553 
+	glše
+-
+	gheight
+: 
+nÜm®
+;
+
+554 
+	g·ddšg
+: 15
+px
+ 23px 14px;
+
+555 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+556 
+	gËá
+: 5
+px
+;
+
+557 
+	gtİ
+: 5
+px
+;
+
+558 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+559 
+	gwidth
+:‡uto;
+
+560 
+	gz
+-
+	gšdex
+: 100000;
+
+564 
+	gbu‰Ú
+,
+
+565 
+	gšput
+,
+
+566 
+	g‹x»a
+ {
+
+567 
+	gbÜd”
+: 2
+px
+ 
+sŞid
+ #d4d0ba;
+
+568 
+	gfÚt
+-
+	gçmy
+: 
+šh”™
+;
+
+569 
+	g·ddšg
+: 5
+px
+;
+
+572 
+	gšput
+,
+
+573 
+	g‹x»a
+ {
+
+574 
+	gcŞÜ
+: #141412;
+
+577 
+	gšput
+:
+focus
+,
+
+578 
+	g‹x»a
+:
+focus
+ {
+
+579 
+bÜd”
+: 2
+px
+ 
+sŞid
+ #c3c0ab;
+
+580 
+	gouše
+: 0;
+
+584 
+	gbu‰Ú
+,
+
+585 
+	gšput
+[
+ty³
+="submit"],
+
+586 
+	gšput
+[
+ty³
+="button"],
+
+587 
+	gšput
+[
+ty³
+="reset"] {
+
+588 
+background
+: #e05d22;
+
+589 
+	gbackground
+: -
+webk™
+-
+lš—r
+-
+g¿d›Á
+(
+tİ
+, #e05d22 0%, #d94412 100%);
+
+590 
+	gbackground
+: 
+lš—r
+-
+g¿d›Á
+(
+to
+ 
+bÙtom
+, #e05d22 0%, #d94412 100%);
+
+591 
+	gbÜd”
+: 
+nÚe
+;
+
+592 
+	gbÜd”
+-
+	gbÙtom
+: 3
+px
+ 
+sŞid
+ #b93207;
+
+593 
+	gbÜd”
+-
+	g¿dius
+: 2
+px
+;
+
+594 
+	gcŞÜ
+: #fff;
+
+595 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+596 
+	g·ddšg
+: 11
+px
+ 24px 10px;
+
+597 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+600 
+	gbu‰Ú
+:
+hov”
+,
+
+601 
+	gbu‰Ú
+:
+focus
+,
+
+602 
+	gšput
+[
+ty³
+="subm™"]:
+hov”
+,
+
+603 
+	gšput
+[
+ty³
+="bu‰Ú"]:
+hov”
+,
+
+604 
+	gšput
+[
+ty³
+="»£t"]:
+hov”
+,
+
+605 
+	gšput
+[
+ty³
+="subm™"]:
+focus
+,
+
+606 
+	gšput
+[
+ty³
+="bu‰Ú"]:
+focus
+,
+
+607 
+	gšput
+[
+ty³
+="»£t"]:
+focus
+ {
+
+608 
+background
+: #ed6a31;
+
+609 
+	gbackground
+: -
+webk™
+-
+lš—r
+-
+g¿d›Á
+(
+tİ
+, #ed6a31 0%, #e55627 100%);
+
+610 
+	gbackground
+: 
+lš—r
+-
+g¿d›Á
+(
+to
+ 
+bÙtom
+, #ed6a31 0%, #e55627 100%);
+
+611 
+	gouše
+: 
+nÚe
+;
+
+614 
+	gbu‰Ú
+:
+aùive
+,
+
+615 
+	gšput
+[
+ty³
+="subm™"]:
+aùive
+,
+
+616 
+	gšput
+[
+ty³
+="bu‰Ú"]:
+aùive
+,
+
+617 
+	gšput
+[
+ty³
+="»£t"]:
+aùive
+ {
+
+618 
+background
+: #d94412;
+
+619 
+	gbackground
+: -
+webk™
+-
+lš—r
+-
+g¿d›Á
+(
+tİ
+, #d94412 0%, #e05d22 100%);
+
+620 
+	gbackground
+: 
+lš—r
+-
+g¿d›Á
+(
+to
+ 
+bÙtom
+, #d94412 0%, #e05d22 100%);
+
+621 
+	gbÜd”
+: 
+nÚe
+;
+
+622 
+	gbÜd”
+-
+	gtİ
+: 3
+px
+ 
+sŞid
+ #b93207;
+
+623 
+	g·ddšg
+: 10
+px
+ 24px 11px;
+
+626 .
+	gpo¡
+-
+	g·sswÜd
+-
+»quœed
+ 
+	gšput
+[
+ty³
+="submit"] {
+
+627 
+·ddšg
+: 7
+px
+ 24px 4px;
+
+628 
+	gv”tiÿl
+-
+	g®ign
+: 
+bÙtom
+;
+
+631 .
+	gpo¡
+-
+	g·sswÜd
+-
+»quœed
+ 
+	gšput
+[
+ty³
+="subm™"]:
+aùive
+ {
+
+632 
+·ddšg
+: 5
+px
+ 24px 6px;
+
+636 ::-
+webk™
+-
+šput
+-
+¶aûhŞd”
+ {
+
+637 
+cŞÜ
+: #7
+d7b6d
+;
+
+640 :-
+moz
+-
+¶aûhŞd”
+ {
+
+641 
+cŞÜ
+: #7
+d7b6d
+;
+
+644 ::-
+moz
+-
+¶aûhŞd”
+ {
+
+645 
+cŞÜ
+: #7
+d7b6d
+;
+
+648 :-
+ms
+-
+šput
+-
+¶aûhŞd”
+ {
+
+649 
+cŞÜ
+: #7
+d7b6d
+;
+
+657 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+,
+
+658 .
+	g’Œy
+-
+summ¬y
+ 
+	gimg
+,
+
+659 .
+	gcomm’t
+-
+cÚ‹Á
+ 
+	gimg
+,
+
+660 .
+widg‘
+ 
+	gimg
+,
+
+661 .
+	gwp
+-
+	gÿ±iÚ
+ {
+
+662 
+	gmax
+-
+	gwidth
+: 100%;
+
+666 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+,
+
+667 .
+	g’Œy
+-
+summ¬y
+ 
+	gimg
+,
+
+668 .
+	gcomm’t
+-
+cÚ‹Á
+ 
+	gimg
+[
+height
+],
+
+669 
+	gimg
+[
+şass
+*="align"],
+
+670 
+	gimg
+[
+şass
+*="wp-image-"],
+
+671 
+	gimg
+[
+şass
+*="attachment-"] {
+
+672 
+height
+:‡uto;
+
+675 
+	gimg
+.
+	gsize
+-
+	gfuÎ
+,
+
+676 
+	gimg
+.
+	gsize
+-
+	gÏrge
+,
+
+677 
+	gimg
+.
+	gwp
+-
+	gpo¡
+-
+	gimage
+ {
+
+678 
+	gheight
+:‡uto;
+
+679 
+	gmax
+-
+	gwidth
+: 100%;
+
+683 
+	gembed
+,
+
+684 
+	giäame
+,
+
+685 
+	gobjeù
+,
+
+686 
+	gvideo
+ {
+
+687 
+	gmax
+-
+	gwidth
+: 100%;
+
+691 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gtw™‹r
+-
+	gtw“t
+-
+	g»nd”ed
+ {
+
+692 
+	gmax
+-
+	gwidth
+: 100% !
+impÜÁ
+;
+
+696 .
+	g®igÆeá
+ {
+
+697 : 
+Ëá
+;
+
+700 .
+	g®igÄight
+ {
+
+701 : 
+right
+;
+
+704 .
+	g®ignûÁ”
+ {
+
+705 
+	gdi¥Ïy
+: 
+block
+;
+
+706 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+707 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+710 
+	gimg
+.
+	g®igÆeá
+ {
+
+711 
+	gm¬gš
+: 5
+px
+ 20px 5px 0;
+
+714 .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+715 
+	gm¬gš
+: 5
+px
+ 10px 5px 0;
+
+718 
+	gimg
+.
+	g®igÄight
+ {
+
+719 
+	gm¬gš
+: 5
+px
+ 0 5px 20px;
+
+722 .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+723 
+	gm¬gš
+: 5
+px
+ 0 5px 10px;
+
+726 
+	gimg
+.
+	g®ignûÁ”
+ {
+
+727 
+	gm¬gš
+: 5
+px
+‡uto;
+
+730 
+	gimg
+.
+	g®igÂÚe
+ {
+
+731 
+	gm¬gš
+: 5
+px
+ 0;
+
+734 .
+	gwp
+-
+	gÿ±iÚ
+ .wp-ÿ±iÚ-
+	g‹xt
+,
+
+735 .
+	g’Œy
+-
+	gÿ±iÚ
+,
+
+736 .
+	gg®Ëry
+-
+	gÿ±iÚ
+ {
+
+737 
+	gcŞÜ
+: #220e10;
+
+738 
+	gfÚt
+-
+	gsize
+: 18
+px
+;
+
+739 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+740 
+	gfÚt
+-
+	gweight
+: 300;
+
+743 
+	gimg
+.
+	gwp
+-
+	gsmey
+,
+
+744 .
+rsswidg‘
+ 
+	gimg
+ {
+
+745 
+	gbÜd”
+: 0;
+
+746 
+	gbÜd”
+-
+	g¿dius
+: 0;
+
+747 
+	gbox
+-
+	gshadow
+: 
+nÚe
+;
+
+748 
+	gm¬gš
+-
+	gbÙtom
+: 0;
+
+749 
+	gm¬gš
+-
+	gtİ
+: 0;
+
+750 
+	g·ddšg
+: 0;
+
+753 .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ + 
+	gul
+,
+
+754 .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ + 
+	gŞ
+ {
+
+755 
+	gli¡
+-
+	g¡yË
+-
+	gpos™iÚ
+: 
+šside
+;
+
+764 .
+	gs™e
+ {
+
+765 
+	gbackground
+-
+	gcŞÜ
+: #fff;
+
+766 
+	gbÜd”
+-
+	gËá
+: 1
+px
+ 
+sŞid
+ #f2f2f2;
+
+767 
+	gbÜd”
+-
+	gright
+: 1
+px
+ 
+sŞid
+ #f2f2f2;
+
+768 
+	gm¬gš
+: 0‡uto;
+
+769 
+	gmax
+-
+	gwidth
+: 1600
+px
+;
+
+770 
+	gwidth
+: 100%;
+
+773 .
+	gs™e
+-
+	gmaš
+ {
+
+774 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+777 .
+	gs™e
+-
+	gmaš
+ .
+	gsideb¬
+-
+	gcÚš”
+ {
+
+778 
+	gheight
+: 0;
+
+779 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+780 
+	gtİ
+: 40
+px
+;
+
+781 
+	gwidth
+: 100%;
+
+782 
+	gz
+-
+	gšdex
+: 1;
+
+785 .
+	gs™e
+-
+	gmaš
+ .
+	gsideb¬
+-
+	gšÃr
+ {
+
+786 
+	gm¬gš
+: 0‡uto;
+
+787 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+801 .
+	gs™e
+-
+	gh—d”
+ {
+
+802 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+805 .
+	gs™e
+-
+	gh—d”
+ .
+	ghome
+-
+	glšk
+ {
+
+806 
+	gcŞÜ
+: #141412;
+
+807 
+	gdi¥Ïy
+: 
+block
+;
+
+808 
+	gm¬gš
+: 0‡uto;
+
+809 
+	gmax
+-
+	gwidth
+: 1080
+px
+;
+
+810 
+	gmš
+-
+	gheight
+: 230
+px
+;
+
+811 
+	g·ddšg
+: 0 20
+px
+;
+
+812 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+813 
+	gwidth
+: 100%;
+
+816 .
+	gs™e
+-
+	gh—d”
+ .s™e-
+	gt™Ë
+:
+hov”
+ {
+
+817 
+‹xt
+-
+decÜ©iÚ
+: 
+und”lše
+;
+
+820 .
+	gs™e
+-
+	gt™Ë
+ {
+
+821 
+	gfÚt
+-
+	gsize
+: 60
+px
+;
+
+822 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+823 
+	glše
+-
+	gheight
+: 1;
+
+824 
+	gm¬gš
+: 0;
+
+825 
+	g·ddšg
+: 58
+px
+ 0 10px;
+
+828 .
+	gs™e
+-
+	gdesütiÚ
+ {
+
+829 
+	gfÚt
+: 300 
+™®ic
+ 24
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+830 
+	gm¬gš
+: 0;
+
+839 .
+	gmaš
+-
+	gÇvig©iÚ
+ {
+
+840 
+	gş—r
+: 
+bÙh
+;
+
+841 
+	gm¬gš
+: 0‡uto;
+
+842 
+	gmax
+-
+	gwidth
+: 1080
+px
+;
+
+843 
+	gmš
+-
+	gheight
+: 45
+px
+;
+
+844 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+847 
+	gul
+.
+	gÇv
+-
+	gm’u
+,
+
+848 
+	gdiv
+.
+	gÇv
+-
+	gm’u
+ > 
+	gul
+ {
+
+849 
+	gm¬gš
+: 0;
+
+850 
+	g·ddšg
+: 0 40
+px
+ 0 0;
+
+853 .
+	gÇv
+-
+m’u
+ 
+	gli
+ {
+
+854 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+855 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+858 .
+	gÇv
+-
+m’u
+ 
+li
+ 
+	ga
+ {
+
+859 
+	gcŞÜ
+: #141412;
+
+860 
+	gdi¥Ïy
+: 
+block
+;
+
+861 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+862 
+	glše
+-
+	gheight
+: 1;
+
+863 
+	g·ddšg
+: 15
+px
+ 20px;
+
+864 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+867 .
+	gÇv
+-
+m’u
+ 
+	gli
+:
+hov”
+ > 
+a
+,
+
+868 .
+	gÇv
+-
+m’u
+ 
+li
+ 
+	ga
+:
+hov”
+ {
+
+869 
+Œªs™iÚ
+:
+background
+-
+cŞÜ
+ 1
+s
+;
+
+870 -
+	gwebk™
+-
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 1
+s
+;
+
+871 
+	gbackground
+-
+	gcŞÜ
+: #220e10;
+
+872 
+	gcŞÜ
+: #fff;
+
+875 .
+	gÇv
+-
+	gm’u
+ .
+	gsub
+-menu,
+
+876 .
+	gÇv
+-
+	gm’u
+ .
+	gchd»n
+ {
+
+877 
+	gbackground
+-
+	gcŞÜ
+: #220e10;
+
+878 
+	gbÜd”
+-
+	gtİ
+: 0;
+
+879 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+880 
+	g·ddšg
+: 0;
+
+881 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+882 
+	gz
+-
+	gšdex
+: 99999;
+
+885 .
+	gÇv
+-
+	gm’u
+ .
+	gsub
+-
+m’u
+ 
+	gul
+,
+
+886 .
+	gÇv
+-
+	gm’u
+ .
+chd»n
+ 
+	gul
+ {
+
+887 
+	gbÜd”
+-
+	gËá
+: 0;
+
+888 
+	gËá
+: 100%;
+
+889 
+	gtİ
+: 0;
+
+892 
+	gul
+.
+	gÇv
+-
+m’u
+ 
+ul
+ 
+	ga
+,
+
+893 .
+	gÇv
+-
+m’u
+ 
+ul
+ uÈ
+	ga
+ {
+
+894 
+	gcŞÜ
+: #fff;
+
+895 
+	gm¬gš
+: 0;
+
+896 
+	gwidth
+: 200
+px
+;
+
+899 
+	gul
+.
+	gÇv
+-
+m’u
+ 
+ul
+ 
+	ga
+:
+hov”
+,
+
+900 .
+	gÇv
+-
+m’u
+ 
+ul
+ uÈ
+	ga
+:
+hov”
+ {
+
+901 
+background
+-
+cŞÜ
+: #db572f;
+
+904 
+	gul
+.
+	gÇv
+-
+m’u
+ 
+	gli
+:
+hov”
+ > 
+ul
+,
+
+905 .
+	gÇv
+-
+m’u
+ 
+ul
+ 
+	gli
+:
+hov”
+ > ul {
+
+906 
+di¥Ïy
+: 
+block
+;
+
+909 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t_·ge_™em
+ > 
+	ga
+,
+
+910 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t_·ge_ªû¡Ü
+ > 
+	ga
+,
+
+911 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t
+-m’u-
+	g™em
+ > 
+	ga
+,
+
+912 .
+	gÇv
+-
+	gm’u
+ .
+	gcu¼’t
+-m’u-
+	gªû¡Ü
+ > 
+	ga
+ {
+
+913 
+	gcŞÜ
+: #bc360a;
+
+914 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+917 .
+	gm’u
+-
+	gtoggË
+ {
+
+918 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+922 .
+	gÇvb¬
+ {
+
+923 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+924 
+	gm¬gš
+: 0‡uto;
+
+925 
+	gmax
+-
+	gwidth
+: 1600
+px
+;
+
+926 
+	gwidth
+: 100%;
+
+929 .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gfÜm
+ {
+
+930 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+931 
+	gright
+: 20
+px
+;
+
+932 
+	gtİ
+: 1
+px
+;
+
+935 .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gf›ld
+ {
+
+936 
+	gbackground
+-
+	gcŞÜ
+: 
+Œª¥¬’t
+;
+
+937 
+	gbackground
+-
+	gimage
+: 
+u¾
+(
+images
+/
+£¬ch
+-
+icÚ
+.
+²g
+);
+
+938 
+	gbackground
+-
+	gpos™iÚ
+: 5
+px
+ 
+ûÁ”
+;
+
+939 
+	gbackground
+-
+	g»³©
+: 
+no
+-
+»³©
+;
+
+940 
+	gbackground
+-
+	gsize
+: 24
+px
+ 24px;
+
+941 
+	gbÜd”
+: 
+nÚe
+;
+
+942 
+	gcursÜ
+: 
+poš‹r
+;
+
+943 
+	gheight
+: 37
+px
+;
+
+944 
+	gm¬gš
+: 3
+px
+ 0;
+
+945 
+	g·ddšg
+: 0 0 0 34
+px
+;
+
+946 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+947 -
+	gwebk™
+-
+	gŒªs™iÚ
+: 
+width
+ 400
+ms
+ 
+—£
+, 
+	gbackground
+ 400m 
+	g—£
+;
+
+948 
+	gŒªs™iÚ
+: 
+width
+ 400
+ms
+ 
+—£
+, 
+	gbackground
+ 400m 
+	g—£
+;
+
+949 
+	gwidth
+: 0;
+
+952 .
+	gs™e
+-
+	gh—d”
+ .
+	g£¬ch
+-
+	gf›ld
+:
+focus
+ {
+
+953 
+background
+-
+cŞÜ
+: #fff;
+
+954 
+	gbÜd”
+: 2
+px
+ 
+sŞid
+ #c3c0ab;
+
+955 
+	gcursÜ
+: 
+‹xt
+;
+
+956 
+	gouše
+: 0;
+
+957 
+	gwidth
+: 230
+px
+;
+
+966 .
+	gh’Œy
+ {
+
+967 
+	g·ddšg
+: 20
+px
+ 0;
+
+970 .
+	g’Œy
+-
+	gh—d”
+,
+
+971 .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+972 .
+	g’Œy
+-
+	gsumm¬y
+,
+
+973 .
+	g’Œy
+-
+	gm‘a
+ {
+
+974 
+	gm¬gš
+: 0‡uto;
+
+975 
+	gmax
+-
+	gwidth
+: 800
+px
+;
+
+976 
+	gwidth
+: 100%;
+
+979 .
+	g’Œy
+-
+	gm‘a
+ {
+
+980 
+	gmax
+-
+	gwidth
+: 800
+px
+;
+
+983 .
+	gÏrge
+-
+	gh—d”
+ {
+
+984 
+	gm¬gš
+: 0‡uto;
+
+985 
+	gmax
+-
+	gwidth
+: 1300
+px
+;
+
+986 
+	gwidth
+: 100%;
+
+989 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+990 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+991 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+992 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+993 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+994 
+	g·ddšg
+: 0 376
+px
+ 0 60px;
+
+1003 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gh—d”
+ .’Œy-
+	gm‘a
+ {
+
+1004 
+	g·ddšg
+: 0;
+
+1007 .
+	g’Œy
+-
+thumbÇ
+ 
+	gimg
+ {
+
+1008 
+	gdi¥Ïy
+: 
+block
+;
+
+1009 
+	gm¬gš
+: 0‡utØ10
+px
+;
+
+1012 .
+	g’Œy
+-
+	gh—d”
+ {
+
+1013 
+	gm¬gš
+-
+	gbÙtom
+: 30
+px
+;
+
+1016 .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1017 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+1018 
+	gm¬gš
+: 20
+px
+ 0 20px;
+
+1019 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+1022 .
+	g’Œy
+-
+t™Ë
+ 
+	ga
+ {
+
+1023 
+	gcŞÜ
+: #141412;
+
+1026 .
+	g’Œy
+-
+t™Ë
+ 
+	ga
+:
+hov”
+ {
+
+1027 
+cŞÜ
+: #ea9629;
+
+1036 .
+	g’Œy
+-
+	gm‘a
+ {
+
+1037 
+	gş—r
+: 
+bÙh
+;
+
+1038 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+1041 .
+	g’Œy
+-
+m‘a
+ 
+	ga
+ {
+
+1042 
+	gcŞÜ
+: #bc360a;
+
+1045 .
+	g’Œy
+-
+m‘a
+ 
+	ga
+:
+hov”
+ {
+
+1046 
+cŞÜ
+: #bc360a;
+
+1049 .
+	g’Œy
+-
+	gm‘a
+ > 
+	g¥ª
+ {
+
+1050 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+1053 .
+	g’Œy
+-
+	gm‘a
+ > 
+	g¥ª
+:
+Ï¡
+-
+chd
+ {
+
+1054 
+m¬gš
+-
+right
+: 0;
+
+1057 .
+	gã©u»d
+-
+	gpo¡
+:
+befÜe
+ {
+
+1058 
+cÚ‹Á
+: "\f308";
+
+1059 
+	gm¬gš
+-
+	gright
+: 2
+px
+;
+
+1062 .
+	g’Œy
+-
+	gm‘a
+ .
+d©e
+ 
+	ga
+:
+befÜe
+ {
+
+1063 
+cÚ‹Á
+: "\f303";
+
+1066 .
+	gcomm’ts
+-
+lšk
+ 
+	ga
+:
+befÜe
+ {
+
+1067 
+cÚ‹Á
+: "\f300";
+
+1068 
+	gm¬gš
+-
+	gright
+: 2
+px
+;
+
+1069 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1070 
+	gtİ
+: -1
+px
+;
+
+1073 .
+	g’Œy
+-
+	gm‘a
+ .
+authÜ
+ 
+	ga
+:
+befÜe
+ {
+
+1074 
+cÚ‹Á
+: "\f304";
+
+1075 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1076 
+	gtİ
+: -1
+px
+;
+
+1079 .
+	gÿ‹gÜ›s
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+1080 
+cÚ‹Á
+: "\f301";
+
+1083 .
+	ggs
+-
+lšks
+ 
+	ga
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+1084 
+cÚ‹Á
+: "\f302";
+
+1085 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1086 
+	gtİ
+: -1
+px
+;
+
+1089 .
+	ged™
+-
+lšk
+ 
+	ga
+:
+befÜe
+ {
+
+1090 
+cÚ‹Á
+: "\f411";
+
+1091 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1092 
+	gtİ
+: -1
+px
+;
+
+1095 .
+	gsšgË
+-
+	gauthÜ
+ .
+	g’Œy
+-
+	gm‘a
+ .author,
+
+1096 .
+	g¡icky
+.
+	gfÜm©
+-
+	g¡ªd¬d
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gd©e
+,
+
+1097 .
+	g¡icky
+.
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gd©e
+,
+
+1098 .
+	g¡icky
+.
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gd©e
+,
+
+1099 .
+	g¡icky
+.
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gd©e
+,
+
+1100 .
+	g¡icky
+.
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gd©e
+ {
+
+1101 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1110 .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+1111 -
+	gwebk™
+-
+	ghyph’s
+:‡uto;
+
+1112 -
+	gmoz
+-
+	ghyph’s
+:‡uto;
+
+1113 -
+	gms
+-
+	ghyph’s
+:‡uto;
+
+1114 
+	ghyph’s
+:‡uto;
+
+1115 
+	gwÜd
+-
+	gw¿p
+: -
+wÜd
+;
+
+1118 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+,
+
+1119 .
+	gcomm’t
+-
+cÚ‹Á
+ 
+	ga
+ {
+
+1120 
+	gcŞÜ
+: #bc360a;
+
+1123 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+:
+hov”
+,
+
+1124 .
+	gcomm’t
+-
+cÚ‹Á
+ 
+	ga
+:
+hov”
+ {
+
+1125 
+cŞÜ
+: #ea9629;
+
+1128 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gblockquÙe
+ {
+
+1129 
+	gfÚt
+-
+	gsize
+: 24
+px
+;
+
+1132 .
+	g’Œy
+-
+cÚ‹Á
+ 
+blockquÙe
+ 
+	gc™e
+,
+
+1133 .
+	g’Œy
+-
+cÚ‹Á
+ 
+blockquÙe
+ 
+	gsm®l
+ {
+
+1134 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+1137 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÆeá
+,
+
+1138 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+1139 
+	gm¬gš
+-
+	gËá
+: -60
+px
+;
+
+1142 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÄight
+,
+
+1143 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+1144 
+	gm¬gš
+-
+	gright
+: -60
+px
+;
+
+1147 
+	gfoÙ”
+.
+	g’Œy
+-
+	gm‘a
+ {
+
+1148 
+	gm¬gš
+-
+	gtİ
+: 24
+px
+;
+
+1151 .
+	gfÜm©
+-
+¡ªd¬d
+ 
+	gfoÙ”
+.
+	g’Œy
+-
+	gm‘a
+ {
+
+1152 
+	gm¬gš
+-
+	gtİ
+: 0;
+
+1156 .
+	g·ge
+-
+	glšks
+ {
+
+1157 
+	gş—r
+: 
+bÙh
+;
+
+1158 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+1159 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+1160 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+1161 
+	glše
+-
+	gheight
+: 2.2;
+
+1162 
+	gm¬gš
+: 20
+px
+ 0;
+
+1163 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+uµ”ÿ£
+;
+
+1166 .
+	g·ge
+-
+lšks
+ 
+	ga
+,
+
+1167 .
+	g·ge
+-
+	glšks
+ > 
+	g¥ª
+ {
+
+1168 
+	gbackground
+: #fff;
+
+1169 
+	gbÜd”
+: 1
+px
+ 
+sŞid
+ #fff;
+
+1170 
+	g·ddšg
+: 5
+px
+ 10px;
+
+1171 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+1174 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+,
+
+1175 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+,
+
+1176 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+,
+
+1177 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+,
+
+1178 .
+	g·ge
+-
+lšks
+ 
+	ga
+ {
+
+1179 
+	gbackground
+: #e63f2a;
+
+1180 
+	gbÜd”
+: 1
+px
+ 
+sŞid
+ #e63f2a;
+
+1181 
+	gcŞÜ
+: #fff;
+
+1184 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+,
+
+1185 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+,
+
+1186 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+,
+
+1187 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+,
+
+1188 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+,
+
+1189 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+,
+
+1190 .
+	g·ge
+-
+lšks
+ 
+	ga
+:
+hov”
+ {
+
+1191 
+background
+: #fff;
+
+1192 
+	gcŞÜ
+: #e63f2a;
+
+1195 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+	glšks
+ > 
+	g¥ª
+,
+
+1196 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	g·ge
+-
+	glšks
+ > 
+	g¥ª
+ {
+
+1197 
+	gbackground
+: 
+nÚe
+;
+
+1200 .
+	g·ge
+-
+	glšks
+ .·ge-lšks-
+	gt™Ë
+ {
+
+1201 
+	gbackground
+: 
+Œª¥¬’t
+;
+
+1202 
+	gbÜd”
+: 
+nÚe
+;
+
+1203 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+1204 
+	g·ddšg
+: 0;
+
+1208 .
+	gh’Œy
+ .
+	gmejs
+-
+	gmedŸ–em’t
+,
+
+1209 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚš”
+ .mejs-
+	gcÚŒŞs
+ {
+
+1210 
+	gbackground
+: #220e10;
+
+1213 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	gtime
+-
+	g¿
+ .mejs-time-
+	glßded
+,
+
+1214 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	ghÜizÚl
+-
+	gvŞume
+-
+	g¦id”
+ .mejs-hÜizÚl-vŞume-
+	gcu¼’t
+ {
+
+1215 
+	gbackground
+: #fff;
+
+1218 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	gtime
+-
+	g¿
+ .mejs-time-
+	gcu¼’t
+ {
+
+1219 
+	gbackground
+: #ea9629;
+
+1222 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	gtime
+-
+	g¿
+ .mejs-time-
+	gtÙ®
+,
+
+1223 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	ghÜizÚl
+-
+	gvŞume
+-
+	g¦id”
+ .mejs-hÜizÚl-vŞume-
+	gtÙ®
+ {
+
+1224 
+	gbackground
+: #595959;
+
+1227 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	gtime
+-
+¿
+ 
+	g¥ª
+,
+
+1228 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	ghÜizÚl
+-
+	gvŞume
+-
+	g¦id”
+ .mejs-hÜizÚl-vŞume-
+	gtÙ®
+,
+
+1229 .
+	gh’Œy
+ .
+	gmejs
+-
+	gcÚŒŞs
+ .mejs-
+	ghÜizÚl
+-
+	gvŞume
+-
+	g¦id”
+ .mejs-hÜizÚl-vŞume-
+	gcu¼’t
+ {
+
+1230 
+	gbÜd”
+-
+	g¿dius
+: 0;
+
+1239 .
+	gg®Ëry
+ {
+
+1240 
+	gm¬gš
+-
+	gbÙtom
+: 20
+px
+;
+
+1241 
+	gm¬gš
+-
+	gËá
+: -4
+px
+;
+
+1244 .
+	gg®Ëry
+-
+	g™em
+ {
+
+1245 : 
+Ëá
+;
+
+1246 
+	gm¬gš
+: 0 4
+px
+ 4px 0;
+
+1247 
+	gov”æow
+: 
+hidd’
+;
+
+1248 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1251 .
+	gg®Ëry
+-
+	gcŞumns
+-1.g®Ëry-
+	gsize
+-
+	gmedium
+,
+
+1252 .
+	gg®Ëry
+-
+	gcŞumns
+-1.g®Ëry-
+	gsize
+-
+	gthumbÇ
+,
+
+1253 .
+	gg®Ëry
+-
+	gcŞumns
+-2.g®Ëry-
+	gsize
+-
+	gthumbÇ
+,
+
+1254 .
+	gg®Ëry
+-
+	gcŞumns
+-3.g®Ëry-
+	gsize
+-
+	gthumbÇ
+ {
+
+1255 
+	gdi¥Ïy
+: 
+bË
+;
+
+1256 
+	gm¬gš
+: 0‡utØ20
+px
+;
+
+1259 .
+	gg®Ëry
+-
+	gcŞumns
+-1 .g®Ëry-
+	g™em
+,
+
+1260 .
+	gg®Ëry
+-
+	gcŞumns
+-2 .g®Ëry-
+	g™em
+,
+
+1261 .
+	gg®Ëry
+-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+ {
+
+1262 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+1265 .
+	gg®Ëry
+-
+	gcŞumns
+-4 .g®Ëry-
+	g™em
+ {
+
+1266 
+	gmax
+-
+	gwidth
+: 23%;
+
+1267 
+	gmax
+-
+	gwidth
+: -
+webk™
+-
+ÿlc
+(25% - 4
+px
+);
+
+1268 
+	gmax
+-
+	gwidth
+: 
+ÿlc
+(25% - 4
+px
+);
+
+1271 .
+	gg®Ëry
+-
+	gcŞumns
+-5 .g®Ëry-
+	g™em
+ {
+
+1272 
+	gmax
+-
+	gwidth
+: 19%;
+
+1273 
+	gmax
+-
+	gwidth
+: -
+webk™
+-
+ÿlc
+(20% - 4
+px
+);
+
+1274 
+	gmax
+-
+	gwidth
+: 
+ÿlc
+(20% - 4
+px
+);
+
+1277 .
+	gg®Ëry
+-
+	gcŞumns
+-6 .g®Ëry-
+	g™em
+ {
+
+1278 
+	gmax
+-
+	gwidth
+: 15%;
+
+1279 
+	gmax
+-
+	gwidth
+: -
+webk™
+-
+ÿlc
+(16.7% - 4
+px
+);
+
+1280 
+	gmax
+-
+	gwidth
+: 
+ÿlc
+(16.7% - 4
+px
+);
+
+1283 .
+	gg®Ëry
+-
+	gcŞumns
+-7 .g®Ëry-
+	g™em
+ {
+
+1284 
+	gmax
+-
+	gwidth
+: 13%;
+
+1285 
+	gmax
+-
+	gwidth
+: -
+webk™
+-
+ÿlc
+(14.28% - 4
+px
+);
+
+1286 
+	gmax
+-
+	gwidth
+: 
+ÿlc
+(14.28% - 4
+px
+);
+
+1289 .
+	gg®Ëry
+-
+	gcŞumns
+-8 .g®Ëry-
+	g™em
+ {
+
+1290 
+	gmax
+-
+	gwidth
+: 11%;
+
+1291 
+	gmax
+-
+	gwidth
+: -
+webk™
+-
+ÿlc
+(12.5% - 4
+px
+);
+
+1292 
+	gmax
+-
+	gwidth
+: 
+ÿlc
+(12.5% - 4
+px
+);
+
+1295 .
+	gg®Ëry
+-
+	gcŞumns
+-9 .g®Ëry-
+	g™em
+ {
+
+1296 
+	gmax
+-
+	gwidth
+: 9%;
+
+1297 
+	gmax
+-
+	gwidth
+: -
+webk™
+-
+ÿlc
+(11.1% - 4
+px
+);
+
+1298 
+	gmax
+-
+	gwidth
+: 
+ÿlc
+(11.1% - 4
+px
+);
+
+1301 .
+	gg®Ëry
+-
+	gcŞumns
+-1 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(1
+n
+),
+
+1302 .
+	gg®Ëry
+-
+	gcŞumns
+-2 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(2
+n
+),
+
+1303 .
+	gg®Ëry
+-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(3
+n
+),
+
+1304 .
+	gg®Ëry
+-
+	gcŞumns
+-4 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(4
+n
+),
+
+1305 .
+	gg®Ëry
+-
+	gcŞumns
+-5 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(5
+n
+),
+
+1306 .
+	gg®Ëry
+-
+	gcŞumns
+-6 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(6
+n
+),
+
+1307 .
+	gg®Ëry
+-
+	gcŞumns
+-7 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(7
+n
+),
+
+1308 .
+	gg®Ëry
+-
+	gcŞumns
+-8 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(8
+n
+),
+
+1309 .
+	gg®Ëry
+-
+	gcŞumns
+-9 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+	$ty³
+(9
+n
+) {
+
+1310 
+m¬gš
+-
+right
+: 0;
+
+1311 
+	}
+}
+
+1313 .
+	gg®Ëry
+-
+	gÿ±iÚ
+ {
+
+1314 
+	gbackground
+-
+	gcŞÜ
+: 
+rgba
+(0, 0, 0, 0.7);
+
+1315 
+	gbox
+-
+	gsizšg
+: 
+bÜd”
+-
+box
+;
+
+1316 
+	gcŞÜ
+: #fff;
+
+1317 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+1318 
+	glše
+-
+	gheight
+: 1.3;
+
+1319 
+	gm¬gš
+: 0;
+
+1320 
+	gmax
+-
+	gheight
+: 50%;
+
+1321 
+	gİac™y
+: 0;
+
+1322 
+	g·ddšg
+: 2
+px
+ 8px;
+
+1323 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+1324 
+	gbÙtom
+: 0;
+
+1325 
+	gËá
+: 0;
+
+1326 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+1327 -
+	gwebk™
+-
+	gŒªs™iÚ
+: 
+İac™y
+ 400
+ms
+ 
+—£
+;
+
+1328 
+	gŒªs™iÚ
+: 
+İac™y
+ 400
+ms
+ 
+—£
+;
+
+1329 
+	gwidth
+: 100%;
+
+1332 .
+	gg®Ëry
+-
+	gÿ±iÚ
+:
+befÜe
+ {
+
+1333 
+box
+-
+shadow
+: 0 -10
+px
+ 15px #000 
+š£t
+;
+
+1334 
+	gcÚ‹Á
+: "";
+
+1335 
+	gheight
+: 100%;
+
+1336 
+	gmš
+-
+	gheight
+: 49
+px
+;
+
+1337 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+1338 
+	gËá
+: 0;
+
+1339 
+	gtİ
+: 0;
+
+1340 
+	gwidth
+: 100%;
+
+1343 .
+	gg®Ëry
+-
+	g™em
+:
+hov”
+ .
+g®Ëry
+-
+ÿ±iÚ
+ {
+
+1344 
+İac™y
+: 1;
+
+1347 .
+	gg®Ëry
+-
+	gcŞumns
+-7 .g®Ëry-
+	gÿ±iÚ
+,
+
+1348 .
+	gg®Ëry
+-
+	gcŞumns
+-8 .g®Ëry-
+	gÿ±iÚ
+,
+
+1349 .
+	gg®Ëry
+-
+	gcŞumns
+-9 .g®Ëry-
+	gÿ±iÚ
+ {
+
+1350 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1360 .
+	gfÜm©
+-
+	gaside
+ {
+
+1361 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+1364 .
+	gblog
+ .
+	gfÜm©
+-
+	gaside
+:
+fœ¡
+-
+of
+-
+ty³
+,
+
+1365 .
+	gsšgË
+ .
+	gfÜm©
+-
+	gaside
+:
+fœ¡
+-
+of
+-
+ty³
+,
+
+1366 .
+	gfÜm©
+-
+	gaside
+ + .format-aside,
+
+1367 .
+	gfÜm©
+-
+	gaside
+ + .fÜm©-
+	glšk
+,
+
+1368 .
+	gfÜm©
+-
+	glšk
+ + .fÜm©-
+	gaside
+ {
+
+1369 
+	gbox
+-
+	gshadow
+: 
+š£t
+ 0 2
+px
+ 2px 
+rgba
+(173, 165, 105, 0.2);
+
+1372 .
+	gfÜm©
+-
+	gaside
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1373 
+	gm¬gš
+-
+	gtİ
+: 0;
+
+1376 .
+	gfÜm©
+-
+aside
+ 
+	gblockquÙe
+ {
+
+1377 
+	gfÚt
+-
+	gsize
+: 100%;
+
+1378 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+1381 .
+	gfÜm©
+-
+aside
+ 
+	gc™e
+ {
+
+1382 
+	gfÚt
+-
+	gsize
+: 100%;
+
+1383 
+	g‹xt
+-
+	gŒªsfÜm
+: 
+nÚe
+;
+
+1386 .
+	gfÜm©
+-
+aside
+ 
+	gc™e
+:
+befÜe
+ {
+
+1387 
+cÚ‹Á
+: "\2014";
+
+1388 
+	gm¬gš
+-
+	gright
+: 5
+px
+;
+
+1392 .
+	gfÜm©
+-
+	gaudio
+ {
+
+1393 
+	gbackground
+-
+	gcŞÜ
+: #db572f;
+
+1396 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1397 
+	gfÚt
+-
+	gsize
+: 28
+px
+;
+
+1398 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+1401 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+ {
+
+1402 
+cÚ‹Á
+: "\f109";
+
+1403 : 
+Ëá
+;
+
+1404 
+	gfÚt
+-
+	gsize
+: 64
+px
+;
+
+1405 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1406 
+	gtİ
+: 4
+px
+;
+
+1409 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+,
+
+1410 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+,
+
+1411 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+:
+hov”
+,
+
+1412 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+:
+hov”
+ {
+
+1413 
+cŞÜ
+: #fbfaf3;
+
+1416 .
+	gfÜm©
+-
+	gaudio
+ .audio-
+	gcÚ‹Á
+ {
+
+1417 
+	gbackground
+: 
+u¾
+(
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+-
+y
+ 
+Ëá
+ 
+tİ
+;
+
+1418 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+1419 : 
+right
+;
+
+1420 
+	g·ddšg
+-
+	gËá
+: 35
+px
+;
+
+1421 
+	gwidth
+: 80%;
+
+1422 
+	gwidth
+: -
+webk™
+-
+ÿlc
+(100% - 85
+px
+);
+
+1423 
+	gwidth
+: 
+ÿlc
+(100% - 85
+px
+);
+
+1426 .
+	gfÜm©
+-
+	gaudio
+ .
+	gwp
+-audio-
+	gshÜtcode
+ {
+
+1427 
+	gheight
+: 30
+px
+ !
+impÜÁ
+;
+
+1428 
+	gm¬gš
+: 20
+px
+ 0;
+
+1429 
+	gmax
+-
+	gwidth
+: 400
+px
+ !
+impÜÁ
+;
+
+1432 .
+	gfÜm©
+-
+audio
+ 
+	gaudio
+ {
+
+1433 
+	gmax
+-
+	gwidth
+: 100% !
+impÜÁ
+;
+
+1437 .
+	gfÜm©
+-
+	gch©
+ {
+
+1438 
+	gbackground
+-
+	gcŞÜ
+: #eadaa6;
+
+1441 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1442 
+	gfÚt
+-
+	gsize
+: 28
+px
+;
+
+1443 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+1446 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+,
+
+1447 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+ {
+
+1448 
+	gcŞÜ
+: #722d19;
+
+1451 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gm‘a
+ .
+d©e
+ 
+	ga
+:
+befÜe
+ {
+
+1452 
+cÚ‹Á
+: "\f108";
+
+1453 
+	gm¬gš
+-
+	gright
+: 2
+px
+;
+
+1456 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gauthÜ
+ {
+
+1457 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1460 .
+	gfÜm©
+-
+	gch©
+ .chat {
+
+1461 
+	gm¬gš
+: 0;
+
+1464 .
+	gfÜm©
+-
+	gch©
+ .ch© .ch©-
+	gtime¡amp
+ {
+
+1465 
+	gcŞÜ
+: #722d19;
+
+1466 : 
+right
+;
+
+1467 
+	gfÚt
+-
+	gsize
+: 12
+px
+;
+
+1468 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+1469 
+	gm¬gš
+: 5
+px
+ 10px 0;
+
+1472 .
+	gfÜm©
+-
+	gch©
+ .ch© .
+	gâ
+ {
+
+1473 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+1477 .
+	gfÜm©
+-
+	gg®Ëry
+ {
+
+1478 
+	gbackground
+-
+	gcŞÜ
+: #fbca3c;
+
+1481 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+	gh—d”
+ {
+
+1482 
+	gm¬gš
+-
+	gbÙtom
+: 15
+px
+;
+
+1485 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1486 
+	gfÚt
+-
+	gsize
+: 50
+px
+;
+
+1487 
+	gfÚt
+-
+	gweight
+: 400;
+
+1488 
+	gm¬gš
+: 0;
+
+1491 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+,
+
+1492 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+ {
+
+1493 
+	gcŞÜ
+: #722d19;
+
+1497 .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1498 
+	gfÚt
+-
+	gsize
+: 28
+px
+;
+
+1499 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+1502 .
+	gfÜm©
+-
+	gimage
+ .
+	gÿ‹gÜ›s
+-
+	glšks
+,
+
+1503 .
+	gfÜm©
+-
+	gimage
+ .
+	ggs
+-
+	glšks
+ {
+
+1504 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1508 .
+	gfÜm©
+-
+	glšk
+ {
+
+1509 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+1512 .
+	gblog
+ .
+	gfÜm©
+-
+	glšk
+:
+fœ¡
+-
+of
+-
+ty³
+,
+
+1513 .
+	gsšgË
+ .
+	gfÜm©
+-
+	glšk
+:
+fœ¡
+-
+of
+-
+ty³
+ {
+
+1514 
+box
+-
+shadow
+: 
+š£t
+ 0 2
+px
+ 2px 
+rgba
+(173, 165, 105, 0.2);
+
+1517 .
+	gfÜm©
+-
+	glšk
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+1518 .
+	gfÜm©
+-
+	glšk
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+Ï¡
+-
+chd
+ {
+
+1519 
+m¬gš
+-
+bÙtom
+: 0;
+
+1522 .
+	gfÜm©
+-
+	glšk
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1523 
+	gcŞÜ
+: #ca3c08;
+
+1524 
+	gdi¥Ïy
+: 
+šlše
+;
+
+1525 
+	gfÚt
+: 300 
+™®ic
+ 20
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+1526 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+1529 .
+	gfÜm©
+-
+	glšk
+ .
+	g’Œy
+-
+t™Ë
+ 
+	ga
+ {
+
+1530 
+	gcŞÜ
+: #bc360a;
+
+1533 .
+	gfÜm©
+-
+lšk
+ 
+	gdiv
+.
+	g’Œy
+-
+	gm‘a
+ {
+
+1534 
+	gdi¥Ïy
+: 
+šlše
+;
+
+1538 .
+	gfÜm©
+-
+	gquÙe
+ {
+
+1539 
+	gbackground
+-
+	gcŞÜ
+: #210d10;
+
+1542 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+1543 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1544 
+	gcŞÜ
+: #f7f5e7;
+
+1547 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gblockquÙe
+ {
+
+1548 
+	gfÚt
+-
+	gsize
+: 28
+px
+;
+
+1549 
+	gm¬gš
+: 0;
+
+1552 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+,
+
+1553 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+,
+
+1554 .
+	gfÜm©
+-
+	gquÙe
+ .
+	glšked
+ {
+
+1555 
+	gcŞÜ
+: #e63f2a;
+
+1558 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+c™e
+ 
+	ga
+ {
+
+1559 
+	gbÜd”
+-
+	gbÙtom
+: 1
+px
+ 
+dÙ‹d
+ #fff;
+
+1560 
+	gcŞÜ
+: #fff;
+
+1563 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+c™e
+ 
+	ga
+:
+hov”
+ {
+
+1564 
+‹xt
+-
+decÜ©iÚ
+: 
+nÚe
+;
+
+1567 .
+	gfÜm©
+-
+quÙe
+ 
+blockquÙe
+ 
+	gsm®l
+,
+
+1568 .
+	gfÜm©
+-
+quÙe
+ 
+blockquÙe
+ 
+	gc™e
+ {
+
+1569 
+	gdi¥Ïy
+: 
+block
+;
+
+1570 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+1573 .
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+ {
+
+1574 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+1575 
+	gfÚt
+-
+	gweight
+: 300;
+
+1576 
+	g·ddšg
+-
+	gËá
+: 75
+px
+;
+
+1577 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1580 .
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+:
+befÜe
+ {
+
+1581 
+cÚ‹Á
+: '\201C';
+
+1582 
+	gfÚt
+-
+	gsize
+: 140
+px
+;
+
+1583 
+	gfÚt
+-
+	gweight
+: 400;
+
+1584 
+	glše
+-
+	gheight
+: .8;
+
+1585 
+	g·ddšg
+-
+	gright
+: 25
+px
+;
+
+1586 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+1587 
+	gËá
+: -15
+px
+;
+
+1588 
+	gtİ
+: -3
+px
+;
+
+1591 .
+	gfÜm©
+-
+	gquÙe
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	gauthÜ
+ {
+
+1592 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1596 .
+	gfÜm©
+-
+	g¡©us
+ {
+
+1597 
+	gbackground
+-
+	gcŞÜ
+: #722d19;
+
+1598 
+	g·ddšg
+: 0;
+
+1601 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+1602 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1603 
+	g·ddšg
+-
+	gËá
+: 35
+px
+;
+
+1604 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1607 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+ {
+
+1608 
+	gcŞÜ
+: #eadaa6;
+
+1611 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+ {
+
+1612 
+	gcŞÜ
+: #f7f5e7;
+
+1615 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+1616 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1617 
+	g·ddšg
+-
+	gËá
+: 95
+px
+;
+
+1620 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+1621 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+1622 
+background
+: 
+u¾
+(
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+-
+y
+ 
+Ëá
+ 
+bÙtom
+;
+
+1623 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+1624 
+	gcÚ‹Á
+: "";
+
+1625 
+	gdi¥Ïy
+: 
+block
+;
+
+1626 
+	gheight
+: 100%;
+
+1627 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+1628 
+	gËá
+: 10
+px
+;
+
+1629 
+	gtİ
+: 0;
+
+1630 
+	gwidth
+: 1
+px
+;
+
+1633 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+1634 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+1635 
+Ëá
+: 70
+px
+;
+
+1638 .
+	gfÜm©
+-
+	g¡©us
+ .
+	gÿ‹gÜ›s
+-
+	glšks
+,
+
+1639 .
+	gfÜm©
+-
+	g¡©us
+ .
+	ggs
+-
+	glšks
+ {
+
+1640 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1644 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+1645 
+background
+-
+pos™iÚ
+: 
+Ëá
+ 
+tİ
+;
+
+1648 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+1649 
+	gcŞÜ
+: #f7f5e7;
+
+1650 
+	gfÚt
+-
+	gsize
+: 24
+px
+;
+
+1651 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+1652 
+	gfÚt
+-
+	gweight
+: 300;
+
+1653 
+	g·ddšg
+-
+	gbÙtom
+: 30
+px
+;
+
+1654 
+	g·ddšg
+-
+	gtİ
+: 40
+px
+;
+
+1655 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1658 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+1659 
+background
+-
+cŞÜ
+: 
+rgba
+(0, 0, 0, 0.65);
+
+1660 
+	gcÚ‹Á
+: "";
+
+1661 
+	gheight
+: 3
+px
+;
+
+1662 
+	gm¬gš
+-
+	gtİ
+: 13
+px
+;
+
+1663 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+1664 
+	gËá
+: 4
+px
+;
+
+1665 
+	gwidth
+: 13
+px
+;
+
+1668 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ > 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+1669 
+Ëá
+: 64
+px
+;
+
+1672 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+Ï¡
+-
+chd
+ {
+
+1673 
+m¬gš
+-
+bÙtom
+: 0;
+
+1676 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1677 
+	gm¬gš
+-
+	gtİ
+: 0;
+
+1678 
+	g·ddšg
+-
+	gbÙtom
+: 40
+px
+;
+
+1681 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ .
+d©e
+ 
+	ga
+:
+befÜe
+ {
+
+1682 
+cÚ‹Á
+: "\f105";
+
+1686 .
+	gfÜm©
+-
+	gvideo
+ {
+
+1687 
+	gbackground
+-
+	gcŞÜ
+: #db572f;
+
+1690 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+,
+
+1691 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+,
+
+1692 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	ga
+:
+hov”
+,
+
+1693 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+:
+hov”
+ {
+
+1694 
+cŞÜ
+: #fbfaf3;
+
+1697 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1698 
+	gfÚt
+-
+	gsize
+: 50
+px
+;
+
+1699 
+	gfÚt
+-
+	gweight
+: 400;
+
+1702 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1703 
+	gcŞÜ
+: #220e10;
+
+1712 .
+	g©chm’t
+ .
+	gh’Œy
+ {
+
+1713 
+	gbackground
+-
+	gcŞÜ
+: #e8e5ce;
+
+1714 
+	gm¬gš
+: 0;
+
+1715 
+	g·ddšg
+: 0;
+
+1718 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+ {
+
+1719 
+	gm¬gš
+-
+	gbÙtom
+: 0;
+
+1720 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+1721 
+	g·ddšg
+: 30
+px
+ 0;
+
+1724 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+1725 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+1726 : 
+Ëá
+;
+
+1727 
+	gfÚt
+: 300 
+™®ic
+ 30
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+1728 
+	gm¬gš
+: 0;
+
+1731 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gt™Ë
+:
+befÜe
+ {
+
+1732 
+cÚ‹Á
+: "\f416";
+
+1733 
+	gfÚt
+-
+	gsize
+: 32
+px
+;
+
+1734 
+	gm¬gš
+-
+	gright
+: 10
+px
+;
+
+1737 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+1738 
+	gş—r
+: 
+nÚe
+;
+
+1739 
+	gcŞÜ
+: 
+šh”™
+;
+
+1740 : 
+right
+;
+
+1741 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+1742 
+	g·ddšg
+: 9
+px
+ 0 0;
+
+1743 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+1746 .
+	gh’Œy
+.
+	g©chm’t
+:
+nÙ
+(.
+image
+-
+©chm’t
+è.
+’Œy
+-
+m‘a
+ {
+
+1747 
+max
+-
+width
+: 104
+px
+;
+
+1750 .
+©chm’t
+ 
+	gfoÙ”
+.
+	g’Œy
+-
+	gm‘a
+,
+
+1751 .
+	gsšgË
+-
+	g©chm’t
+ .
+	gs™e
+-
+	gmaš
+ .
+	gsideb¬
+-
+	gcÚš”
+ {
+
+1752 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1755 .
+	g©chm’t
+-
+	gm‘a
+:
+befÜe
+ {
+
+1756 
+cÚ‹Á
+: "\f307";
+
+1759 .
+	gfuÎ
+-
+	gsize
+-
+lšk
+ 
+	ga
+:
+befÜe
+ {
+
+1760 
+cÚ‹Á
+: "\f402";
+
+1763 .
+	gfuÎ
+-
+	gsize
+-
+	glšk
+:
+befÜe
+ {
+
+1764 
+cÚ‹Á
+: 
+nÚe
+;
+
+1767 .
+	g©chm’t
+ .
+	g’Œy
+-
+m‘a
+ 
+	ga
+,
+
+1768 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gm‘a
+ .
+	ged™
+-
+	glšk
+:
+befÜe
+,
+
+1769 .
+	g©chm’t
+ .
+	gfuÎ
+-
+	gsize
+-
+	glšk
+:
+befÜe
+ {
+
+1770 
+cŞÜ
+: #ca3c08;
+
+1773 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+1774 
+	gbackground
+-
+	gcŞÜ
+: #fff;
+
+1775 
+	gmax
+-
+	gwidth
+: 100%;
+
+1776 
+	g·ddšg
+: 40
+px
+ 0;
+
+1779 .
+	gimage
+-
+	gÇvig©iÚ
+ {
+
+1780 
+	gm¬gš
+: 0‡uto;
+
+1781 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+1782 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+1785 .
+	gimage
+-
+Çvig©iÚ
+ 
+	ga
+:
+hov”
+ {
+
+1786 
+‹xt
+-
+decÜ©iÚ
+: 
+nÚe
+;
+
+1789 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+,
+
+1790 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+1791 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+1792 
+	gtİ
+: 50
+px
+;
+
+1795 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ {
+
+1796 
+	gËá
+: 0;
+
+1799 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+1800 
+	gright
+: 0;
+
+1803 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gm‘a
+-
+	gÇv
+ {
+
+1804 
+	gfÚt
+-
+	gsize
+: 32
+px
+;
+
+1805 
+	gfÚt
+-
+	gweight
+: 300;
+
+1806 
+	gv”tiÿl
+-
+	g®ign
+: -4
+px
+;
+
+1809 .
+	g©chm’t
+ .
+	g’Œy
+-attachment,
+
+1810 .
+©chm’t
+ 
+	gp
+.
+	g©chm’t
+ {
+
+1811 
+	gm¬gš
+: 0‡uto;
+
+1812 
+	gmax
+-
+	gwidth
+: 724
+px
+;
+
+1813 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+1816 .
+	g©chm’t
+ .
+	g’Œy
+-attachment .attachment {
+
+1817 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+1820 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gÿ±iÚ
+ {
+
+1821 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+1824 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gdesütiÚ
+ {
+
+1825 
+	gm¬gš
+: 20
+px
+‡uto 0;
+
+1826 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+1829 .
+	g©chm’t
+ .
+	g’Œy
+-
+ÿ±iÚ
+ 
+	gp
+:
+Ï¡
+-
+chd
+,
+
+1830 .
+	g©chm’t
+ .
+	g’Œy
+-
+desütiÚ
+ 
+	gp
+:
+Ï¡
+-
+chd
+ {
+
+1831 
+m¬gš
+: 0;
+
+1840 .
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ {
+
+1841 : 
+Ëá
+;
+
+1844 .
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+1845 : 
+right
+;
+
+1848 .
+Çvig©iÚ
+ 
+	ga
+ {
+
+1849 
+	gcŞÜ
+: #bc360a;
+
+1852 .
+Çvig©iÚ
+ 
+	ga
+:
+hov”
+ {
+
+1853 
+cŞÜ
+: #ea9629;
+
+1854 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+1857 .
+	g·gšg
+-
+	gÇvig©iÚ
+ {
+
+1858 
+	gbackground
+-
+	gcŞÜ
+: #e8e5ce;
+
+1859 
+	g·ddšg
+: 40
+px
+ 0;
+
+1862 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+1863 
+	gm¬gš
+: 0‡uto;
+
+1864 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+1865 
+	gwidth
+: 100%;
+
+1868 .
+	gsideb¬
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+1869 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+1870 
+	g·ddšg
+: 0 376
+px
+ 0 60px;
+
+1873 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+1874 
+	g·ddšg
+: 13
+px
+ 0;
+
+1877 .
+	g·gšg
+-
+Çvig©iÚ
+ 
+	ga
+ {
+
+1878 
+	gfÚt
+-
+	gsize
+: 22
+px
+;
+
+1879 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+1880 
+	gfÚt
+-
+	gweight
+: 300;
+
+1883 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gm‘a
+-
+	gÇv
+ {
+
+1884 
+	gbackground
+-
+	gcŞÜ
+: #e63f2a;
+
+1885 
+	gbÜd”
+-
+	g¿dius
+: 50%;
+
+1886 
+	gcŞÜ
+: #fff;
+
+1887 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+1888 
+	gfÚt
+-
+	gsize
+: 26
+px
+;
+
+1889 
+	g·ddšg
+: 3
+px
+ 0 8px;
+
+1890 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+1891 
+	gwidth
+: 50
+px
+;
+
+1894 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+ .
+	gm‘a
+-nav {
+
+1895 
+	gm¬gš
+-
+	gright
+: 10
+px
+;
+
+1896 
+	g·ddšg
+: 17
+px
+ 0 23px;
+
+1897 
+	gwidth
+: 80
+px
+;
+
+1900 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ .
+	gm‘a
+-nav {
+
+1901 
+	gm¬gš
+-
+	gËá
+: 10
+px
+;
+
+1904 .
+	g·gšg
+-
+Çvig©iÚ
+ 
+	ga
+:
+hov”
+ .
+m‘a
+-
+Çv
+ {
+
+1905 
+background
+-
+cŞÜ
+: #ea9629;
+
+1906 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+1909 .
+	gpo¡
+-
+	gÇvig©iÚ
+ {
+
+1910 
+	gbackground
+-
+	gcŞÜ
+: #fff;
+
+1911 
+	gcŞÜ
+: #ca3c08;
+
+1912 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+1913 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+1914 
+	gfÚt
+-
+	gweight
+: 300;
+
+1915 
+	g·ddšg
+: 20
+px
+ 0;
+
+1918 .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+1919 
+	gm¬gš
+: 0‡uto;
+
+1920 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+1923 .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+1924 
+	g·ddšg
+: 0 376
+px
+ 0 60px;
+
+1927 .
+	gpo¡
+-
+Çvig©iÚ
+ 
+	ga
+[
+»l
+="next"] {
+
+1928 : 
+right
+;
+
+1929 
+	g‹xt
+-
+	g®ign
+: 
+right
+;
+
+1938 .
+	gauthÜ
+-
+	gšfo
+ {
+
+1939 
+	gm¬gš
+: 0‡uto;
+
+1940 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+1941 
+	g·ddšg
+: 30
+px
+ 0 10px;
+
+1942 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+1943 
+	gwidth
+: 100%;
+
+1946 .
+	gauthÜ
+.
+	gsideb¬
+ .authÜ-
+	gšfo
+ {
+
+1947 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+1948 
+	g·ddšg
+: 30
+px
+ 376px 10px 60px;
+
+1951 .
+	gsšgË
+ .
+	gauthÜ
+-
+	gšfo
+ {
+
+1952 
+	g·ddšg
+: 50
+px
+ 0 0;
+
+1955 .
+	gauthÜ
+-
+	gav©¬
+ .avatar {
+
+1956 : 
+Ëá
+;
+
+1957 
+	gm¬gš
+: 0 30
+px
+ 30px 0;
+
+1960 .
+	gsšgË
+-
+	gfÜm©
+-
+	g¡©us
+ .
+	gauthÜ
+-
+	gdesütiÚ
+ {
+
+1961 
+	gcŞÜ
+: #f7f5e7;
+
+1964 .
+	gauthÜ
+-
+	gdesütiÚ
+ .authÜ-
+	gt™Ë
+ {
+
+1965 
+	gş—r
+: 
+nÚe
+;
+
+1966 
+	gfÚt
+: 300 
+™®ic
+ 20
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+1967 
+	gm¬gš
+: 0 0 8
+px
+;
+
+1970 .
+	gauthÜ
+-
+	glšk
+ {
+
+1971 
+	gcŞÜ
+: #ca3c08;
+
+1972 
+	gm¬gš
+-
+	gËá
+: 2
+px
+;
+
+1975 .
+	gauthÜ
+.
+	g¬chive
+ .authÜ-
+	glšk
+ {
+
+1976 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+1985 .
+	g¬chive
+-
+	gh—d”
+ {
+
+1986 
+	gbackground
+-
+	gcŞÜ
+: #e8e5ce;
+
+1989 .
+	g¬chive
+-
+	gt™Ë
+,
+
+1990 .
+	g¬chive
+-
+	gm‘a
+ {
+
+1991 
+	gfÚt
+: 300 
+™®ic
+ 30
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+1992 
+	gm¬gš
+: 0‡uto;
+
+1993 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+1994 
+	g·ddšg
+: 30
+px
+ 0;
+
+1995 
+	gwidth
+: 100%;
+
+1998 .
+	g¬chive
+-
+	gm‘a
+ {
+
+1999 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+2000 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+2001 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+2002 
+	gm¬gš
+-
+	gtİ
+: -15
+px
+;
+
+2003 
+	g·ddšg
+: 0 0 11
+px
+;
+
+2006 .
+	gsideb¬
+ .
+	g¬chive
+-
+	gm‘a
+ {
+
+2007 
+	g·ddšg
+-
+	gright
+: 316
+px
+;
+
+2016 .
+	g·ge
+-
+	gh—d”
+ {
+
+2017 
+	gbackground
+-
+	gcŞÜ
+: #e8e5ce;
+
+2020 .
+	g·ge
+-
+	gt™Ë
+ {
+
+2021 
+	gfÚt
+: 300 
+™®ic
+ 30
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+2022 
+	gm¬gš
+: 0‡uto;
+
+2023 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+2024 
+	g·ddšg
+: 30
+px
+ 0;
+
+2025 
+	gwidth
+: 100%;
+
+2028 .
+	g·ge
+-
+	gcÚ‹Á
+ {
+
+2029 
+	gm¬gš
+: 0‡uto;
+
+2030 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2031 
+	g·ddšg
+: 40
+px
+ 0;
+
+2032 
+	gwidth
+: 100%;
+
+2035 .
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+ {
+
+2036 
+	gm¬gš
+: 0‡uto;
+
+2037 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+2038 
+	g·ddšg
+: 40
+px
+ 376px 40px 60px;
+
+2047 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gh—d”
+ {
+
+2048 
+	gbackground
+-
+	gcŞÜ
+: #fff;
+
+2051 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+ {
+
+2052 
+	glše
+-
+	gheight
+: 0.6;
+
+2053 
+	gm¬gš
+: 0;
+
+2054 
+	g·ddšg
+: 300
+px
+;
+
+2055 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2056 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+2057 
+	gwidth
+:‡uto;
+
+2060 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+:
+befÜe
+ {
+
+2061 
+cŞÜ
+: #e8e5ce;
+
+2062 
+	gcÚ‹Á
+: "\f423";
+
+2063 
+	gfÚt
+-
+	gsize
+: 964
+px
+;
+
+2064 
+	glše
+-
+	gheight
+: 0.6;
+
+2065 
+	gov”æow
+: 
+hidd’
+;
+
+2066 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+2067 
+	gËá
+: 7
+px
+;
+
+2068 
+	gtİ
+: 28
+px
+;
+
+2071 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gw¿µ”
+ {
+
+2072 
+	gbackground
+-
+	gcŞÜ
+: #e8e5ce;
+
+2075 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gh—d”
+,
+
+2076 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gcÚ‹Á
+ {
+
+2077 
+	gm¬gš
+: 0‡uto;
+
+2078 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+2079 
+	g·ddšg
+-
+	gbÙtom
+: 40
+px
+;
+
+2080 
+	gwidth
+: 100%;
+
+2089 .
+	gcomm’ts
+-
+	gt™Ë
+,
+
+2090 .
+	gcomm’t
+-
+	gli¡
+,
+
+2091 .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+,
+
+2092 .
+	gmu¡
+-
+	glog
+-
+	gš
+,
+
+2093 .
+	gcomm’t
+-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+,
+
+2094 .
+	gcomm’t
+-
+»¥Úd
+ 
+	giäame
+ {
+
+2095 
+	gdi¥Ïy
+: 
+block
+;
+
+2096 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+2097 
+	gm¬gš
+-
+	gright
+:‡uto;
+
+2098 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2099 
+	gwidth
+: 100%;
+
+2102 .
+	gsideb¬
+ .
+	gcomm’ts
+-
+	gt™Ë
+,
+
+2103 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+2104 .
+	gsideb¬
+ .
+	gmu¡
+-
+	glog
+-
+	gš
+,
+
+2105 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+,
+
+2106 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gÇvig©iÚ
+,
+
+2107 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+ {
+
+2108 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+2109 
+	g·ddšg
+-
+	gËá
+: 60
+px
+;
+
+2110 
+	g·ddšg
+-
+	gright
+: 376
+px
+;
+
+2113 .
+	gcomm’ts
+-
+	gt™Ë
+ {
+
+2114 
+	gfÚt
+: 300 
+™®ic
+ 28
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+2117 .
+	gcomm’t
+-
+	gli¡
+,
+
+2118 .
+	gcomm’t
+-
+	gli¡
+ .
+	gchd»n
+ {
+
+2119 
+	gli¡
+-
+	g¡yË
+-
+	gty³
+: 
+nÚe
+;
+
+2120 
+	g·ddšg
+: 0;
+
+2123 .
+	gcomm’t
+-
+	gli¡
+ .
+	gchd»n
+ {
+
+2124 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+2127 .
+	gcomm’t
+-
+	gli¡
+ > 
+	gli
+:
+aá”
+,
+
+2128 .
+	gcomm’t
+-
+	gli¡
+ .
+	gchd»n
+ > 
+	gli
+:
+befÜe
+ {
+
+2129 
+background
+: 
+u¾
+(
+images
+/
+dÙ‹d
+-
+lše
+.
+²g
+è
+»³©
+ 
+Ëá
+ 
+tİ
+;
+
+2130 
+	gbackground
+-
+	gsize
+: 4
+px
+ 4px;
+
+2131 
+	gcÚ‹Á
+: "";
+
+2132 
+	gdi¥Ïy
+: 
+block
+;
+
+2133 
+	gheight
+: 1
+px
+;
+
+2134 
+	gwidth
+: 100%;
+
+2137 .
+	gcomm’t
+-
+	gli¡
+ > 
+	gli
+:
+Ï¡
+-
+chd
+:
+aá”
+ {
+
+2138 
+di¥Ïy
+: 
+nÚe
+;
+
+2141 .
+	gcomm’t
+-
+	gbody
+ {
+
+2142 
+	g·ddšg
+: 24
+px
+ 0;
+
+2143 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2146 .
+	gcomm’t
+-
+	gauthÜ
+ {
+
+2147 : 
+Ëá
+;
+
+2148 
+	gmax
+-
+	gwidth
+: 74
+px
+;
+
+2151 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gav©¬
+ {
+
+2152 
+	gdi¥Ïy
+: 
+block
+;
+
+2153 
+	gm¬gš
+-
+	gbÙtom
+: 10
+px
+;
+
+2156 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gâ
+ {
+
+2157 
+	gwÜd
+-
+	gw¿p
+: -
+wÜd
+;
+
+2160 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gâ
+,
+
+2161 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gu¾
+,
+
+2162 .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+,
+
+2163 .
+	gcomm’t
+-
+	g»¶y
+-
+	glogš
+ {
+
+2164 
+	gcŞÜ
+: #bc360a;
+
+2165 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+2166 
+	gfÚt
+-
+	g¡yË
+: 
+nÜm®
+;
+
+2167 
+	gfÚt
+-
+	gweight
+: 
+nÜm®
+;
+
+2170 .
+	g§ys
+ {
+
+2171 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+2174 .
+	gno
+-
+	gav©¬s
+ .
+	gcomm’t
+-
+	gauthÜ
+ {
+
+2175 
+	gm¬gš
+: 0 0 5
+px
+;
+
+2176 
+	gmax
+-
+	gwidth
+: 100%;
+
+2177 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2180 .
+	gno
+-
+	gav©¬s
+ .
+	gcomm’t
+-
+	gm‘ad©a
+,
+
+2181 .
+	gno
+-
+	gav©¬s
+ .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+2182 .
+	gno
+-
+	gav©¬s
+ .
+	gcomm’t
+-
+	gli¡
+ .
+	g»¶y
+ {
+
+2183 
+	gwidth
+: 100%;
+
+2186 .
+	gbypo¡authÜ
+ > .
+	gcomm’t
+-
+	gbody
+ .
+	gâ
+:
+befÜe
+ {
+
+2187 
+cÚ‹Á
+: "\f408";
+
+2188 
+	gv”tiÿl
+-
+	g®ign
+: 
+‹xt
+-
+tİ
+;
+
+2191 .
+	gcomm’t
+-
+	gli¡
+ .
+	ged™
+-
+	glšk
+ {
+
+2192 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+2195 .
+	gcomm’t
+-
+	gm‘ad©a
+,
+
+2196 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+,
+
+2197 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+2198 .
+	gcomm’t
+-
+	gli¡
+ .
+	g»¶y
+ {
+
+2199 : 
+right
+;
+
+2200 
+	gwidth
+: 79%;
+
+2201 
+	gwidth
+: -
+webk™
+-
+ÿlc
+(100% - 124
+px
+);
+
+2202 
+	gwidth
+: 
+ÿlc
+(100% - 124
+px
+);
+
+2205 .
+	gcomm’t
+-
+	gm‘a
+,
+
+2206 .
+	gcomm’t
+-
+m‘a
+ 
+	ga
+ {
+
+2207 
+	gcŞÜ
+: #a2a2a2;
+
+2208 
+	gfÚt
+-
+	gsize
+: 13
+px
+;
+
+2211 .
+	gcomm’t
+-
+m‘a
+ 
+	ga
+:
+hov”
+ {
+
+2212 
+cŞÜ
+: #ea9629;
+
+2215 .
+	gcomm’t
+-
+	gm‘ad©a
+ {
+
+2216 
+	gm¬gš
+-
+	gbÙtom
+: 20
+px
+;
+
+2219 .
+	gpšg
+-
+	gm‘a
+ {
+
+2220 
+	gcŞÜ
+: #a2a2a2;
+
+2221 
+	gfÚt
+-
+	gsize
+: 13
+px
+;
+
+2222 
+	glše
+-
+	gheight
+: 2;
+
+2225 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+ {
+
+2226 
+	gcŞÜ
+: #a2a2a2;
+
+2229 .
+	gcomm’t
+-
+	gawa™šg
+-
+	gmod”©iÚ
+:
+befÜe
+ {
+
+2230 
+cÚ‹Á
+: "\f414";
+
+2231 
+	gm¬gš
+-
+	gright
+: 5
+px
+;
+
+2232 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2233 
+	gtİ
+: -2
+px
+;
+
+2236 .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+:
+befÜe
+,
+
+2237 .
+	gcomm’t
+-
+	g»¶y
+-
+	glogš
+:
+befÜe
+ {
+
+2238 
+cÚ‹Á
+: "\f412";
+
+2239 
+	gm¬gš
+-
+	gright
+: 3
+px
+;
+
+2243 .
+	gcomm’t
+-
+	g»¥Úd
+ {
+
+2244 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+2245 
+	g·ddšg
+: 30
+px
+ 0;
+
+2248 .
+	gcomm’t
+ .comm’t-
+	g»¥Úd
+ {
+
+2249 
+	gm¬gš
+-
+	gbÙtom
+: 20
+px
+;
+
+2250 
+	g·ddšg
+: 20
+px
+;
+
+2253 .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+ {
+
+2254 
+	gfÚt
+: 300 
+™®ic
+ 28
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+2257 .
+	gcomm’t
+-
+	g»¶y
+-
+t™Ë
+ 
+sm®l
+ 
+	ga
+ {
+
+2258 
+	gcŞÜ
+: #131310;
+
+2259 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+2260 : 
+right
+;
+
+2261 
+	gheight
+: 16
+px
+;
+
+2262 
+	gov”æow
+: 
+hidd’
+;
+
+2263 
+	gwidth
+: 16
+px
+;
+
+2266 .
+	gcomm’t
+-
+	g»¶y
+-
+t™Ë
+ 
+sm®l
+ 
+	ga
+:
+hov”
+ {
+
+2267 
+cŞÜ
+: #ed331c;
+
+2268 
+	g‹xt
+-
+	gdecÜ©iÚ
+: 
+nÚe
+;
+
+2271 .
+	gcomm’t
+-
+	g»¶y
+-
+t™Ë
+ 
+sm®l
+ 
+	ga
+:
+befÜe
+ {
+
+2272 
+cÚ‹Á
+: "\f406";
+
+2273 
+	gv”tiÿl
+-
+	g®ign
+: 
+tİ
+;
+
+2276 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+ .comm’t-
+	g»¶y
+-
+	gt™Ë
+,
+
+2277 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+ .comm’t-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+ {
+
+2278 
+	g·ddšg
+: 0;
+
+2281 .
+	gcomm’t
+-
+	gfÜm
+ .comm’t-
+	gnÙes
+ {
+
+2282 
+	gm¬gš
+-
+	gbÙtom
+: 15
+px
+;
+
+2285 .
+	gcomm’t
+-
+	gfÜm
+ .comm’t-fÜm-
+	gauthÜ
+,
+
+2286 .
+	gcomm’t
+-
+	gfÜm
+ .comm’t-fÜm-
+	gema
+,
+
+2287 .
+	gcomm’t
+-
+	gfÜm
+ .comm’t-fÜm-
+	gu¾
+ {
+
+2288 
+	gm¬gš
+-
+	gbÙtom
+: 8
+px
+;
+
+2291 .
+	gcomm’t
+-
+	gfÜm
+ [="author"],
+
+2292 .
+	gcomm’t
+-
+	gfÜm
+ [="email"],
+
+2293 .
+	gcomm’t
+-
+	gfÜm
+ [="url"],
+
+2294 .
+	gcomm’t
+-
+	gfÜm
+ [="comment"] {
+
+2295 : 
+Ëá
+;
+
+2296 
+	g·ddšg
+: 5
+px
+ 0;
+
+2297 
+	gwidth
+: 120
+px
+;
+
+2300 .
+	gcomm’t
+-
+	gfÜm
+ .
+	g»quœed
+ {
+
+2301 
+	gcŞÜ
+: #ed331c;
+
+2304 .
+	gcomm’t
+-
+fÜm
+ 
+	gšput
+[
+ty³
+="text"],
+
+2305 .
+	gcomm’t
+-
+fÜm
+ 
+	gšput
+[
+ty³
+="email"],
+
+2306 .
+	gcomm’t
+-
+fÜm
+ 
+	gšput
+[
+ty³
+="url"] {
+
+2307 
+max
+-
+width
+: 270
+px
+;
+
+2308 
+	gwidth
+: 60%;
+
+2311 .
+	gcomm’t
+-
+fÜm
+ 
+	g‹x»a
+ {
+
+2312 
+	gwidth
+: 100%;
+
+2315 .
+	gfÜm
+-
+	g®lowed
+-
+	ggs
+,
+
+2316 .
+	gfÜm
+-
+	g®lowed
+-
+gs
+ 
+	gcode
+ {
+
+2317 
+	gcŞÜ
+: #686758;
+
+2318 
+	gfÚt
+-
+	gsize
+: 12
+px
+;
+
+2321 .
+	gfÜm
+-
+	g®lowed
+-
+gs
+ 
+	gcode
+ {
+
+2322 
+	gfÚt
+-
+	gsize
+: 10
+px
+;
+
+2323 
+	gm¬gš
+-
+	gËá
+: 3
+px
+;
+
+2326 .
+	gcomm’t
+-
+	gli¡
+ .
+	gpšgback
+,
+
+2327 .
+	gcomm’t
+-
+	gli¡
+ .
+	gŒackback
+ {
+
+2328 
+	g·ddšg
+-
+	gtİ
+: 24
+px
+;
+
+2331 .
+	gcomm’t
+-
+	gÇvig©iÚ
+ {
+
+2332 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+2333 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+2334 
+	gfÚt
+-
+	gweight
+: 300;
+
+2335 
+	gm¬gš
+: 0‡uto;
+
+2336 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2337 
+	g·ddšg
+: 20
+px
+ 0 30px;
+
+2338 
+	gwidth
+: 100%;
+
+2341 .
+	gno
+-
+	gcomm’ts
+ {
+
+2342 
+	gbackground
+-
+	gcŞÜ
+: #f7f5e7;
+
+2343 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+2344 
+	gfÚt
+-
+	g¡yË
+: 
+™®ic
+;
+
+2345 
+	gfÚt
+-
+	gweight
+: 300;
+
+2346 
+	gm¬gš
+: 0;
+
+2347 
+	g·ddšg
+: 40
+px
+ 0;
+
+2348 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+2351 .
+	gsideb¬
+ .
+	gno
+-
+	gcomm’ts
+ {
+
+2352 
+	g·ddšg
+-
+	gËá
+: 60
+px
+;
+
+2353 
+	g·ddšg
+-
+	gright
+: 376
+px
+;
+
+2362 .
+	gs™e
+-
+	gmaš
+ .
+	gmu_»gi¡”
+ {
+
+2363 
+	gm¬gš
+: 0‡uto;
+
+2364 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2365 
+	gwidth
+: 100%;
+
+2368 .
+	gmu_®”t
+ {
+
+2369 
+	gm¬gš
+-
+	gtİ
+: 25
+px
+;
+
+2372 .
+	gs™e
+-
+	gmaš
+ .
+mu_»gi¡”
+ 
+	gšput
+[
+ty³
+="submit"],
+
+2373 .
+	gs™e
+-
+	gmaš
+ .
+	gmu_»gi¡”
+ #blog_title,
+
+2374 .
+	gs™e
+-
+	gmaš
+ .
+	gmu_»gi¡”
+ #user_email,
+
+2375 .
+	gs™e
+-
+	gmaš
+ .
+	gmu_»gi¡”
+ #blogname,
+
+2376 .
+	gs™e
+-
+	gmaš
+ .
+	gmu_»gi¡”
+ #user_name {
+
+2377 
+	gfÚt
+-
+	gsize
+: 
+šh”™
+;
+
+2378 
+	gwidth
+: 270
+px
+;
+
+2381 .
+	gs™e
+-
+	gmaš
+ .
+mu_»gi¡”
+ 
+	gšput
+[
+ty³
+="submit"] {
+
+2382 
+width
+:‡uto;
+
+2391 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2392 : 
+right
+;
+
+2393 
+	gwidth
+: 300
+px
+;
+
+2402 .
+	gwidg‘
+ {
+
+2403 
+	gbackground
+-
+	gcŞÜ
+: 
+rgba
+(247, 245, 231, 0.7);
+
+2404 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+2405 -
+	gwebk™
+-
+	ghyph’s
+:‡uto;
+
+2406 -
+	gmoz
+-
+	ghyph’s
+:‡uto;
+
+2407 -
+	gms
+-
+	ghyph’s
+:‡uto;
+
+2408 
+	ghyph’s
+:‡uto;
+
+2409 
+	gm¬gš
+: 0 0 24
+px
+;
+
+2410 
+	g·ddšg
+: 20
+px
+;
+
+2411 
+	gwÜd
+-
+	gw¿p
+: -
+wÜd
+;
+
+2414 .
+	gwidg‘
+ .widg‘-
+	gt™Ë
+ {
+
+2415 
+	gfÚt
+: 300 
+™®ic
+ 20
+px
+ "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+2416 
+	gm¬gš
+: 0 0 10
+px
+;
+
+2419 .
+widg‘
+ 
+	gul
+,
+
+2420 .
+widg‘
+ 
+	gŞ
+ {
+
+2421 
+	gli¡
+-
+	g¡yË
+-
+	gty³
+: 
+nÚe
+;
+
+2422 
+	gm¬gš
+: 0;
+
+2423 
+	g·ddšg
+: 0;
+
+2426 .
+widg‘
+ 
+	gli
+ {
+
+2427 
+	g·ddšg
+: 5
+px
+ 0;
+
+2430 .
+	gwidg‘
+ .
+chd»n
+ 
+	gli
+:
+Ï¡
+-
+chd
+ {
+
+2431 
+·ddšg
+-
+bÙtom
+: 0;
+
+2434 .
+widg‘
+ 
+	gli
+ > 
+	gul
+,
+
+2435 .
+widg‘
+ 
+	gli
+ > 
+	gŞ
+ {
+
+2436 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+2439 .
+widg‘
+ 
+	ga
+ {
+
+2440 
+	gcŞÜ
+: #bc360a;
+
+2443 .
+widg‘
+ 
+	ga
+:
+hov”
+ {
+
+2444 
+cŞÜ
+: #ea9629;
+
+2448 .
+	g£¬ch
+-
+	gfÜm
+ .£¬ch-
+	gsubm™
+ {
+
+2449 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+2453 .
+	gwidg‘_rss
+ .
+	grss
+-
+	gd©e
+ {
+
+2454 
+	gdi¥Ïy
+: 
+block
+;
+
+2457 .
+	gwidg‘_rss
+ .
+	grss
+-
+	gd©e
+,
+
+2458 .
+widg‘_rss
+ 
+	gli
+ > 
+	gc™e
+ {
+
+2459 
+	gcŞÜ
+: #a2a2a2;
+
+2463 .
+widg‘_ÿËnd¬
+ 
+	gbË
+,
+
+2464 .
+widg‘_ÿËnd¬
+ 
+	gtd
+ {
+
+2465 
+	gbÜd”
+: 0;
+
+2466 
+	gbÜd”
+-
+	gcŞÏp£
+: 
+£·¿‹
+;
+
+2467 
+	gbÜd”
+-
+	g¥acšg
+: 1
+px
+;
+
+2470 .
+widg‘_ÿËnd¬
+ 
+	gÿ±iÚ
+ {
+
+2471 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+2472 
+	gm¬gš
+: 0;
+
+2475 .
+widg‘_ÿËnd¬
+ 
+	gth
+,
+
+2476 .
+widg‘_ÿËnd¬
+ 
+	gtd
+ {
+
+2477 
+	g·ddšg
+: 0;
+
+2478 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+2481 .
+widg‘_ÿËnd¬
+ 
+	ga
+ {
+
+2482 
+	gdi¥Ïy
+: 
+block
+;
+
+2485 .
+widg‘_ÿËnd¬
+ 
+	ga
+:
+hov”
+ {
+
+2486 
+background
+-
+cŞÜ
+: 
+rgba
+(0, 0, 0, 0.15);
+
+2489 .
+widg‘_ÿËnd¬
+ 
+tbody
+ 
+	gtd
+ {
+
+2490 
+	gbackground
+-
+	gcŞÜ
+: 
+rgba
+(255, 255, 255, 0.5);
+
+2493 .
+	gs™e
+-
+	gfoÙ”
+ .
+widg‘_ÿËnd¬
+ 
+tbody
+ 
+	gtd
+ {
+
+2494 
+	gbackground
+-
+	gcŞÜ
+: 
+rgba
+(255, 255, 255, 0.05);
+
+2497 .
+widg‘_ÿËnd¬
+ 
+	gtbody
+ .
+	g·d
+, .
+	gs™e
+-
+	gfoÙ”
+ .widget_calendarbody .pad {
+
+2498 
+	gbackground
+-
+	gcŞÜ
+: 
+Œª¥¬’t
+;
+
+2507 .
+	gs™e
+-
+	gfoÙ”
+ {
+
+2508 
+	gbackground
+-
+	gcŞÜ
+: #e8e5ce;
+
+2509 
+	gcŞÜ
+: #686758;
+
+2510 
+	gfÚt
+-
+	gsize
+: 14
+px
+;
+
+2511 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+2514 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+,
+
+2515 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ {
+
+2516 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+2519 .
+	gs™e
+-
+foÙ”
+ 
+	ga
+ {
+
+2520 
+	gcŞÜ
+: #686758;
+
+2523 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gsideb¬
+-
+	gcÚš”
+ {
+
+2524 
+	gbackground
+-
+	gcŞÜ
+: #220e10;
+
+2525 
+	g·ddšg
+: 20
+px
+ 0;
+
+2528 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2529 
+	gm¬gš
+: 0‡uto;
+
+2530 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+2531 
+	gwidth
+: 100%;
+
+2534 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2535 
+	gmax
+-
+	gwidth
+: 724
+px
+;
+
+2536 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2537 
+	gËá
+: -158
+px
+;
+
+2540 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+ {
+
+2541 
+	gbackground
+: 
+Œª¥¬’t
+;
+
+2542 
+	gcŞÜ
+: #fff;
+
+2543 : 
+Ëá
+;
+
+2544 
+	gm¬gš
+-
+	gright
+: 20
+px
+;
+
+2545 
+	gwidth
+: 245
+px
+;
+
+2548 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+ {
+
+2549 
+	gwidth
+: 228
+px
+;
+
+2552 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+:
+Áh
+-
+of
+-
+ty³
+(4),
+
+2553 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+:
+Áh
+-
+of
+-
+	$ty³
+(3) {
+
+2554 
+m¬gš
+-
+right
+: 0;
+
+2555 
+	}
+}
+
+2557 .
+	gs™e
+-
+	gfoÙ”
+ .
+widg‘
+ 
+	ga
+ {
+
+2558 
+	gcŞÜ
+: #e6402a;
+
+2561 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	gt™Ë
+,
+
+2562 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+t™Ë
+ 
+	ga
+,
+
+2563 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwp
+-
+	gÿ±iÚ
+-
+	g‹xt
+ {
+
+2564 
+	gcŞÜ
+: #fff;
+
+2567 .
+	gs™e
+-
+	gšfo
+ {
+
+2568 
+	gm¬gš
+: 0‡uto;
+
+2569 
+	gmax
+-
+	gwidth
+: 1040
+px
+;
+
+2570 
+	g·ddšg
+: 30
+px
+ 0;
+
+2571 
+	gwidth
+: 100%;
+
+2575 
+	gdi¥Ïy
+: 
+block
+;
+
+2576 
+	gm¬gš
+: -10
+px
+‡uto 0;
+
+2585 @
+medŸ
+ (
+max
+-
+width
+: 1599
+px
+) {
+
+2586 .
+s™e
+ {
+
+2587 
+bÜd”
+: 0;
+
+2591 @
+medŸ
+ (
+max
+-
+width
+: 1069
+px
+) {
+
+2592 .
+sideb¬
+ 
+img
+.
+®igÆeá
+,
+
+2593 .
+	gsideb¬
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+2594 
+	gm¬gš
+-
+	gËá
+: 0;
+
+2597 .
+sideb¬
+ 
+	gimg
+.
+	g®igÄight
+,
+
+2598 .
+	gsideb¬
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+2599 
+	gm¬gš
+-
+	gright
+: 0;
+
+2602 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gh—d”
+ {
+
+2603 
+	gm¬gš
+-
+	gËá
+:‡uto;
+
+2604 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2605 
+	gwidth
+: 100%;
+
+2608 .
+	g¬chive
+-
+	gh—d”
+,
+
+2609 .
+	g£¬ch
+ .
+	g·ge
+-
+	gh—d”
+,
+
+2610 .
+	g¬chive
+ .
+	g·ge
+-
+	gh—d”
+,
+
+2611 .
+	gblog
+ .
+	g·ge
+-
+	gh—d”
+,
+
+2612 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2613 .
+	g£¬ch
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2614 .
+	g¬chive
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2615 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+2616 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+2617 .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+2618 .
+	gsideb¬
+ .
+	gs™e
+-
+	gšfo
+,
+
+2619 .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2620 
+	g·ddšg
+-
+	gËá
+: 20
+px
+;
+
+2621 
+	g·ddšg
+-
+	gright
+: 20
+px
+;
+
+2624 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+ {
+
+2625 
+	gfÚt
+-
+	gsize
+: 24
+px
+;
+
+2626 
+	g·ddšg
+: 180
+px
+;
+
+2629 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+:
+befÜe
+ {
+
+2630 
+fÚt
+-
+size
+: 554
+px
+;
+
+2633 .
+	g©chm’t
+ .
+	gimage
+-
+	gÇvig©iÚ
+ {
+
+2634 
+	gmax
+-
+	gwidth
+: 724
+px
+;
+
+2637 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	g´evious
+,
+
+2638 .
+	gimage
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	gÃxt
+ {
+
+2639 
+	gpos™iÚ
+: ;
+
+2642 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2643 
+	gm¬gš
+-
+	gright
+: 60
+px
+;
+
+2647 @
+medŸ
+ (
+max
+-
+width
+: 999
+px
+) {
+
+2648 .
+sideb¬
+ .
+’Œy
+-
+h—d”
+,
+
+2649 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+2650 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gsumm¬y
+,
+
+2651 .
+	gsideb¬
+ .
+	g’Œy
+-
+	gm‘a
+,
+
+2652 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+2653 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¶y
+-
+	gt™Ë
+,
+
+2654 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	gÇvig©iÚ
+,
+
+2655 .
+	gsideb¬
+ .
+	gcomm’t
+-
+	g»¥Úd
+ .comm’t-
+	gfÜm
+,
+
+2656 .
+	gsideb¬
+ .
+	gã©u»d
+-
+	gg®Ëry
+,
+
+2657 .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+2658 .
+	gauthÜ
+.
+	gsideb¬
+ .authÜ-
+	gšfo
+ {
+
+2659 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2660 
+	g·ddšg
+-
+	gËá
+: 0;
+
+2661 
+	g·ddšg
+-
+	gright
+: 0;
+
+2664 .
+	gsideb¬
+ .
+	gs™e
+-
+	gšfo
+,
+
+2665 .
+	g£¬ch
+.
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2666 .
+	gblog
+.
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2667 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+2668 .
+	gsideb¬
+ .
+	gcomm’ts
+-
+	gt™Ë
+ {
+
+2669 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2672 .
+	gsideb¬
+ .
+	g¬chive
+-
+	gm‘a
+,
+
+2673 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gh—d”
+,
+
+2674 .
+	g£¬ch
+.
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2675 .
+	gblog
+.
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2676 .
+	gsideb¬
+ .
+	gs™e
+-
+	gšfo
+,
+
+2677 .
+	gsideb¬
+ .
+	gcomm’ts
+-
+	gt™Ë
+,
+
+2678 .
+	gsideb¬
+ .
+	gno
+-
+	gcomm’ts
+ {
+
+2679 
+	g·ddšg
+-
+	gËá
+: 0;
+
+2680 
+	g·ddšg
+-
+	gright
+: 0;
+
+2683 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+2684 : 
+Ëá
+;
+
+2685 
+	g‹xt
+-
+	g®ign
+: 
+Ëá
+;
+
+2686 
+	gwidth
+: 100%;
+
+2689 .
+	g©chm’t
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+2690 
+	gmax
+-
+	gwidth
+: 100%;
+
+2691 
+	g·ddšg
+: 40
+px
+ 0;
+
+2694 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+2695 
+	g·ddšg
+-
+	gtİ
+: 40
+px
+;
+
+2698 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+2699 
+	g·ddšg
+-
+	gbÙtom
+: 40
+px
+;
+
+2702 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+2703 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+ {
+
+2704 
+	g·ddšg
+-
+	gËá
+: 35
+px
+;
+
+2707 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+2708 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+ {
+
+2709 
+Ëá
+: 10
+px
+;
+
+2712 .
+	gsideb¬
+ .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gp
+:
+fœ¡
+-
+chd
+:
+befÜe
+ {
+
+2713 
+Ëá
+: 4
+px
+;
+
+2716 .
+	gsideb¬
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+2717 
+	g·ddšg
+: 0 60
+px
+;
+
+2720 .
+	gs™e
+-
+	gmaš
+ .
+	gsideb¬
+-
+	gcÚš”
+ {
+
+2721 
+	gheight
+:‡uto;
+
+2722 
+	gm¬gš
+: 0‡uto;
+
+2723 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2724 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2725 
+	gtİ
+: 20
+px
+;
+
+2728 .
+	gs™e
+-
+	gmaš
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2729 : 
+nÚe
+;
+
+2730 
+	gm¬gš
+: 0;
+
+2731 
+	gwidth
+: 100%;
+
+2734 .
+	gsideb¬
+ .
+	gs™e
+-
+	gfoÙ”
+ .
+	gwidg‘
+-
+	g¬—
+ {
+
+2735 
+	gmax
+-
+	gwidth
+: 100%;
+
+2736 
+	gËá
+: 0;
+
+2741 @
+medŸ
+ (
+max
+-
+width
+: 767
+px
+) {
+
+2742 .
+’Œy
+-
+cÚ‹Á
+ 
+img
+.
+®igÆeá
+,
+
+2743 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+2744 
+	gm¬gš
+-
+	gËá
+: 0;
+
+2747 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÄight
+,
+
+2748 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+2749 
+	gm¬gš
+-
+	gright
+: 0;
+
+2752 .
+	g©chm’t
+ .
+	gimage
+-
+	gÇvig©iÚ
+,
+
+2753 .
+	g©chm’t
+ .
+	g’Œy
+-attachment .attachment {
+
+2754 
+	gmax
+-
+	gwidth
+: 604
+px
+;
+
+2755 
+	g·ddšg
+: 0;
+
+2756 
+	gwidth
+: 100%;
+
+2759 .
+	gg®Ëry
+-
+	gÿ±iÚ
+ {
+
+2760 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+2764 @
+medŸ
+ (
+max
+-
+width
+: 643
+px
+) {
+
+2765 .
+s™e
+-
+t™Ë
+ {
+
+2766 
+fÚt
+-
+size
+: 30
+px
+;
+
+2769 #cÚ‹Á .
+’Œy
+-
+h—d”
+,
+
+2770 #cÚ‹Á .
+’Œy
+-
+cÚ‹Á
+,
+
+2771 #cÚ‹Á .
+’Œy
+-
+summ¬y
+,
+
+2772 #cÚ‹Á 
+foÙ”
+.
+’Œy
+-
+m‘a
+,
+
+2773 #cÚ‹Á .
+ã©u»d
+-
+g®Ëry
+,
+
+2774 .
+	g£¬ch
+.
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2775 .
+	gblog
+.
+	gsideb¬
+ .
+	g·ge
+-
+	gcÚ‹Á
+,
+
+2776 .
+	gsideb¬
+ .
+	gpo¡
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+2777 .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+,
+
+2778 #cÚ‹Á .
+authÜ
+-
+šfo
+,
+
+2779 .
+	gcomm’ts
+-
+	g¬—
+ .comm’ts-
+	gt™Ë
+,
+
+2780 .
+	gcomm’ts
+-
+	g¬—
+ .
+	gcomm’t
+-
+	gli¡
+,
+
+2781 .
+	gcomm’ts
+-
+	g¬—
+ .
+	gcomm’t
+-
+	gÇvig©iÚ
+,
+
+2782 .
+	gcomm’t
+-
+	g»¥Úd
+,
+
+2783 .
+	gsideb¬
+ .
+	gs™e
+-
+	gšfo
+,
+
+2784 .
+	gsideb¬
+ .
+	g·gšg
+-
+	gÇvig©iÚ
+ .
+	gÇv
+-
+	glšks
+ {
+
+2785 
+	g·ddšg
+-
+	gËá
+: 20
+px
+;
+
+2786 
+	g·ddšg
+-
+	gright
+: 20
+px
+;
+
+2789 #cÚ‹Á .
+fÜm©
+-
+¡©us
+ .
+’Œy
+-
+cÚ‹Á
+,
+
+2790 #cÚ‹Á .
+fÜm©
+-
+¡©us
+ .
+’Œy
+-
+m‘
+ {
+
+2791 
+	g·ddšg
+-
+	gËá
+: 35
+px
+;
+
+2795 .
+	gm’u
+-
+	gtoggË
+ {
+
+2796 
+	gcursÜ
+: 
+poš‹r
+;
+
+2797 
+	gdi¥Ïy
+: 
+šlše
+-
+block
+;
+
+2798 
+	gfÚt
+: 
+bŞd
+ 16
+px
+/1.3 "Sourû Sª Pro", 
+	gH–v‘iÿ
+, 
+	g§ns
+-
+	g£rif
+;
+
+2799 
+	gm¬gš
+: 0;
+
+2800 
+	g·ddšg
+: 12
+px
+ 0 12px 20px;
+
+2803 .
+	gm’u
+-
+	gtoggË
+:
+aá”
+ {
+
+2804 
+cÚ‹Á
+: "\f502";
+
+2805 
+	gfÚt
+-
+	gsize
+: 12
+px
+;
+
+2806 
+	g·ddšg
+-
+	gËá
+: 8
+px
+;
+
+2807 
+	gv”tiÿl
+-
+	g®ign
+: -4
+px
+;
+
+2810 .
+	gtoggËd
+-
+	gÚ
+ .
+	gm’u
+-
+	gtoggË
+:
+aá”
+ {
+
+2811 
+cÚ‹Á
+: "\f500";
+
+2812 
+	gv”tiÿl
+-
+	g®ign
+: 2
+px
+;
+
+2815 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+	gm’u
+,
+
+2816 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+	gm’u
+ > 
+	gul
+ {
+
+2817 
+	gdi¥Ïy
+: 
+block
+;
+
+2818 
+	gm¬gš
+-
+	gËá
+: 0;
+
+2819 
+	g·ddšg
+: 0;
+
+2820 
+	gwidth
+: 100%;
+
+2823 .
+	gtoggËd
+-
+Ú
+ 
+	gli
+,
+
+2824 .
+	gtoggËd
+-
+	gÚ
+ .
+	gchd»n
+ {
+
+2825 
+	gdi¥Ïy
+: 
+block
+;
+
+2828 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+m’u
+ 
+	gli
+ > 
+	gul
+ {
+
+2829 
+	gbackground
+-
+	gcŞÜ
+: 
+Œª¥¬’t
+;
+
+2830 
+	gdi¥Ïy
+: 
+block
+;
+
+2831 : 
+nÚe
+;
+
+2832 
+	gm¬gš
+-
+	gËá
+: 20
+px
+;
+
+2833 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+2834 
+	gËá
+:‡uto;
+
+2835 
+	gtİ
+:‡uto;
+
+2838 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+m’u
+ 
+	gli
+ > 
+ul
+ 
+	ga
+ {
+
+2839 
+	gcŞÜ
+: #141412;
+
+2840 
+	gwidth
+:‡uto;
+
+2843 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+m’u
+ 
+	gli
+:
+hov”
+ > 
+a
+,
+
+2844 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+	gm’u
+ .
+chd»n
+ 
+	ga
+ {
+
+2845 
+	gbackground
+-
+	gcŞÜ
+: 
+Œª¥¬’t
+;
+
+2846 
+	gcŞÜ
+: #141412;
+
+2849 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+m’u
+ 
+li
+ 
+	ga
+:
+hov”
+,
+
+2850 .
+	gtoggËd
+-
+	gÚ
+ .
+	gÇv
+-
+m’u
+ 
+ul
+ 
+	ga
+:
+hov”
+ {
+
+2851 
+background
+-
+cŞÜ
+: #db572f;
+
+2852 
+	gcŞÜ
+: #fff;
+
+2855 
+	gul
+.
+	gÇv
+-
+	gm’u
+,
+
+2856 
+	gdiv
+.
+	gÇv
+-
+	gm’u
+ > 
+	gul
+ {
+
+2857 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+2860 #cÚ‹Á .
+ã©u»d
+-
+g®Ëry
+ {
+
+2861 
+	g·ddšg
+-
+	gËá
+: 24
+px
+;
+
+2864 .
+	gg®Ëry
+-
+	gcŞumns
+-1 .g®Ëry-
+	g™em
+ {
+
+2865 
+	gm¬gš
+-
+	gright
+: 0;
+
+2866 
+	gwidth
+: 100%;
+
+2869 .
+	g’Œy
+-
+	gt™Ë
+,
+
+2870 .
+	gfÜm©
+-
+	gch©
+ .
+	g’Œy
+-
+	gt™Ë
+,
+
+2871 .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gt™Ë
+,
+
+2872 .
+	gfÜm©
+-
+	gg®Ëry
+ .
+	g’Œy
+-
+	gt™Ë
+,
+
+2873 .
+	gfÜm©
+-
+	gvideo
+ .
+	g’Œy
+-
+	gt™Ë
+ {
+
+2874 
+	gfÚt
+-
+	gsize
+: 22
+px
+;
+
+2875 
+	gfÚt
+-
+	gweight
+: 
+bŞd
+;
+
+2878 .
+	gfÜm©
+-
+quÙe
+ 
+	gblockquÙe
+,
+
+2879 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ {
+
+2880 
+	gfÚt
+-
+	gsize
+: 18
+px
+;
+
+2883 .
+	gfÜm©
+-
+quÙe
+ 
+blockquÙe
+ 
+	gsm®l
+,
+
+2884 .
+	gfÜm©
+-
+quÙe
+ 
+blockquÙe
+ 
+	gc™e
+ {
+
+2885 
+	gfÚt
+-
+	gsize
+: 13
+px
+;
+
+2888 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+ {
+
+2889 
+	g·ddšg
+: 40
+px
+ 0 0;
+
+2892 .
+	g”rÜ404
+ .
+	g·ge
+-
+	gt™Ë
+:
+befÜe
+ {
+
+2893 
+cÚ‹Á
+: 
+nÜm®
+;
+
+2896 .
+	gcomm’t
+-
+	gauthÜ
+ {
+
+2897 
+	gm¬gš
+-
+	gright
+: 30
+px
+;
+
+2900 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gav©¬
+ {
+
+2901 
+	gheight
+:‡uto;
+
+2902 
+	gmax
+-
+	gwidth
+: 100%;
+
+2905 .
+	gcomm’t
+-
+	gm‘ad©a
+,
+
+2906 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+2907 .
+	gcomm’t
+-
+	gli¡
+ .
+	g»¶y
+ {
+
+2908 
+	gwidth
+: 70%;
+
+2909 
+	gwidth
+: -
+webk™
+-
+ÿlc
+(100% - 104
+px
+);
+
+2910 
+	gwidth
+: 
+ÿlc
+(100% - 104
+px
+);
+
+2913 .
+	gcomm’t
+-
+fÜm
+ 
+	gšput
+[
+ty³
+="text"],
+
+2914 .
+	gcomm’t
+-
+fÜm
+ 
+	gšput
+[
+ty³
+="email"],
+
+2915 .
+	gcomm’t
+-
+fÜm
+ 
+	gšput
+[
+ty³
+="url"] {
+
+2916 
+width
+: -
+webk™
+-
+ÿlc
+(100% - 120
+px
+);
+
+2917 
+	gwidth
+: 
+ÿlc
+(100% - 120
+px
+);
+
+2920 .
+	gcomm’t
+-
+fÜm
+ 
+	g‹x»a
+ {
+
+2921 
+	gheight
+: 80
+px
+;
+
+2925 .
+	gfÜm©
+-
+	gaudio
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+ {
+
+2926 
+di¥Ïy
+: 
+nÚe
+;
+
+2929 .
+	gfÜm©
+-
+	gaudio
+ .audio-
+	gcÚ‹Á
+ {
+
+2930 
+	gbackground
+-
+	gimage
+: 
+nÚe
+;
+
+2931 : 
+nÚe
+;
+
+2932 
+	g·ddšg
+-
+	gËá
+: 0;
+
+2933 
+	gwidth
+:‡uto;
+
+2938 @
+medŸ
+ (
+max
+-
+width
+: 359
+px
+) {
+
+2939 .
+g®Ëry
+ {
+
+2940 
+m¬gš
+-
+Ëá
+: 0;
+
+2943 .
+	gg®Ëry
+ .g®Ëry-
+	g™em
+,
+
+2944 .
+	gg®Ëry
+-
+	gcŞumns
+-2.g®Ëry-
+	gsize
+-
+	gthumbÇ
+ .g®Ëry-
+	g™em
+ {
+
+2945 
+	gmax
+-
+	gwidth
+: 
+nÚe
+;
+
+2946 
+	gwidth
+: 49%;
+
+2947 
+	gwidth
+: -
+webk™
+-
+ÿlc
+(50% - 4
+px
+);
+
+2948 
+	gwidth
+: 
+ÿlc
+(50% - 4
+px
+);
+
+2951 .
+	gg®Ëry
+-
+	gcŞumns
+-1.g®Ëry-
+	gsize
+-
+	gmedium
+,
+
+2952 .
+	gg®Ëry
+-
+	gcŞumns
+-1.g®Ëry-
+	gsize
+-
+	gthumbÇ
+,
+
+2953 .
+	gg®Ëry
+-
+	gcŞumns
+-2.g®Ëry-
+	gsize
+-
+	gthumbÇ
+,
+
+2954 .
+	gg®Ëry
+-
+	gcŞumns
+-3.g®Ëry-
+	gsize
+-
+	gthumbÇ
+ {
+
+2955 
+	gdi¥Ïy
+: 
+block
+;
+
+2958 .
+	gg®Ëry
+-
+	gcŞumns
+-1 .g®Ëry-
+	g™em
+,
+
+2959 .
+	gg®Ëry
+-
+	gcŞumns
+-1.g®Ëry-
+	gsize
+-
+	gmedium
+ .g®Ëry-
+	g™em
+,
+
+2960 .
+	gg®Ëry
+-
+	gcŞumns
+-1.g®Ëry-
+	gsize
+-
+	gthumbÇ
+ .g®Ëry-
+	g™em
+ {
+
+2961 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+2962 
+	gwidth
+: 98%;
+
+2963 
+	gwidth
+: -
+webk™
+-
+ÿlc
+(100% - 4
+px
+);
+
+2964 
+	gwidth
+: 
+ÿlc
+(100% - 4
+px
+);
+
+2967 .
+	gg®Ëry
+-
+	gcŞumns
+-3 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(3
+n
+),
+
+2968 .
+	gg®Ëry
+-
+	gcŞumns
+-5 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(5
+n
+),
+
+2969 .
+	gg®Ëry
+-
+	gcŞumns
+-7 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(7
+n
+),
+
+2970 .
+	gg®Ëry
+-
+	gcŞumns
+-9 .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(9
+n
+) {
+
+2971 
+m¬gš
+-
+right
+: 4
+px
+;
+
+2974 .
+g®Ëry
+ 
+	gbr
+ {
+
+2975 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+2978 .
+	gg®Ëry
+ .g®Ëry-
+	g™em
+:
+Áh
+-
+of
+-
+ty³
+(
+ev’
+) {
+
+2979 
+m¬gš
+-
+right
+: 0;
+
+2983 .
+	gcomm’t
+-
+	gauthÜ
+ {
+
+2984 
+	gm¬gš
+: 0 0 5
+px
+;
+
+2985 
+	gmax
+-
+	gwidth
+: 100%;
+
+2988 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gav©¬
+ {
+
+2989 
+	gdi¥Ïy
+: 
+šlše
+;
+
+2990 
+	gm¬gš
+: 0 5
+px
+ 0 0;
+
+2991 
+	gmax
+-
+	gwidth
+: 20
+px
+;
+
+2994 .
+	gcomm’t
+-
+	gm‘ad©a
+,
+
+2995 .
+	gcomm’t
+-
+	gcÚ‹Á
+,
+
+2996 .
+	gcomm’t
+-
+	gli¡
+ .
+	g»¶y
+ {
+
+2997 
+	gwidth
+: 100%;
+
+3008 @
+medŸ
+ 
+	g´št
+,
+
+3009 (-
+	go
+-
+	gmš
+-
+	gdeviû
+-
+	gpix–
+-
+	g¿tio
+: 5/4),
+
+3010 (-
+	gwebk™
+-
+	gmš
+-
+	gdeviû
+-
+	gpix–
+-
+	g¿tio
+: 1.25),
+
+3011 (
+	gmš
+-
+	g»sŞutiÚ
+: 120d
+pi
+) {
+
+3013 .
+s™e
+-
+h—d”
+ .
+£¬ch
+-
+f›ld
+ {
+
+3014 
+background
+-
+image
+: 
+u¾
+(
+images
+/
+£¬ch
+-
+icÚ
+-2x.
+²g
+);
+
+3017 .
+	gfÜm©
+-
+	gaudio
+ .audio-
+	gcÚ‹Á
+,
+
+3018 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gcÚ‹Á
+:
+befÜe
+,
+
+3019 .
+	gfÜm©
+-
+	g¡©us
+ .
+	g’Œy
+-
+	gm‘a
+:
+befÜe
+,
+
+3020 .
+	gcomm’t
+-
+	gli¡
+ > 
+	gli
+:
+aá”
+,
+
+3021 .
+	gcomm’t
+-
+	gli¡
+ .
+	gchd»n
+ > 
+	gli
+:
+befÜe
+ {
+
+3022 
+background
+-
+image
+: 
+u¾
+(
+images
+/
+dÙ‹d
+-
+lše
+-2x.
+²g
+);
+
+3026 @
+medŸ
+ 
+	g´št
+ {
+
+3027 
+	gbody
+ {
+
+3028 
+	gbackground
+: 
+nÚe
+ !
+impÜÁ
+;
+
+3029 
+	gcŞÜ
+: #000;
+
+3030 
+	gfÚt
+-
+	gsize
+: 10
+±
+;
+
+3033 
+foÙ”
+ 
+	ga
+[
+»l
+="bookm¬k"]:
+lšk
+:
+aá”
+,
+
+3034 
+foÙ”
+ 
+	ga
+[
+»l
+="bookm¬k"]:
+vis™ed
+:
+aá”
+ {
+
+3035 
+cÚ‹Á
+: " [" 
+©Œ
+(
+h»f
+) "] ";
+
+3038 .
+	gs™e
+ {
+
+3039 
+	gmax
+-
+	gwidth
+: 98%;
+
+3042 .
+	gs™e
+-
+	gh—d”
+ {
+
+3043 
+	gbackground
+-
+	gimage
+: 
+nÚe
+ !
+impÜÁ
+;
+
+3046 .
+	gs™e
+-
+	gh—d”
+ .
+	ghome
+-
+	glšk
+ {
+
+3047 
+	gmax
+-
+	gwidth
+: 
+nÚe
+;
+
+3048 
+	gmš
+-
+	gheight
+: 0;
+
+3051 .
+	gs™e
+-
+	gt™Ë
+ {
+
+3052 
+	gcŞÜ
+: #000;
+
+3053 
+	gfÚt
+-
+	gsize
+: 21
+±
+;
+
+3056 .
+	gs™e
+-
+	gdesütiÚ
+ {
+
+3057 
+	gfÚt
+-
+	gsize
+: 10
+±
+;
+
+3060 .
+	gauthÜ
+-
+	gav©¬
+,
+
+3061 .
+	gs™e
+-
+	gfoÙ”
+,
+
+3062 .
+	gcomm’t
+-
+	g»¥Úd
+,
+
+3063 .
+	gcomm’ts
+-
+	g¬—
+ .
+	gcomm’t
+-
+	ged™
+-
+	glšk
+,
+
+3064 .
+	gcomm’ts
+-
+	g¬—
+ .
+	g»¶y
+,
+
+3065 .
+	gcomm’ts
+-
+	glšk
+,
+
+3066 .
+	g’Œy
+-
+	gm‘a
+ .
+	ged™
+-
+	glšk
+,
+
+3067 .
+	g·ge
+-
+	glšks
+,
+
+3068 .
+	gs™e
+-
+cÚ‹Á
+ 
+	gÇv
+,
+
+3069 .
+	gwidg‘
+-
+	g¬—
+,
+
+3070 .
+	gmaš
+-
+	gÇvig©iÚ
+,
+
+3071 .
+	gÇvb¬
+,
+
+3072 .
+	gmÜe
+-
+	glšk
+ {
+
+3073 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+3076 .
+	g’Œy
+-
+	gh—d”
+,
+
+3077 .
+	g’Œy
+-
+	gcÚ‹Á
+,
+
+3078 .
+	g’Œy
+-
+	gsumm¬y
+,
+
+3079 .
+	g’Œy
+-
+	gm‘a
+ {
+
+3080 
+	gm¬gš
+: 0;
+
+3081 
+	gwidth
+: 100%;
+
+3084 .
+	g·ge
+-
+	gt™Ë
+,
+
+3085 .
+	g’Œy
+-
+	gt™Ë
+ {
+
+3086 
+	gfÚt
+-
+	gsize
+: 21
+±
+;
+
+3089 .
+	g’Œy
+-
+	gm‘a
+,
+
+3090 .
+	g’Œy
+-
+m‘a
+ 
+	ga
+ {
+
+3091 
+	gcŞÜ
+: #444;
+
+3092 
+	gfÚt
+-
+	gsize
+: 10
+±
+;
+
+3095 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÆeá
+,
+
+3096 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÆeá
+ {
+
+3097 
+	gm¬gš
+-
+	gËá
+: 0;
+
+3100 .
+	g’Œy
+-
+cÚ‹Á
+ 
+	gimg
+.
+	g®igÄight
+,
+
+3101 .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gwp
+-
+	gÿ±iÚ
+.
+	g®igÄight
+ {
+
+3102 
+	gm¬gš
+-
+	gright
+: 0;
+
+3105 .
+	gfÜm©
+-
+	gimage
+ .
+	g’Œy
+-
+	gcÚ‹Á
+ .
+	gsize
+-
+	gfuÎ
+ {
+
+3106 
+	gm¬gš
+: 0;
+
+3110 .
+	gh’Œy
+ {
+
+3111 
+	gbackground
+-
+	gcŞÜ
+: #fff;
+
+3115 .
+	gcomm’ts
+-
+	g¬—
+ > 
+	gli
+.
+	gcomm’t
+ {
+
+3116 
+	gbackground
+: 
+nÚe
+;
+
+3117 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+3118 
+	gwidth
+:‡uto;
+
+3121 .
+	gcomm’t
+-
+	gm‘ad©a
+ {
+
+3122 : 
+nÚe
+;
+
+3125 .
+	gcomm’t
+-
+	gauthÜ
+ .
+	gâ
+,
+
+3126 .
+	gcomm’t
+-
+	g»¶y
+-
+	glšk
+,
+
+3127 .
+	gcomm’t
+-
+	g»¶y
+-
+	glogš
+ {
+
+3128 
+	gcŞÜ
+: #333;
+
+3133 
+	gdiv
+.
+	g¶aûhŞd”_g®Ëry
+ {
+
+3134 
+	gwidth
+ : 600
+px
+;
+
+3135 
+	gheight
+ : 430
+px
+;
+
+3136 
+	gbackground
+-
+	gcŞÜ
+ : 
+rgb
+(150, 150, 150);
+
+3137 
+	gm¬gš
+ : 15
+px
+‡uto;
+
+3140 
+	gdiv
+.
+	g¶aûhŞd”
+ {
+
+3141 
+	gwidth
+ : 400
+px
+;
+
+3142 
+	gheight
+ : 267
+px
+;
+
+3143 
+	gbackground
+-
+	gcŞÜ
+ : 
+rgb
+(150, 150, 150);
+
+3144 
+	gm¬gš
+ : 15
+px
+‡uto;
+
+3147 .
+	gh_img_cÚš”
+{
+
+3148 
+	gbackground
+-
+	gcŞÜ
+: 
+rgba
+(0, 0, 0, 0.6);
+
+3149 
+	gwidth
+: 100%;
+
+3150 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+3151 
+	gbÙtom
+: -25
+px
+;
+
+3152 
+	gcŞÜ
+: 
+wh™e
+;
+
+3156 .
+	gmasÚry
+ {
+
+3157 
+	gm¬gš
+: 0‡uto;
+
+3160 .
+	gÿt_cÚš”
+ {
+
+3161 
+	gwidth
+: 300
+px
+;
+
+3164 .
+	gmÚth_cÚš”
+ {
+
+3165 
+	gwidth
+: 400
+px
+;
+
+3168 .
+	gte_img_cÚš”
+ {
+
+3169 
+	gwidth
+: 420
+px
+;
+
+3170 
+	g·ddšg
+: 10
+px
+;
+
+3173 .
+	gte_img_cÚš”
+:
+hov”
+ {
+
+3174 
+background
+-
+cŞÜ
+: #dddddd;
+
+3175 
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3176 -
+	gwebk™
+-
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3181 .
+	ghtml_ÿrou£l
+ {
+
+3182 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+3183 
+	gmax
+-
+	gwidth
+: 1300
+px
+;
+
+3184 
+	gm¬gš
+: 0‡uto;
+
+3187 .
+html_ÿrou£l
+ 
+	gdiv
+.
+	g¦ide
+ {
+
+3188 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+3190 .
+html_ÿrou£l
+ 
+	gdiv
+.
+¦ide
+ 
+	gimg
+ {
+
+3191 
+	gwidth
+: 100%;
+
+3192 
+	gheight
+: 100%;
+
+3194 .
+html_ÿrou£l
+ 
+	gdiv
+.
+¦ide
+ div {
+
+3195 
+	gbackground
+-
+	gcŞÜ
+: 
+rgba
+(0, 0, 0, 0.6);
+
+3196 
+	gwidth
+: 100%;
+
+3197 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+3198 
+	gbÙtom
+: 0;
+
+3200 .
+html_ÿrou£l
+ 
+	gdiv
+.
+¦ide
+ 
+	gh4
+ {
+
+3201 
+	gfÚt
+-
+	gsize
+: 35
+px
+;
+
+3202 
+	g·ddšg
+: 30
+px
+ 0 0 100px;
+
+3204 .
+html_ÿrou£l
+ 
+	gdiv
+.
+¦ide
+ 
+	gp
+ {
+
+3205 
+	gfÚt
+-
+	gsize
+: 16
+px
+;
+
+3206 
+	g·ddšg
+: 0 0 30
+px
+ 100px;
+
+3208 .
+html_ÿrou£l
+ 
+	gdiv
+.
+¦ide
+ 
+	gh4
+, .html_ÿrou£Èdiv.¦id
+	gp
+ {
+
+3209 
+	gcŞÜ
+: 
+wh™e
+;
+
+3210 
+	gm¬gš
+: 0;
+
+3212 .
+	gş—rfix
+ {
+
+3213 : 
+nÚe
+;
+
+3214 
+	gş—r
+: 
+bÙh
+;
+
+3216 
+	ga
+.
+	g´ev
+,‡.
+	gÃxt
+ {
+
+3217 
+	gwidth
+: 49
+px
+;
+
+3218 
+	gheight
+: 49
+px
+;
+
+3219 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+3220 
+	gtİ
+: 50%;
+
+3223 
+	ga
+.
+	g´ev
+ {
+
+3224 
+	gbackground
+: 
+u¾
+(
+cu¡om
+-
+images
+/
+Ëá
+.
+²g
+è
+no
+-
+»³©
+ 
+Œª¥¬’t
+;
+
+3225 
+	gËá
+: 30
+px
+;
+
+3227 
+	ga
+.
+	gÃxt
+ {
+
+3228 
+	gbackground
+: 
+u¾
+(
+cu¡om
+-
+images
+/
+right
+.
+²g
+è
+no
+-
+»³©
+ 
+Œª¥¬’t
+;
+
+3229 
+	gright
+: 30
+px
+;
+
+3231 
+	ga
+.
+	gÃxt
+:
+hov”
+,
+
+3232 
+	ga
+.
+	g´evious
+:
+hov”
+ {
+İac™y
+:1;}
+
+3234 
+	ga
+.
+´ev
+ 
+	g¥ª
+,‡.
+Ãxt
+ span {
+
+3235 
+	gdi¥Ïy
+: 
+nÚe
+;
+
+3238 .
+	ghtml_ÿrou£l
+ {
+
+3239 
+	gpos™iÚ
+: 
+»Ïtive
+
+
+3242 .
+sm®l_m¬gš
+ {
+
+3243 
+m¬gš
+: 10
+px
+ 0;
+
+3246 
+	ga
+.
+	gno_decÜ©iÚ
+ {
+
+3247 
+	gcŞÜ
+: #141412;
+
+3250 
+	ga
+.
+	gno_decÜ©iÚ
+:
+hov”
+ {
+
+3251 
+‹xt
+-
+decÜ©iÚ
+: 
+nÚe
+;
+
+3256 
+	gdiv
+.
+	gŞd”_po¡s
+ {
+
+3257 : 
+Ëá
+;
+
+3258 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+3261 
+	gdiv
+.
+	gÃw”_po¡s
+ {
+
+3262 : 
+right
+;
+
+3263 
+	gfÚt
+-
+	gsize
+: 20
+px
+;
+
+3267 
+	gwidth
+: 50
+px
+;
+
+3268 
+	gheight
+: 50
+px
+;
+
+3269 -
+	gwebk™
+-
+	gbÜd”
+-
+	g¿dius
+: 25
+px
+;
+
+3270 -
+	gmoz
+-
+	gbÜd”
+-
+	g¿dius
+: 25
+px
+;
+
+3271 
+	gbÜd”
+-
+	g¿dius
+: 25
+px
+;
+
+3274 #cœşe.
+»d
+ {
+
+3275 
+	gbackground
+-
+	gcŞÜ
+: #bc360a;
+
+3276 
+	gİac™y
+: 0.6;
+
+3277 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+3280 #cœşe.
+g»’
+ {
+
+3281 
+	gbackground
+-
+	gcŞÜ
+: #220e10;
+
+3282 
+	gİac™y
+: 0.5;
+
+3283 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+3286 .
+	gcœşe_cÚš”
+ {
+
+3287 
+	gpos™iÚ
+: 
+»Ïtive
+;
+
+3288 
+	g·ddšg
+: 10
+px
+;
+
+3289 
+	gwidth
+: 150
+px
+;
+
+3290 
+	gheight
+: 100
+px
+;
+
+3291 : 
+Ëá
+;
+
+3292 
+	gcŞÜ
+: 
+wh™e
+;
+
+3295 .
+	gcœşe_cÚš”
+:
+hov”
+ {
+
+3296 
+background
+-
+cŞÜ
+: #dddddd;
+
+3297 
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3298 -
+	gwebk™
+-
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3299 
+	gcŞÜ
+: #141412;
+
+3300 
+	gŒªs™iÚ
+:
+cŞÜ
+ 0.5
+s
+;
+
+3301 -
+	gwebk™
+-
+	gŒªs™iÚ
+:
+cŞÜ
+ 0.5
+s
+;
+
+3304 .
+	gcœşe
+-
+	g‹xt
+ {
+
+3305 
+	gpos™iÚ
+: 
+absŞu‹
+;
+
+3306 
+	gtİ
+: 70
+px
+;
+
+3309 
+	gdiv
+.
+	ghÜizÚlRuË
+ {
+
+3310 
+	gmš
+-
+	gheight
+: 1
+px
+;
+
+3311 
+	gş—r
+:
+bÙh
+; 
+	gwidth
+:100%;
+
+3312 
+	gbÜd”
+-
+	gbÙtom
+:2
+px
+ 
+sŞid
+ #d1d1d1;
+
+3313 
+	gheight
+:1
+px
+; 
+	g·ddšg
+-
+	gtİ
+:5px;
+
+3314 
+	gm¬gš
+-
+	gtİ
+:5
+px
+;
+
+3315 
+	gm¬gš
+-
+	gbÙtom
+:5
+px
+;
+
+3318 .
+	g‹xt
+-
+	gûÁ”
+ {
+
+3319 
+	g‹xt
+-
+	g®ign
+: 
+ûÁ”
+;
+
+3320 
+	gm¬gš
+: 20
+px
+;
+
+3323 .
+	gdiv
+-
+	gûÁ”
+ {
+
+3324 
+	gm¬gš
+: 0‡uto;
+
+3327 .
+	ghighligh‹d
+ {
+
+3328 
+	gbackground
+-
+	gcŞÜ
+: #dddddd;
+
+3331 
+	ga
+.
+	ghighlight
+:
+hov”
+ {
+
+3332 
+background
+-
+cŞÜ
+: #dddddd;
+
+3333 
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3334 -
+	gwebk™
+-
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3337 
+	gul
+.
+	gno_¡yË
+ {
+
+3338 
+	gli¡
+-
+	g¡yË
+: 
+nÚe
+;
+
+3339 
+	gm¬gš
+-
+	gËá
+: 30
+px
+;
+
+3342 
+	gli
+.
+	gcheckbox
+ {
+
+3343 
+	glše
+-
+	gheight
+: 28
+px
+;
+
+3344 
+	gv”tiÿl
+-
+	g®ign
+: 
+middË
+;
+
+3345 
+	g·ddšg
+-
+	gËá
+: 40
+px
+;
+
+3346 
+	gfÚt
+-
+	gsize
+: 17
+px
+;
+
+3349 
+	gli
+.
+	gcheckbox
+:
+hov”
+ {
+
+3350 
+background
+: 
+u¾
+('cu¡om-images/checked-checkbox.²g'è
+no
+-
+»³©
+;
+
+3351 
+	gbackground
+-
+	gcŞÜ
+: #dddddd;
+
+3352 
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3353 -
+	gwebk™
+-
+	gŒªs™iÚ
+:
+background
+-
+cŞÜ
+ 0.5
+s
+;
+
+3356 
+	gli
+.
+	gem±y
+ {
+
+3357 
+	gbackground
+: 
+u¾
+('cu¡om-images/em±y-checkbox.²g'è
+no
+-
+»³©
+;
+
+3360 
+	gli
+.
+	gchecked
+ {
+
+3361 
+	gbackground
+: 
+u¾
+('cu¡om-images/checked-checkbox.²g'è
+no
+-
+»³©
+;
+
+3364 .
+	gul_h—dšg
+ {
+
+3365 
+	gm¬gš
+-
+	gËá
+: 70
+px
+;
+
+3368 
+	gdiv
+.
+	g£¬chfÜm
+ {
+
+3369 
+	gm¬gš
+ : 40
+px
+
+
+3372 
+div
+.
+tw—kšg
+ {
+
+3373 
+m¬gš
+ : 10
+px
+
+
 	@tag.php
 
 1 <?
@@ -8072,8 +32366,8 @@ php
 .
 1
 /usr/include
-35
-521
+41
+597
 404.php
 archive.php
 author-bio.php
@@ -8091,9 +32385,12 @@ content-quote.php
 content-status.php
 content-video.php
 content.php
+css/editor-style.css
+css/ie.css
 explore.php
+fonts/genericons.css
 footer.php
-front-page-resposive.php
+front-page.php
 functions.php
 gallery-main.php
 gallery.php
@@ -8102,10 +32399,13 @@ image.php
 inc/back-compat.php
 inc/custom-header.php
 index.php
+my-archive.php
 page.php
+rtl.css
 search.php
 sidebar-main.php
 sidebar.php
 single.php
+style.css
 tag.php
 taxonomy-post_format.php

@@ -4,10 +4,11 @@
 ./sidebar-main.php
 ./search.php
 ./content.php
+./front-page.php
 ./footer.php
 ./content-aside.php
 ./functions.php
-./front-page-resposive.php
+./my-archive.php
 ./content-audio.php
 ./content-video.php
 ./comments.php
@@ -33,3 +34,8 @@
 ./taxonomy-post_format.php
 ./single.php
 ./page.php
+./fonts/genericons.css
+./rtl.css
+./css/editor-style.css
+./css/ie.css
+./style.css

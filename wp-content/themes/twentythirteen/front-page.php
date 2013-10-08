@@ -36,7 +36,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-            <div class="html_carousel">
+            <div class="html_carousel site_content">
                 <div id="foo2">
                     <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/DSC_5482.jpg" alt="carousel 1"/>
@@ -57,7 +57,7 @@ get_header(); ?>
                 <a class="next" id="foo2_next" href="#"><span>next</span></a>
                 <div class="clearfix"></div>
             </div>
-            <div class="horizontalRule html_carousel"></div>
+            <div class="horizontalRule site_content"></div>
             <i><h3 class="text-center">Recent adventures</h3></i>
             <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
