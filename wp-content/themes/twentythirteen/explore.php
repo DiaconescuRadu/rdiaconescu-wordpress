@@ -24,11 +24,11 @@ get_header(); ?>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(window).load(function(){ $('#cat_div').masonry({
-                 columnWidth: 325,
+                 columnWidth: 300,
                  itemSelector: '.cat_container'
             }); });
         $(window).load(function(){ $('#img_container').masonry({
-             columnWidth: 433,
+             columnWidth: 415,
              itemSelector: '.tile_img_container'
         }); });
     });

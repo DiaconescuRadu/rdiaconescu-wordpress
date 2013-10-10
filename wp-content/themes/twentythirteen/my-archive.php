@@ -24,7 +24,7 @@ get_header(); ?>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(window).load(function(){ $('#month_div').masonry({
-                 columnWidth: 425,
+                 columnWidth: 400,
                  itemSelector: '.month_container'
             }); });
     });

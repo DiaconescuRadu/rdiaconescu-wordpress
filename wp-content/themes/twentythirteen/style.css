@@ -3131,7 +3131,7 @@ footer.entry-meta {
 
 /* custom stiles added for my theme */
 div.site_content {
-    max-width: 1300px;
+    max-width: 1245px;
     margin: 0 auto;
 }
 
@@ -3144,7 +3144,7 @@ div.placeholder_gallery {
 }
 
 div.placeholder {
-    width : 400px;
+    width : 395px;
     height : 267px;
     background-color : rgb(150, 150, 150);
     margin : 15px auto;
@@ -3164,15 +3164,16 @@ div.placeholder {
 }
 
 .cat_container {
-    width: 300px;
+    width: 280px;
+    margin: 0px;
 }
 
 .month_container {
-    width: 400px;
+    width: 380px;
 }
 
 .tile_img_container {
-    width: 420px;
+    width: 415px;
     padding: 10px;
 }
 
@@ -3289,7 +3290,7 @@ div.newer_posts {
 .circle_container {
     position: relative;
     padding: 10px;
-    width: 150px;
+    width: 140px;
     height: 100px;
     float: left;
     color: white;

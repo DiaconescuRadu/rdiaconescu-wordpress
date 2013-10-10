@@ -27,7 +27,7 @@ get_header(); ?>
                     next : "#foo2_next"
                 }); });
                 $(window).load(function(){ $('#img_container').masonry({
-                     columnWidth: 420,
+                     columnWidth: 415,
                      itemSelector: '.tile_img_container',
                      isFitWidth: true
                 }); });
