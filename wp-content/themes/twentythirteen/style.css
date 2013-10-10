@@ -3174,7 +3174,7 @@ div.placeholder {
 
 .tile_img_container {
     width: 415px;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
 }
 
 .tile_img_container:hover {
@@ -3226,11 +3226,11 @@ a.prev, a.next {
 
 a.prev {            
     background: url(custom-images/left.png) no-repeat transparent;
-    left: 30px;
+    left: 10px;
 }
 a.next {            
     background: url(custom-images/right.png) no-repeat transparent;
-    right: 30px;
+    right: 10px;
 }
 a.next:hover,
 a.previous:hover {opacity:1;}

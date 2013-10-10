@@ -97,7 +97,7 @@ function twentythirteen_setup() {
 	 * "standard" posts and pages.
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 1300, 800, true );
+	set_post_thumbnail_size( 1245, 800, true );
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
@@ -560,7 +560,7 @@ function list_posts($blog_query, $wp_query) {
             echo '<div class="tile_img_container">';
             echo '<a href="' . get_permalink() . '" >';
             if (has_post_thumbnail()) {
-                echo the_post_thumbnail('large');
+                echo the_post_thumbnail('medium');
             }
             else {
                 echo '<div class="placeholder">';

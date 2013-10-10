@@ -12,14 +12,17 @@ get_header(); ?>
             jQuery(document).ready(function($) {
                 $(window).load(function(){ $('#foo2').carouFredSel({
                     responsive  : true,
-                    width       : 1200,
+                    width       : 1245,
                     scroll      : {
                         fx          : "crossfade",
                         easing      : "linear",
-                        duration    : 1500
+                        duration    : 1000
+                    },
+                    auto      : {
+                        timeoutDuration  : 5000,
                     },
                     items       : {
-                        width       : 1300,
+                        width       : 1245,
                         height      : 431,
                         visible     : 1
                     },
@@ -40,17 +43,17 @@ get_header(); ?>
                 <div id="foo2">
                     <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/DSC_5482.jpg" alt="carousel 1"/>
-                        <div>
+                        <!--div>
                             <h4>Text epic 1</h4>
                             <p>Descriere text epic 1</p>
-                        </div>
+                        </div-->
                     </div>
                     <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/DSC_5522.jpg" alt="carousel 2"/>
-                        <div>
+                        <!--div>
                             <h4>Text epic 2</h4>
                             <p>Descriere text epic 2</p>
-                        </div>
+                        </div-->
                     </div>
                 </div>
                 <a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
