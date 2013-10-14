@@ -76,9 +76,9 @@ get_header(); ?>
     /* chunk for rating */
     $ratingsName = "Ratings";
     $ratingCats = array(
-        1 => $slugCats["one-star"],
-        2 => $slugCats["two-stars"],
-        3 => $slugCats["three-stars"],
+        1 => $slugCats["plimbare-prin-parc"],
+        2 => $slugCats["interesant-si-provocator"],
+        3 => $slugCats["aventuros"],
         4 => $slugCats["epic"],
         #5 => $slugCats["concursuri"],
         #6 => $slugCats["cicloturism"],

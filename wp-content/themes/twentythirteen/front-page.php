@@ -23,7 +23,7 @@ get_header(); ?>
                     },
                     items       : {
                         width       : 1245,
-                        height      : 431,
+                        height      : 415,
                         visible     : 1
                     },
                     prev : "#foo2_prev",
@@ -42,27 +42,92 @@ get_header(); ?>
             <div class="html_carousel site_content">
                 <div id="foo2">
                     <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/DSC_5482.jpg" alt="carousel 1"/>
-                        <!--div>
-                            <h4>Text epic 1</h4>
-                            <p>Descriere text epic 1</p>
-                        </div-->
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_1.jpg" alt="carousel 1"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/DSC_5522.jpg" alt="carousel 2"/>
-                        <!--div>
-                            <h4>Text epic 2</h4>
-                            <p>Descriere text epic 2</p>
-                        </div-->
-                    </div>
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_2.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_3.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_4.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_5.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_6.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_7.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_8.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_9.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_10.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_11.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_12.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+                   <div class="slide">
+                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_13.jpg" alt="carousel 2"/>
+                        <div class="slider_title">
+                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                        </div>
+                   </div>
+
                 </div>
-                <a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
-                <a class="next" id="foo2_next" href="#"><span>next</span></a>
+                <a class="slider_buttons prev" id="foo2_prev" href="#"><span>prev</span></a>
+                <a class="slider_buttons next" id="foo2_next" href="#"><span>next</span></a>
                 <div class="clearfix"></div>
             </div>
             <div class="horizontalRule site_content"></div>
             <i><h3 class="text-center">Recent adventures</h3></i>
-            <?php
+             <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
             list_posts($blog_query);
             wp_reset_postdata();
