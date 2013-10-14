@@ -23,7 +23,7 @@ get_header(); ?>
                     },
                     items       : {
                         width       : 1245,
-                        height      : 415,
+                        height      : "variable",
                         visible     : 1
                     },
                     prev : "#foo2_prev",
