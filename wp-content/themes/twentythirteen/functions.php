@@ -552,7 +552,7 @@ function list_category_array($groupName, $categories, $new_url) {
 function list_posts($blog_query, $wp_query) {
    if ( $blog_query->have_posts() ) :
 
-        echo '<div class="tile_cont" id="img_container">';
+        echo '<div class="tile_cont site_content" id="img_container">';
             while ( $blog_query->have_posts() ) : $blog_query->the_post(); 
                 ?>
 
