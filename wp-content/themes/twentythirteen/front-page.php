@@ -113,7 +113,7 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
             <div class="horizontalRule site_content"></div>
-            <i><h3 class="text-center">Recent adventures</h3></i>
+            <i><h3 class="text-center">Aventuri recente</h3></i>
              <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
             list_posts($blog_query);

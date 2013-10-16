@@ -38,7 +38,7 @@ get_header(); ?>
 		<div id="content" class="site-content site_content" role="main">
             <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 500));
-            echo '<i><h3 class="text-center"> Overview: ' . $blog_query->post_count . ' adventures , ' . $blog_query->post_count * 2 . ' days spent outside</h3></i>';
+            echo '<i><h3 class="text-center"> ' . $blog_query->post_count . ' de aventuri , ' . $blog_query->post_count * 2 . ' zile petrecute afara</h3></i>';
             echo '<div class="horizontalRule"></div>';
             echo '<div id="month_div">';
             if ( $blog_query->have_posts() ) :

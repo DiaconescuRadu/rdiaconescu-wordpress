@@ -6,7 +6,7 @@ if ( !defined('ABSPATH')) exit;
 /**
  * Full Content Template
  *
-   Template Name:  Explore
+   Template Name:  Explore - en
  *
  * @file           full-width-page.php
  * @package        Responsive 
@@ -43,7 +43,7 @@ get_header(); ?>
         $slugCats[$cat->slug] = $cat;
     }
 
-    $activitiesName = "Activitati";
+    $activitiesName = "Activities";
     /* chunk for activities */
     $activitiesCats = array(
         1 => $slugCats["alpinism"],
@@ -54,13 +54,12 @@ get_header(); ?>
         6 => $slugCats["schi-de-tura"],
         7 => $slugCats["schi-de-partie"],
         8 => $slugCats["drumetii"],
-        9 => $slugCats["cicloturism"],
         #9 => $slugCats["concursuri"],
         #10 => $slugCats["cicloturism"],
     );
 
     /* chunk for places */
-    $locationsName = "Locuri";
+    $locationsName = "Locations";
     $locationCats = array(
         1 => $slugCats["bucegi"],
         2 => $slugCats["piatra-craiului"],
@@ -75,7 +74,7 @@ get_header(); ?>
     );
 
     /* chunk for rating */
-    $ratingsName = "Rating";
+    $ratingsName = "Ratings";
     $ratingCats = array(
         1 => $slugCats["plimbare-prin-parc"],
         2 => $slugCats["interesant-si-provocator"],
@@ -140,7 +139,7 @@ get_header(); ?>
             
             /* adding two headings for the mode */
             ?>
-            <i><h3 class="text-center"> Usurand gasirea acului in carul cu fan. </h3></i>
+            <i><h3 class="text-center"> Making the needle in the haystack a bit easier to find. </h3></i>
             <div class="horizontalRule"></div>
             <div class="cat_div" id="cat_div">
                 <div class="cat_container tweaking">
@@ -154,13 +153,13 @@ get_header(); ?>
                     </form>
                     </div><!--end of the searchformdiv-->
                     
-                    <i><h4 class="text-center"> Mod de cautare </h4></i>
+                    <i><h4 class="text-center"> Search mode </h4></i>
 
                     <a href="<?php echo str_replace( 'mode/int' , 'mode/reu' ,$new_url)?>">
                     <div class="circle_container">
                         <div id="circle" class="red" style="left:30px;opacity:1"></div>
                         <div id="circle" class="red" style="left:65px;opacity:1"></div>
-                        <div class="circle-text" style="top:70px;left:45px"><i><p>Reuniune</p></i></div>
+                        <div class="circle-text" style="top:70px;left:45px"><i><p>Reunion</p></i></div>
                     </div>
                     </a>
                     
@@ -168,7 +167,7 @@ get_header(); ?>
                     <div class="circle_container">
                         <div id="circle" class="red" style="left:30px;"></div>
                         <div id="circle" class="red" style="left:65px;"></div>
-                        <div class="circle-text" style="top:70px;left:30px"><i><p>Intersectie</p></i></div>
+                        <div class="circle-text" style="top:70px;left:30px"><i><p>Intersection</p></i></div>
                     </div>
                     </a><br>
                 </div>
@@ -188,9 +187,8 @@ get_header(); ?>
                 $cat_id_array = get_category_and($cat_name);
                 $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category__and' => $cat_id_array, 'search' => $search));
             }
-             
+            
             if ($blog_query->found_posts !== 0) {
-                echo '<i><h3 class="text-center">' . $blog_query->found_posts . ' de jurnale gasite</h3></i>';
                 list_posts($blog_query);
             } else {
                 echo '<i><h3 class="text-center">Found no results, extend your search</h3></i>';
