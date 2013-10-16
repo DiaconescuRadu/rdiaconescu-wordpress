@@ -97,7 +97,7 @@ function twentythirteen_setup() {
 	 * "standard" posts and pages.
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 1245, 800, true );
+	/*set_post_thumbnail_size( 1245, 800, true );*/
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
