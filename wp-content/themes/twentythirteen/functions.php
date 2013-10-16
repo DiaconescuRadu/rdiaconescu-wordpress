@@ -538,9 +538,9 @@ function list_category_array($groupName, $categories, $new_url) {
         echo '<ul class="no_style">';
             foreach($categories as $category) {
                 if (strpos($new_url , $category->slug) !== false) {
-                   echo '<li class="checkbox checked"><a href=' . str_replace($category->slug, '', $new_url) . '>' . $category->name .  '(' . $category->count . ')' . '</a></li>';
+                   echo '<a href=' . str_replace($category->slug, '', $new_url) . '><li class="checkbox checked">' . $category->name .  '(' . $category->count . ')' . '</li></a>';
                 } else {
-                   echo '<li class="checkbox empty"><a href=' . $new_url . '/' . $category->slug . '>' . $category->name . '(' . $category->count . ')' . '</a></li>';
+                   echo '<a href=' . $new_url . '/' . $category->slug . '><li class="checkbox empty">' . $category->name . '(' . $category->count . ')' . '</li></a>';
                 };
             }
         echo '</ul>';

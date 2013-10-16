@@ -16,10 +16,10 @@ get_header(); ?>
                     scroll      : {
                         fx          : "crossfade",
                         easing      : "linear",
-                        duration    : 1000
+                        duration    : 750
                     },
                     auto      : {
-                        timeoutDuration  : 5000,
+                        timeoutDuration  : 7000,
                     },
                     items       : {
                         width       : 1245,
