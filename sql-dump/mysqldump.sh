@@ -1,6 +1,6 @@
 #!/bin/bash
 #dumping the database for a certain database
-date=`date +%y%m%d`
+date=`date +%y%m%d%M`
 if [ $# -ne 1 ]; then
 	echo "Wrong number of params, please add the dump file";
 	exit
