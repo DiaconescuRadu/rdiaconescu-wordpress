@@ -6,12 +6,6 @@ if [ $# -ne 1 ]; then
 	exit
 fi
 
-if [ "$1" = "localhost" ]; then 
-    mysqldump --add-drop-table -h localhost\
-     -u radi -p radi | bzip2\
-     -c > $date$1.sql.bz2
-else
-    mysqldump --add-drop-table -h localhost\
-     -u radi -p radi | sed -e "s/localhost:10080/$1/g" | bzip2\
-     -c > $date$1.sql.bz2
-fi
+mysqldump --add-drop-table -h localhost\
+ -u radi -p radi | bzip2\
+ -c > $date$1.sql.bz2
