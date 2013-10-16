@@ -62,13 +62,13 @@ get_header(); ?>
     $locationsName = "Locations";
     $locationCats = array(
         1 => $slugCats["bucegi"],
-        2 => $slugCats["baiului"],
+        2 => $slugCats["piatra-craiului"],
         3 => $slugCats["fagaras"],
         4 => $slugCats["postavaru"],
         5 => $slugCats["retezat"],
-        6 => $slugCats["mont-blanc"],
+        6 => $slugCats["germania"],
         7 => $slugCats["ciucas"],
-        8 => $slugCats["drumetii"],
+        8 => $slugCats["baiului"],
         #9 => $slugCats["concursuri"],
         #10 => $slugCats["cicloturism"],
     );

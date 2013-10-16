@@ -44,82 +44,69 @@ get_header(); ?>
                     <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_1.jpg" alt="carousel 1"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/2013/04/bivuac-pe-piatra-iernii-si-din-nou.html"><h5>Bivuac pe piatra iernii</h5></a>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_2.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/2013/08/wilder-kaiser-ziua-6-via-classica-din.html"><h5>Via Classica din Wilder Kaiser</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_3.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/2012/01/inceput-de-in-fagaras.html"><h5>Vanatoarea lui Buteanu</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_4.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/2013/08/wilder-kaiser-ziua-4-soclul-din.html"><h5>Wilder Kaiser</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_5.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/2013/06/de-la-bordeluri-pe-apa-la-mori-de-vant.html"><h5>Olanda pe bicicleta</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_6.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/drumetii"><h5>Drumetii in dolomiti</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_7.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/category/dolomiti"><h5>Dolomiti, imparatia de stanca</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_8.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/2011/11/lepsezi.html"><h5>Lespezi</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_9.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://localhost:10080/explore/mode/reu/search/categories/piatra-craiului/germania"><h5>De pe dealurilei Germaniei</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_10.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/fagaras"><h5>Pe creste Fagarasului</h5></a>
                         </div>
                    </div>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_11.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
+                            <a href="http://localhost:10080/explore/mode/reu/search/categories/piatra-craiului"><h5>Din al nostru Crai</h5></a>
                         </div>
                    </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_12.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_13.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href=""><h5>Turingia pe bicicleta</h5></a>
-                        </div>
-                   </div>
-
                 </div>
                 <a class="slider_buttons prev" id="foo2_prev" href="#"><span>prev</span></a>
                 <a class="slider_buttons next" id="foo2_next" href="#"><span>next</span></a>
