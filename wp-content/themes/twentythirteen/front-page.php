@@ -92,7 +92,7 @@ get_header(); ?>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_9.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href="http://localhost:10080/explore/mode/reu/search/categories/piatra-craiului/germania"><h5>De pe dealurilei Germaniei</h5></a>
+                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/piatra-craiului/germania"><h5>De pe dealurilei Germaniei</h5></a>
                         </div>
                    </div>
                    <div class="slide">
@@ -104,7 +104,7 @@ get_header(); ?>
                    <div class="slide">
                         <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_11.jpg" alt="carousel 2"/>
                         <div class="slider_title">
-                            <a href="http://localhost:10080/explore/mode/reu/search/categories/piatra-craiului"><h5>Din al nostru Crai</h5></a>
+                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/piatra-craiului"><h5>Din al nostru Crai</h5></a>
                         </div>
                    </div>
                 </div>
