@@ -928,7 +928,7 @@ ul.nav-menu li:hover > ul,
 
 .site-header .search-form {
 	position: absolute;
-	right: 20px;
+	right: 40px;
 	top: 1px;
 }
 
@@ -3462,6 +3462,15 @@ blockquote.side_blockquote {
 
 .story_page_mountain {
     background-image: url(custom-images/mountain-64.png);
+}
+
+a.language_switcher {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 120%;
+    font-weight: 500;
+    font-style: italic;
 }
 
 }

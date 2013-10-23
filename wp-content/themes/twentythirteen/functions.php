@@ -720,3 +720,14 @@ function translate_title($title){
     };
     return $title;
 }
+
+// Print the language switcher
+function get_language_switcher(){
+    $translation_list = icl_get_languages(); 
+   
+    if(ICL_LANGUAGE_CODE == 'ro'){
+        echo '<a class="language_switcher" href="' . $translation_list[en][url] . '">EN</a>';
+    } else {
+        echo '<a class="language_switcher" href="' . $translation_list[ro][url] . '">RO</a>';
+    }
+}
