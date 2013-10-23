@@ -653,7 +653,12 @@ function add_rewrite_rules($aRules) {
 $aNewRules = array('explore/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
         'explore/mode/([^/]+)/search/categories/(.+)?$' => 'explore.php?pagename=explore&mode=$matches[1]&categories=$matches[2]' ,
         'explore/mode/([^/]+)/search/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]',
-        'explore/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]');
+        'explore/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore&mode=$matches[1]&search=$matches[2]',
+        'explore-en/mode/([^/]+)/search/([^/]+)/categories/(.+)?$' => 'explore.php?pagename=explore-en&mode=$matches[1]&search=$matches[2]&categories=$matches[3]',
+        'explore-en/mode/([^/]+)/search/categories/(.+)?$' => 'explore.php?pagename=explore-en&mode=$matches[1]&categories=$matches[2]' ,
+        'explore-en/mode/([^/]+)/search/categories/?$' => 'explore.php?pagename=explore-en&mode=$matches[1]',
+        'explore-en/mode/([^/]+)/search/([^/]+)/categories/?$' => 'explore.php?pagename=explore-en&mode=$matches[1]&search=$matches[2]'
+        );
 #$aNewRules = array('explore/([^/]+)/([^/]+)/?$' => 'explore.php[2]');
 $aRules = $aNewRules + $aRules;
 return $aRules;
