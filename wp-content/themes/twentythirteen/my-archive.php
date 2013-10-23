@@ -31,14 +31,23 @@ get_header(); ?>
 </script>
 
 <?php
+    if(ICL_LANGUAGE_CODE == 'en'){
+        $adventures = ' adventures, ';
+        $daysOutside = ' days spent outside';
+    }
+    if(ICL_LANGUAGE_CODE == 'ro'){
+        $adventures = 'de aventuri, ';
+        $daysOutside = ' zile petrecute afara';
+    }
 ?>
+
 
 <div id="main" class="site-main">
     <div id="primary" class="content-area">
 		<div id="content" class="site-content site_content" role="main">
             <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 500));
-            echo '<i><h3 class="text-center"> ' . $blog_query->post_count . ' de aventuri , ' . $blog_query->post_count * 2 . ' zile petrecute afara</h3></i>';
+            echo '<i><h3 class="text-center"> ' . $blog_query->post_count . $adventures . $blog_query->post_count * 2 . $daysOutside . '</h3></i>';
             echo '<div class="horizontalRule"></div>';
             echo '<div id="month_div">';
             if ( $blog_query->have_posts() ) :
