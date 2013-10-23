@@ -37,83 +37,109 @@ get_header(); ?>
             });
         </script>
 
+<?php
+    /* Localisation strings can be found here */
+    class Slider
+    {
+       public $photo;
+       public $link;
+       public $title;
+       public $alt;
+
+       public function Slider($photo, $link, $title, $alt) {
+            $this->photo = $photo;
+            $this->link = $link;
+            $this->title = $title;
+            $this->alt = $alt;
+       }
+    }
+    
+    $sliders = array (
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_1.jpg',
+                'http://diaconescuradu.com/2013/04/bivuac-pe-piatra-iernii-si-din-nou.html',
+                'Bivuac pe piatra iernii',
+                'Bivuac pe piatra iernii'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_2.jpg',
+                'http://diaconescuradu.com/2013/08/wilder-kaiser-ziua-6-via-classica-din.html',
+                'Via Classica din Wilder Kaiser',
+                'Via Classica din Wilder Kaiser'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_3.jpg',
+                'http://diaconescuradu.com/2012/01/inceput-de-in-fagaras.html',
+                'Vanatoarea lui Buteanu',
+                'Vanatoarea lui Buteanu'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_4.jpg',
+                'http://diaconescuradu.com/2013/08/wilder-kaiser-ziua-4-soclul-din.html',
+                'Wilder Kaiser',
+                'Wilder Kaiser'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_5.jpg',
+                'http://diaconescuradu.com/2013/06/de-la-bordeluri-pe-apa-la-mori-de-vant.html',
+                'Olanda pe bicicleta',
+                'Olanda pe bicicleta'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_6.jpg',
+                'http://diaconescuradu.com/explore/mode/reu/search/categories/drumetii',
+                'Drumetii in dolomiti',
+                'Drumetii in dolomiti'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_7.jpg',
+                'http://diaconescuradu.com/category/dolomiti',
+                'Dolomiti, imparatia de stanca',
+                'Dolomiti, imparatia de stanca'),
+
+                new Slider(content_url() . '/uploads/header_slider_images/cover_photo_8.jpg',
+                'http://diaconescuradu.com/2011/11/lepsezi.html',
+                'Lespezi',
+                'Lespezi'),
+
+                 new Slider(content_url() . '/uploads/header_slider_images/cover_photo_9.jpg',
+                'http://diaconescuradu.com/explore/mode/reu/search/categories/piatra-craiului/germania',
+                'De pe dealurilei Germaniei',
+                'De pe dealurilei Germaniei'),
+
+                 new Slider(content_url() . '/uploads/header_slider_images/cover_photo_10.jpg',
+                'http://diaconescuradu.com/explore/mode/reu/search/categories/fagaras',
+                'Pe creste Fagarasului',
+                'Pe creste Fagarasului'),
+
+                 new Slider(content_url() . '/uploads/header_slider_images/cover_photo_11.jpg',
+                'http://diaconescuradu.com/explore/mode/reu/search/categories/piatra-craiului',
+                'Din al nostru Crai',
+                'Din al nostru Crai'));
+
+
+    if(ICL_LANGUAGE_CODE == 'en'){
+        $recentAdventures = 'Recent Adventures';
+    }
+    if(ICL_LANGUAGE_CODE == 'ro'){
+        $recentAdventures = 'Aventuri recente';
+    }
+?>
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
             <div class="html_carousel site_content">
                 <div id="foo2">
-                    <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_1.jpg" alt="carousel 1"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/2013/04/bivuac-pe-piatra-iernii-si-din-nou.html"><h5>Bivuac pe piatra iernii</h5></a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_2.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/2013/08/wilder-kaiser-ziua-6-via-classica-din.html"><h5>Via Classica din Wilder Kaiser</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_3.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/2012/01/inceput-de-in-fagaras.html"><h5>Vanatoarea lui Buteanu</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_4.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/2013/08/wilder-kaiser-ziua-4-soclul-din.html"><h5>Wilder Kaiser</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_5.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/2013/06/de-la-bordeluri-pe-apa-la-mori-de-vant.html"><h5>Olanda pe bicicleta</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_6.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/drumetii"><h5>Drumetii in dolomiti</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_7.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/category/dolomiti"><h5>Dolomiti, imparatia de stanca</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_8.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/2011/11/lepsezi.html"><h5>Lespezi</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_9.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/piatra-craiului/germania"><h5>De pe dealurilei Germaniei</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_10.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/fagaras"><h5>Pe creste Fagarasului</h5></a>
-                        </div>
-                   </div>
-                   <div class="slide">
-                        <img src="<?php echo content_url()?>/uploads/header_slider_images/cover_photo_11.jpg" alt="carousel 2"/>
-                        <div class="slider_title">
-                            <a href="http://diaconescuradu.com/explore/mode/reu/search/categories/piatra-craiului"><h5>Din al nostru Crai</h5></a>
-                        </div>
-                   </div>
+                    <?php
+                    foreach ($sliders as $slider) {
+                        echo '<div class="slide">';
+                            echo '<img src="' . $slider->photo . '" alt="' . $slider->alt . '"/>';
+                            echo '<div class="slider_title">';
+                                echo '<a href="' . $slider->link . '"><h5>' . $slider->title . '</h5></a>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
                 <a class="slider_buttons prev" id="foo2_prev" href="#"><span>prev</span></a>
                 <a class="slider_buttons next" id="foo2_next" href="#"><span>next</span></a>
                 <div class="clearfix"></div>
             </div>
             <div class="horizontalRule site_content"></div>
-            <i><h3 class="text-center">Aventuri recente</h3></i>
+            <i><h3 class="text-center"><?php echo $recentAdventures?></h3></i>
              <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
             list_posts($blog_query);
