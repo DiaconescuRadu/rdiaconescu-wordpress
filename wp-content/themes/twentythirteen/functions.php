@@ -202,8 +202,7 @@ function twentythirteen_wp_title( $title, $sep ) {
 	if ( is_feed() )
 		return $title;
 
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
+    $title .= get_bloginfo( 'name' );
 
 	// Add the site description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
@@ -713,8 +712,11 @@ function replace_image_width($content){
 }
 add_filter('the_content', 'replace_image_width');
 
-// Clears all empty <p></p> in the_content()
-function replace_image_height($content){
-    return ereg_replace("height=\"[0-9][0-9][0-9]\"","style=\"margin-left:auto;margin-right:auto;display:block;\"", $content);
+// translate the title
+function translate_title($title){
+    if(ICL_LANGUAGE_CODE == 'en'){
+        $title = str_replace("Jurnal de aventura si explorare", "Adventure journal", $title);
+        $title = str_replace("Alpinism, Alergat, Escalada, Cicloturism, Ultramaratoane si alte lucruri aventuroase.", "Alpinism, Running, Climbing, Bike Touring, Ultramarathons and other outdoorsy things", $title);
+    };
+    return $title;
 }
-add_filter('the_content', 'replace_image_height');
