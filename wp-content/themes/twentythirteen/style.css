@@ -3468,7 +3468,25 @@ a.language_switcher {
     font-size: 120%;
     font-weight: 500;
     font-style: italic;
+    display: inline-block;
+    text-indent: 5px;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    background-position: 0 0;
+    overflow: hidden;
 }
+
+a.language_switcher:hover {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    transition:background-color 1s;
+    -webkit-transition:background-color 1s;
+    background-color: #220e10;
+    color: #fff;
+}
+
 
 div.social_buttons {
     margin: 0 auto;
@@ -3482,7 +3500,7 @@ div.fb-like {
 div.social_header {
     position: absolute;
     right: 10px;
-    top: 5px;
+    top: 8px;
 }
 
 a.facebook {
@@ -3523,5 +3541,6 @@ a.social-media-icon {
 a.social-media-icon:hover {
     background-position: 0 -32px;
 }
+
 
 }
