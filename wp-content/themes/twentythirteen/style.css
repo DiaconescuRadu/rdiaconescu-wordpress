@@ -839,7 +839,7 @@ img.wp-smiley,
 .main-navigation {
 	clear: both;
 	margin: 0 auto;
-	max-width: 1080px;
+	max-width: 1200px;
 	min-height: 45px;
 	position: relative;
 }
@@ -3465,12 +3465,63 @@ blockquote.side_blockquote {
 }
 
 a.language_switcher {
-    position: absolute;
-    right: 10px;
-    top: 8px;
     font-size: 120%;
     font-weight: 500;
     font-style: italic;
+}
+
+div.social_buttons {
+    margin: 0 auto;
+    width: 350px;
+}
+
+div.fb-like {
+    width: 110px;
+}
+
+div.social_header {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+a.facebook {
+    background-image: url(custom-images/social-media/facebook.png);
+}
+
+a.google-plus {
+    background-image: url(custom-images/social-media/google-plus.png);
+}
+
+a.twitter {
+    background-image: url(custom-images/social-media/twitter.png);
+}
+
+a.email {
+    background-image: url(custom-images/social-media/email.png);
+}
+
+a.rss {
+    background-image: url(custom-images/social-media/rss.png);
+}
+
+a.social-media-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    background-position: 0 0;
+    overflow: hidden;
+    text-indent: -1000px;
+    -moz-transition: background-position .25s ease;
+    -webkit-transition: background-position .25s ease;
+    -o-transition: background-position .25s ease;
+    -ms-transition: background-position .25s ease;
+    transition: background-position .25s ease;
+}
+
+a.social-media-icon:hover {
+    background-position: 0 -32px;
 }
 
 }
