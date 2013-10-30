@@ -3551,5 +3551,18 @@ a.social-media-icon:hover {
     background-position: 0 -32px;
 }
 
+p.caption {
+	font-weight: normal;
+	text-align: center;
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+.img_container p {
+	font-weight: normal;
+	text-align: center;
+	font-size: 16px;
+}
+
 
 }

@@ -1,0 +1,23 @@
+diff --git a/wp-content/plugins/picasa-express-x2/picasa-express-2.php b/wp-content/plugins/picasa-express-x2/picasa-express-2.php
+index 1d779cf..ac90817 100644
+--- a/wp-content/plugins/picasa-express-x2/picasa-express-2.php
++++ b/wp-content/plugins/picasa-express-x2/picasa-express-2.php
+@@ -2692,13 +2692,14 @@ jQuery('document').ready(function(){
+ 
+ 				// wrap the current image tag with the A tag, adding the "link" 
+ 				// attribute so the thickbox-custom can add the link to picasa
+-				$html = "<div class=\"cat_container\" id=\"cat_container\"><a href=\"{$a_href}\" link=\"{$href}\" {$ititle}{$amore_this}>$html</a></div>";
++				$html = "<div class=\"img_container\"><a href=\"{$a_href}\" link=\"{$href}\" {$ititle}{$amore_this}>$html</a></div>";
+ 			}// end if we need to add the link
+ 
+-			if ($pe2_caption) {
++            /* commenting for how the captions, we might get away without them */
++			//if ($pe2_caption) {
+ 				// add caption
+-				$html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
+-			}
++			//	$html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
++			//}
+ 
+ 			// return our processed shortcode with teh image link
+ 			return do_shortcode($html);

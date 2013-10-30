@@ -726,7 +726,7 @@ function get_social_icons(){
     ?>
     <div class="social_header">
         <a class="social-media-icon facebook" target="_blank" href="https://www.facebook.com/diaconescu.radu.9">F</a>
-        <a class="social-media-icon google-plus" target="_blank" href="https://plus.google.com/102164334047255333030/posts">G+</a>
+        <a class="social-media-icon google-plus" target="_blank" href="https://plus.google.com/u/0/+DiaconescuRadu/posts">G+</a>
         <!--a class="social-media-icon twitter" target="_blank" href="https://plus.google.com/102164334047255333030/posts">T</a!-->
         <a class="social-media-icon rss" target="_blank" href="http://www.diaconescuradu.com/feed">Rss</a>
         <!--a class="social-media-icon email" target="_blank" href="https://plus.google.com/102164334047255333030/posts">Email</a-->
