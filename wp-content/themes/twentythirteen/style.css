@@ -738,6 +738,7 @@ img.alignnone {
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 300;
+    text-align: center;
 }
 
 img.wp-smiley,
@@ -928,8 +929,8 @@ ul.nav-menu li:hover > ul,
 
 .site-header .search-form {
 	position: absolute;
-	right: 40px;
-	top: 1px;
+	right: 160px;
+	top: 2px;
 }
 
 .site-header .search-field {

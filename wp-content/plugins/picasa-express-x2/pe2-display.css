@@ -14,11 +14,13 @@
 }
 
 /* correct the image spacing when captions are on */
-div.wp-caption {
+/* radi - remove captions for now */
+/*div.wp-caption {
 	padding: 2px;
 	margin-right: 2px;
 	margin-bottom: 2px;
-}
+}*/
+
 .pe2-album div.wp-caption {
 	padding: 1px;
 	margin-right: 1px;

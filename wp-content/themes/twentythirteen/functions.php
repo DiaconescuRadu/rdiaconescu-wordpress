@@ -683,35 +683,35 @@ add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
  * Removing unwanted things from the posts this should all be replaced inside the posts
  */
 // Replaces all <div> in the_content with <p>
-function clear_replacedivopen($content){
+/*function clear_replacedivopen($content){
     return str_replace("<div>","<p>", $content);
 }
-add_filter('the_content', 'clear_replacedivopen');
+add_filter('the_content', 'clear_replacedivopen', 20);
 
 // Replaces all </div> in the_content with </p>
 function clear_replacedivclose($content){
     return str_replace("</div>","</p>", $content);
 }
-add_filter('the_content', 'clear_replacedivclose');
+add_filter('the_content', 'clear_replacedivclose', 20);
 
 // Clears all empty <p></p> in the_content()
 function clear_emptyp($content){
     return str_replace("<p></p>","", $content);
 }
-add_filter('the_content', 'clear_emptyp');
+add_filter('the_content', 'clear_emptyp', 20);
 
 // Clears all empty <p></p> in the_content()
 function replace_image_size($content){
     return str_replace("s640","s800", $content);
 }
-add_filter('the_content', 'replace_image_size');
+add_filter('the_content', 'replace_image_size', 20);
 
 // Clears all empty <p></p> in the_content()
 function replace_image_width($content){
     return ereg_replace("width=\"[0-9][0-9][0-9]\"","", $content);
 }
-add_filter('the_content', 'replace_image_width');
-
+add_filter('the_content', 'replace_image_width', 20);
+*/
 // translate the title
 function translate_title($title){
     if(ICL_LANGUAGE_CODE == 'en'){

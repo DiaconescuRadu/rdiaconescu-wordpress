@@ -2642,7 +2642,8 @@ jQuery('document').ready(function(){
 			}// end if we need to calculate width for the caption
 
 			// generate the URL for the thumbnail image
-			$thumb_src = preg_replace('/\/(w|h|s)[0-9]+(-c-o|-c|-o|)\//', '/'.$thumb_size.'-o/', $src);
+			//$thumb_src = preg_replace('/\/(w|h|s)[0-9]+(-c-o|-c|-o|)\//', '/'.$thumb_size.'-o/', $src);
+			$thumb_src = preg_replace('/\/(w|h|s)[0-9]+(-c-o|-c|-o|)\//', '/s800/', $src);
 
 			// add our pe2 class to the image class
 			$iclass[] = 'pe2-photo';
@@ -2654,7 +2655,8 @@ jQuery('document').ready(function(){
 				$iclass .= ' '.$pe2_img_css;
 			}
 			if($iclass){
-				$iclass = 'class="'.$iclass.'" ';
+                /* radi - removing the class for now */
+				//$iclass = 'class="'.$iclass.'" ';
 			}
 			if($pe2_img_style){
 				$istyle = 'style="'.$pe2_img_style.'" ';
@@ -2697,10 +2699,11 @@ jQuery('document').ready(function(){
 			}// end if we need to add the link
 
             /* commenting for how the captions, we might get away without them */
-			//if ($pe2_caption) {
+			if ($pe2_caption) {
 				// add caption
-				//$html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
-			//}
+				// old version $html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
+				$html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
+			}
 
 			// return our processed shortcode with teh image link
 			return do_shortcode($html);
