@@ -965,7 +965,8 @@ ul.nav-menu li:hover > ul,
  */
 
 .hentry {
-	padding: 20px 0;
+	/* padding: 20px 0; */
+	padding: 10px 0;
 }
 
 .entry-header,
@@ -1862,7 +1863,7 @@ footer.entry-meta {
 
 .paging-navigation .nav-links {
 	margin: 0 auto;
-	max-width: 604px;
+	max-width: 1150px;
 	width: 100%;
 }
 

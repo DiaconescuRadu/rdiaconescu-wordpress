@@ -549,6 +549,16 @@ function list_category_array($groupName, $categories, $new_url) {
 /* function list posts */
 
 function list_posts($blog_query, $wp_query) {
+    /* localizare */
+    if(ICL_LANGUAGE_CODE == 'en'){
+        $prev_posts = ' Older posts';
+        $next_posts = ' Newer posts';
+    }
+    if(ICL_LANGUAGE_CODE == 'ro'){
+        $prev_posts = ' Postari mai vechi';
+        $next_posts = ' Postari mai noi';
+    }
+
    if ( $blog_query->have_posts() ) :
 
         echo '<div class="tile_cont site_content" id="img_container">';
@@ -587,13 +597,24 @@ function list_posts($blog_query, $wp_query) {
     endwhile;
     echo '</div><!-- end of .col-940 -->';
 
-    if (  $blog_query->max_num_pages > 1 ) : 
-        ?>
-        <div class="navigation site_content">
-            <div class="previous older_posts"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ), $blog_query->max_num_pages ); ?></div>
-            <div class="next newer_posts"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ), $blog_query->max_num_pages ); ?></div>
-        </div><!-- end of .navigation -->
-        <?php 
+    if ( $blog_query->max_num_pages > 1 ) : 
+	?>
+	<nav class="navigation paging-navigation" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
+		<div class="nav-links">
+
+			<?php if ( get_next_posts_link('Previous posts', $blog_query->max_num_pages) ) : ?>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> '. $prev_posts, 'twentythirteen' ), $blog_query->max_num_pages ); ?></div>
+			<?php endif; ?>
+
+			<?php if ( get_previous_posts_link('Next posts', $blog_query->max_num_pages) ) : ?>
+			<div class="nav-next"><?php previous_posts_link( __( $next_posts . ' <span class="meta-nav">&rarr;</span>', 'twentythirteen' ), $blog_query->max_num_pages ); ?></div>
+			<?php endif; ?>
+
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+
+    <?php
     endif;
 
 else : 
@@ -712,6 +733,13 @@ function replace_image_width($content){
 }
 add_filter('the_content', 'replace_image_width', 20);
 */
+
+// Filter for replacing embedded widths from thumbnails, should be fixed from the database
+function replace_image_width($content){
+    return ereg_replace("width=\"[0-9][0-9][0-9][0-9]\"","", $content);
+}
+add_filter('post_thumbnail_html', 'replace_image_width');
+
 // translate the title
 function translate_title($title){
     if(ICL_LANGUAGE_CODE == 'en'){
