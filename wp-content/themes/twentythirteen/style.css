@@ -3566,5 +3566,12 @@ p.caption {
 	font-size: 16px;
 }
 
+/* titles which should be hidden */
+
+.post-1195 h1 {
+    display: none;
+}
+
+
 
 }

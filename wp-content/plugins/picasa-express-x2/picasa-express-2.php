@@ -2665,7 +2665,7 @@ jQuery('document').ready(function(){
 			}
 
 			// create the HTML for the image tag
-			$html = "<img src=\"{$thumb_src}\" alt=\"{$alt}\" {$ititle}{$iclass}{$istyle}{$imore} />";
+			$html = "<img class=\"aligncenter\" src=\"{$thumb_src}\" alt=\"{$alt}\" {$ititle}{$iclass}{$istyle}{$imore} />";
 
 			// add the link?
 			if ($pe2_link != 'none') {
@@ -2702,7 +2702,7 @@ jQuery('document').ready(function(){
 			if ($pe2_caption) {
 				// add caption
 				// old version $html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
-				$html = "[caption id=\"\" {$calign} width=\"{$cwidth}\" caption=\"{$caption}\"]{$html}[/caption] ";
+				$html = "[caption id=\"\" {$calign} width=\"800\" caption=\"{$caption}\"]{$html}[/caption] ";
 			}
 
 			// return our processed shortcode with teh image link
