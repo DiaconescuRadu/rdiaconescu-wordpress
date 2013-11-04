@@ -156,7 +156,9 @@ get_header(); ?>
             $paged = array_pop($cat_array);
             array_pop($cat_array);
             $cat_filter = implode ('/', $cat_array);
-        }
+            /* removing page from the $cat_name */
+            $cat_name = preg_replace("/,page,.*/", "" , $cat_name);
+         }
 
         /* mode processing, and setting the class properly */
         if (empty($mode)) {
@@ -179,9 +181,7 @@ get_header(); ?>
 
         $new_url = $exploreUrl . '/mode/' . $mode . '/search/' . $search_string . 'categories/' . $cat_filter;
 
-        #echo '<pre>';
-        #print_r($search);
-        #echo '<br>';
+        #print_r($cat_filter);
         #print_r(str_replace( 'mode/int' , 'mode/reu' ,$new_url));
         #echo '<br>';
         #print_r($search);
