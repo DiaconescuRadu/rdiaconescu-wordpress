@@ -233,8 +233,13 @@ get_header(); ?>
         <div class="horizontalRule site_content"></div>
 
         <?php
+        echo '<pre>';
+        echo '<br>';
+        print_r($search);
+        echo '</pre>';
+
         if (strpos($mode , 'reu') !== false || empty($cat_name)) {
-            $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
+            $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 's' => $search));
         } else {
             $cat_id_array = get_category_and($cat_name);
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category__and' => $cat_id_array, 'search' => $search));
