@@ -6,6 +6,14 @@ if [ $# -ne 1 ]; then
 	exit
 fi
 
-mysqldump --add-drop-table -h localhost\
- --user=radi --password=X7Wr5KzR radi | bzip2\
- -c > $date$1.sql.bz2
+hostname=$(hostname);
+
+if [ "$hostname" = "mongolia" ]; then 
+    mysqldump --add-drop-table -h localhost\
+     --user=radi -p radi | bzip2\
+     -c > $date$1.sql.bz2
+else
+    mysqldump --add-drop-table -h localhost\
+     --user=radi --password=X7Wr5KzR radi | bzip2\
+     -c > $date$1.sql.bz2
+fi

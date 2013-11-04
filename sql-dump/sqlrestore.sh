@@ -18,7 +18,7 @@ if [ "$hostname" = "vpstesting" ]; then
     cat $sqlfile | sed -e "s/www.diaconescuradu.com/localhost:10080/g" | mysql --user=radi --password=X7Wr5KzR radi
 else
     echo hostname is mongolia
-    cat $sqlfile | sed -e "s/localhost:10080/www.diaconescuradu.com/g" | mysql --user=radi --password=X7Wr5KzR radi
+    cat $sqlfile | sed -e "s/localhost:10080/www.diaconescuradu.com/g" | mysql --user=radi -p radi
 fi
 
 rm -rf $sqlfile
