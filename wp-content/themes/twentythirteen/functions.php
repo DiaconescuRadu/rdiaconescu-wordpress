@@ -770,3 +770,18 @@ function get_social_icons(){
     }?>
     <?php
 }
+
+// Display the meta information
+function front_page_meta(){
+    if(ICL_LANGUAGE_CODE == 'ro'){
+    ?>
+        <meta name="description" content="Jurnal despre munte , calatorie, aventura si explorare intr-o lume  moderna si povestea unei calatorii de 9 luni pe bicicleta prin Asia Centrala, catre Khan Tengri."/>
+        <meta name="keywords" content="alpinism, cicloturism, alergat, maratoane, ultramaratoane, germania"/>
+    <?php
+    } else {
+    ?>
+        <meta name="description" content="A journal about mountains, travel, adventure and exploration in a modern world, and the story of 9 month bike-touring trip through Central Asia, towards Khan Tengri."/>
+        <meta name="keywords" content="alpinism, bike touring, running, marathons, ultramarathons, Germany"/>
+    <?php
+    }
+}
