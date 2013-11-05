@@ -3444,26 +3444,44 @@ blockquote.side_blockquote {
     max-width: 600px; 
 }
 
-.story_page a {
+.story_page h5{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.story_page a{
     min-width: 64px;
     min-height: 64px;
+    background-size: 100% 100%;
     display: inline-block;
 }
-
-.story_page_bike {
-    background-image: url(custom-images/bike-64.png);
+a.bike {
+    min-width: 80px;
+    min-height: 80px;
+    background-image: url(custom-images/bike_new.png);
 }
 
-.story_page_mosque {
+a.mosque {
     background-image: url(custom-images/mosque-64.png);
 }
 
-.story_page_trek {
-    background-image: url(custom-images/trekking-64.png);
+a.bike_trek {
+    min-width: 200px;
+    min-height: 90px;
+    margin-bottom: 10px;
+    background-image: url(custom-images/bike_trek.png);
 }
 
-.story_page_mountain {
-    background-image: url(custom-images/mountain-64.png);
+a.mountain {
+    min-width: 120px;
+    min-height: 100px;
+    margin-bottom: 10px;
+    background-image: url(custom-images/mountain-new.png);
+}
+
+a.trek_back {
+    margin-bottom: 10px;
+    background-image: url(custom-images/trekking_new.png);
 }
 
 a.language_switcher {
