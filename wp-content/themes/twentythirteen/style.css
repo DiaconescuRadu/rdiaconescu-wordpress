@@ -3446,7 +3446,7 @@ blockquote.side_blockquote {
 
 .story_page h5{
     margin-top: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .story_page a{
@@ -3458,30 +3458,37 @@ blockquote.side_blockquote {
 a.bike {
     min-width: 80px;
     min-height: 80px;
-    background-image: url(custom-images/bike_new.png);
+    background-image: url(custom-images/khan-tengri/bike_new.png);
 }
 
 a.mosque {
-    background-image: url(custom-images/mosque-64.png);
+    background-image: url(custom-images/khan-tengri/mosque-64.png);
 }
 
 a.bike_trek {
     min-width: 200px;
     min-height: 90px;
     margin-bottom: 10px;
-    background-image: url(custom-images/bike_trek.png);
+    background-image: url(custom-images/khan-tengri/bike_trek.png);
 }
 
 a.mountain {
     min-width: 120px;
     min-height: 100px;
     margin-bottom: 10px;
-    background-image: url(custom-images/mountain-new.png);
+    background-image: url(custom-images/khan-tengri/mountain-new.png);
 }
 
 a.trek_back {
     margin-bottom: 10px;
-    background-image: url(custom-images/trekking_new.png);
+    background-image: url(custom-images/khan-tengri/trekking_new.png);
+}
+
+a.steppes {
+    margin-bottom: 10px;
+    min-width: 50px;
+    min-height: 50px;
+    background-image: url(custom-images/khan-tengri/steppes_grass.png);
 }
 
 a.language_switcher {
