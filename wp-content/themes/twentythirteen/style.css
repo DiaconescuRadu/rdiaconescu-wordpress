@@ -3519,19 +3519,26 @@ a.language_switcher:hover {
 }
 
 
+/* begging of the social buttons on each page */
+
 div.social_buttons {
     margin: 0 auto;
-    width: 350px;
+    width: 290px;
 }
 
 div.fb-like {
-    width: 110px;
+    width: 130px;
 }
-
 /* neede for the facebook cutoff */
 iframe {
     max-width:none;
 }
+
+/* this overrides 90px to 72px width to +1 button */
+#___plusone_0{ width:65px !important; }
+
+/* override the twitter width */
+#twitter-widget-0{ width:80px !important; }
 
 div.social_header {
     position: absolute;

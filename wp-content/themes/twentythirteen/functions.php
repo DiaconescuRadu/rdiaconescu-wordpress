@@ -785,12 +785,14 @@ function get_social_buttons(){
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
-        <!-- Facebook -->
-        <div class="fb-like" data-href="<?php the_permalink()?>" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+        <div class="fb-like" data-href="<?php the_permalink()?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+       <!-- Facebook -->
+        <!--div class="fb-like" data-href="<?php the_permalink()?>" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div-->
         <!-- Google plus button -->
 
         <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium"></div>
+        <div class="my_google_style g-plusone" data-size="medium"></div>
 
         <!-- Place this tag after the last +1 button tag. -->
         <script type="text/javascript">
