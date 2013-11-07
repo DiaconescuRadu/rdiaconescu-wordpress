@@ -9,11 +9,11 @@ fi
 hostname=$(hostname);
 
 if [ "$hostname" = "mongolia" ]; then 
-    mysqldump --add-drop-table --default-character-set="utf8" -h localhost\
+    mysqldump --add-drop-table  -h localhost\
      --user=radi -p radi | bzip2\
      -c > $date$1.sql.bz2
 else
-    mysqldump --add-drop-table --default-character-set="utf8" -h localhost\
+    mysqldump --add-drop-table  -h localhost\
      --user=radi --password=X7Wr5KzR radi | bzip2\
      -c > $date$1.sql.bz2
 fi
