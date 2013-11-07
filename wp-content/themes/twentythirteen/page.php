@@ -13,6 +13,16 @@
 
 get_header(); ?>
 
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(window).load(function(){ $('#gallery').masonry({
+             columnWidth: 10,
+             itemSelector: '.gallery_image',
+             isFitWidth: true
+        }); });
+    });
+</script>
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
