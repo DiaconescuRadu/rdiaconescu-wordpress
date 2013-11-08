@@ -3604,28 +3604,41 @@ p.caption {
     display: none;
 }
 
+/* specific settings for posts which have galleries */
+
 .post-280 div {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .post-280 div.entry-content p{
     max-width: 800px;
 }
 
+.gallery p {
+    display: none;
+}
+
 div.gallery {
     max-width: 960px;
 }
 
+
 div.landscape {
     padding : 10px;
-    max-width: 600px;
-    max-height: 400px;
+    max-width: 660px;
+    max-height: 440px;
 }
 
-div.landscape_300 {
+div.landscape_full {
     padding : 10px;
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 1000px;
+    max-height: 666px;
+}
+
+div.landscape_330 {
+    padding : 10px;
+    max-width: 330px;
+    max-height: 220px;
 }
 
 div.landscape_450 {
@@ -3634,10 +3647,16 @@ div.landscape_450 {
     max-height: 300px;
 }
 
+div.landscape_495 {
+    padding : 10px;
+    max-width: 495px;
+    max-height: 330px;
+}
+
 div.portrait {
     padding : 10px;
-    max-width: 278px;
-    max-height: 400px;
+    max-width: 305px;
+    max-height: 440px;
 }
 
 }
