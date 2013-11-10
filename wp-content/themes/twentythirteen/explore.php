@@ -54,7 +54,7 @@ get_header(); ?>
         $activitiesCats = array(
             1 => $slugCats["alpinism"],
             2 => $slugCats["alergat"],
-            3 => $slugCats["cu-bicla"],
+            3 => $slugCats["bike-climb-bike"],
             4 => $slugCats["escalada"],
             5 => $slugCats["catarat"],
             6 => $slugCats["schi-de-tura"],

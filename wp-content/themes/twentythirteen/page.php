@@ -15,7 +15,22 @@ get_header(); ?>
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {
-        $(window).load(function(){ $('#gallery').masonry({
+        $(window).load(function(){ $('#gallery1').masonry({
+             columnWidth: 10,
+             itemSelector: '.gallery_image',
+             isFitWidth: true
+        }); });
+        $(window).load(function(){ $('#gallery2').masonry({
+             columnWidth: 10,
+             itemSelector: '.gallery_image',
+             isFitWidth: true
+        }); });
+        $(window).load(function(){ $('#gallery3').masonry({
+             columnWidth: 10,
+             itemSelector: '.gallery_image',
+             isFitWidth: true
+        }); });
+        $(window).load(function(){ $('#gallery4').masonry({
              columnWidth: 10,
              itemSelector: '.gallery_image',
              isFitWidth: true

@@ -2664,8 +2664,12 @@ jQuery('document').ready(function(){
 				$istyle = '';
 			}
 
-			// create the HTML for the image tag
-			$html = "<img class=\"aligncenter\" src=\"{$thumb_src}\" alt=\"{$alt}\" {$ititle}{$iclass}{$istyle}{$imore} />";
+			// create the HTML for the image tag, if there is a caption in picasa use for the alt
+			if ($caption) {
+                $html = "<img class=\"aligncenter\" src=\"{$thumb_src}\" alt=\"{$caption}\" {$ititle}{$istyle}{$imore} />";
+            } else {
+                $html = "<img class=\"aligncenter\" src=\"{$thumb_src}\" alt=\"{$alt}\" {$ititle}{$istyle}{$imore} />";
+            }
 
 			// add the link?
 			if ($pe2_link != 'none') {
