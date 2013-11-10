@@ -3431,6 +3431,13 @@ blockquote.side_blockquote {
     float : right;
 }
 
+@media all and (max-width: 600px) {
+    blockquote.side_blockquote {
+    float: none;
+    width : 100%;
+    }
+}
+
 .center_title {
     text-align: center;
     margin: 5px 0 25px 0;
