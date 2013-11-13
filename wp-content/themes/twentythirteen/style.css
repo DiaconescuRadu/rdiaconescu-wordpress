@@ -3168,6 +3168,7 @@ div.placeholder {
 .cat_container {
     width: 280px;
     margin: 0px;
+    float: left;
 }
 
 .month_container {
@@ -3177,6 +3178,7 @@ div.placeholder {
 .tile_img_container {
     width: 415px;
     padding: 20px 10px 10px 10px;
+    float: left;
 }
 
 .tile_img_container:hover {
@@ -3433,8 +3435,8 @@ blockquote.side_blockquote {
 
 @media all and (max-width: 600px) {
     blockquote.side_blockquote {
-    float: none;
-    width : 100%;
+        float: none;
+        width : 100%;
     }
 }
 
@@ -3617,19 +3619,7 @@ p.caption {
     margin: 35px 0 45px;
 }
 
-.post-280 div {
-    max-width: 1024px;
-}
-
-.post-1289 div {
-    max-width: 1024px;
-}
-
-.post-1383 div {
-    max-width: 1024px;
-}
-
-.post-1415 div {
+.gallery-width {
     max-width: 1024px;
 }
 
@@ -3659,37 +3649,31 @@ div.horizontal-spacing {
 div.landscape {
     padding : 10px;
     max-width: 660px;
-    /*max-height: 440px;*/
 }
 
 div.landscape_full {
     padding : 10px;
     max-width: 965px;
-    /*max-height: 666px;*/
 }
 
 div.landscape_330 {
     padding : 10px;
     max-width: 330px;
-    /*max-height: 220px;*/
 }
 
 div.landscape_450 {
     padding : 10px;
     max-width: 450px;
-    /*max-height: 300px;*/
 }
 
 div.landscape_half {
     padding : 10px;
     max-width: 481px;
-    /*max-height: 330px;*/
 }
 
 div.portrait {
     padding : 10px;
     max-width: 305px;
-    /*max-height: 440px;*/
 }
 
 div.profile-pic {
