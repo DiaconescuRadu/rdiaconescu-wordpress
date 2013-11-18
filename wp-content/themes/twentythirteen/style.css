@@ -3641,38 +3641,45 @@ div.gallery {
     display: none;
 }
 
+.gallery div {
+    float: left;
+    padding: 10px;
+}
+
 div.horizontal-spacing {
     min-height: 1px;
     min-width: 945px;
 }
 
 div.landscape {
-    padding : 10px;
     max-width: 660px;
 }
 
 div.landscape_full {
-    padding : 10px;
     max-width: 965px;
 }
 
 div.landscape_330 {
-    padding : 10px;
     max-width: 330px;
 }
 
 div.landscape_450 {
-    padding : 10px;
     max-width: 450px;
 }
 
 div.landscape_half {
-    padding : 10px;
     max-width: 481px;
 }
 
+div.landscape_half {
+    max-width: 481px;
+}
+
+div.landscape_third{
+    max-width: 320px;
+}
+
 div.portrait {
-    padding : 10px;
     max-width: 305px;
 }
 
@@ -3681,5 +3688,65 @@ div.profile-pic {
     margin-left: 20px;
     float : right;
 }
+
+/* settings for the gallery page */
+
+.gallery-photo {
+    max-width: 1024px;
+}
+
+.gallery-photo p{
+    display: none;
+}
+
+.gallery-photo div{
+    padding : 5px 10px 5px 10px;
+    float: left;
+}
+
+.gallery-photo div:hover {
+    background-color: #ddd;
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+}
+
+/* tweaking needed for portraits which need to be combined with panoramas */
+.gallery-photo div.trimm-portrait {
+    padding: 0px;
+    margin: 0 0 5px 0;
+    max-height: 365px;
+    overflow: hidden;
+}
+
+
+/*
+.gallery-width-full {
+    max-width: 1024px;
+}
+
+.gallery-width-full p {
+    display: none;
+}
+
+div.full-landscape {
+    padding : 5px 10px 5px 10px;
+    max-width: 410px;
+    float: left;
+}
+
+div.full-portrait {
+    padding : 5px 10px 5px 10px;
+    height: 570px;
+    width: 410px;
+    overflow: hidden;
+    float: left;
+}
+
+#gallery1 div:hover {
+    background-color: #ddd;
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+}
+*/
 
 }
