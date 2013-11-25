@@ -20,7 +20,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,9 +33,23 @@ get_header(); ?>
                 <?php
                     //for use in the loop, list 5 post titles related to first tag on current post
                     $post_categories = wp_get_post_categories($post->ID);
+                    $exclude_cats = array(
+                        1 => 63, #epic
+                        2 => 67, #interesant
+                        3 => 68, #plimbare prin parc
+                        4 => 69, #aventuros
+                    );
+
+                    foreach($post_categories as $key => $cat) {
+                        foreach($exclude_cats as $exclude_cat) {
+                            if ($cat == $exclude_cat) {
+                                unset($post_categories[$key]);
+                            }
+                        }
+                    }
+
                     if ($post_categories) {
-                        $first_cat = $post_categories[0];
-                        $args=array(
+                       $args=array(
                             'category__in' => $post_categories,
                             'post__not_in' => array($post->ID),
                             'posts_per_page'=>3,
