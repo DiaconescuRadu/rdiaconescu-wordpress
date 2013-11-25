@@ -3620,7 +3620,7 @@ p.caption {
 }
 
 .gallery-width {
-    max-width: 1024px;
+    max-width: 980px;
 }
 
 div.text-area{
@@ -3744,34 +3744,25 @@ div.profile-pic {
     display: none;
 }
 
-/*
-.gallery-width-full {
-    max-width: 1024px;
-}
-
-.gallery-width-full p {
-    display: none;
-}
-
-div.full-landscape {
-    padding : 5px 10px 5px 10px;
-    max-width: 410px;
+.photo-page header {
     float: left;
+    margin: 20px 20px 20px 20px;
+    max-width: 30%;
 }
 
-div.full-portrait {
-    padding : 5px 10px 5px 10px;
-    height: 570px;
-    width: 410px;
-    overflow: hidden;
+.photo-page header h1 {
     float: left;
+    margin: 10px 0 10px 0;
 }
 
-#gallery1 div:hover {
-    background-color: #ddd;
-    transition:background-color 0.5s;
-    -webkit-transition:background-color 0.5s;
+.photo-page blockquote {
+    width: 50%;
+    margin-bottom: 5px;
+    text-align: right;
 }
-*/
+
+.photo-page blockquote p{
+    margin-bottom: 5px;
+}
 
 }
