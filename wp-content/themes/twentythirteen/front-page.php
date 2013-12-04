@@ -172,10 +172,10 @@ get_header(); ?>
 
 
     if(ICL_LANGUAGE_CODE == 'en'){
-        $recentAdventures = 'Recent Adventures';
+        $recentAdventures = 'Recent Posts';
     }
     if(ICL_LANGUAGE_CODE == 'ro'){
-        $recentAdventures = 'Aventuri recente';
+        $recentAdventures = 'Postari recente';
     }
 ?>
 

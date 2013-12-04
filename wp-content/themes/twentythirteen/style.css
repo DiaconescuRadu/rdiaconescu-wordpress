@@ -3765,4 +3765,8 @@ div.profile-pic {
     margin-bottom: 5px;
 }
 
+div.tile_cont {
+    min-height: 700px;
+}
+
 }

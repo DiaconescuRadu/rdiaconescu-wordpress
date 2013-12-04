@@ -108,7 +108,7 @@ get_header(); ?>
 
             /* mode processing, and setting the class properly */
             if (empty($mode)) {
-                $mode = 'reu';
+                $mode = 'int';
             }
             /*
             if (strpos($mode , 'int') !== false) {

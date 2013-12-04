@@ -613,7 +613,6 @@ function list_posts($blog_query, $wp_query) {
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
-
     <?php
     endif;
 
