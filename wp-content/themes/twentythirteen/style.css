@@ -3769,4 +3769,42 @@ div.tile_cont {
     min-height: 700px;
 }
 
+.sponsors {
+    padding : 1px 0px 20px 0px;
+    background-color: #B7AFA3;
+}
+
+.sponsor {
+    padding: 5px;
+    float: left;
+    max-width: 120px;
+}
+
+.sponsor img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.copyright {
+    padding : 5px 0px 5px 0px;
+    background-color: #CCCCCC;
+}
+
+.copyright p{
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.box-title {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    width: 400px;
+    margin: 15px auto;
+}
+
 }
