@@ -11,6 +11,16 @@
  */
 ?>
 
+<?
+    if(ICL_LANGUAGE_CODE == 'ro'){
+        $followText = "Urmareste pe";
+        $supportText = "Sustinut de";
+    } else {
+        $followText = "Follow using";
+        $supportText = "Supported by";
+    }
+?>
+
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
             <!-- removing the sidebar for now -->
@@ -18,7 +28,7 @@
             <div class="footer-space">
                 <div class="footer-container">
                     <div class="follow float-left">
-                        <h4> Urmareste pe </h4>
+                        <h4> <?php echo $followText;?></h4>
                         <!-- facebook page -->
                         <div class="facebook-twitter float-left">
                             <script>(function(d, s, id) {
@@ -54,7 +64,7 @@
                         </div>
                     </div>
                     <div class="sponsors float-left">
-                        <h4> Sustinut de </h4>
+                        <h4> <?php echo $supportText;?></h4>
                         <div class="site_content inline_block">
                             <div class="sponsor">
                                 <a href="http://amintiridinmunti.blogspot.de/">
