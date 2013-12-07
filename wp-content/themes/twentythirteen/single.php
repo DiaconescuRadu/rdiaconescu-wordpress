@@ -26,10 +26,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
                 <?php get_social_buttons() ?>
                 <div class="horizontalRule site_content"></div>
-                <?php twentythirteen_post_nav(); ?>
-                <div class="horizontalRule site_content"></div>
-
-                <i><h3 class="text-center">Postari similare</h3></i>
+                <i><h3 class="text-center box-title">Postari similare</h3></i>
                 <?php
                     //for use in the loop, list 5 post titles related to first tag on current post
                     $post_categories = wp_get_post_categories($post->ID);
@@ -61,7 +58,7 @@ get_header(); ?>
                         wp_reset_query();
                     }?>
                 <?php comments_template(); ?>
-
+                <?php twentythirteen_post_nav(); ?>
 			<?php endwhile; ?>
 
 		</div><!-- #content -->

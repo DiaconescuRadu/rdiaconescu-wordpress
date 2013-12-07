@@ -298,12 +298,16 @@ function twentythirteen_post_nav() {
 	if ( ! $next && ! $previous )
 		return;
 	?>
-	<nav class="navigation post-navigation" role="navigation">
+	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'twentythirteen' ); ?></h1>
 		<div class="nav-links">
 
-			<?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'twentythirteen' ) ); ?>
+		    <div class="nav-previous">
+            <?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'twentythirteen' ) ); ?>
+            </div>
+		    <div class="nav-next">
 			<?php next_post_link( '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link', 'twentythirteen' ) ); ?>
+            </div>
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -597,7 +601,7 @@ function list_posts($blog_query, $wp_query) {
     endwhile;
     echo '</div><!-- end of .col-940 -->';
 
-    if ( $blog_query->max_num_pages > 1 ) : 
+    if ( $blog_query->max_num_pages > 1 && $blog_query->get('posts_per_page') == 9) : 
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>

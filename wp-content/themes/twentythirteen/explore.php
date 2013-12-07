@@ -191,8 +191,7 @@ get_header(); ?>
         
         /* adding two headings for the mode */
         ?>
-        <i><h3 class="text-center"><?php echo $needleString ?></h3></i>
-        <div class="horizontalRule site_content"></div>
+        <i><h3 class="box-title text-center"><?php echo $needleString ?></h3></i>
         <div class="cat_div site_content" id="cat_div">
             <div class="cat_container tweaking">
                 <div class="searchform div-center">
@@ -241,10 +240,10 @@ get_header(); ?>
         }
          
         if ($blog_query->found_posts !== 0) {
-            echo '<i><h3 class="text-center">' . $blog_query->found_posts . $entryFoundString . '</h3></i>';
+            echo '<i><h3 class="box-title text-center">' . $blog_query->found_posts . $entryFoundString . '</h3></i>';
             list_posts($blog_query);
         } else {
-            echo '<i><h3 class="text-center">Found no results, extend your search</h3></i>';
+            echo '<i><h3 class="box-title text-center">Found no results, extend your search</h3></i>';
         }
         wp_reset_postdata();
         ?>  

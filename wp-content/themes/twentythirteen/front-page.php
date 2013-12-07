@@ -201,6 +201,7 @@ get_header(); ?>
             <i><h3 class="box-title text-center"><?php echo $recentAdventures;?></h3></i>
              <?php
             $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged , 'posts_per_page' => 9, 'category_name' => $cat_name, 'search' => $search));
+
             list_posts($blog_query);
             wp_reset_postdata();
             ?>  
