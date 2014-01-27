@@ -300,7 +300,7 @@ function twentythirteen_post_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'twentythirteen' ); ?></h1>
-		<div class="nav-links">
+		<div class="nav-links-wide">
 
 		    <div class="nav-previous">
             <?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'twentythirteen' ) ); ?>
