@@ -11,7 +11,19 @@
 	<header class="large-header">
 		<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 		<div class="entry-thumbnail">
-			<?php the_post_thumbnail(); ?>
+            <?php 
+
+            require_once 'Mobile_Detect.php';
+            $detect = new Mobile_Detect;
+
+            /* Some fu in order to fetch smaller photos for mobile devices */
+
+            if ( $detect->isMobile() && !$detect->isTablet()) {
+                the_post_thumbnail('large');
+            } else {
+                the_post_thumbnail();
+            }
+            ?>
 		</div>
 		<?php endif; ?>
         <div class="entry-header">
