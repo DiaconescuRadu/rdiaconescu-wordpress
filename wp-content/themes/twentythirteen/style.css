@@ -3548,16 +3548,17 @@ div.social_buttons {
 div.fb-like {
     width: 130px;
 }
+
 /* neede for the facebook cutoff */
 iframe {
     max-width:none;
 }
 
 /* this overrides 90px to 72px width to +1 button */
-#___plusone_0{ width:65px !important; }
+#___plusone_0{ width:65px !important; vertical-align: bottom !important;}
 
 /* override the twitter width */
-#twitter-widget-0{ width:80px !important; }
+#twitter-widget-0{ width:80px !important; vertical-align: bottom;}
 
 div.social_header {
     position: absolute;
