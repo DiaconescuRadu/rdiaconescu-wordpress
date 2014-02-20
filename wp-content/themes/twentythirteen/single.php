@@ -19,12 +19,14 @@ get_header(); ?>
 </script>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content single-content" role="main">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
                 <?php get_social_buttons() ?>
+                <div class="horizontalRule site_content"></div>
+                <?php twentythirteen_post_nav(); ?>
                 <div class="horizontalRule site_content"></div>
                 <i><h3 class="text-center box-title">Postari similare</h3></i>
                 <?php
@@ -58,7 +60,6 @@ get_header(); ?>
                         wp_reset_query();
                     }?>
                 <?php comments_template(); ?>
-                <?php twentythirteen_post_nav(); ?>
 			<?php endwhile; ?>
 
 		</div><!-- #content -->

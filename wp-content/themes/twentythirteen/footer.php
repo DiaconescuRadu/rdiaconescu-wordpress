@@ -39,41 +39,86 @@
                               fjs.parentNode.insertBefore(js, fjs);
                             }(document, 'script', 'facebook-jssdk'));</script>
 
-                            <div class="fb-like-box" data-href="https://www.facebook.com/pages/Diaconescu-Radu-Blog/221072178016386" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-height="180"></div>
+                            <div class="fb-like-box" data-href="https://www.facebook.com/pages/Diaconescu-Radu-Blog/221072178016386" data-width="280" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
                             
+                            <!-- Place this tag where you want the widget to render. -->
+                            <div class="g-page" data-width="280" data-href="//plus.google.com/112005024431275689015" data-theme="dark" data-layout="landscape" data-rel="publisher"></div>
+
+                            <!-- Place this tag after the last widget tag. -->
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/platform.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+
                             <div class="twitter-follow">
                                 <!-- twitter follow -->
                                 <a href="https://twitter.com/diaconescu_radu" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large">Follow @twitterapi</a>
                                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                             </div>
-                        </div>
-                        <!-- google + page -->
-                        <div class="float-left">
-                        <!-- Place this tag where you want the widget to render. -->
-                        <div class="g-page" data-href="//plus.google.com/112005024431275689015" data-theme="dark" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
 
-                        <!-- Place this tag after the last widget tag. -->
-                        <script type="text/javascript">
-                          (function() {
-                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                            po.src = 'https://apis.google.com/js/platform.js';
-                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                          })();
-                        </script>
+
                         </div>
-                    </div>
-                    <div class="sponsors float-left">
-                        <h4> <?php echo $supportText;?></h4>
+                </div><!-- footer container-->
+                <div class="sponsors float-left">
+                   <h4> <?php echo $supportText;?></h4>
+                   <div class="real-sponsors">
+                       <div class="site_content inline_block">
+                            <div class="sponsor polartec-logo">
+                                <a href="http://polartec.com/">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/Polartec_Logo_Black.jpg">
+                                </a>
+                            </div>
+                        </div>
                         <div class="site_content inline_block">
-                            <div class="sponsor">
+                            <div class="sponsor decathlon-logo">
+                                <a href="http://www.decathlon.ro/">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/decathlon.jpg">
+                                </a>
+                            </div>
+                        </div>
+                   </div><!--real-sponsors-->
+                   <div class="media-partners">
+                       <div class="inline_block">
+                            <div class="sponsor rra-logo">
+                                <a href="http://www.romania-actualitati.ro/">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/radio-romania-actualitati.jpg">
+                                </a>
+                            </div>
+                        </div>
+                       <div class="inline_block">
+                            <div class="sponsor rfi-logo">
+                                <a href="http://www.rfi.ro/">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/Logo_RFI.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="inline_block">
+                            <div class="sponsor gsp-logo">
+                                <a href="http://www.gsp.ro/">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/gazeta-sporturilor.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="inline_block">
+                            <div class="sponsor discovery-logo">
+                                <a href="http://www.discovery.ro/">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/Discovery+Channel-33874_500x200.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="inline_block">
+                            <div class="sponsor poza-mike-logo">
                                 <a href="http://amintiridinmunti.blogspot.de/">
                                     <img src="<?php echo content_url()?>/uploads/sponsors/poza_mike.jpg">
                                 </a>
                             </div>
                         </div>
-                   </div>
-               </div><!-- footer container-->
+                    </div><!-- media partners-->
+               </div>
            </div>
            <!-- copyright section -->
            <div class="copyright">

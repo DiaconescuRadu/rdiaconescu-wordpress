@@ -1862,7 +1862,12 @@ footer.entry-meta {
 
 .paging-navigation {
 	background-color: #f7f5e7;
-	padding: 25px 0;
+	padding: 15px 0;
+}
+
+.single-content .paging-navigation {
+	background-color: #fff;
+	padding: 15px 0;
 }
 
 .paging-navigation .nav-links {
@@ -3781,7 +3786,7 @@ div.tile_cont {
 }
 
 .footer-space {
-    padding : 1px 0px 20px 0px;
+    padding : 1px 0px 0px 0px;
     /*background-color: #B7AFA3;*/
     background-color: #1d1d1d;
 }
@@ -3793,7 +3798,7 @@ div.tile_cont {
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
-    height: 330px;
+    height: 300px;
     color: #FFFDDF;
 }
 
@@ -3802,21 +3807,16 @@ div.tile_cont {
 }
 
 .follow {
-    width: 60%;
+    width: 30%;
 }
 
 .sponsors {
-    width: 40%;
-}
-
-.sponsor {
-    max-width: 120px;
+    width: 70%;
 }
 
 .sponsor {
     padding: 5px;
     float: left;
-    max-width: 120px;
 }
 
 .sponsor img {
@@ -3844,6 +3844,45 @@ div.tile_cont {
     padding: 10px 0;
     max-width: 600px;
     margin: 15px auto;
+}
+
+/*
+ * Sponsors individual sizes
+ */
+
+.polartec-logo {
+    max-height: 105px;
+    width: 300px;
+}
+
+.decathlon-logo {
+    max-height: 105px;
+    max-width: 350px;
+}
+
+.rra-logo {
+    max-width: 139px;
+    max-height: 50px;
+}
+
+.rfi-logo {
+    max-width: 57px;
+    max-height: 50px;
+}
+
+.discovery-logo {
+    max-height: 50px;
+    max-width: 130px;
+}
+
+.gsp-logo {
+    max-height: 50px;
+    max-width: 197px;
+}
+
+.poza-mike-logo {
+    max-height: 50px;
+    max-width: 50px;
 }
 
 }
