@@ -80,6 +80,13 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="site_content inline_block">
+                            <div class="sponsor ciuc-logo">
+                                <a href="http://www.ciucpremium.ro/radler.2013">
+                                    <img src="<?php echo content_url()?>/uploads/sponsors/ciuc-radler.jpg">
+                                </a>
+                            </div>
+                        </div>
                    </div><!--real-sponsors-->
                    <div class="media-partners">
                        <div class="inline_block">

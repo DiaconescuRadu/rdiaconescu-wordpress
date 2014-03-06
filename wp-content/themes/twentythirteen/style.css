@@ -3796,7 +3796,7 @@ div.tile_cont {
 }
 
 .footer-container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     height: 300px;
     color: #FFFDDF;
@@ -3858,6 +3858,11 @@ div.tile_cont {
 .decathlon-logo {
     max-height: 105px;
     max-width: 350px;
+}
+
+.ciuc-logo {
+    max-height: 105px;
+    max-width: 110px;
 }
 
 .rra-logo {
