@@ -819,6 +819,7 @@ function front_page_meta(){
     if(ICL_LANGUAGE_CODE == 'ro'){
     ?>
         <meta name="description" content="Jurnal despre munte , calatorie, aventura si explorare intr-o lume  moderna si povestea unei calatorii de 9 luni pe bicicleta prin Asia Centrala, catre Khan Tengri."/>
+        <meta name="google-site-verification" content="sew4rCyRwDMVb5HpH3QZXY5_SRX4bUOdPHXp_4dp9Io" />
         <meta name="keywords" content="alpinism, cicloturism, alergat, maratoane, ultramaratoane, germania"/>
     <?php
     } else {

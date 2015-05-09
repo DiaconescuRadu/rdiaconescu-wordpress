@@ -76,7 +76,7 @@ get_header(); ?>
             6 => $slugCats["germania"],
             7 => $slugCats["ciucas"],
             8 => $slugCats["baiului"],
-            #9 => $slugCats["concursuri"],
+            9 => $slugCats["maroc"],
             #10 => $slugCats["cicloturism"],
         );
 

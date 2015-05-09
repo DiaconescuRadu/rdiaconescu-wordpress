@@ -98,6 +98,12 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
+/* changing the font-size */
+
+.entry-content p {
+    font-size: 120%;
+}
+
 html,
 button,
 input,
@@ -314,7 +320,7 @@ ul {
 }
 
 ul {
-	list-style-type: square;
+	list-style-type: disc;
 }
 
 nav ul,
@@ -3409,7 +3415,7 @@ ul.no_style {
     margin-left: 30px;
 }
 
-li.checkbox {
+li.checkbox{
    line-height: 28px;
    vertical-align: middle;
    padding-left: 40px;
@@ -3431,8 +3437,11 @@ li.checked {
    background: url('custom-images/checked-checkbox.png') no-repeat;
 }
 
+
+
 .ul_heading {
     margin-left: 70px;
+    font-style: italic;
 }
 
 div.searchform {
@@ -3760,6 +3769,13 @@ div.profile-pic {
     display: none;
 }
 
+.post-2904 h1 {
+    display: none;
+}
+
+.post-2995 h1 {
+    display: none;
+}
 .photo-page header {
     float: left;
     margin: 20px 20px 20px 20px;
@@ -3890,4 +3906,32 @@ div.tile_cont {
     max-width: 50px;
 }
 
+li.equipment-list{
+   line-height: 28px;
+   vertical-align: middle;
+   font-size: 17px;
+}
+
+li.equipment-list:hover {
+   background-color: #eee;
+   transition:background-color 0.5s;
+   -webkit-transition:background-color 0.5s;
+}
+
+div.equipment-list  {
+    width: 340px;
+    float: left;
+}
+
+
+div.equipment-photo{
+    padding : 5px 10px 5px 10px;
+    float: left;
+}
+
+div.equipment-photo:hover {
+    background-color: #ddd;
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+}
 }
