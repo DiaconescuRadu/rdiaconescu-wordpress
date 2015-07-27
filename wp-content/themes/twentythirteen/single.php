@@ -25,6 +25,7 @@ get_header(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
                 <?php get_social_buttons() ?>
+                <?php get_signup_form() ?>
                 <div class="horizontalRule site_content"></div>
                 <?php twentythirteen_post_nav(); ?>
                 <div class="horizontalRule site_content"></div>

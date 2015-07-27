@@ -939,7 +939,7 @@ ul.nav-menu li:hover > ul,
 
 .site-header .search-form {
 	position: absolute;
-	right: 160px;
+	right: 205px;
 	top: 2px;
 }
 
@@ -3934,4 +3934,24 @@ div.equipment-photo:hover {
     transition:background-color 0.5s;
     -webkit-transition:background-color 0.5s;
 }
+
+#mc_embed_signup {
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 5px;
+}
+
+#mc_embed_signup h5 {
+    margin-top: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#mc_embed_signup input {
+    margin-bottom: 10px;
+    width: 250px;
+}
+
 }

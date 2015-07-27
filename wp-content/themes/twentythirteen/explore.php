@@ -61,6 +61,7 @@ get_header(); ?>
             7 => $slugCats["schi-de-partie"],
             8 => $slugCats["drumetii"],
             9 => $slugCats["cicloturism"],
+            10 => $slugCats["khan-tengri"],
             #9 => $slugCats["concursuri"],
             #10 => $slugCats["cicloturism"],
         );
@@ -71,12 +72,13 @@ get_header(); ?>
             1 => $slugCats["bucegi"],
             2 => $slugCats["piatra-craiului"],
             3 => $slugCats["fagaras"],
-            4 => $slugCats["postavaru"],
-            5 => $slugCats["retezat"],
-            6 => $slugCats["germania"],
-            7 => $slugCats["ciucas"],
-            8 => $slugCats["baiului"],
-            9 => $slugCats["maroc"],
+            4 => $slugCats["germania"],
+            6 => $slugCats["maroc"],
+            7 => $slugCats["turcia"],
+            8 => $slugCats["iran"],
+            9 => $slugCats["uzbekistan"],
+            10 => $slugCats["tadjikistan"],
+            11 => $slugCats["kyrgystan"],
             #10 => $slugCats["cicloturism"],
         );
 

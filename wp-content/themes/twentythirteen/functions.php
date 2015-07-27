@@ -758,9 +758,9 @@ function get_social_icons(){
     <div class="social_header">
         <a class="social-media-icon facebook" target="_blank" href="https://www.facebook.com/diaconescu.radu.9">F</a>
         <a class="social-media-icon google-plus" target="_blank" href="https://plus.google.com/u/0/+DiaconescuRadu/posts">G+</a>
+        <a class="social-media-icon email" target="_blank" href="http://eepurl.com/btBGbf">Email</a>
         <!--a class="social-media-icon twitter" target="_blank" href="https://plus.google.com/102164334047255333030/posts">T</a!-->
         <a class="social-media-icon rss" target="_blank" href="http://www.diaconescuradu.com/feed">Rss</a>
-        <!--a class="social-media-icon email" target="_blank" href="https://plus.google.com/102164334047255333030/posts">Email</a-->
     <?php
     $translation_list = icl_get_languages(); 
     echo '</div>';
@@ -814,6 +814,32 @@ function get_social_buttons(){
     <?php
 }
 
+// Print the social icons
+function get_signup_form(){
+    ?>
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//diaconescuradu.us11.list-manage.com/subscribe/post?u=1e6b779ca548514417d6f6d3f&amp;id=2f0040a1cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <h5>Pentru noutati din calatorii si pentru idei de aventuri mail-ul ramane cea mai sigura varianta.</h5>
+<div class="mc-field-group">
+    <input type="email" value="Scrie aici adresa ta de email" name="EMAIL" class="required email" id="mce-EMAIL" onblur="if (this.value == '') {this.value = 
+
+'Scrie aici adresa ta de email';}" onfocus="if (this.value == 'Scrie aici adresa ta de email') {this.value = '';}">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_1e6b779ca548514417d6f6d3f_2f0040a1cf" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Aboneaza-te" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+   <?php
+}
 // Display the meta information
 function front_page_meta(){
     if(ICL_LANGUAGE_CODE == 'ro'){
