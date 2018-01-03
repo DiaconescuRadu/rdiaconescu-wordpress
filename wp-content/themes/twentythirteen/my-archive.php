@@ -36,7 +36,7 @@ get_header(); ?>
         $daysOutside = ' days spent outside';
     }
     if(ICL_LANGUAGE_CODE == 'ro'){
-        $adventures = 'de aventuri, ';
+        $adventures = ' de aventuri, ';
         $daysOutside = ' zile petrecute afara';
     }
 ?>
@@ -46,7 +46,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
 		<div id="content" class="site-content site_content" role="main">
             <?php
-            $blog_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 500));
+            $blog_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 1000));
             echo '<i><h3 class="text-center"> ' . $blog_query->post_count . $adventures . $blog_query->post_count * 2 . $daysOutside . '</h3></i>';
             echo '<div class="horizontalRule"></div>';
             echo '<div id="month_div">';
