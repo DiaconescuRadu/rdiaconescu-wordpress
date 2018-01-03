@@ -24,7 +24,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
         <div style="text-align: center;">
-          <iframe src="http://share.findmespot.com/shared/faces/viewspots.jsp?glId=0BreE0uK6jADJNEBkgq5p2vLSNLekfcER" height="800" width="1250">
+          <iframe src="http://share.findmespot.com/shared/faces/viewspots.jsp?glId=0hEL3CkkjGPxOZtXYSd5ptjN4f3gTEtoB" height="800" width="1250">
           </iframe>
         </div>
 </div><!-- end of #content content -->
