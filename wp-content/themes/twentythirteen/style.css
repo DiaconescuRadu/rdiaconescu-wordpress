@@ -3954,4 +3954,28 @@ div.equipment-photo:hover {
     width: 250px;
 }
 
+.videowrapper { 
+    text-align : center;
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+.videowrapper iframe {
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.music_header {
+    text-align : center;
+    font-style: italic;
+}
+
+.end_div {
+    background: url(images/break.png) bottom center no-repeat;
+    padding-bottom: 1em;
+}
+
+
 }
