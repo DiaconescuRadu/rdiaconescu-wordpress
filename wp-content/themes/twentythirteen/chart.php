@@ -16,8 +16,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.js"></script>
 </head>
 <body>
+        <h3 class="box-title text-center">Aerobic Power</h3>
         <div class="wrapper">
             <canvas id="chart-0"></canvas>
+        </div>
+        <h3 class="box-title text-center">Performance Manager</h3>
+        <div class="wrapper">
+            <canvas id="chart-1"></canvas>
         </div>
         <!--div class="toolbar">
             <button onclick="togglePropagate(this)">Propagate</button>
@@ -118,7 +123,7 @@
             },
             scales: {
                 yAxes: [{
-                    stacked: true
+                    stacked: false
                 }]
             },
             plugins: {
@@ -132,6 +137,127 @@
         };
 
         var chart = new Chart('chart-0', {
+            type: 'line',
+            data: data,
+            options: options
+        });
+
+        function togglePropagate(btn) {
+            var value = btn.classList.toggle('btn-on');
+            chart.options.plugins.filler.propagate = value;
+            chart.update();
+        }
+
+        function toggleSmooth(btn) {
+            var value = btn.classList.toggle('btn-on');
+            chart.options.elements.line.tension = value? 0.4 : 0.000001;
+            chart.update();
+        }
+
+        function randomize() {
+            chart.data.datasets.forEach(function(dataset) {
+                dataset.data = generateData();
+            });
+            chart.update();
+        }
+    </script>
+    <script>
+        var presets = window.chartColors;
+        var utils = Samples.utils;
+        var inputs = {
+            min: 20,
+            max: 80,
+            count: 8,
+            decimals: 2,
+            continuity: 1
+        };
+
+        function generateData() {
+            return utils.numbers(inputs);
+        }
+
+        function generateLabels(config) {
+            return utils.months({count: inputs.count});
+        }
+
+        $.ajax({
+          type: "GET",
+          url: 'http://www.diaconescuradu.com/wp-content/uploads/data/pmc.csv',
+          dataType: 'text',
+          async: false,
+        }).done(loadData);
+
+        function loadData(allText) {
+            data = $.csv.toArrays(allText)
+            days = []
+            atl = []
+            ctl = []
+            tsb = []
+            tss = []
+            for(var i = 1; i < data.length; i++) {
+                var line = data[i];
+                days.push(line[0])
+                atl.push(line[1])
+                ctl.push(line[2])
+                tsb.push(line[3])
+                tss.push(line[4])
+                }
+            console.log(days)
+        }
+
+        utils.srand(42);
+
+        var data = {
+            labels: days,
+            datasets: [{
+                backgroundColor: utils.transparentize(presets.red),
+                fill: false,
+                borderColor: presets.red,
+                data: atl,
+                label: 'Acute Trailing Load'
+            }, {
+                backgroundColor: utils.transparentize(presets.orange),
+                fill: false,
+                borderColor: presets.orange,
+                data: ctl,
+                label: 'Chronic Training Load',
+            }, {
+                backgroundColor: utils.transparentize(presets.yellow),
+                borderColor: presets.yellow,
+                data: tsb,
+                label: 'Training Stress Balance',
+            }, {
+                backgroundColor: utils.transparentize(presets.green),
+                borderColor: presets.green,
+                data: tss,
+                label: 'Stress Ramp Rate',
+            }]
+        };
+
+        var options = {
+            maintainAspectRatio: false,
+            spanGaps: false,
+            elements: {
+                line: {
+                    tension: 0.000001
+                }
+            },
+            scales: {
+                yAxes: [{
+                    stacked: false
+                }]
+            },
+            plugins: {
+                filler: {
+                    propagate: false
+                },
+                samples_filler_analyser: {
+                    target: 'chart-analyser'
+                }
+            }
+        };
+
+        var chart = new Chart('chart-1', {
             type: 'line',
             data: data,
             options: options
