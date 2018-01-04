@@ -1,3 +1,25 @@
+<?php
+
+// Exit if accessed directly
+if ( !defined('ABSPATH')) exit;
+
+/**
+ * Full Content Template
+ *
+   Template Name:  Chart
+ *
+ * @file           full-width-page.php
+ * @package        Responsive 
+ * @author         Emil Uzelac 
+ * @copyright      2003 - 2011 ThemeID
+ * @license        license.txt
+ * @version        Release: 1.0
+ * @filesource     wp-content/themes/responsive/full-width-page.php
+ * @link           http://codex.wordpress.org/Theme_Development#Pages_.28page.php.29
+ * @since          available since Release 1.0
+ */
+
+get_header(); ?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -16,15 +38,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.js"></script>
 </head>
 <body>
-        <h3 class="box-title text-center">Aerobic Power</h3>
+        <i><h3 class="box-title text-center">Aerobic Power</h3></i>
         <div class="wrapper">
             <canvas id="chart-0"></canvas>
         </div>
-        <h3 class="box-title text-center">Performance Manager</h3>
+        <i><h3 class="box-title text-center">Performance Manager</h3></i>
         <div class="wrapper">
             <canvas id="chart-1"></canvas>
         </div>
-        <h3 class="box-title text-center">Weight and W/Kg</h3>
+        <i><h3 class="box-title text-center">Weight and W/Kg</h3></i>
         <div class="wrapper">
             <canvas id="chart-2"></canvas>
         </div>
@@ -344,12 +366,12 @@
                 fill: false,
                 borderColor: presets.red,
                 data: weight,
+                hidden: true,
                 label: 'Weight'
             }, {
                 backgroundColor: utils.transparentize(presets.blue),
                 borderColor: presets.blue,
                 data: WPerKg,
-                hidden: true,
                 label: 'Watts / KG',
             }]
         };
