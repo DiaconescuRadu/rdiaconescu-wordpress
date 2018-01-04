@@ -24,7 +24,11 @@
         <div class="wrapper">
             <canvas id="chart-1"></canvas>
         </div>
-        <!--div class="toolbar">
+        <h3 class="box-title text-center">Weight and W/Kg</h3>
+        <div class="wrapper">
+            <canvas id="chart-2"></canvas>
+        </div>
+       <!--div class="toolbar">
             <button onclick="togglePropagate(this)">Propagate</button>
             <button onclick="toggleSmooth(this)">Smooth</button>
             <button onclick="randomize(this)">Randomize</button>
@@ -65,6 +69,7 @@
             power20 = []
             power10 = []
             power5 = []
+            datePowerMap = new Map()
             for(var i = 1; i < data.length; i++) {
                 var line = data[i];
                 weeks.push(line[0])
@@ -73,8 +78,9 @@
                 power20.push(line[4])
                 power10.push(line[5])
                 power5.push(line[6])
+                datePowerMap.set((new Date(weeks[i-1])).toString(), power20[i-1])
                 }
-            console.log(weeks)
+            console.log(datePowerMap)
         }
 
         utils.srand(42);
@@ -282,5 +288,118 @@
             chart.update();
         }
     </script>
-</body>
+    <script>
+        var presets = window.chartColors;
+        var utils = Samples.utils;
+        var inputs = {
+            min: 20,
+            max: 80,
+            count: 8,
+            decimals: 2,
+            continuity: 1
+        };
+
+        function generateData() {
+            return utils.numbers(inputs);
+        }
+
+        function generateLabels(config) {
+            return utils.months({count: inputs.count});
+        }
+
+        $.ajax({
+          type: "GET",
+          url: 'http://www.diaconescuradu.com/wp-content/uploads/data/weight.csv',
+          dataType: 'text',
+          async: false,
+        }).done(loadData);
+
+        function loadData(allText) {
+            data = $.csv.toArrays(allText)
+            days = []
+            realDayDate = []
+            weight = []
+            WPerKg = []
+            last20MinPower = 300
+            for(var i = 1; i < data.length; i++) {
+                var line = data[i];
+                days.push(line[0])
+                weight.push(line[1])
+                //get corresponding power
+                coresponding20MinPower = datePowerMap.get((new Date(days[i-1])).toString()) 
+                if (coresponding20MinPower && coresponding20MinPower != 0) {
+                    last20MinPower = coresponding20MinPower
+                }
+                WPerKg.push(last20MinPower / weight[i-1]) 
+            }
+            console.log(realDayDate)
+        }
+
+        utils.srand(42);
+
+        var data = {
+            labels: days,
+            datasets: [{
+                backgroundColor: utils.transparentize(presets.red),
+                fill: false,
+                borderColor: presets.red,
+                data: weight,
+                label: 'Weight'
+            }, {
+                backgroundColor: utils.transparentize(presets.blue),
+                borderColor: presets.blue,
+                data: WPerKg,
+                hidden: true,
+                label: 'Watts / KG',
+            }]
+        };
+
+        var options = {
+            maintainAspectRatio: false,
+            spanGaps: false,
+            elements: {
+                line: {
+                    tension: 0.000001
+                }
+            },
+            scales: {
+                yAxes: [{
+                    stacked: false
+                }]
+            },
+            plugins: {
+                filler: {
+                    propagate: false
+                },
+                samples_filler_analyser: {
+                    target: 'chart-analyser'
+                }
+            }
+        };
+
+        var chart = new Chart('chart-2', {
+            type: 'line',
+            data: data,
+            options: options
+        });
+
+        function togglePropagate(btn) {
+            var value = btn.classList.toggle('btn-on');
+            chart.options.plugins.filler.propagate = value;
+            chart.update();
+        }
+
+        function toggleSmooth(btn) {
+            var value = btn.classList.toggle('btn-on');
+            chart.options.elements.line.tension = value? 0.4 : 0.000001;
+            chart.update();
+        }
+
+        function randomize() {
+            chart.data.datasets.forEach(function(dataset) {
+                dataset.data = generateData();
+            });
+            chart.update();
+        }
+    </script></body>
 </html>
