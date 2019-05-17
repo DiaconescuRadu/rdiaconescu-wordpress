@@ -774,6 +774,7 @@ img.wp-smiley,
 	border-right: 1px solid #f2f2f2;
 	margin: 0 auto;
 	max-width: 1600px;
+	min-width: 415px;
 	width: 100%;
 }
 
