@@ -3807,8 +3807,8 @@ div.tile_cont {
     background-color: #1d1d1d;
 }
 
-.facebook-twitter {
-    /*background-color: #1d1d1d;*/
+.facebook {
+    margin-top: 20px;
 }
 
 .footer-container {
@@ -3820,10 +3820,6 @@ div.tile_cont {
 
 .float-left {
     float: left;
-}
-
-.follow {
-    width: 30%;
 }
 
 .sponsors {
