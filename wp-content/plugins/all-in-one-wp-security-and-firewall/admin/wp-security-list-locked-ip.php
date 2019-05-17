@@ -1,4 +1,8 @@
 <?php
+if(!defined('ABSPATH')){
+    exit;//Exit if accessed directly
+}
+
 class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
     
     function __construct(){
@@ -87,7 +91,7 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
         {//Process delete bulk actions
             if(!isset($_REQUEST['item']))
             {
-                AIOWPSecurity_Admin_Menu::show_msg_error_st(__('Please select some records using the checkboxes','aiowpsecurity'));
+                AIOWPSecurity_Admin_Menu::show_msg_error_st(__('Please select some records using the checkboxes','all-in-one-wp-security-and-firewall'));
             }else 
             {            
                 $this->delete_lockdown_records(($_REQUEST['item']));
@@ -98,7 +102,7 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
         {//Process unlock bulk actions
             if(!isset($_REQUEST['item']))
             {
-                AIOWPSecurity_Admin_Menu::show_msg_error_st(__('Please select some records using the checkboxes','aiowpsecurity'));
+                AIOWPSecurity_Admin_Menu::show_msg_error_st(__('Please select some records using the checkboxes','all-in-one-wp-security-and-firewall'));
             }else 
             {            
                 $this->unlock_ip_range(($_REQUEST['item']));
@@ -112,19 +116,20 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
      */
     function unlock_ip_range($entries)
     {
-        global $wpdb;
+        global $wpdb,$aio_wp_security;
         $lockdown_table = AIOWPSEC_TBL_LOGIN_LOCKDOWN;
         if (is_array($entries))
         {
             if (isset($_REQUEST['_wp_http_referer']))
             {
                 //Unlock multiple records
+                $entries = array_filter($entries, 'is_numeric'); //discard non-numeric ID values
                 $id_list = "(" .implode(",",$entries) .")"; //Create comma separate list for DB operation
                 $unlock_command = "UPDATE ".$lockdown_table." SET release_date = now() WHERE id IN ".$id_list;
                 $result = $wpdb->query($unlock_command);
                 if($result != NULL)
                 {
-                    AIOWPSecurity_Admin_Menu::show_msg_updated_st(__('The selected IP entries were unlocked successfully!','aiowpsecurity'));
+                    AIOWPSecurity_Admin_Menu::show_msg_updated_st(__('The selected IP entries were unlocked successfully!','all-in-one-wp-security-and-firewall'));
                 }
             }
         } elseif ($entries != NULL)
@@ -133,15 +138,15 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
             if (!isset($nonce) ||!wp_verify_nonce($nonce, 'unlock_ip'))
             {
                 $aio_wp_security->debug_logger->log_debug("Nonce check failed for unlock IP operation!",4);
-                die(__('Nonce check failed for unlock IP operation!','aiowpsecurity'));
+                die(__('Nonce check failed for unlock IP operation!','all-in-one-wp-security-and-firewall'));
             }
             
             //Unlock single record
-            $unlock_command = "UPDATE ".$lockdown_table." SET release_date = now() WHERE id = '".absint($entries)."'";
+            $unlock_command = $wpdb->prepare( "UPDATE ".$lockdown_table." SET release_date = now() WHERE id = %d", absint($entries) );
             $result = $wpdb->query($unlock_command);
             if($result != NULL)
             {
-                AIOWPSecurity_Admin_Menu::show_msg_updated_st(__('The selected IP entry was unlocked successfully!','aiowpsecurity'));
+                AIOWPSecurity_Admin_Menu::show_msg_updated_st(__('The selected IP entry was unlocked successfully!','all-in-one-wp-security-and-firewall'));
             }
         }
     }
@@ -159,6 +164,7 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
             if (isset($_REQUEST['_wp_http_referer']))
             {
                 //Delete multiple records
+                $entries = array_filter($entries, 'is_numeric'); //discard non-numeric ID values
                 $id_list = "(" .implode(",",$entries) .")"; //Create comma separate list for DB operation
                 $delete_command = "DELETE FROM ".$lockdown_table." WHERE id IN ".$id_list;
                 $result = $wpdb->query($delete_command);
@@ -174,7 +180,7 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
             if (!isset($nonce) ||!wp_verify_nonce($nonce, 'delete_lockdown_record'))
             {
                 $aio_wp_security->debug_logger->log_debug("Nonce check failed for delete lockdown record operation!",4);
-                die(__('Nonce check failed for delete lockdown record operation!','aiowpsecurity'));
+                die(__('Nonce check failed for delete lockdown record operation!','all-in-one-wp-security-and-firewall'));
             }
             //Delete single record
             $delete_command = "DELETE FROM ".$lockdown_table." WHERE id = '".absint($entries)."'";
@@ -213,7 +219,8 @@ class AIOWPSecurity_List_Locked_IP extends AIOWPSecurity_List_Table {
         $orderby = AIOWPSecurity_Utility::sanitize_value_by_array($orderby, $sortable);
         $order = AIOWPSecurity_Utility::sanitize_value_by_array($order, array('DESC' => '1', 'ASC' => '1'));
         
-	$data = $wpdb->get_results($wpdb->prepare("SELECT * FROM $lockdown_table_name WHERE (lock_reason=%s OR lock_reason=%s) AND release_date > now() ORDER BY $orderby $order", 'login_fail', '404'), ARRAY_A);
+        $now = current_time( 'mysql' );
+	$data = $wpdb->get_results($wpdb->prepare("SELECT * FROM $lockdown_table_name WHERE (lock_reason=%s OR lock_reason=%s) AND release_date > %s ORDER BY $orderby $order", 'login_fail', '404', $now), ARRAY_A);
         $current_page = $this->get_pagenum();
         $total_items = count($data);
         $data = array_slice($data,(($current_page-1)*$per_page),$per_page);

@@ -4,6 +4,10 @@
  * global $aio_wp_security;
  * $aio_wp_security->debug_logger->log_debug("Log messaged goes here");
  */
+if(!defined('ABSPATH')){
+    exit;//Exit if accessed directly
+}
+
 class AIOWPSecurity_Logger
 {
     var $log_folder_path;
@@ -13,12 +17,11 @@ class AIOWPSecurity_Logger
     var $debug_status = array('SUCCESS','STATUS','NOTICE','WARNING','FAILURE','CRITICAL');
     var $section_break_marker = "\n----------------------------------------------------------\n\n";
     var $log_reset_marker = "-------- Log File Reset --------\n";
-    
-    function __construct()
+
+    function __construct($debug_enabled)
     {
+        $this->debug_enabled = $debug_enabled;
         $this->log_folder_path = AIO_WP_SECURITY_PATH . '/logs';
-        //TODO - check config and if debug is enabled then set the enabled flag to true
-        $this->debug_enabled = true;
     }
     
     function get_debug_timestamp()
@@ -28,13 +31,7 @@ class AIOWPSecurity_Logger
     
     function get_debug_status($level)
     {
-        $size = count($this->debug_status);
-        if($level >= $size){
-            return 'UNKNOWN';
-        }
-        else{
-            return $this->debug_status[$level];
-        }
+        return isset($this->debug_status[$level]) ? $this->debug_status[$level] : 'UNKNOWN';
     }
     
     function get_section_break($section_break)
@@ -63,7 +60,7 @@ class AIOWPSecurity_Logger
         fwrite($fp, $content);
         fclose($fp);
     }
-    
+
     function log_debug($message,$level=0,$section_break=false,$file_name='')
     {
         if (!$this->debug_enabled) return;
@@ -77,24 +74,7 @@ class AIOWPSecurity_Logger
 
     function log_debug_cron($message,$level=0,$section_break=false)
     {
-        if (!$this->debug_enabled) return;
-        $content = $this->get_debug_timestamp();//Timestamp
-        $content .= $this->get_debug_status($level);//Debug status
-        $content .= ' : ';
-        $content .= $message . "\n";
-        $content .= $this->get_section_break($section_break);
-        //$file_name = $this->default_log_file_cron;
-        $this->append_to_file($content, $this->default_log_file_cron);
+        $this->log_debug($message, $level, $section_break, $this->default_log_file_cron);
     }
-    
-    //TODO - this function need to be completed
-    static function log_debug_st($message,$level=0,$section_break=false,$file_name='')
-    {
-        $content = "\n". $message . "\n";
-        $debug_log_file = 'wp-security-log-static.txt';
-        //$debug_log_file =  AIO_WP_SECURITY_PATH .'/wp-security-log.txt';
-        $fp=fopen($debug_log_file,'a');
-        fwrite($fp, $content);
-        fclose($fp);
-    }
+
 }

@@ -3,8 +3,8 @@ Contributors: sudiptomahato
 Donate link: http://techxt.com/donate
 Tags: Blogger redirect, 301 redirect, Blogger to wordpress migration, Blogger to wordpress redirection, SEO
 Requires at least: 3.0
-Tested up to: 3.6.1
-Stable tag: 2.4
+Tested up to: 4.4.2
+Stable tag: 2.5.2
 
 Useful for mapping your Blogger post and feeds to Wordpress posts and feeds after blogger to wordpress migration.
 

@@ -1,4 +1,9 @@
 <?php
+if(!defined('ABSPATH')){
+    exit;//Exit if accessed directly
+}
+
+include_once(dirname(__FILE__) . '/wp-security-configure-settings.php');//Allows activating via wp-cli
 
 class AIOWPSecurity_Deactivation
 {

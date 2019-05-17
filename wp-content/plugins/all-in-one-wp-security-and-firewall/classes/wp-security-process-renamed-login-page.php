@@ -1,4 +1,7 @@
 <?php
+if(!defined('ABSPATH')){
+    exit;//Exit if accessed directly
+}
 
 class AIOWPSecurity_Process_Renamed_Login_Page
 {
@@ -10,6 +13,7 @@ class AIOWPSecurity_Process_Renamed_Login_Page
         add_filter('network_site_url', array(&$this, 'aiowps_site_url'), 10, 2);
         add_filter('wp_redirect', array(&$this, 'aiowps_wp_redirect'), 10, 2);
         add_filter('register', array(&$this, 'register_link'));
+        add_filter('user_request_action_email_content', array(&$this, 'aiowps_user_request_email_content'), 10, 2);
         remove_action('template_redirect', 'wp_redirect_admin_locations', 1000); //To prevent redirect to login page when people type "login" at end of home URL
         
     }
@@ -53,6 +57,28 @@ class AIOWPSecurity_Process_Renamed_Login_Page
         return $this->aiowps_filter_wp_login_file($registration_url);
     }
     
+    // Filter confirm link so we hide the secret login slug in the export_personal_data email
+    function aiowps_user_request_email_content($email_text, $email_data)
+    {
+        global $aio_wp_security;
+        if(isset($email_data['request']) && isset($email_data['request']->action_name)) {
+            if($email_data['request']->action_name == 'export_personal_data') {
+                $confirm_url = $email_data['confirm_url'];
+                $login_slug = $aio_wp_security->configs->get_value('aiowps_login_page_slug');
+                if(get_option('permalink_structure')) {
+                    $new_confirm_url = str_replace( $login_slug, 'wp-login.php', $confirm_url );
+                } else {
+                    $search_pattern = '?'.$login_slug.'&action';
+                    $new_confirm_url = str_replace( $search_pattern, '/wp-login.php/?action', $confirm_url );
+                }
+                
+                $email_text_modified = str_replace( '###CONFIRM_URL###', esc_url_raw( $new_confirm_url ), $email_text );
+                return $email_text_modified;
+            }
+        }
+        return $email_text;
+    }
+
     //Filter all login url strings on the login page
     function aiowps_filter_wp_login_file($url)
     {
@@ -64,6 +90,7 @@ class AIOWPSecurity_Process_Renamed_Login_Page
                 }
                 parse_str($args[1], $args);
                 $url = esc_url(add_query_arg($args, AIOWPSecurity_Process_Renamed_Login_Page::new_login_url()));
+                $url = html_entity_decode($url);
             }else{
                 $url = AIOWPSecurity_Process_Renamed_Login_Page::new_login_url();
             }
@@ -74,7 +101,7 @@ class AIOWPSecurity_Process_Renamed_Login_Page
     static function renamed_login_init_tasks()
     {
         global $aio_wp_security;
-        
+
         //The following will process the native wordpress post password protection form
         //Normally this is done by wp-login.php file but we cannot use that since the login page has been renamed 
         $action = isset($_GET['action'])?strip_tags($_GET['action']):'';
@@ -100,17 +127,37 @@ class AIOWPSecurity_Process_Renamed_Login_Page
         }
         
         //case where someone attempting to reach wp-admin 
-        if (is_admin() && !is_user_logged_in() && !defined('DOING_AJAX')){
-            //Check if the maintenance (lockout) mode is active - if so prevent access to site by not displaying 404 page!
-            if($aio_wp_security->configs->get_value('aiowps_site_lockout') == '1'){
-                AIOWPSecurity_WP_Loaded_Tasks::site_lockout_tasks();
-            }else{
-                AIOWPSecurity_Process_Renamed_Login_Page::aiowps_set_404();
-            }
+        if (is_admin() && !is_user_logged_in() && !defined('DOING_AJAX') && basename( $_SERVER["SCRIPT_FILENAME"] ) !== 'admin-post.php'){
+            //Fix to prevent fatal error caused by some themes and Yoast SEO
+            do_action('aiowps_before_wp_die_renamed_login');
+            wp_die( __( 'Not available.', 'all-in-one-wp-security-and-firewall' ), 403 );
         }
 
         //case where someone attempting to reach wp-login
         if(isset($_SERVER['REQUEST_URI']) && strpos( $_SERVER['REQUEST_URI'], 'wp-login.php' ) && !is_user_logged_in()){
+            
+            // Handle export personal data request for rename login case
+            if(isset($_GET['request_id'])) {
+                $request_id = (int) $_GET['request_id'];
+                $result = '';
+                if ( isset( $_GET['confirm_key'] ) ) {
+                    $key = sanitize_text_field( wp_unslash( $_GET['confirm_key'] ) );
+                    $result = wp_validate_user_request_key( $request_id, $key );
+                } else {
+                    $result = new WP_Error( 'invalid_key', __( 'Invalid key' ) );
+                }
+
+                if ( is_wp_error( $result ) ) {
+                        wp_die( $result );
+                }else if(!empty($result)) {
+                    _wp_privacy_account_request_confirmed($request_id);
+                    $message = _wp_privacy_account_request_confirmed_message( $request_id );
+                    login_header( __( 'User action confirmed.' ), $message );
+                    login_footer();
+                    exit;
+                }
+            }
+           
             //Check if the maintenance (lockout) mode is active - if so prevent access to site by not displaying 404 page!
             if($aio_wp_security->configs->get_value('aiowps_site_lockout') == '1'){
                 AIOWPSecurity_WP_Loaded_Tasks::site_lockout_tasks();
@@ -133,12 +180,38 @@ class AIOWPSecurity_Process_Renamed_Login_Page
         $parsed_url = parse_url($_SERVER['REQUEST_URI']);
 
         $login_slug = $aio_wp_security->configs->get_value('aiowps_login_page_slug');
+        $home_url_with_slug = home_url($login_slug, 'relative');
         
-        if(untrailingslashit($parsed_url['path']) === home_url($login_slug, 'relative')
+        /*
+         * Compatibility fix for WPML plugin
+         */
+        if (function_exists('icl_object_id') && strpos($home_url_with_slug,$login_slug)){
+            $home_url_with_slug = home_url($login_slug);
+            function qtranxf_init_language() {}
+        }
+
+        /*
+         * *** Compatibility fix for qTranslate-X plugin ***
+         * qTranslate-X plugin modifies the result for the following command by adding the protocol and host to the url path:
+         * home_url($login_slug, 'relative');
+         * Therefore we will remove the protocol and host for the following cases:
+         * qTranslate-X is active AND the URL being accessed contains the secret slug
+         */
+        if (function_exists('qtranxf_init_language') && strpos($home_url_with_slug,$login_slug)){
+            $parsed_home_url_with_slug = parse_url($home_url_with_slug);
+            $home_url_with_slug = $parsed_home_url_with_slug['path']; //this will return just the path minus the protocol and host
+        }
+
+        if(untrailingslashit($parsed_url['path']) === $home_url_with_slug
                 || (!get_option('permalink_structure') && isset($_GET[$login_slug]))){
-            status_header( 200 );
-            require_once(AIO_WP_SECURITY_PATH . '/other-includes/wp-security-rename-login-feature.php' );
-            die;
+            if(empty($action) && is_user_logged_in()){
+                //if user is already logged in but tries to access the renamed login page, send them to the dashboard
+                AIOWPSecurity_Utility::redirect_to_url(AIOWPSEC_WP_URL."/wp-admin");
+            }else{
+                status_header( 200 );
+                require_once(AIO_WP_SECURITY_PATH . '/other-includes/wp-security-rename-login-feature.php' );
+                die;
+            }
         }        
     }
     
@@ -156,6 +229,8 @@ class AIOWPSecurity_Process_Renamed_Login_Page
     static function aiowps_set_404() 
     {
         global $wp_query;
+        do_action('aiopws_before_set_404'); //This hook is for themes which produce a fatal error when the rename login feature is enabled and someone visits "wp-admin" slug directly
+
         status_header(404);
         $wp_query->set_404();
         if ((($template = get_404_template()) || ($template = get_index_template()))

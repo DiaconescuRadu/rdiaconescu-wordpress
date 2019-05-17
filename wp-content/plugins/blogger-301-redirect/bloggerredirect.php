@@ -5,7 +5,7 @@ Plugin URI: http://techxt.com/blogger-301-redirect-plugin-for-wordpress/
 Description: Redirect from blogger to wordpress. Helps you keep your blog traffic and Pagerank after migration from Blogger to WordPress.
 Author URI: http://techxt.com
 Author: Sudipto Pratap Mahato
-Version: 2.4
+Version: 2.5.2
 */
 
 function redirect_to()
@@ -22,7 +22,8 @@ if($requri!=false)
 }
 if ($old_url != "")
 	{
-		$old_url=str_replace("//","",$old_url);
+		$old_url=preg_replace('%//%', '', $old_url, 1);
+		$old_url=str_replace("//","/",$old_url);
 		$pos = strpos($old_url, "/");	
 		if ($pos !== false) 
 		{
@@ -121,6 +122,16 @@ if ($old_url != "")
 		exit;
 	}
 }
+
+function br_plugin_settings_link($links) { 
+  $settings_link = '<a href="options-general.php?page=bloggerredirect">Settings</a>'; 
+  array_unshift($links, $settings_link); 
+  return $links; 
+}
+ 
+$plugin = plugin_basename(__FILE__); 
+add_filter("plugin_action_links_$plugin", 'br_plugin_settings_link' );
+
 add_action( 'init', 'redirect_to' );
 
 function br_option()
@@ -187,7 +198,7 @@ $stat1=explode(":",$stat);
 </b:if>
 <script type='text/javascript'>
 var wpblog = &quot;<?php echo site_url()."/"; ?>?br=&quot;;
-wpblog = wpblog  + window.location.href;
+wpblog = wpblog  + window.location.href.replace('http:','');
 window.location.replace(wpblog);
 </script>
 <b:skin><![CDATA[/*
@@ -210,7 +221,7 @@ Started:     07:41 1/1/2013
 <div>
 <p>This page has found a new home </p>
   <a href='<?php echo site_url()."/"; ?>'><data:blog.title/></a>
-  <a expr:href='&quot;<?php echo site_url()."/"; ?>br=&quot; + data:blog.url' />
+  <a expr:href='&quot;<?php echo site_url()."/?"; ?>br=&quot; + data:blog.url' />
 </div>
 <a href='http://techxt.com/?'>Blogger 301 Redirect Plugin</a>
 </body>
@@ -235,8 +246,10 @@ Started:     07:41 1/1/2013
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
 <head><title><$BlogPageTitle$></title>
 <script type="text/javascript">
+var wpblog = &quot;<?php echo site_url()."/"; ?>?br=&quot;;
+wpblog = wpblog + window.location.href.replace('http:','');
 <MainorArchivePage>window.location.href="<?php echo site_url()."/"; ?>"</MainOrArchivePage>
-<Blogger><ItemPage>window.location.href="<?php echo site_url()."/"; ?>?br=<$BlogItemPermalinkURL$>"</ItemPage></Blogger>
+<Blogger><ItemPage>window.location.href=wpblog</ItemPage></Blogger>
 </script>
 <MainPage><link rel="canonical" href="<?php echo site_url()."/"; ?>" /></MainPage>
 <Blogger><ItemPage><link rel="canonical" href="<?php echo site_url()."/"; ?>?br=<$BlogItemPermalinkURL$>" /></ItemPage></Blogger>

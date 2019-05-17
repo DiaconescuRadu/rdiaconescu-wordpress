@@ -1,4 +1,7 @@
 <?php
+if(!defined('ABSPATH')){
+    exit;//Exit if accessed directly
+}
 
 class AIOWPSecurity_Utility_File
 {
@@ -10,17 +13,23 @@ class AIOWPSecurity_Utility_File
          /* Let's initiliaze our class variable array with all of the files and/or directories we wish to check permissions for.
          * NOTE: we can add to this list in future if we wish
          */
-         $this->files_and_dirs_to_check = array(
+
+        //Get wp-config.php file path
+        if ( !function_exists( 'get_home_path' ) ) require_once( ABSPATH. '/wp-admin/includes/file.php' );
+        $wp_config_path = AIOWPSecurity_Utility_File::get_wp_config_file_path();
+        $home_path = get_home_path();
+        
+        $this->files_and_dirs_to_check = array(
             array('name'=>'root directory','path'=>ABSPATH,'permissions'=>'0755'),
             array('name'=>'wp-includes/','path'=>ABSPATH."wp-includes",'permissions'=>'0755'),
-            array('name'=>'.htaccess','path'=>ABSPATH.".htaccess",'permissions'=>'0644'),
+            array('name'=>'.htaccess','path'=>$home_path.".htaccess",'permissions'=>'0644'),
             array('name'=>'wp-admin/index.php','path'=>ABSPATH."wp-admin/index.php",'permissions'=>'0644'),
             array('name'=>'wp-admin/js/','path'=>ABSPATH."wp-admin/js/",'permissions'=>'0755'),
             array('name'=>'wp-content/themes/','path'=>ABSPATH."wp-content/themes",'permissions'=>'0755'),
             array('name'=>'wp-content/plugins/','path'=>ABSPATH."wp-content/plugins",'permissions'=>'0755'),
             array('name'=>'wp-admin/','path'=>ABSPATH."wp-admin",'permissions'=>'0755'),
             array('name'=>'wp-content/','path'=>ABSPATH."wp-content",'permissions'=>'0755'),
-            array('name'=>'wp-config.php','path'=>ABSPATH."wp-config.php",'permissions'=>'0644')
+            array('name'=>'wp-config.php','path'=>$wp_config_path,'permissions'=>'0640')
             //Add as many files or dirs as needed by following the convention above
         );
 
@@ -118,7 +127,7 @@ class AIOWPSecurity_Utility_File
         $file_contents = AIOWPSecurity_Utility_File::get_file_contents($src_file_path);
         
         $payload = serialize($file_contents);
-        $date_time = current_time('mysql');
+        $date_time = current_time( 'mysql' );
         $data = array('date_time' => $date_time, 'meta_key1' => $key_description, 'meta_value2' => $payload);
 
         //First check if a backup entry already exists in the global_meta table
@@ -254,8 +263,8 @@ class AIOWPSecurity_Utility_File
         $public_value_actual = substr($actual,-1,1); //get dec value for actual public permission
         $public_value_rec = substr($recommended,-1,1); //get dec value for recommended public permission
 
-        $pva_bin = decbin($public_value_actual); //Convert value to binary
-        $pvr_bin = decbin($public_value_rec); //Convert value to binary
+        $pva_bin = sprintf('%04b', $public_value_actual); //Convert value to binary
+        $pvr_bin = sprintf('%04b', $public_value_rec); //Convert value to binary
         //Compare the "executable" bit values for the public actual versus the recommended
         if (substr($pva_bin,-1,1)<=substr($pvr_bin,-1,1))
         {
@@ -292,8 +301,8 @@ class AIOWPSecurity_Utility_File
         //Check "group" permissions
         $group_value_actual = substr($actual,-2,1);
         $group_value_rec = substr($recommended,-2,1);
-        $gva_bin = decbin($group_value_actual); //Convert value to binary
-        $gvr_bin = decbin($group_value_rec); //Convert value to binary
+        $gva_bin = sprintf('%04b', $group_value_actual); //Convert value to binary
+        $gvr_bin = sprintf('%04b', $group_value_rec); //Convert value to binary
 
         //Compare the "executable" bit values for the group actual versus the recommended
         if (substr($gva_bin,-1,1)<=substr($gvr_bin,-1,1))
@@ -331,8 +340,8 @@ class AIOWPSecurity_Utility_File
         //Check "owner" permissions
         $owner_value_actual = substr($actual,-3,1);
         $owner_value_rec = substr($recommended,-3,1);
-        $ova_bin = decbin($owner_value_actual); //Convert value to binary
-        $ovr_bin = decbin($owner_value_rec); //Convert value to binary
+        $ova_bin = sprintf('%04b', $owner_value_actual); //Convert value to binary
+        $ovr_bin = sprintf('%04b', $owner_value_rec); //Convert value to binary
 
         //Compare the "executable" bit values for the group actual versus the recommended
         if (substr($ova_bin,-1,1)<=substr($ovr_bin,-1,1))
@@ -408,6 +417,29 @@ class AIOWPSecurity_Utility_File
             $attachment_id = $wpdb->get_var( $wpdb->prepare( "SELECT wposts.ID FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '%s' AND wposts.post_type = 'attachment'", $attachment_url ) );
         }
         return $attachment_id;
-    }    
-    
+    }
+
+
+    /**
+     * Will return an indexed array of files sorted by last modified timestamp
+     * @param string $dir
+     * @param string $sort (ASC, DESC)
+     * @return array
+     */
+    static function scan_dir_sort_date($dir, $sort='DESC') {
+        $files = array();
+        foreach (scandir($dir) as $file) {
+            $files[$file] = filemtime($dir . '/' . $file);
+        }
+
+        if ($sort === 'ASC') {
+            asort($files);
+        }
+        else {
+            arsort($files);
+        }
+
+        return array_keys($files);
+    }
+
 }

@@ -717,7 +717,7 @@ if (!class_exists("PicasaExpressX2")) {
 
 					if ('blog'==$this->options['pe2_level'] && $user) {
 						$result = 'ok';
-						$feed_url = "http://picasaweb.google.com/data/feed/base/user/$user?alt=rss&kind=album&hl=en_US";
+						$feed_url = "http://picasaweb.google.com/data/feed/base/user/$user?alt=rss&kind=album&hl=en_US&deprecation-extension=true";
 						$response = $this->get_feed($feed_url);
 						if ( is_wp_error( $response ) )
 							$result = 'error: '.$response->get_error_message();
@@ -1554,13 +1554,14 @@ jQuery('document').ready(function(){
 			}
 			if ($token) $options['headers'] = array ( 'Authorization' =>"AuthSub token=\"$token\"" );
 
+            //return new WP_Error('http_request_failed', __('Response code is ').$url);
 			$response = wp_remote_get($url, $options);
 
 			if ( is_wp_error( $response ) )
 				return $response;
 
 			if ( 200 != $response['response']['code'] )
-				return new WP_Error('http_request_failed', __('Response code is ').$response['response']['code']);
+				return new WP_Error('http_request_failed', __('Response code is ').$url.$response['response']['code']);
 
 			// preg sensitive for \n\n, but we not need any formating inside
 			return (str_replace("\n",'',trim( $response['body'] )));
@@ -1617,7 +1618,7 @@ jQuery('document').ready(function(){
 				$user = $_POST['user'];
 			} else die();
 
-			$rss = $this->get_feed("http://picasaweb.google.com/data/feed/base/user/$user?alt=rss&kind=album&hl=en_US");
+			$rss = $this->get_feed("http://picasaweb.google.com/data/feed/base/user/$user?alt=rss&kind=album&hl=en_US&deprecation-extension=true");
 			if (is_wp_error($rss)) {
 				$out->error = $rss->get_error_message();
 			} else if (!$this->get_item($rss,'atom:id')) {
@@ -1631,8 +1632,8 @@ jQuery('document').ready(function(){
 			    	$i = 0;
 					$max_albums = get_option('pe2_max_albums_displayed');
 					foreach($items as $item) {
-						// http://picasaweb.google.com/data/entry/base/user/wotttt/albumid/5408701349107410241?alt=rss&amp;hl=en_US
-						$guid  = str_replace("entry","feed",$this->get_item($item,'guid'))."&kind=photo";
+						// http://picasaweb.google.com/data/entry/base/user/wotttt/albumid/5408701349107410241?alt=rss&amp;hl=en_US&deprecation-extension=true
+						$guid  = str_replace("entry","feed",$this->get_item($item,'guid'))."&deprecation-extension=true&kind=photo";
 						$title = $this->escape($this->get_item($item,'title'));
 						$desc  = $this->escape($this->get_item($item,'media:description'));
 						$url   = $this->get_item_attr($item,'media:thumbnail','url');
@@ -2783,7 +2784,7 @@ jQuery('document').ready(function(){
 					<?php
 					$user = get_user_meta($user_id,'pe2_user_name',true);
 					$result = 'ok';
-					$feed_url = "http://picasaweb.google.com/data/feed/base/user/$user?alt=rss&kind=album&hl=en_US";
+					$feed_url = "http://picasaweb.google.com/data/feed/base/user/$user?alt=rss&kind=album&hl=en_US&deprecation-extension=true";
 					$response = $this->get_feed($feed_url);
 					if ( is_wp_error( $response ) )
 						$result = 'error: '.$response->get_error_message();

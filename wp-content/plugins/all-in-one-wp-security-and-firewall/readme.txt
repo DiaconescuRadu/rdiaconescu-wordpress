@@ -1,13 +1,17 @@
 === All In One WP Security & Firewall ===
-Contributors: Tips and Tricks HQ, wpsolutions, Peter Petreski, Ruhul Amin, mbrsolution, samuelaguilera
+Contributors: Tips and Tricks HQ, wpsolutions, Peter Petreski, Ruhul Amin, mbrsolution, chesio
 Donate link: https://www.tipsandtricks-hq.com
 Tags: security, secure, Anti Virus, antivirus, ban, ban hacker, virus, firewall, firewall security, login, lockdown, htaccess, hack, malware, vulnerability, protect, protection, phishing, database, backup, plugin, sql injection, ssl, restrict, login captcha, bot, hotlink, 404 detection, admin, rename, all in one, scan, scanner, iframe,
-Requires at least: 3.5
-Tested up to: 4.2
-Stable tag: 3.9.5
+Requires at least: 4.7
+Tested up to: 5.2
+Stable tag: trunk
 License: GPLv3
 
 A comprehensive, user-friendly, all in one WordPress security and firewall plugin for your site.
+
+== Privacy Policy ==
+This plugin may collect IP addresses for security reasons such as mitigating brute force login threats and malicious activity.
+The collected information is stored on your server. No information is transmitted to third parties or remote server locations.
 
 == Description ==
 = A COMPREHENSIVE, EASY TO USE, STABLE AND WELL SUPPORTED WORDPRESS SECURITY PLUGIN =
@@ -37,6 +41,7 @@ Below is a list of the security and firewall features offered in this plugin:
 * The plugin will also detect if you have any WordPress user accounts which have identical login and display names. Having account's where display name is identical to login name is bad security practice because 
 you are making it 50% easier for hackers because they already know the login name.
 * Password strength tool to allow you to create very strong passwords.
+* Stop user enumeration. So users/bots cannot discover user info via author permalink.
 
 = User Login Security =
 * Protect against "Brute Force Login Attack" with the Login Lockdown feature. Users with a certain IP address or range will be locked out of the system for a predetermined amount of time based on the configuration settings and you can also choose to be notified 
@@ -50,15 +55,16 @@ via email whenever somebody gets locked out due to too many login attempts.
 * Ability to automatically lockout IP address ranges which attempt to login with an invalid username.
 * Ability to see a list of all the users who are currently logged into your site.
 * Allows you to specify one or more IP addresses in a special whitelist. The whitelisted IP addresses will have access to your WP login page.
-* Add captcha to WordPress Login form.
-* Add captcha to the forgot password form of your WP Login system.
+* Add Google reCaptcha or plain maths captcha to WordPress Login form.
+* Add Google reCaptcha or plain maths captcha to the forgot password form of your WP Login system.
 
 = User Registration Security =
 * Enable manual approval of WordPress user accounts. If your site allows people to create their own accounts via the WordPress registration form, then you can minimize SPAM or bogus registrations by manually approving each registration.
-* Ability to add captcha to the WordPress user registration page to protect you from spam user registration.
+* Ability to add Google reCaptcha or plain maths captcha to the WordPress's user registration page to protect you from spam user registration.
+* Ability to add Honeypot to the WordPress's user registration form to reduce registration attempts by robots.
 
 = Database Security =
-* Easily the default WP prefix to a value of your choice with the click of a button.
+* Easily set the default WP prefix to a value of your choice with the click of a button.
 * Schedule automatic backups and email notifications or make an instant DB backup whenever you want with one click.
 
 = File System Security =
@@ -80,18 +86,20 @@ via email whenever somebody gets locked out due to too many login attempts.
 This plugin allows you to easily add a lot of firewall protection to your site via htaccess file. An htaccess file is processed by your web server before any other code on your site. 
 So these firewall rules will stop malicious script(s) before it gets a chance to reach the WordPress code on your site.
 
-* Access control facility
-* Instantly activate a selection of firewall settings ranging from basic, intermediate and advanced
-* Enable the famous "5G Blacklist" Firewall rules courtesy of [Perishable Press](http://perishablepress.com/)
-* Forbid proxy comment posting
-* Disable trace and track
-* Deny bad or malicious query strings
+* Access control facility.
+* Instantly activate a selection of firewall settings ranging from basic, intermediate and advanced.
+* Enable the famous "6G Blacklist" Firewall rules courtesy of [Perishable Press](http://perishablepress.com/)
+* Forbid proxy comment posting.
+* Block access to debug log file.
+* Disable trace and track.
+* Deny bad or malicious query strings.
 * Protect against Cross Site Scripting (XSS) by activating the comprehensive advanced character string filter.
 or malicious bots who do not have a special cookie in their browser. You (the site admin) will know how to set this special cookie and be able to log into your site.
 * WordPress PingBack Vulnerability Protection feature. This firewall feature allows the user to prohibit access to the xmlrpc.php file in order to protect against certain vulnerabilities in the pingback functionality. This is also helpful to block bots from constantly accessing the xmlrpc.php file and wasting your server resource.
 * Ability to block fake Googlebots from crawling your site.
 * Ability to prevent image hotlinking. Use this to prevent others from hotlinking your images.
 * Ability to log all 404 events on your site. You can also choose to automatically block IP addresses that are hitting too many 404s.
+* Ability to add custom rules to block access to various resources of your site.
 
 = Brute force login attack prevention =
 * Instantly block Brute Force Login Attacks via our special Cookie-Based Brute Force Login Prevention feature. This firewall functionality will block all login attempts from people and bots.
@@ -104,12 +112,12 @@ or malicious bots who do not have a special cookie in their browser. You (the si
 
 = Security Scanner =
 * The file change detection scanner can alert you if any files have changed in your WordPress system. You can then investigate and see if that was a legitimate change or some bad code was injected.
-* Database scanner feature can be used to scan your database tables. It will look for any common suspicious-looking strings, javascript and html code in some of the WordPress core tables.
 
 = Comment SPAM Security =
 * Monitor the most active IP addresses which persistently produce the most SPAM comments and instantly block them with the click of a button.
 * Prevent comments from being submitted if it doesn't originate from your domain (this should reduce some SPAM bot comment posting on your site).
 * Add a captcha to your wordpress comment form to add security against comment spam.
+* Automatically and permanently block IP addresses which have exceeded a certain number of comments labeled as SPAM.
 
 = Front-end Text Copy Protection =
 * Ability to disable the right click, text selection and copy option for your front-end.
@@ -122,6 +130,7 @@ or malicious bots who do not have a special cookie in their browser. You (the si
 
 = Additional Features =
 * Ability to remove the WordPress Generator Meta information from the HTML source of your site.
+* Ability to remove the WordPress Version information from the JS and CSS file includes of your site.
 * Ability to prevent people from accessing the readme.html, license.txt and wp-config-sample.php files
 * Ability to temporarily lock down the front end of your site from general visitors while you do various backend tasks (investigate security attacks, perform site upgrades, do maintenance work etc.)
 * Ability to export/import the security settings.
@@ -177,6 +186,323 @@ https://www.tipsandtricks-hq.com/wordpress-security-and-firewall-plugin
 None
 
 == Changelog ==
+
+= 4.3.9 =
+- Fixed captcha bug.
+- Fixed PHP_EOL issue where some IPv6 and v4 addresses saved in settings were incorrectly deemed invalid.
+- Tightened file permission for wp-config.php to "640"
+- Fixed DB prefix change bug for cases where DB had tables of type "view".
+- Fixed some translation string issues.
+- Minor style fix for wp list table pagination nav buttons.
+
+= 4.3.8.3 =
+- Trying again - Fixed login captcha authentication bug.
+
+= 4.3.8.2 =
+- Fixed login captcha authentication bug.
+
+= 4.3.8.1 =
+- Minor bug fix - added missing check to enqueue recaptcha script only if that feature is enabled.
+
+= 4.3.8 =
+- Added ability to hide secret rename login page link when sending emails to people asking for personal data export.
+- Fixed Google reCaptcha not showing on comment page.
+- Fixed activation handler and creation of DB tables to handle multi-site activations more robustly.
+- Improved reCaptcha code to prevent the occasional occurrence of "Uncaught Error: reCAPTCHA placeholder element must be an element or id" error.
+- Added extra check for PHP_OS value to prevent Apple "DARWIN" being interpreted as windows server.
+- Corrected some minor translation issues on rename login page.
+- Increased priority of authenticate hook for captcha check.
+- Updated the Dutch Language file.
+
+= 4.3.7.2 =
+- More "get_home_path" fatal error preventions.
+
+= 4.3.7.1 =
+- Fixed fatal error regarding "get_home_path" function.
+
+
+= 4.3.7 =
+- Added Google reCaptcha feature for login forms.
+- Improved code which checks if site is main for multi-site installations.
+- Removed the text domain string from the translation functions in the wp-security-rename-login-feature.php file.
+- Changed .htaccess path location to use get_home_path().
+- Fixed minor woocommerce captcha bug
+
+= 4.3.6 =
+- Added new tab called "WP REST API" in the Miscellaneous menu and created separate feature which disables unauthorized REST access for non-logged in users independent of the users enumeration feature.
+- Improved dashboard page widget area display.
+- Small translation string fix in the rename login page feature.
+
+= 4.3.5 =
+- Fix - Error: Call to undefined function the_privacy_policy_link() in older versions of WordPress.
+- Added a check to disable file change detection feature and prevent fatal errors when FilesystemIterator is not available due to old versions of PHP.
+- Improved get_login_fail_count method in the AIOWPSecurity_User_Login class which will fix cases where login lockdown 
+was not working on some servers due to timestamp difference between PHP current_time( 'mysql' ) and mysql now().
+
+= 4.3.4 =
+- Modified rename login page to handle GDPR Export/Erase Personal Data request.
+- Fixed woocommerce registration page captcha bug.
+- Improved users enumeration so that authenticated requests to the REST API are allowed but others are blocked.
+- Improved logic in Renamed Login Page settings such that unnecessary call of AIOWPSecurity_Utility_Htaccess::write_to_htaccess() function is avoided.
+
+= 4.3.3.1 =
+- Fixed a typo with the newly added action hook - aiowps_before_wp_die_renamed_login
+
+= 4.3.3 =
+- Fixed bug - aiowps will now allow access to admin-post.php from front-end when rename login feature is active.
+- Modified login lockdown feature so that the exact IP address is locked down and not the IP range.
+- Added new filter (aiowps_ip_blocked_output_page) which allows user to filter the complete output when someone's IP has been locked out.
+- Added new action hook (aiopws_before_wp_die_renamed_login) for the renamed login feature which fires just before the wp_die event which produces the "Not available" behaviour.
+- Removed unused code.
+- Modified get_user_ip_address to get the first IP address in cases where there are multiple comma separated addresses provided - example X-Forwarded-For.
+
+= 4.3.2 =
+- Added new IP address settings page which user the ability to configure which $_SERVER global the IP address will be retrieved from. (New setting found in WP Security >> Settings >> Advanced Settings)
+- Fixed bug in .htaccess rules caused when 6G and IP blacklist firewall rules were simultaneously enabled.
+- Fixed bug where captcha answer was being ignored on woocommerce login page.
+- Added support for unlock requests made from woocomerce account login page when rename login feature is active.
+- Added useful debug code for troubleshooting in the fake googlebot function.
+- Some general code cleanup and improvement.
+- Added code to prevent direct access data leaks.
+- Added captcha settings for BBPress new topic form.
+- Fixed minor bug in dashboard page when checking if htaccess rules applied.
+- Added a check for Windows server installation in File Permissions feature - this feature is not applicable for Windows servers.
+- Added check to display comment captcha only when user not logged in.
+
+= 4.3.1 =
+- Improved white list directives to cater for Apache 2.4 and earlier versions.
+- Added 3 filters for the manual account registration approval email: aiowps_register_approval_email_subject, aiowps_register_approval_email_msg, aiowps_register_approval_email_from_name
+- Added configuration option to allow custom firewall rules to be applied at beginning of all rules applied by aiowps.
+- Changed record insertions to DB table aiowps_failed_logins to store the full IP address instead of IP range.
+
+= 4.3.0 =
+- Updated wp-security-rename-login-feature.php to include latest WordPress core changes.
+- Added captcha for woocommerce login and registration forms.
+- Fixed "mixed line endings" warnings for whois library.
+- Moved DB cleanup task cron job from daily to hourly.
+- Updated the reapply htaccess function so it doesn't create the header already sent error.
+
+= 4.2.9 =
+- Changed the parameter in current_user_can function to use an administrator capability instead of the "administrator" role name.
+- Added some new hooks to the AIOWPSecurity_WP_Loaded_Tasks called aiowps_wp_loaded_tasks_start and aiowps_wp_loaded_tasks_end.
+- Improved get_locked_ips() function and added $wpdb->prepare statement.
+- Added more missing translation domain parameters for translatable strings in the rename login page.
+- Deleted local copy of the Persian and Italian language files. These translations are available on translate.wordpress.org.
+- Domain path and text domain added to plugin header.
+- Changed the get_user_ip_address functions so that $_SERVER['REMOTE_ADDR'] is the primary method used to obtain IP address.
+- Added enumeration block via REST API (wp >= 4.7)
+
+= 4.2.8 =
+- Improved "User Registration" feature to bypass the pending approval status for new users created in admin side.
+- Fixed bug in whois library.
+- Added translation domain parameter for translatable strings in the rename login page.
+- Updated the chinese language file.
+
+= 4.2.7 =
+- The PHPWhois library updated to their latest version to include a security patch.
+
+= 4.2.6 =
+- Added new Login Lockdown whitelist feature which allows immunity for IP address or ranges from being locked by the lockdown feature.
+- Fixed bug - Replaced date_i18n with current_time to prevent cases where some localizations produce foreign characters in date stamp output.
+- Added a new feature to add Honeypot to the WordPress's user registration form (this can help reduce registration attempts by robots).
+- Added "Export to CSV" buttons for 404 Event Logs, Account Activity Logs and Failed Login Records.
+- Minor update to 6G rules.
+- Minor spelling and wording fixes and changes.
+
+= 4.2.5 =
+- Fixed bug - added code which caters for mysql view definitions when DB prefix is changed.
+- Fixed a typo in the user login security menu.
+- Fixed storage of time stamp in lockdown table to match the local Wordpress server time and be consistent with the timestamp stored in the failed logins table.
+- Prevent direct access to wp-security-core.php
+- Updated the POT file.
+
+= 4.2.4 =
+- Fix error on block_ip_if_locked(), doesn't exit with a wp_user. This is needed for other plugins that create the $user (aka ldap auth plugins).
+- Fix login error message for users with pending account approval.
+- Wordpress 4.7 compatibility.
+
+= 4.2.3 =
+- Fixed bug when math captcha was displayed on Woocommerce registration page.
+- Fixed login page bug for cases where email address and captcha are used to submit login form (thanks to @chesio for fix).
+- Logs directory now contains a .htaccess file with proper deny directives.
+- Small UX improvement: add for attribute to captcha label.
+- Added check for IIS server in get_server_type function.
+
+= 4.2.2 =
+- Debug logger class improvements.
+- Added a message in the debug settings area to state that the log files are reset on every plugin update.
+- Always return an array from scan_dir_sort_date() to prevent PHP notices.
+- Improvements for Automated DB backups filling up space - old backup file will be deleted first.
+- Thanks to RIPS Analyzer for sending us the vulnerability report. 
+
+= 4.2.1 = 
+- Improve output of .htaccess to include <IfModule mod_rewrite.c> checks and RewriteEngine On directives.
+- Fall back to default DB backup interval in case of invalid value.
+- The aiowps_delete_backup_files() function will produce a debug log message on every call (to help with troubleshooting when needed).
+
+= 4.2.0 =
+- WPML plugin compatibility fix for the renamed admin login page feature.
+- Fixed a few potential XSS vulnerabilities.
+
+= 4.1.9 =
+- Small improvement to the new "immediate blocking of specific usernames" feature.
+
+= 4.1.8 =
+- New feature to allow immediate blocking of specific usernames.
+- Only activate copy (right-click) protection for non-admin users.
+- Fixed bug where logout link in admin bar does not get updated on after the $_POST submit to reflect the new rename login setting.
+- Fixed small bug in return_regularized_url function.
+- Improvement/bug fix: When currently logged in user attempts to access renamed login page, redirect them to dashboard.
+- Removed Spanish language files so they can be automatically pulled from WordPress.org.
+- Drop unnecessary WHERE clause in some backend listings.
+- Improvement: do not schedule a cronjob, if it is already scheduled.
+
+= 4.1.7 =
+- Added sanitisation for log file data in textarea.
+- Disabled autocomplete for Captcha field.
+
+= 4.1.6 =
+- Added cleanup code for captcha string info transients.
+- Minor change to the username label in the renamed login page to keep it inline with the standard WordPress login page.
+- Fixed a potential vulnerability when viewing AIOWPS log files in the Dashboard menu. Thanks to Manuel LLOP for pointing this out.
+
+= 4.1.5 =
+- Fixed bug where username is an email and captcha was being ignored.
+- Reduce memory footprint of database backup.
+- Improvements: Make hard-coded strings localizable.
+- Partial Apache 2.3 compatibility.
+- Improved: Hide WP version number by replacing it with a hash. This way, WordPress version number is not exposed, but browser caching is not obscured by missing version numbers.
+
+= 4.1.4 =
+- Improved and tweaked the login captcha feature to avoid some issues people had with the last modification.
+- Deleted reference to ini_get('safe_mode') to avoid fatal errors for newer versions of PHP where that setting has been totally removed.
+
+= 4.1.3 =
+- Added new checkbox for XMLRPC to disable only pingback methods but leave other XMLRPC functionality accessible. This will be useful for people who use Jetpack or Wordpress iOS or other apps.
+- Updated the French language file.
+- Fix: decbin doesn't add leading zero. Comparing empty strings return bad results.
+- Fix: bugfix in the login captcha. Thanks to Sipke Mellema for pointing it out.
+
+= 4.1.2 =
+- Fixed bug introduced by last file change scanner code changes.
+- Fixed bug in SPAM comment blocking functionality.
+- Fixed fatal error case when Divi theme and front end lockout is enabled.
+
+= 4.1.1 =
+- Fixed Fatal error conflict between Rename Login feature and Yoast SEO and some themes when attempting to access wp-admin page directly.
+- Added "Pending Approval" message when manual registration approval feature is enabled and a user registers.
+- Fix (minor): No need to use strcmp to compare integer values.
+- Updated and simplified wp-security-stop-users-enumeration.php for bug (thanks to @davidegiunchidiennea)
+- Minor code cleanup (Thanks to @chesio for the following changes).
+- File scanner codebase cleanup.
+- Fix: properly report invalid email addresses in file scanner configuration.
+- Code clean-up in AIOWPSecurity_Scan::do_file_change_scan() method.
+- Tweak: Compare file scan data faster.
+
+= 4.1.0 =
+- Fixed bug in Maintenance menu page when trying to attach a media file to the message text box.
+- Added a new filter (called "aiowps_ip_blocked_error_msg") which allows the modification of the error message displayed on the login page when an IP address has been blocked by the login lockdown feature.
+- Updated French language translation. Thanks to Claude Ribaux for providing the translation files.
+- Thanks to @chesio for making the following two changes.
+- Replaced deprecated call to get_currentuserinfo() function.
+- Minor code fixes in the backup class file.
+- Fix: display correct (error) message when write_to_htaccess() fails.
+- Tweak: database backup filename is more human-readable. 
+  Before: 24x7eg8l6i-database-backup-1463042767.zip
+  After: database-backup-20160512-104607-24x7eg8l6i.zip
+
+= 4.0.9 =
+- Made file change scanner code more robust for cases when open_basedir restriction is in effect. (Thanks to Manuel Jeanne for pointing this out).
+- Added code which will remove WordPress version info during CSS and JS script loading if you have the "Remove WP Generator Meta Info" option checked. (Thanks to aldemarcalazans for pointing this out).
+- Fixed some potential SQL injection vulnerabilities. (Thanks to Julio Potier for pointing these out).
+- Changed the feature category of blacklist manger from "Intermediate" to "Advanced".
+- Tweak: Remove "@" from list of characters blocked by advanced character string filter. (Because it is often used in retina-ready images).
+- Fix: Use home URL instead of site URL in lock notification email subject. Thanks to @chesio for fixing this.
+
+= 4.0.8 =
+- Added ability to identify IP addresses during user registration and option to block selected IPs.
+- Added login form captcha functionality for sub-sites in a multi-site installation. (see the Brute Force menu)
+- Fixed multi-site bug related to manual user-chosen DB prefix change.
+- Added extra XSS protection inside admin menu pages for the "tab" query parameter.
+- Added a note to the features that has the potential to lock you out if it doesn't work correctly on your site.
+- Updated Brazil-Portuguese language file.
+- Fixed issue with firewall custom rules being corrupted by magic quotes. Thanks to @chesio for fixing this.
+
+= 4.0.7 =
+- Added a new action hook "aiopws_before_set_404" which triggers just before the AIOWPS sets a 404. (handy for cases when rename login page is used which affects some themes when accessing "wp-admin" directly)
+- Fixed some potential SQL injection vulnerabilities.
+- Thanks to @chesio for submitting the following changes and applying the fixes.
+- Sub-directory install fixes.
+- Improve behavior of WP File Access tab. 
+- Fix invalid nesting of HTML elements.
+- Do not block HTTP requests that contain "tag=" in query string.
+- Option to enable the 6G firewall.
+
+= 4.0.6 =
+- Removed the viewing of contents of wp-config.php and .htaccess files in order to protect sensitive info.
+- Fixed more potential XSS vulnerabilities in some other settings pages. (Once again many thanks to Erin Germ for pointing these out)
+
+= 4.0.5 =
+- Fixed some potential XSS vulnerability in the blacklist, file system and file change detection settings pages. (Many thanks to Erin Germ for pointing these out)
+
+= 4.0.4 =
+- Added new feature: Auto Block Spammer IPs. This feature will automatically and permanently block IP addresses which are linked to comment SPAM. (see SPAM Prevention -> Comment SPAM IP Monitoring tab)
+- Added compatibility fix for the qTranslate-X plugin in the rename login page feature.
+- Added ability to send to more than one email address for file change detection feature notification.
+- Fixed bug in whois library when searching ARIN registry.
+- Fixed the handling of display of longer IPV6 strings in dashboard summary table.
+- Added hook for WooCommerce login form to display unlock button.
+- Added Dutch language translation. Thanks to Jeroen van der Linde for providing the translation files.
+- Typo fix in the "stop users enumeration" feature.
+
+= 4.0.3 =
+- Added urlencode to query strings in URLs to prevent unexpected behaviour. Thanks to @chesio for spotting the issue.
+- Added new feature to stop users enumeration. Thanks to Davide Giunchi @davidegiunchidiennea for adding this.
+- Added a more robust code for check_user_exists function. Thanks to Christian Carey.
+- Added cron cleanup of the global meta table.
+- Added a title in each of the admin interface menu.
+
+= 4.0.2 =
+- Added ability to enable/disable debug from the settings menu.
+- Fixed bug related to using IP ranges in the whitelist settings.
+- Added IPv6 support for the whitelist feature.
+- Added check in file permissions feature for cases where wp-config.php may be located outside of root.
+- Added wp cron DB cleanup events for various tables which may grow large over time.
+- Changed firewall rule for proxy comment prevention to reflect suggestion made by Thomas O. in forum (https://wordpress.org/support/topic/high-server-cpu-with-proxy-login)
+- Fixed CSS styling issue in admin pages for WordPrss 4.4
+
+= 4.0.1 =
+- Renamed the language files to match the new textdomain slug to fix the language translation bug.
+- Fixed bug related to the rename login feature and force logout or logout expiry events.
+- Applied fix for log being generated by events table DB insert.
+- Corrected a function call to static version of display error msg.
+
+= 4.0.0 =
+- Updated text domain to match expected value for translate.wordpress.org translation system.
+- Fixed bug related to multi-site user_roles not being updated for child sites.
+- Fixed minor bug in rename login feature.
+- Updated the Italian language file. 
+
+= 3.9.9 =
+- Fixed an issue with the rename login page feature for WordPress 4.3
+- Added esc_attr() sanitization to some of the relevant parameters
+- Added the necessary changes to allow activation via wp-cli
+
+= 3.9.8 =
+- Added guard against possible XSS in the unlock request feature.
+
+= 3.9.7 =
+- Added new feature which allows custom .htaccess rules. (See "Custom Rules" tab in Firewall menu). You can now use this to add custom rules to block access to various resources on your site.
+- Added a new feature to block access to the wp-content/debug.log file (WordPress creates this file if you enabled debug loggin option in the config file).
+- Removed the "v" from version number of the plugin.
+- Completed testing with WordPress 4.3.
+
+= 3.9.6 =
+- Added Rename Login page feature from the "Brute Force" menu to multisite sub-sites.
+- Removed invalid "length" attribute from input element in captcha code.
+- Fixed reset password feature whereby the URL which is sent out in the email for cases when rename login feature is enabled was not decoded properly.
+- Corrected the check for boolean false if returned from wpdb query result.
+- Added media button for wp editor in maintenance settings page.
 
 = 3.9.5 =
 - Fixed minor bug - IP addresses blocked due to '404' were not being listed in the display table.
