@@ -3555,8 +3555,8 @@ a.language_switcher:hover {
 /* begging of the social buttons on each page */
 
 div.social_buttons {
-    margin: 10px auto;
-    width: 290px;
+    margin: 0 auto;
+    width: 145px;
 }
 
 div.fb-like {
@@ -3807,7 +3807,7 @@ div.tile_cont {
     background-color: #1d1d1d;
 }
 
-.facebook {
+.facebook-footer {
     margin-top: 20px;
 }
 

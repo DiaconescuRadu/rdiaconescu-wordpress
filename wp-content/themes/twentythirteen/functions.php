@@ -757,9 +757,7 @@ function get_social_icons(){
     ?>
     <div class="social_header">
         <a class="social-media-icon facebook" target="_blank" href="https://www.facebook.com/diaconescu.radu.9">F</a>
-        <a class="social-media-icon google-plus" target="_blank" href="https://plus.google.com/u/0/+DiaconescuRadu/posts">G+</a>
         <a class="social-media-icon email" target="_blank" href="http://eepurl.com/btBGbf">Email</a>
-        <!--a class="social-media-icon twitter" target="_blank" href="https://plus.google.com/102164334047255333030/posts">T</a!-->
         <a class="social-media-icon rss" target="_blank" href="http://www.diaconescuradu.com/feed">Rss</a>
     <?php
     $translation_list = icl_get_languages(); 
@@ -779,37 +777,7 @@ function get_social_buttons(){
     ?>
     <div class="social_buttons"> <!-- Social buttons -->
         <!-- facebook like button -->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=1380479268860167";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-        <div class="fb-like" data-href="<?php the_permalink()?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
-       <!-- Facebook -->
-        <!--div class="fb-like" data-href="<?php the_permalink()?>" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div-->
-        <!-- Google plus button -->
-
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="my_google_style g-plusone" data-size="medium"></div>
-
-        <!-- Place this tag after the last +1 button tag. -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-        
-        <!-- Twitter -->
-
-        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-like" data-href="<?php the_permalink()?>" data-width="140" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
     </div>
     <?php
 }

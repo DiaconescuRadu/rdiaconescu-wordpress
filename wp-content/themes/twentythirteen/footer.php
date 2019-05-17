@@ -29,7 +29,7 @@
                 <div class="footer-container">
                     <div class="follow">
                         <!-- facebook page -->
-                        <div class="facebook">
+                        <div class="facebook-footer">
                               <!-- Load Facebook SDK for JavaScript -->
                                 <div id="fb-root"></div>
                                 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=1380479268860167&autoLogAppEvents=1"></script>
