@@ -7,4 +7,5 @@ wp-content/uploads/2012
 wp-content/uploads/2013
 wp-content/uploads/*.sh
 wp-content/uploads/*.txt
-wp-content/plugins/search-regex
+wp-content/plugins/wp-super-cache/*
+sql-dump/

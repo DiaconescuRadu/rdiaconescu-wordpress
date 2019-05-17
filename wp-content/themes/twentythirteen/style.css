@@ -3977,5 +3977,11 @@ div.equipment-photo:hover {
     padding-bottom: 1em;
 }
 
+.wp-block-image figcaption {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
 
 }

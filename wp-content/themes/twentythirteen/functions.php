@@ -175,7 +175,7 @@ function twentythirteen_scripts_styles() {
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 
 	// Loads our main stylesheet.
-	wp_enqueue_style( 'twentythirteen-style', get_stylesheet_uri(), array(), '2013-07-18' );
+	wp_enqueue_style( 'twentythirteen-style', get_stylesheet_uri(), array(), '2019-05-15' );
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentythirteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentythirteen-style' ), '2013-07-18' );

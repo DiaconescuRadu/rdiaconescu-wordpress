@@ -6,7 +6,7 @@ if ( !defined('ABSPATH')) exit;
 /**
  * Full Content Template
  *
-   Template Name:  Chart
+   Template Name:  Performance Manager Chart
  *
  * @file           full-width-page.php
  * @package        Responsive 
@@ -38,13 +38,13 @@ get_header(); ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.js"></script>
 </head>
 <body>
-        <i><h3 class="box-title text-center">Aerobic Power</h3></i>
-        <div class="wrapper">
-            <canvas id="chart-0"></canvas>
-        </div>
         <i><h3 class="box-title text-center">Performance Manager</h3></i>
         <div class="wrapper">
             <canvas id="chart-1"></canvas>
+        </div>
+        <i><h3 class="box-title text-center">Aerobic Power</h3></i>
+        <div class="wrapper">
+            <canvas id="chart-0"></canvas>
         </div>
         <i><h3 class="box-title text-center">Weight and W/Kg</h3></i>
         <div class="wrapper">
@@ -60,6 +60,8 @@ get_header(); ?>
     <script>
         var presets = window.chartColors;
         var utils = Samples.utils;
+        var username = window.location.href.split("-")[2];
+        console.log(username);
         var inputs = {
             min: 20,
             max: 80,
@@ -78,7 +80,7 @@ get_header(); ?>
 
         $.ajax({
           type: "GET",
-          url: 'http://www.diaconescuradu.com/wp-content/uploads/data/AerobicPower.csv',
+          url: `http://www.diaconescuradu.com/wp-content/uploads/data/${username}/AerobicPower.csv`,
           dataType: 'text',
           async: false,
         }).done(loadData);
@@ -125,12 +127,12 @@ get_header(); ?>
                 backgroundColor: utils.transparentize(presets.yellow),
                 borderColor: presets.yellow,
                 data: power20,
-                hidden: true,
                 label: '20 min power',
             }, {
                 backgroundColor: utils.transparentize(presets.green),
                 borderColor: presets.green,
                 data: power10,
+                hidden: true,
                 label: '10 min power',
             }, {
                 backgroundColor: utils.transparentize(presets.blue),
@@ -210,7 +212,7 @@ get_header(); ?>
 
         $.ajax({
           type: "GET",
-          url: 'http://www.diaconescuradu.com/wp-content/uploads/data/pmc.csv',
+          url: `http://www.diaconescuradu.com/wp-content/uploads/data/${username}/Pmc.csv`,
           dataType: 'text',
           async: false,
         }).done(loadData);
@@ -242,23 +244,23 @@ get_header(); ?>
                 fill: false,
                 borderColor: presets.red,
                 data: atl,
-                label: 'Acute Trailing Load'
+                label: 'Acute Trailing Load (Impact pe termen scurt)'
             }, {
                 backgroundColor: utils.transparentize(presets.orange),
                 fill: false,
                 borderColor: presets.orange,
                 data: ctl,
-                label: 'Chronic Training Load',
+                label: 'Chronic Training Load (Fitness)',
             }, {
                 backgroundColor: utils.transparentize(presets.yellow),
                 borderColor: presets.yellow,
                 data: tsb,
-                label: 'Training Stress Balance',
+                label: 'Training Stress Balance (Oboseala)',
             }, {
                 backgroundColor: utils.transparentize(presets.green),
                 borderColor: presets.green,
                 data: tss,
-                label: 'Stress Ramp Rate',
+                label: 'Stress Ramp Rate (Ritmul de crestere in antrenament)',
             }]
         };
 
@@ -331,7 +333,7 @@ get_header(); ?>
 
         $.ajax({
           type: "GET",
-          url: 'http://www.diaconescuradu.com/wp-content/uploads/data/weight.csv',
+          url: `http://www.diaconescuradu.com/wp-content/uploads/data/${username}/Weight.csv`,
           dataType: 'text',
           async: false,
         }).done(loadData);
@@ -352,7 +354,7 @@ get_header(); ?>
                 if (coresponding20MinPower && coresponding20MinPower != 0) {
                     last20MinPower = coresponding20MinPower
                 }
-                WPerKg.push(last20MinPower / weight[i-1]) 
+                WPerKg.push(last20MinPower * 0.95 / weight[i-1]) 
             }
             console.log(realDayDate)
         }
