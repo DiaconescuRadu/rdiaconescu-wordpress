@@ -4,7 +4,7 @@ wp-content/uploads/2009
 wp-content/uploads/2010
 wp-content/uploads/2011
 wp-content/uploads/2012
-wp-content/uploads/2013
+wp-content/uploads/**
 wp-content/uploads/*.sh
 wp-content/uploads/*.txt
 wp-content/plugins/wp-super-cache/*
