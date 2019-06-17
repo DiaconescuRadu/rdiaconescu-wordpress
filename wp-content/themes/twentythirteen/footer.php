@@ -36,6 +36,12 @@
                                 <div class="fb-page" data-href="https://www.facebook.com/Diaconescu-Radu-221072178016386/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Diaconescu-Radu-221072178016386/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Diaconescu-Radu-221072178016386/">Diaconescu Radu</a></blockquote></div>
 
                        </div>
+                        <div class="facebook-footer">
+                        <h4> Bicicletele le reparam la:</h4>
+                            <a href="https://www.bikelab.ro" title="BikeLab" class="active-item">
+                            <img src="https://www.bikelab.ro/img/logo.png" alt="BikeLab" title="BikeLab">
+                            </a>
+                       </div>
                 </div><!-- footer container-->
                 <!--div class="sponsors float-left">
                    <h4> <?php echo $supportText;?></h4>
