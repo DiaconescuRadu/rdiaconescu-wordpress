@@ -349,8 +349,15 @@ get_header(); ?>
                 var line = data[i];
                 days.push(line[0])
                 weight.push(line[1])
-                //get corresponding power
-                coresponding20MinPower = datePowerMap.get((new Date(days[i-1])).toString()) 
+                //get previous  corresponding power
+                var currentDate = new Date(days[i-1])
+                coresponding20MinPower = datePowerMap.get(currentDate.toString()) 
+                var tries = 0
+                while (!coresponding20MinPower && tries < 7) {
+                    tries = tries + 1
+                    currentDate.setDate( currentDate.getDate() - 1)
+                    coresponding20MinPower = datePowerMap.get(currentDate.toString()) 
+                }
                 if (coresponding20MinPower && coresponding20MinPower != 0) {
                     last20MinPower = coresponding20MinPower
                 }
