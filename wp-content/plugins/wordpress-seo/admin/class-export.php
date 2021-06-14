@@ -1,123 +1,101 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin\Export
  */
 
 /**
- * class WPSEO_Export
+ * Class WPSEO_Export.
  *
- * Class with functionality to export the WP SEO settings
+ * Class with functionality to export the WP SEO settings.
  */
 class WPSEO_Export {
 
 	/**
+	 * Holds the nonce action.
+	 *
+	 * @var string
+	 */
+	const NONCE_ACTION = 'wpseo_export';
+
+	/**
+	 * Holds the export data.
+	 *
 	 * @var string
 	 */
 	private $export = '';
 
 	/**
-	 * @var string
-	 */
-	private $error = '';
-
-	/**
-	 * @var string
-	 */
-	public $export_zip_url = '';
-
-	/**
+	 * Holds whether the export was a success.
+	 *
 	 * @var boolean
 	 */
 	public $success;
 
 	/**
-	 * Whether or not the export will include taxonomy metadata
-	 *
-	 * @var boolean
+	 * Handles the export request.
 	 */
-	private $include_taxonomy;
-
-	/**
-	 * @var array
-	 */
-	private $dir = array();
-
-
-	/**
-	 * Class constructor
-	 *
-	 * @param boolean $include_taxonomy Whether to include the taxonomy metadata the plugin creates.
-	 */
-	public function __construct( $include_taxonomy = false ) {
-		$this->include_taxonomy = $include_taxonomy;
-		$this->dir              = wp_upload_dir();
-		$this->success          = $this->export_settings();
+	public function export() {
+		check_admin_referer( self::NONCE_ACTION );
+		$this->export_settings();
+		$this->output();
 	}
 
 	/**
-	 * Returns an array with status and output message.
-	 *
-	 * @return array $results
+	 * Outputs the export.
 	 */
-	public function get_results() {
-		$results = array();
-		if ( $this->success ) {
-			$results['status'] = 'success';
-			$results['msg']    = sprintf( __( 'Export created: %1$sdownload your export file here%2$s.', 'wordpress-seo' ), '<a href="' . $this->export_zip_url . '">', '</a>' );
-		}
-		else {
-			$results['status'] = 'failure';
-			$results['msg']    = __( 'Error creating WordPress SEO export: ', 'wordpress-seo' ) . $this->error;
+	public function output() {
+		if ( ! WPSEO_Capability_Utils::current_user_can( 'wpseo_manage_options' ) ) {
+			esc_html_e( 'You do not have the required rights to export settings.', 'wordpress-seo' );
+			return;
 		}
 
-		return $results;
+		echo '<p>';
+		printf(
+			/* translators: %1$s expands to Import settings */
+			esc_html__(
+				'Copy all these settings to another site\'s %1$s tab and click "%1$s" there.',
+				'wordpress-seo'
+			),
+			esc_html__(
+				'Import settings',
+				'wordpress-seo'
+			)
+		);
+		echo '</p>';
+		echo '<textarea id="wpseo-export" rows="20" cols="100">' . esc_textarea( $this->export ) . '</textarea>';
 	}
 
 	/**
 	 * Exports the current site's WP SEO settings.
-	 *
-	 * @return boolean|string $return true when success, error when failed.
 	 */
 	private function export_settings() {
-
 		$this->export_header();
 
 		foreach ( WPSEO_Options::get_option_names() as $opt_group ) {
-			$this->write_opt_group( $opt_group, $this->export );
+			$this->write_opt_group( $opt_group );
 		}
-
-		$this->taxonomy_metadata();
-
-		if ( $this->write_file() ) {
-			if ( $this->zip_file() ) {
-				return true;
-			}
-			else {
-				$this->error = __( 'Could not zip settings-file.', 'wordpress-seo' );
-
-				return false;
-			}
-		}
-		$this->error = __( 'Could not write settings to file.', 'wordpress-seo' );
-
-		return false;
 	}
 
 	/**
-	 * Writes the header of the export file.
+	 * Writes the header of the export.
 	 */
 	private function export_header() {
-		$this->write_line( '; ' . __( 'This is a settings export file for the WordPress SEO plugin by Yoast.com', 'wordpress-seo' ) . ' - https://yoast.com/wordpress/plugins/seo/' );
-		if ( $this->include_taxonomy ) {
-			$this->write_line( '; ' . __( 'This export includes taxonomy metadata', 'wordpress-seo' ) );
-		}
+		$header = sprintf(
+			/* translators: %1$s expands to Yoast SEO, %2$s expands to Yoast.com */
+			esc_html__( 'These are settings for the %1$s plugin by %2$s', 'wordpress-seo' ),
+			'Yoast SEO',
+			'Yoast.com'
+		);
+		$this->write_line( '; ' . $header );
 	}
 
 	/**
-	 * Writes a line to the export
+	 * Writes a line to the export.
 	 *
-	 * @param string  $line
-	 * @param boolean $newline_first
+	 * @param string  $line          Line string.
+	 * @param boolean $newline_first Boolean flag whether to prepend with new line.
 	 */
 	private function write_line( $line, $newline_first = false ) {
 		if ( $newline_first ) {
@@ -127,11 +105,12 @@ class WPSEO_Export {
 	}
 
 	/**
-	 * Writes an entire option group to the export
+	 * Writes an entire option group to the export.
 	 *
-	 * @param string $opt_group
+	 * @param string $opt_group Option group name.
 	 */
 	private function write_opt_group( $opt_group ) {
+
 		$this->write_line( '[' . $opt_group . ']', true );
 
 		$options = get_option( $opt_group );
@@ -142,7 +121,8 @@ class WPSEO_Export {
 
 		foreach ( $options as $key => $elem ) {
 			if ( is_array( $elem ) ) {
-				for ( $i = 0; $i < count( $elem ); $i ++ ) {
+				$count = count( $elem );
+				for ( $i = 0; $i < $count; $i++ ) {
 					$this->write_setting( $key . '[]', $elem[ $i ] );
 				}
 			}
@@ -153,10 +133,10 @@ class WPSEO_Export {
 	}
 
 	/**
-	 * Writes a settings line to the export
+	 * Writes a settings line to the export.
 	 *
-	 * @param string $key
-	 * @param string $val
+	 * @param string $key Key string.
+	 * @param string $val Value string.
 	 */
 	private function write_setting( $key, $val ) {
 		if ( is_string( $val ) ) {
@@ -165,58 +145,31 @@ class WPSEO_Export {
 		$this->write_line( $key . ' = ' . $val );
 	}
 
-	/**
-	 * Adds the taxonomy meta data if there is any
-	 */
-	private function taxonomy_metadata() {
-		if ( $this->include_taxonomy ) {
-			$taxonomy_meta = get_option( 'wpseo_taxonomy_meta' );
-			if ( is_array( $taxonomy_meta ) ) {
-				$this->write_line( '[wpseo_taxonomy_meta]', true );
-				$this->write_setting( 'wpseo_taxonomy_meta', urlencode( json_encode( $taxonomy_meta ) ) );
-			}
-			else {
-				$this->write_line( '; ' . __( 'No taxonomy metadata found', 'wordpress-seo' ), true );
-			}
-		}
-	}
+	/* ********************* DEPRECATED METHODS ********************* */
 
 	/**
-	 * Writes the settings to our temporary settings.ini file
+	 * Returns true when the property error has a value.
 	 *
-	 * @return boolean unsigned
+	 * @deprecated 11.9 Obsolete since the export setting refactor in 9.2.
+	 *
+	 * @codeCoverageIgnore
+	 *
+	 * @return bool
 	 */
-	private function write_file() {
-		$handle = fopen( $this->dir['path'] . '/settings.ini', 'w' );
-		if ( ! $handle ) {
-			return false;
-		}
+	public function has_error() {
+		_deprecated_function( __METHOD__, 'WPSEO 11.9' );
 
-		$res = fwrite( $handle, $this->export );
-		if ( ! $res ) {
-			return false;
-		}
-
-		fclose( $handle );
-
-		return true;
+		return false;
 	}
 
 	/**
-	 * Zips the settings ini file
+	 * Sets the error hook, to display the error to the user.
 	 *
-	 * @return boolean unsigned
+	 * @deprecated 11.9 Obsolete since the export setting refactor in 9.2.
+	 *
+	 * @codeCoverageIgnore
 	 */
-	private function zip_file() {
-		chdir( $this->dir['path'] );
-		$zip = new PclZip( './settings.zip' );
-		if ( 0 === $zip->create( './settings.ini' ) ) {
-			return false;
-		}
-
-		$this->export_zip_url = $this->dir['url'] . '/settings.zip';
-
-		return true;
+	public function set_error_hook() {
+		_deprecated_function( __METHOD__, 'WPSEO 11.9' );
 	}
-
 }

@@ -11,13 +11,20 @@ class SLB_Theme extends SLB_Component {
 	
 	protected $props_required = array('name');
 	
+	/**
+	 * Public flag
+	 * @var bool
+	 */
+	protected $public = true;
+	
 	/* Get/Set */
 	
 	/**
 	 * Retrieve theme's ancestors
+	 * @param bool $sort_topdown (optional) Ancestor sorting (Default: Nearest to Farthest)
 	 * @return array Theme's ancestors (sorted by nearest to most distant ancestor)
 	 */
-	public function get_ancestors() {
+	public function get_ancestors($sort_topdown = false) {
 		$ret = array();
 		/**
 		 * @var SLB_Theme
@@ -25,35 +32,34 @@ class SLB_Theme extends SLB_Component {
 		$thm = $this;
 		while ( $thm->has_parent() ) {
 			$par = $thm->get_parent();
-			//Add ancestor
+			// Add ancestor
 			if ( $par->is_valid() && !in_array($par, $ret, true) ) {
 				$ret[] = $par;
 			}
-			//Get next ancestor
+			// Get next ancestor
 			$thm = $par;
+		}
+		// Sorting
+		if ( $sort_topdown ) {
+			$ret = array_reverse($ret);
 		}
 		return $ret;
 	}
 	
-	/* Style */
-	
 	/**
-	 * Set Theme style path
-	 * @see `add_style()`
+	 * Set public flag
+	 * @param bool $public
 	 */
-	public function set_client_style($src, $deps = array()) {
-		if ( is_array($src) ) {
-			list($src, $deps) = func_get_arg(0);
-		}
-		return $this->add_style('client', $src, $deps);
+	public function set_public($public) {
+		$this->public = !!$public;
 	}
 	
 	/**
-	 * Get Theme style path
-	 * @see `get_style()`
+	 * Get privacy state
+	 * @return bool
 	 */
-	public function get_client_style($format = null) {
-		return $this->get_style('client', $format);
+	public function get_public() {
+		return !!$this->public;
 	}
 	
 	/* Templates */

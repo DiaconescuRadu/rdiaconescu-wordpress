@@ -1,7 +1,9 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin\Bulk Editor
- * @since      1.5.0
+ * @since   1.5.0
  */
 
 /**
@@ -17,7 +19,7 @@ class WPSEO_Bulk_Description_List_Table extends WPSEO_Bulk_List_Table {
 	protected $page_type = 'description';
 
 	/**
-	 * Settings with are used in __construct
+	 * Settings with are used in __construct.
 	 *
 	 * @var array
 	 */
@@ -29,12 +31,13 @@ class WPSEO_Bulk_Description_List_Table extends WPSEO_Bulk_List_Table {
 
 	/**
 	 * The field in the database where meta field is saved.
+	 *
 	 * @var string
 	 */
 	protected $target_db_field = 'metadesc';
 
 	/**
-	 * The columns shown on the table
+	 * The columns shown on the table.
 	 *
 	 * @return array
 	 */
@@ -48,11 +51,11 @@ class WPSEO_Bulk_Description_List_Table extends WPSEO_Bulk_List_Table {
 	}
 
 	/**
-	 * Parse the metadescription
+	 * Parse the metadescription.
 	 *
-	 * @param string $column_name
-	 * @param object $record
-	 * @param string $attributes
+	 * @param string $column_name Column name.
+	 * @param object $record      Data object.
+	 * @param string $attributes  HTML attributes.
 	 *
 	 * @return string
 	 */
@@ -60,17 +63,18 @@ class WPSEO_Bulk_Description_List_Table extends WPSEO_Bulk_List_Table {
 		switch ( $column_name ) {
 			case 'col_new_yoast_seo_metadesc':
 				return sprintf(
-					'<textarea id="%1$s" name="%1$s" class="wpseo-new-metadesc" data-id="%2$s"></textarea>',
-					'wpseo-new-metadesc-' . $record->ID,
-					$record->ID
+					'<textarea id="%1$s" name="%1$s" class="wpseo-new-metadesc" data-id="%2$s" aria-labelledby="col_new_yoast_seo_metadesc"></textarea>',
+					esc_attr( 'wpseo-new-metadesc-' . $record->ID ),
+					esc_attr( $record->ID )
 				);
-				break;
 
 			case 'col_existing_yoast_seo_metadesc':
-				// TODO inconsistent return/echo behavior R.
+				// @todo Inconsistent return/echo behavior R.
+				// I traced the escaping of the attributes to WPSEO_Bulk_List_Table::column_attributes. Alexander.
+				// The output of WPSEO_Bulk_List_Table::parse_meta_data_field is properly escaped.
+				// phpcs:ignore WordPress.Security.EscapeOutput
 				echo $this->parse_meta_data_field( $record->ID, $attributes );
 				break;
 		}
 	}
-
 } /* End of class */

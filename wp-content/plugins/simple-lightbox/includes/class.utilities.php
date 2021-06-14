@@ -16,30 +16,40 @@ class SLB_Utilities {
 	 * Instance parent
 	 * @var object
 	 */
-	var $parent = null;
+	private $_parent = null;
 	
 	/**
-	 * Default plugin headers
-	 * @var array
+	 * Plugin Base
+	 * @var string
 	 */
-	private $plugin_headers = array (
-		'Name'			=> 'Plugin Name',
-		'PluginURI'		=> 'Plugin URI',
-		'Version'		=> 'Version',
-		'Description'	=> 'Description',
-		'Author'		=> 'Author',
-		'AuthorURI'		=> 'Author URI',
-		'TextDomain'	=> 'Text Domain',
-		'DomainPath'	=> 'Domain Path',
-		'Network'		=> 'Network',
+	private $_plugin = array(
+		'base'		=> null,
+		'file'		=> null,
+		'name'		=> null,
+		'data'		=> null,
+		'uri'		=> null,
+		'headers'	=> array (
+			'Name'			=> 'Plugin Name',
+			'PluginURI'		=> 'Plugin URI',
+			'SupportURI'	=> 'Support URI',
+			'Version'		=> 'Version',
+			'Description'	=> 'Description',
+			'Author'		=> 'Author',
+			'AuthorURI'		=> 'Author URI',
+		)
 	);
 	
+	/**
+	 * Plugin base path
+	 * @var string
+	 */
+	private $_path_base = null;
 	
 	/**
 	 * Standard hook priorities
 	 * @var array
 	 */
-	private $priorities = array (
+	private $_priorities = array (
 		'high'							=> 1,
 		'low'							=> 99,
 		'safe'							=> 15,
@@ -48,9 +58,10 @@ class SLB_Utilities {
 	
 	/* Constructors */
 	
-	function __construct(&$obj) {
-		if ( is_object($obj) )
-			$this->parent =& $obj;
+	function __construct($obj) {
+		if ( is_object($obj) ) {
+			$this->_parent = $obj;
+		}
 	}
 	
 	/**
@@ -93,35 +104,47 @@ class SLB_Utilities {
 	 */
 	function get_prefix($sep = null) {
 		$sep = $this->get_sep($sep);
-		$prefix = ( !empty($this->parent->prefix) ) ? $this->parent->prefix . $sep : '';
+		$prefix = ( !empty($this->_parent->prefix) ) ? $this->_parent->prefix . $sep : '';
 		return $prefix;
 	}
 	
 	/**
 	 * Check if a string is prefixed
-	 * @param string $text Text to check for prefix
+	 * @param string|array $text Text to check for prefix
 	 * @param string $sep (optional) Separator used
 	 */
 	function has_prefix($text, $sep = null) {
+		if ( empty($text) )
+			return false;
+		if ( !is_array($text) )
+			$text = array($text);
+		$text = array_values($text);
+		$text = $text[0];
 		return ( !empty($text) && stripos($text, $this->get_prefix($sep)) === 0 );
 	}
 	
 	/**
 	 * Prepend plugin prefix to some text
-	 * @param string $text Text to add to prefix
+	 * @param string|array $text Text to add to prefix
 	 * @param string $sep (optional) Text used to separate prefix and text
 	 * @param bool $once (optional) Whether to add prefix to text that already contains a prefix or not
 	 * @return string Text with prefix prepended
 	 */
 	function add_prefix($text, $sep = '_', $once = true) {
-		if ( $once && $this->has_prefix($text, $sep) )
-			return $text;
-		return $this->get_prefix($sep) . $text;
+		// Normalize data type (array)
+		if ( empty($text) )
+			$text = array('');
+		if ( !is_array($text) )
+			$text = array($text);
+		// Add prefix (if necessary)
+		if ( !$once || ( $once && !$this->has_prefix($text, $sep) ) )
+			array_unshift($text, $this->get_prefix());
+		return implode($sep, $text);
 	}
 	
 	/**
 	 * Prepend uppercased plugin prefix to some text
-	 * @param string $text Text to add to prefix
+	 * @param string|array $text Text to add to prefix
 	 * @param string $sep (optional) Text used to separate prefix and text
 	 * @param bool $once (optional) Whether to add prefix to text that already contains a prefix or not
 	 * @return string Text with prefix prepended
@@ -176,8 +199,8 @@ class SLB_Utilities {
 	 */
 	public function priority($id = null) {
 		$pri = 10;
-		if ( !is_null($id) && array_key_exists($id, $this->priorities) ) {
-			$pri = $this->priorities[$id];
+		if ( !is_null($id) && array_key_exists($id, $this->_priorities) ) {
+			$pri = $this->_priorities[$id];
 		}
 		return $pri;
 	}
@@ -185,30 +208,44 @@ class SLB_Utilities {
 	/* Wrapped Values */
 	
 	/**
-	 * Returns validated object of start/end wrapper values
+	 * Create wrapper object
+	 * Properties
+	 *   > start
+	 *   > end
 	 * @param string|array $start Start text (Can also be array defining start & end values)
 	 * @param string $end (optional) End text
 	 * If $end not defined, then $start is used
 	 * @return obj Wrapper
 	 */
 	function get_wrapper($start = null, $end = null) {
-		//Return pre-built wrapper
+		// Validate existing wrapper
 		if ( is_object($start) && isset($start->start) && isset($start->end) )
 			return $start;
-		//Default wrapper
-		if ( is_null($start) && is_null($end) )
-			$start = array('[', ']');
-		$wrapper = compact('start', 'end');
-		if ( is_array($start) && count($start) > 1 ) {
-			$wrapper['start'] = $start[0];
-			$wrapper['end'] = $start[1];
-		}
-		if ( !is_string($wrapper['start']) || empty($wrapper['start'] ) )
-			$wrapper['start'] = '';
-		if ( !is_string($wrapper['end']) || empty($wrapper['end']) )
-			$wrapper['end'] = $wrapper['start'];
 		
-		return (object) $wrapper;
+		// Initialize wrapper
+		$w = array (
+			'start'		=> '[',
+			'end'		=> ']',
+		);
+		
+		if ( !empty($start) ) {
+			if ( is_string($start) ) {
+				$w['start'] = $start;
+			} elseif ( is_array($start) ) {
+				$start = array_values($start);
+				if ( is_string($start) ) {
+					$w['start'] = $start[0];
+				}
+				if ( isset($start[1]) && is_string($start[1]) ) {
+					$w['end'] = $start[1];
+				}
+			}
+		}
+		if ( is_string($end) ) {
+			$w['end'] = $end;
+		}
+		
+		return (object) $w;
 	}
 	
 	/**
@@ -221,11 +258,11 @@ class SLB_Utilities {
 	function has_wrapper($text, $start = null, $end = null) {
 		if ( !is_string($text) || empty($text) )
 			return false;
-		//Validate wrapper)
+		// Validate wrapper
 		$w = $this->get_wrapper($start, $end);
 		
-		//Check for wrapper
-		return ( substr($text, 0, 1) == $w->start && substr($text, -1, 1) == $w->end ) ? true : false;
+		// Check for wrapper
+		return ( substr($text, 0, strlen($w->start)) == $w->start && substr($text, -1, strlen($w->end)) == $w->end ) ? true : false;
 	}
 	
 	/**
@@ -248,7 +285,7 @@ class SLB_Utilities {
 	
 	/**
 	 * Add wrapper to specified text
-	 * @uses this->get_wrapper() to retrieve wrapper object
+	 * @uses Utilities::get_wrapper() to retrieve wrapper object
 	 * @param string $text Text to wrap
 	 * @param string|array $start (optional) Start text (Array defines both start/end text)
 	 * @param string $end (optional) End text
@@ -285,13 +322,14 @@ class SLB_Utilities {
 	 */
 	function parse_client_files($files, $type = 'scripts') {
 		if ( is_array($files) && !empty($files) ) {
-			//Defaults
+			// Defaults
 			$defaults = array(
 				'file'		=> null,
 				'deps' 		=> array(),
 				'callback'	=> null,
 				'context'	=> array(),
 				'enqueue'	=> true,
+				'enqueued'  => false
 			);
 			switch ( $type ) {
 				case 'styles':
@@ -300,34 +338,43 @@ class SLB_Utilities {
 				default:
 					$defaults['in_footer'] = false;
 			}
-			//Iterate through files
+			// Iterate through files
+			/**
+			 * $h (string) handle
+			 * $p (array) properties
+			 */
 			foreach ( $files as $h => $p ) {
 				unset($file, $cb, $ctxs, $ctx);
-				//Set ID
+				// Set ID
 				$p['id'] = $this->add_prefix($h);
-				//Type Validation
+				// Type Validation
+				/**
+				 * $m (string) property name
+				 * $d (mixed) default value
+				 */
 				foreach ( $defaults as $m => $d ) {
-					//Check if value requires validation
+					// Check if value requires validation
 					if ( !is_array($d) || !isset($p[$m]) || is_array($p[$m]) )
 						continue;
-					//Wrap value in array or destroy it
+					// Wrap value in array or destroy it
 					if ( is_scalar($p[$m]) )
 						$p[$m] = array($p[$m]);
 					else
 						unset($p[$m]);
 				}
 				
+				// Normalize file properties
 				$p = array_merge($defaults, $p);
 				
 				/* File name */
 				
-				//Validate file
+				// Validate file
 				$file =& $p['file'];
 				
-				//Determine if filename or callback
+				// Determine if filename or callback
 				if ( !$this->is_file($file) )
-					$file = $this->parse_client_file_callback($file);
-				//Remove invalid file and move on to next
+					$file = ( is_callable($file) ) ? $file : null;
+				// Remove invalid file and move on to next
 				if ( empty($file) ) {
 					unset($files[$h]);
 					continue;
@@ -335,7 +382,7 @@ class SLB_Utilities {
 				
 				/* Dependencies */
 				
-				//Format internal dependencies
+				// Format internal dependencies
 				foreach ( $p['deps'] as $idx => $dep ) {
 					if ( $this->has_wrapper($dep) ) {
 						$dep = $this->remove_wrapper($dep);
@@ -345,50 +392,46 @@ class SLB_Utilities {
 				
 				/* Context */
 				
-				//Validate callback
+				// Validate callback
 				$cb =& $p['callback'];
-				if ( !is_null($cb) ) {
-					$cb = $this->parse_client_file_callback($cb);
-					//Remove files with invalid callbacks (will never be loaded)
-					if ( is_null($cb) ) {
-						unset($files[$h]);
-						continue;
-					}	
+				if ( !is_null($cb) && !is_callable($cb) ) {
+					// Remove files with invalid callbacks (will never be loaded)
+					unset($files[$h]);
+					continue;
 				}
 				
-				//Validate contexts
+				// Validate contexts
 				$ctxs =& $p['context'];
 				$ctxs = array_unique($ctxs);
 				$has_contexts = ( count($ctxs) > 0 ) ? true : false;
 				foreach ( $ctxs as $idx => $ctx ) {
-					//Convert to array
+					// Convert to array
 					$ctx = array_values( array_slice( (array) $ctx, 0, 2 ) );
 					switch ( count($ctx) ) {
 						case 1 :
-							//Simple context
+							// Simple context
 							$ctx = $ctx[0];
 							break;
 						case 2 :
-							//Context + Callback
-							$ctx[1] = $this->parse_client_file_callback($ctx[1]);
-							if ( !is_null($ctx[1]) ) {
+							// Context + Callback
+							if ( is_callable($ctx[1]) ) {
 								break;
 							}
-							//Continue to default case if callback is invalid
+							// Continue to default case if callback is invalid
 						default :
-							//Context is invalid
+							// Context is invalid
 							$ctx = false;
 							break;
 					}
 					
-					//Remove invalid contexts
+					// Remove invalid contexts
 					if ( empty($ctx) ) {
 						unset($ctxs[$idx]);
 					} else {
 						$ctxs[$idx] = $ctx;
 					}
 				}
-				//Remove file if all specified contexts invalid (no context is OK)
+				// Remove file if all specified contexts invalid (no context is OK)
 				if ( $has_contexts && empty($ctxs) ) {
 					unset($files[$h]);
 					continue;
@@ -397,30 +440,15 @@ class SLB_Utilities {
 				
 				/* Finalize Properties */
 				
-				//Convert properties to object
+				// Convert properties to object
 				$files[$h] = (object) $p;
 			}
 		}
-		//Cast to object before returning
+		// Cast to object before returning
 		$files = (object) $files;
 		return $files;
 	}
 
-	/**
-	 * Parses callbacks set for client files
-	 * @param string $callback Callback value
-	 *  > Values wrapped in square brackets (`[` & `]`) are internal methods (of parent object)
-	 * @return callback|null Validated callback (NULL if callback is invalid)
-	 */
-	function parse_client_file_callback($callback) {
-		if ( $this->has_wrapper($callback) ) {
-			$callback = $this->m($this->parent, $this->remove_wrapper($callback));
-		}
-		if ( !is_callable($callback) )
-			$callback = null;
-		return $callback;
-	}
-	
 	/**
 	 * Build JS client object
 	 * @param string (optional) $path Additional object path
@@ -444,7 +472,7 @@ class SLB_Utilities {
 	 * @return string JS expression to extend client object
 	 */
 	function extend_client_object($obj, $data = null, $out = false) {
-		//Validate parameters
+		// Validate parameters
 		$args = func_get_args();
 		switch ( count($args) ) {
 			case 2:
@@ -459,14 +487,14 @@ class SLB_Utilities {
 				$obj = null;
 				break;
 		}
-		//Default client object
+		// Default client object
 		if ( !is_string($obj) || empty($obj) )
 			$obj = null;
-		//Default data
+		// Default data
 		if ( is_array($data) ) {
 			$data = (object)$data;
 		}
-		//Build expression
+		// Build expression
 		if ( empty($data) || ( empty($obj) && is_scalar($data) ) ) {
 			$ret = '';
 		} else {
@@ -487,24 +515,24 @@ class SLB_Utilities {
 	 * If no command is specified the validation conditions are returned
 	 */
 	public function validate_client_object($obj, $cmd = null) {
-		//Build condition
-		$sep = '.';
-		$obj = trim( $this->get_client_object($obj) , $sep);
-		$offset = 0;
-		$len = strlen($obj);
-		$pos = $len;
-		$fmt = '(typeof %s != \'undefined\')';
-		$objs = array();
-		//Add segments to array (in reverse)
-		do {
-			$objs[] = sprintf($fmt, substr($obj, 0, $pos));
-			$offset = $pos - $len - 1;
-		} while ( $offset < $len && ( $pos = strrpos($obj, $sep, $offset) ) && $pos !== false );
-		//Format condition
-		$condition = implode(' && ', array_reverse($objs));
+		// Get base object
+		$base = $this->get_client_object();
 		
-		//Wrap command in validation
-		if ( is_string($cmd) && !empty($cmd) ) {
+		// Build condition
+		$sep = '.';
+		$obj = trim($obj, $sep);
+		//  Strip base object
+		if ( 0 === strpos($obj, $base . $sep) ) {
+			$obj = substr($obj, strlen($base . $sep));
+		}
+		$fmt = '!!window.%1$s';
+		if ( !empty($obj) ) {
+			$fmt .= ' && %1$s.has_child(\'%2$s\')';
+		}
+		$condition = sprintf($fmt, $base, $obj);
+		
+		// Wrap command in validation
+		if ( !empty($cmd) && is_string($cmd) ) {
 			$condition = sprintf('if ( %1$s ) { %2$s }', $condition, $cmd);
 		}
 		return $condition;
@@ -527,7 +555,7 @@ class SLB_Utilities {
 		$encode = !!$encode;
 		$validate = !!$validate;
 		
-		//Build parameters
+		// Build parameters
 		if ( !is_null($params) ) {
 			if ( $encode ) {
 				$params = json_encode($params);	
@@ -571,17 +599,17 @@ class SLB_Utilities {
 		return true;
 	}
 	
-	/* Hooks */
 	
 	/**
 	 * Retrieve parent object
 	 * @return obj|bool Parent object (FALSE if no valid parent set)
 	 */
-	function &get_parent() {
-		if ( is_object($this->parent) )
-			return $this->parent;
-		else
-			return false; 
+	function get_parent() {
+		if ( is_object($this->_parent) ) {
+			return $this->_parent;
+		} else {
+			return false;
+		} 
 	}
 	
 	/**
@@ -592,9 +620,11 @@ class SLB_Utilities {
 	 * @return mixed Parent property value
 	 */
 	function get_parent_property($prop, $default = '') {
-		$p =& $this->get_parent();
+		$p = $this->get_parent();
 		return ( !!$p && property_exists($p, $prop) ) ? $p->{$prop} : $default; 
-	}	
+	}
+	
+	/* Hooks */
 	
 	/**
 	 * Retrieve formatted name for internal hooks
@@ -602,14 +632,20 @@ class SLB_Utilities {
 	 * @uses self::get_parent_property() to retrieve hook prefix
 	 * @uses self::add_prefix()
 	 * @param string $tag Base tag
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 * @return string Formatted hook
 	 */
-	function get_hook($tag) {
-		//Hook prefix
-		$hook = $this->get_parent_property('hook_prefix', '');
+	function get_hook($tag, $hook_prefix = true) {
+		// Hook prefix
+		$hook = '';
+		if ( is_bool($hook_prefix) && $hook_prefix ) {
+			$hook = $this->get_parent_property('hook_prefix', '');
+		} elseif ( is_string($hook_prefix) ) {
+			$hook = $hook_prefix;
+		}
 		if ( !empty($hook) )
 			$hook .= '_';
-		//Prefix
+		// Prefix
 		return $this->add_prefix($hook . $tag);
 	}
 	
@@ -618,19 +654,27 @@ class SLB_Utilities {
 	 * Namespaces $tag
 	 * @uses self::get_hook()
 	 * @see do_action()
+	 * @param string|array $tag Action hook. If array, get hook prefix
 	 */
 	function do_action($tag, $arg = '') {
+		// Handle hook prefix
+		$hook_prefix = true;
+		if ( is_array($tag) ) {
+			$hook_prefix = $tag[1];
+			$tag = $tag[0];
+		}
 		$args = func_get_args();
-		$args[0] = $this->get_hook($tag);
+		$args[0] = $this->get_hook($tag, $hook_prefix);
 		return call_user_func_array('do_action', $args);
 	}
 	
 	/**
 	 * Run internal action passing arguments in array
 	 * @uses do_action_ref_array()
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 */
-	function do_action_ref_array($tag, $args) {
-		return do_action_ref_array($this->get_hook($tag), $args);
+	function do_action_ref_array($tag, $args, $hook_prefix = true) {
+		return do_action_ref_array($this->get_hook($tag, $hook_prefix), $args);
 	}
 	
 	/**
@@ -638,19 +682,27 @@ class SLB_Utilities {
 	 * Namespaces $tag
 	 * @uses self::get_hook()
 	 * @see apply_filters()
+	 * @param string|array $tag Action hook. If array, get hook prefix
 	 */
 	function apply_filters($tag, $value) {
+		// Handle hook prefix
+		$hook_prefix = true;
+		if ( is_array($tag) ) {
+			$hook_prefix = $tag[1];
+			$tag = $tag[0];
+		}
 		$args = func_get_args();
-		$args[0] = $this->get_hook($tag);
+		$args[0] = $this->get_hook($tag, $hook_prefix);
 		return call_user_func_array('apply_filters', $args);
 	}
 	
 	/**
 	 * Run internal filter passing arguments in array
 	 * @uses apply_filters_ref_array()
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 */
-	function apply_filters_ref_array($tag, $args) {
-		return apply_filters_ref_array($this->get_hook($tag), $args);	
+	function apply_filters_ref_array($tag, $args, $hook_prefix = true) {
+		return apply_filters_ref_array($this->get_hook($tag, $hook_prefix), $args);	
 	}
 	
 	/**
@@ -658,9 +710,10 @@ class SLB_Utilities {
 	 * Namespaces $tag
 	 * @uses self::get_hook()
 	 * @see add_action()
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 */
-	function add_action($tag, $function_to_add, $priority = 10, $accepted_args = 1) {
-		return add_action($this->get_hook($tag), $function_to_add, $priority, $accepted_args);
+	function add_action($tag, $function_to_add, $priority = 10, $accepted_args = 1, $hook_prefix = true) {
+		return add_action($this->get_hook($tag, $hook_prefix), $function_to_add, $priority, $accepted_args);
 	}
 	
 	/**
@@ -668,9 +721,10 @@ class SLB_Utilities {
 	 * Namespaces $tag
 	 * @uses self::get_hook()
 	 * @see add_filter()
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 */
-	function add_filter($tag, $function_to_add, $priority = 10, $accepted_args = 1) {
-		return add_filter($this->get_hook($tag), $function_to_add, $priority, $accepted_args);
+	function add_filter($tag, $function_to_add, $priority = 10, $accepted_args = 1, $hook_prefix = true) {
+		return add_filter($this->get_hook($tag, $hook_prefix), $function_to_add, $priority, $accepted_args);
 	}
 	
 	/**
@@ -678,9 +732,10 @@ class SLB_Utilities {
 	 * Namespaces $tag
 	 * @uses self::get_hook()
 	 * @uses remove_action()
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 */
-	function remove_action($tag, $function_to_remove, $priority = 10, $accepted_args = 1) {
-		return remove_action($this->get_hook($tag), $function_to_remove, $priority, $accepted_args);	
+	function remove_action($tag, $function_to_remove, $priority = 10, $accepted_args = 1, $hook_prefix = true) {
+		return remove_action($this->get_hook($tag, $hook_prefix), $function_to_remove, $priority, $accepted_args);	
 	}
 	
 	/**
@@ -688,9 +743,71 @@ class SLB_Utilities {
 	 * Namespaces $tag
 	 * @uses self::get_hook()
 	 * @uses remove_filter()
+	 * @param bool|string $hook_prefix (optional) Secondary prefix to use for hook (Default: Use predefined hook name, FALSE: no secondary hook)
 	 */
-	function remove_filter($tag, $function_to_remove, $priority = 10, $accepted_args = 1) {
-		return remove_filter($this->get_hook($tag), $function_to_remove, $priority, $accepted_args);
+	function remove_filter($tag, $function_to_remove, $priority = 10, $accepted_args = 1, $hook_prefix = true) {
+		return remove_filter($this->get_hook($tag, $hook_prefix), $function_to_remove, $priority, $accepted_args);
+	}
+	
+	/* Shortcode */
+	
+	/**
+	 * Process specific shortcode(s) in content
+	 * Default: Process all existing shortcodes
+	 * @uses $shortcode_tags - array tag => callback
+	 * @uses do_shortcode()
+	 * 
+	 * @param string $content Content to process for shortcodes
+	 * @param string|array $shortcode Single tag or array of tags to process
+	 *  > Associative array sets temporary callbacks for shortcodes (`tag => callback`)
+	 */
+	public function do_shortcode($content, $shortcode = null) {
+		global $shortcode_tags;
+		
+		// Process custom shortcodes
+		if ( !is_null($shortcode) ) {
+			// Cast to array
+			$shortcode = (array) $shortcode;
+			// Backup and reset shortcode handlers
+			$tags_temp = $shortcode_tags;
+			$shortcode_tags = array();
+			// Register specified tags
+			foreach ( $shortcode as $key => $val ) {
+				if ( is_string($key) && is_callable($val) ) {
+					// Tag w/custom callback
+					$shortcode_tags[$key] = $val;
+				} elseif ( is_int($key) && is_string($val) && isset($tags_temp[$val]) ) {
+					// Tag with default callback
+					$shortcode_tags[$val] = $tags_temp[$val];
+				}
+			}
+		}
+		
+		// Process shortcodes in content
+		$content = do_shortcode($content);
+		
+		// Restore default shortcode handlers
+		if ( isset($tags_temp) ) {
+			$shortcode_tags = $tags_temp;
+			unset($tags_temp);
+		}
+		
+		return $content;
+	}
+	
+	/**
+	 * Build shortcode tag
+	 * @param string $tag Shortcode base
+	 * @param array (optional) $attr Shortcode attributes
+	 * @param string (optional) $content Shortcode content
+	 * @return string Shortcode tag
+	 */
+	public function make_shortcode($tag, $attr = null, $content = null) {
+		return $this->build_element(array (
+			'tag'			=> $tag,
+			'attributes'	=> $attr,
+			'content'		=> $content,
+		));
 	}
 
 	/* Meta */
@@ -777,36 +894,7 @@ class SLB_Utilities {
 		return '_' . $this->add_prefix($text);
 	}
 	
-	/*-** Request **-*/
-	
-	/**
-	 * Checks if the currently executing file matches specified file name
-	 * @param string $filename Filename to check for
-	 * @return bool TRUE if current page matches specified filename, FALSE otherwise
-	 */
-	function is_current_file( $filename ) {
-		return ( $filename == basename( $_SERVER['SCRIPT_NAME'] ) );
-	}
-	
-	/**
-	 * Checks whether the current page is a management page
-	 * @return bool TRUE if current page is a management page, FALSE otherwise
-	 */
-	function is_admin_management_page() {
-		return ( is_admin()
-				 && ( $this->is_current_file('edit.php')
-				 	|| ( $this->is_current_file('admin.php')
-				 		&& isset($_GET['page'])
-				 		&& strpos($_GET['page'], 'cnr') === 0 )
-				 	)
-				 );
-	}
-	
 	/* Class */
-	
-	function is_a($obj, $class_name) {
-		return ( is_object($obj) && is_a($obj, $this->add_prefix_uc($class_name)) ) ? true : false;
-	}
 	
 	/**
 	 * Retrieve name of internal class
@@ -824,38 +912,43 @@ class SLB_Utilities {
 	 * @return array Context
 	 */
 	function get_context() {
-		//Context
+		// Context
 		static $ctx = null;
 		if ( !is_array($ctx) ) {
-			//Standard
+			// Standard
 			$ctx = array($this->build_context());
-			//Action
+			// Action
 			$action = $this->get_action();
 			if ( !empty($action) ) {
 				$ctx[] = $this->build_context('action', $action);
 			}
-			//Post type
+			// Post type
 			$post_type = $this->get_post_type();
 			if ( !empty($action) ) {
 				$ctx[] = $this->build_context('post-type', $post_type);
 			}
-			//Admin page
+			// Admin page
 			if ( is_admin() ) {
 				global $pagenow;
 				$pg = $this->strip_file_extension($pagenow);
 				$ctx[] = $this->build_context('page', $pg);
-				//Query String
-				parse_str($_SERVER['QUERY_STRING'], $qv);
-				if ( isset($qv['page']) ) {
-					$ctx[] = $this->build_context('page', $qv['page']);
+				// Query String
+				if ( isset($_SERVER['QUERY_STRING']) ) {
+					parse_str($_SERVER['QUERY_STRING'], $qv);
+					if ( isset($qv['page']) ) {
+						$ctx[] = $this->build_context('page', $qv['page']);
+						if ( stripos($qv['page'], $this->get_prefix()) === 0 ) {
+							$ctx[] = $this->build_context('page', $this->get_prefix());
+						}
+					}
 				}
-				//Action
+				// Action
 				if ( !empty($action) ) {
 					$ctx[] = $this->build_context('page', $pg, 'action', $action);
 					$ctx[] = $this->build_context('post-type', $post_type, 'action', $action);
 				}
 			}
-			//User
+			// User
 			$u = wp_get_current_user();
 			$ctx[] = $this->build_context('user', ( $u->ID ) ? 'registered' : 'guest', false);
 		}
@@ -875,16 +968,16 @@ class SLB_Utilities {
 	 */
 	function build_context($context = null, $prefix = true) {
 		$args = func_get_args();
-		//Get prefix option
+		// Get prefix option
 		if ( !empty($args) ) {
 			$prefix = ( is_bool($args[count($args) - 1]) ) ? array_pop($args) : true;
 		}
 		
-		//Validate 
+		// Validate 
 		$context = array_filter($args, 'is_string');
 		$sep = '_';
 
-		//Context Prefix
+		// Context Prefix
 		if ( $prefix )
 			array_unshift($context, ( is_admin() ) ? 'admin' : 'public' );
 		return implode($sep, $context);
@@ -919,6 +1012,8 @@ class SLB_Utilities {
 		$this->extend_client_object($ctx, true);
 	}
 	
+	/* Path */
+	
 	/**
 	 * Joins and normalizes the slashes in the paths passed to method
 	 * All forward/back slashes are converted to forward slashes
@@ -932,47 +1027,47 @@ class SLB_Utilities {
 		$sl_f = '/';
 		$sl_b = '\\';
 		$parts = func_get_args();
-		//Slash defaults (trailing, leading);
+		// Slash defaults (trailing, leading);
 		$slashes = array(false, true);
 		if ( func_num_args() > 1 ) {
-			//Get last argument
+			// Get last argument
 			$arg_last = $parts[count($parts) - 1];
 			if ( is_bool($arg_last) ) {
 				$arg_last = array($arg_last);
 			}
 			
 			if ( is_array($arg_last) && count($arg_last) > 0 && is_bool($arg_last[0]) ) {
-				//Remove slash paramter from args array
+				// Remove slash paramter from args array
 				array_pop($parts);
-				//Normalize slashes options
+				// Normalize slashes options
 				if ( isset($arg_last[0]) )
 					$slashes[0] = $arg_last[0];
 				if ( isset($arg_last[1]) )
 					$slashes[1] = $arg_last[1];
 			}
 		}
-		//Extract to slash options local variables
+		// Extract to slash options local variables
 		list($trailing_slash, $leading_slash) = $slashes;
 		
-		//Clean path segments
+		// Clean path segments
 		foreach ( $parts as $key => $part ) {
-			//Trim slashes/spaces
+			// Trim slashes/spaces
 			$parts[$key] = trim($part, " " . $sl_f . $sl_b);
 			
-			//Verify path segment still contains value
+			// Verify path segment still contains value
 			if ( empty($parts[$key]) ) {
 				unset($parts[$key]);
 				continue;
 			}
 		}
 		
-		//Join path parts together
+		// Join path parts together
 		$parts = implode($sl_b, $parts);
 		$parts = str_replace($sl_b, $sl_f, $parts);
-		//Add trailing slash (if necessary)
+		// Add trailing slash (if necessary)
 		if ( $trailing_slash )
 			$parts .= $sl_f;
-		//Add leading slash (if necessary)
+		// Add leading slash (if necessary)
 		$regex = '#^.+:[\\/]#';
 		if ( $leading_slash && !preg_match($regex, $parts) ) {
 			$parts = $sl_f . $parts;
@@ -983,11 +1078,12 @@ class SLB_Utilities {
 	/**
 	 * Returns URL of file (assumes that it is in plugin directory)
 	 * @param string $file name of file get URL
+	 * @param string|bool $relative Path that URI should be relative to (Default: full path)
 	 * @return string File URL
 	 */
-	function get_file_url($file) {
+	function get_file_url($file, $relative = null) {
 		if ( is_string($file) && '' != trim($file) ) {
-			$file = str_replace(' ', '%20', $this->normalize_path($this->get_url_base(), $file));
+			$file = str_replace(' ', '%20', $this->normalize_path($this->get_url_base(false, $relative), $file));
 		}
 		return $file;
 	}
@@ -997,9 +1093,10 @@ class SLB_Utilities {
 	 * @param string $file file name
 	 * @return string File path
 	 */
-	function get_file_path($file) {
+	function get_file_path($file, $relative = null) {
+		// Build path
 		if ( is_string($file) && '' != trim($file) ) {
-			$file = $this->normalize_path($this->get_path_base(), $file);
+			$file = $this->normalize_path($this->get_path_base($relative), $file);
 		}
 		return $file;
 	}
@@ -1021,6 +1118,15 @@ class SLB_Utilities {
 	}
 	
 	/**
+	 * Check if string is valid URI
+	 * @param string $uri String to check
+	 * @return bool TRUE if string is valid URI
+	 */
+	function is_uri($uri) {
+		return ( preg_match('|^(https?:)?//|', $uri) ) ? true : false;
+	}
+	
+	/**
 	 * Retrieves file extension
 	 * @param string $file file name/path
 	 * @param bool (optional) $lowercase Whether lowercase extension should be returned (Default: TRUE)
@@ -1029,8 +1135,13 @@ class SLB_Utilities {
 	function get_file_extension($file, $lowercase = true) {
 		$ret = '';
 		$sep = '.';
+		// Validate
 		if ( !is_string($file) )
 			return $ret;
+		// Strip query string (if necessary)
+		if ( ( $qpos = strpos($file, '?') ) && $qpos !== false ) {
+			$file = substr($file, 0, $qpos);
+		}
 		if ( ( $rpos = strrpos($file, $sep) ) > 0 ) 
 			$ret = substr($file, $rpos + 1);
 		if ( !!$lowercase )
@@ -1050,7 +1161,7 @@ class SLB_Utilities {
 		if ( !is_array($extension) )
 			$extension = array(strval($extension));
 		if ( !$case_sensitive ) {
-			//Normalize extensions
+			// Normalize extensions
 			$extension = array_map('strtolower', $extension);
 		} 
 		return ( in_array($this->get_file_extension($file, !$case_sensitive), $extension) ) ? true : false;
@@ -1077,12 +1188,28 @@ class SLB_Utilities {
 	 * @uses normalize_path()
 	 * @return string Base URL
 	 */
-	function get_url_base() {
-		static $url_base = '';
-		if ( '' == $url_base ) {
-			$url_base = $this->normalize_path(plugins_url(), $this->get_plugin_base());
+	function get_url_base($trailing_slash = false, $relative = null) {
+		$ret = $this->_plugin['uri'];
+		if ( empty($ret) ) {
+			$ret = $this->normalize_path(plugins_url(), $this->get_plugin_base());
 		}
-		return $url_base;
+		// Trailing slash
+		if ( !!$trailing_slash ) {
+			$ret .= '/';
+		}
+		// Relative
+		if ( !empty($relative) ) {
+			// Default
+			if ( is_bool($relative) ) {
+				$relative = site_url();
+			}
+			// Custom
+			if ( is_string($relative) ) {
+				$ret = $this->get_relative_path($ret, $relative);
+			}
+		}
+		
+		return $ret;
 	}
 	
 	/**
@@ -1092,28 +1219,74 @@ class SLB_Utilities {
 	 * @uses normalize_path()
 	 * @return string Base path
 	 */
-	function get_path_base() {
-		static $path_base = '';
-		if ( '' == $path_base ) {
-			$path_base = $this->normalize_path(WP_PLUGIN_DIR, $this->get_plugin_base());
+	function get_path_base($relative = null) {
+		$ret = $this->_path_base;
+		if ( empty($ret) ) {
+			// Get base directory of parent object
+			if ( $this->get_parent() ) {
+				$r = new ReflectionClass(get_class($this->get_parent()));
+				$base = $r->getFileName();
+				unset($r);
+			} else {
+				$base = __FILE__;
+			}
+			// Extract base path
+			$base = $this->normalize_path($base);
+			if ( 0 === strpos($base, $this->normalize_path(WP_PLUGIN_DIR)) ) {
+				$end = strpos($base, '/', strlen(WP_PLUGIN_DIR) + 1);
+				$base = substr($base, 0, $end);
+			}
+			$ret = $this->_path_base = $base;
 		}
-		return $path_base;
+		// Make relative path
+		if ( !empty($relative) ) {
+			// Default
+			if ( is_bool($relative) ) {
+				$relative = ABSPATH;
+			}
+			// Custom
+			if ( is_string($relative) ) {
+				$ret = $this->get_relative_path($ret, $relative);
+			}
+		}
+		return $ret;
+	}
+	
+	/**
+	 * Retrieve relative path for absolute paths
+	 * @param string $path Path to modify
+	 * @param string $relative (optional) Base path to make $path relative to (Default: Site's base path)
+	 * @return string Relative path
+	 */
+	function get_relative_path($path, $relative = true) {
+		// Default base path
+		if ( !is_string($relative) ) {
+			$relative = ABSPATH;
+		}
+		if ( !empty($relative) && !empty($path) ) {
+			$relative = $this->normalize_path($relative);
+			$path = $this->normalize_path($path);
+			// Strip base path
+			if ( strpos($path, $relative) === 0 ) {
+				$path = substr($path, strlen($relative));
+			}
+		}
+		return $path;
 	}
 	
 	/**
 	 * Retrieve plugin's base directory
 	 * @uses WP_PLUGIN_DIR
-	 * @uses normalize_path()
+	 * @uses Utilities::get_path_base() to retrieve plugin base path
+	 * @uses Utilities::_plugin_base to save plugin base
 	 * @return string Base directory
 	 */
-	function get_plugin_base($trim = false) {
-		static $plugin_dir = '';
-		if ( '' == $plugin_dir ) {
-			$plugin_dir = str_replace($this->normalize_path(WP_PLUGIN_DIR), '', $this->normalize_path(dirname(dirname(__FILE__))));
+	function get_plugin_base() {
+		$ret = $this->_plugin['base'];
+		if ( empty($ret) ) {
+			$ret = $this->_plugin['base'] = basename($this->get_path_base());
 		}
-		if ( $trim )
-			$plugin_dir = trim($plugin_dir, ' \/');
-		return $plugin_dir;
+		return $ret;
 	}
 	
 	/**
@@ -1123,28 +1296,30 @@ class SLB_Utilities {
 	 * @return string Base file path
 	 */
 	function get_plugin_base_file() {
-		static $file = '';
-		if ( empty($file) ) {
-			$dir = @ opendir($this->get_path_base());
+		$ret = $this->_plugin['file'];
+		if ( empty($ret) ) {
+			$dir = @opendir($this->get_path_base());
 			if ( $dir ) {
 				while ( ($ftemp = readdir($dir)) !== false ) {
-					//Only process PHP files
+					// Only process PHP files
 					$ftemp = $this->get_file_path($ftemp);
 					if ( !$this->has_file_extension($ftemp, 'php') || !is_readable($ftemp) )
 						continue;
-					//Check for data
-					$data = get_file_data($ftemp, $this->plugin_headers);
+					// Check for data
+					$data = get_file_data($ftemp, $this->_plugin['headers']);
 					if ( !empty($data['Name']) ) {
-						//Set base file
-						$file = $ftemp;
+						// Set base file
+						$ret = $ftemp;
+						// Save plugin data
+						$this->set_plugin_info($data);
 						break;
 					}
 				}
 			}
 			@closedir($dir);
 		}
-		//Return
-		return $file;
+		// Return
+		return $ret;
 	}
 	
 	/**
@@ -1155,33 +1330,35 @@ class SLB_Utilities {
 	 * @return string Internal plugin name
 	 */
 	function get_plugin_base_name() {
-		static $name = false;
-		if ( !$name ) {
-			$file = $this->get_plugin_base_file();
-			$name = plugin_basename($file);
+		$ret = $this->_plugin['name'];
+		if ( empty($ret) ) {
+			$ret = $this->_plugin['name'] = plugin_basename( $this->get_plugin_base_file() );
 		}
-		return $name;
+		return $ret;
+	}
+	
+	private function set_plugin_info($data) {
+		if ( is_array($data) ) {
+			$this->_plugin['data'] = $data;
+		}
 	}
 	
 	/**
 	 * Retrieve plugin info
 	 * Parses info comment in main plugin file
-	 * @uses get_plugin_base_file()
+	 * @uses get_plugin_base_file() to retrieve plugin info
+	 * @return array|string Plugin info (specific value if field set)
 	 */
-	function get_plugin_info($field = '') {
-		static $data = array();
-		$ret = '';
-		//Get plugin data
-		if ( empty($data) ) {
-			$file = $this->get_plugin_base_file(); 
-			$data = get_file_data($file, $this->plugin_headers);
+	function get_plugin_info($field = null) {
+		$ret = $this->_plugin['data'];
+		// Get plugin data
+		if ( empty($ret) ) {
+			$this->get_plugin_base_file(); 
+			$ret = $this->_plugin['data'];
 		}
-		//Return specified field
+		// Return specified field
 		if ( !empty($field) ) {
-			if ( isset($data[$field]) )
-				$ret = $data[$field];
-		} else {
-			$ret = $data;
+			$ret = ( is_array($ret) && isset($ret[$field]) ) ? $ret[$field] : '';
 		}
 		return $ret;
 	}
@@ -1193,31 +1370,15 @@ class SLB_Utilities {
 	 * @return string Plugin version
 	 */
 	function get_plugin_version($strip_desc = true) {
-		static $v = '';
-		//Retrieve version
-		if ( empty($v) ) {
-			$field = 'Version';
-			$v = $this->get_plugin_info($field);
-		}
-		//Format
-		$ret = $v;
-		if ( $strip_desc ) {
+		// Retrieve version
+		$ret = $this->get_plugin_info('Version');
+		// Format
+		if ( !empty($ret) && $strip_desc ) {
 			$ret = explode(' ', $ret, 2);
 			$ret = $ret[0];
 		}
-		//Return
+		// Return
 		return $ret;
-	}
-	
-	/**
-	 * Retrieve plugin textdomain (for localization)
-	 * @return string
-	 */
-	function get_plugin_textdomain() {
-		static $dom = '';
-		if ( empty($dom) )
-			$dom = $this->get_plugin_base(true);
-		return $dom;
 	}
 	
 	/**
@@ -1243,15 +1404,15 @@ class SLB_Utilities {
 	function get_action($default = null) {
 		$action = '';
 		
-		//Check if action is set in URL
+		// Check if action is set in URL
 		if ( isset($_GET['action']) )
 			$action = $_GET['action'];
-		//Otherwise, Determine action based on plugin plugin admin page suffix
-		elseif ( isset($_GET['page']) && ($pos = strrpos($_GET['page'], '-')) && $pos !== false && ( $pos != count($_GET['page']) - 1 ) )
+		// Otherwise, Determine action based on plugin admin page suffix
+		elseif ( isset($_GET['page']) && ($pos = strrpos($_GET['page'], '-')) && $pos !== false && ( $pos != strlen($_GET['page']) - 1 ) )
 			$action = trim(substr($_GET['page'], $pos + 1), '-_');
 
-		//Determine action for core admin pages
-		if ( ! isset($_GET['page']) || empty($action) ) {
+		// Determine action for core admin pages
+		if ( ( !isset($_GET['page']) || empty($action) ) && isset($_SERVER['SCRIPT_NAME']) ) {
 			$actions = array(
 				'add'			=> array('page-new', 'post-new'),
 				'edit-item'		=> array('page', 'post'),
@@ -1274,24 +1435,8 @@ class SLB_Utilities {
 	/*-** General **-*/
 	
 	/**
-	 * Checks if last parameter sent to a function is an array of options and returns it
-	 * Calling function should use `func_get_args()` and pass the value to this method
-	 * @param array $args Parameters passed to calling function
-	 * @return array Options array (Default: empty array)
-	 */
-	function func_get_options($args) {
-		$r = array();
-		if ( is_array($args) && !empty($args) ) {
-			$last = count($args) - 1;
-			if ( is_array($args[$last]) )
-				$r = $args[$last];
-		}
-		return $r;
-	}
-	
-	/**
 	 * Checks if a property exists in a class or object
-	 * (Compatibility method for PHP 4
+	 * Compatibility method for PHP 4
 	 * @param mixed $class Class or object to check 
 	 * @param string $property Name of property to look for in $class
 	 */
@@ -1313,13 +1458,13 @@ class SLB_Utilities {
 	 */
 	function &get_property(&$obj, $property) {
 		$property = trim($property);
-		//Object
+		// Object
 		if ( is_object($obj) )
 			return $obj->{$property};
-		//Array
+		// Array
 		if ( is_array($obj) )
 			return $obj[$property];
-		//Class
+		// Class
 		if ( is_string($obj) && class_exists($obj) ) {
 			$cvars = get_class_vars($obj);
 			if ( isset($cvars[$property]) )
@@ -1339,23 +1484,23 @@ class SLB_Utilities {
 	 */
 	function array_remap($arr, $map = array(), $overwrite = false) {
 		if ( !empty($map) && is_array($map) ) {
-			//Iterate through mappings
+			// Iterate through mappings
 			foreach ( $map as $from => $to ) {
 				if ( !array_key_exists($from, $arr) )
 					continue;
 				$move = $overwrite;
-				//Only remap if parent property doesn't already exist in array
+				// Only remap if parent property doesn't already exist in array
 				if ( !array_key_exists($to, $arr) )
 					$move = true;
 				if ( $move ) {
-					//Move member value to new key
+					// Move member value to new key
 					$arr[$to] = $arr[$from];
-					//Remove source member
+					// Remove source member
 					unset($arr[$from]);
 				}
 			}
 		}
-		//Return remapped properties
+		// Return remapped properties
 		return $arr;
 	}
 	
@@ -1397,28 +1542,28 @@ class SLB_Utilities {
 	 * @return array Merged array
 	 */
 	function array_merge_recursive_distinct($arr1) {
-		//Get all arrays passed to function
+		// Get all arrays passed to function
 		$args = func_get_args();
 		if ( empty($args) )
 			return false;
-		//Return empty array if first parameter is not an array
+		// Return empty array if first parameter is not an array
 		if ( !is_array($args[0]) )
 			return array();
-		//Set first array as base array
+		// Set first array as base array
 		$merged = $args[0];
-		//Iterate through arrays to merge
+		// Iterate through arrays to merge
 		$arg_length = count($args);
 		for ( $x = 1; $x < $arg_length; $x++ ) {
-			//Skip if argument is not an array (only merge arrays)
+			// Skip if argument is not an array (only merge arrays)
 			if ( !is_array($args[$x]) )
 				continue;
-			//Iterate through argument items
+			// Iterate through argument items
 			foreach ( $args[$x] as $key => $val ) {
-				//Generate key for numeric indexes
+				// Generate key for numeric indexes
 				if ( is_int($key) ) {
-					//Add new item to merged array
+					// Add new item to merged array
 					$merged[] = null;
-					//Get key of new item
+					// Get key of new item
 					$key = array_pop(array_keys($merged));
 				}
 				if ( !isset($merged[$key]) || !is_array($merged[$key]) || !is_array($val) ) {
@@ -1441,13 +1586,13 @@ class SLB_Utilities {
 	 */
 	function array_replace_recursive($search, $arr_replace, $arr_subject) {
 		foreach ($arr_subject as $key => $val) {
-			//Skip element if key does not exist in the replacement array
+			// Skip element if key does not exist in the replacement array
 			if (!isset($arr_replace[$key]))
 				continue;
-			//If element values for both arrays are strings, replace text
+			// If element values for both arrays are strings, replace text
 			if (is_string($val) && strpos($val, $search) !== false && is_string($arr_replace[$key]))
 				$arr_subject[$key] = str_replace($search, $arr_replace[$key], $val);
-			//If value in both arrays are arrays, recursively replace text
+			// If value in both arrays are arrays, recursively replace text
 			if (is_array($val) && is_array($arr_replace[$key]))
 				$arr_subject[$key] = $this->array_replace_recursive($search, $arr_replace[$key], $val);
 		}
@@ -1467,20 +1612,6 @@ class SLB_Utilities {
 	}
 	
 	/**
-	 * Returns value of item at specified path in array
-	 * @param array $arr Array to get item from
-	 * @param array $path Array of segments that form path to array (each array item is a deeper dimension in the array)
-	 * @return mixed Value of item in array (Default: empty string)
-	 */
-	function &get_array_item(&$arr, &$path) {
-		$item = '';
-		if ($this->array_item_isset($arr, $path)) {
-			eval('$item =& $arr' . $this->get_array_path($path) . ';');
-		}
-		return $item;
-	}
-	
-	/**
 	 * Build formatted string based on array values
 	 * Array values in formatted string will be ordered by index order
 	 * @param array $attribute Values to build string with
@@ -1488,14 +1619,14 @@ class SLB_Utilities {
 	 * @return string Formatted string based on array values
 	 */
 	function get_array_path($attribute = '', $format = null) {
-		//Formatted value
+		// Formatted value
 		$fmtd = '';
 		if (!empty($attribute)) {
-			//Make sure attribute is array
+			// Make sure attribute is array
 			if (!is_array($attribute)) {
 				$attribute = array($attribute);
 			}
-			//Format attribute
+			// Format attribute
 			$format = strtolower($format);
 			switch ($format) {
 				case 'id':
@@ -1503,14 +1634,14 @@ class SLB_Utilities {
 					break;
 				case 'metadata':
 				case 'attribute':
-					//Join segments
+					// Join segments
 					$delim = '_';
 					$fmtd = implode($delim, $attribute);
-					//Replace white space and repeating delimiters
+					// Replace white space and repeating delimiters
 					$fmtd = str_replace(' ', $delim, $fmtd);
 					while (strpos($fmtd, $delim.$delim) !== false)
 						$fmtd = str_replace($delim.$delim, $delim, $fmtd);
-					//Prefix formatted value with delimeter for metadata keys
+					// Prefix formatted value with delimeter for metadata keys
 					if ('metadata' == $format)
 						$fmtd = $delim . $fmtd;
 					break;
@@ -1533,23 +1664,68 @@ class SLB_Utilities {
 		$path = array();
 		$args = func_get_args();
 		
-		//Iterate through parameters and build path
+		// Iterate through parameters and build path
 		foreach ( $args as $arg ) {
 			if ( empty($arg) )
 				continue;
 				
 			if (is_array($arg)) {
-				//Recurse through array items to pull out any more arrays
+				// Recurse through array items to pull out any more arrays
 				foreach ($arg as $key => $val) {
 					$path = array_merge($path, $this->build_path($val));
 				}
-				//$path = array_merge($path, array_values($arg));
+				// $path = array_merge($path, array_values($arg));
 			} elseif ( is_scalar($arg) ) {
 				$path[] = $arg;
 			}
 		}
 		
 		return $path;
+	}
+	
+	/**
+	 * Build generic element
+	 * @param array $args
+	 * @return string Element output
+	 */
+	public function build_element($args = array()) {
+		$ret = '';
+		$args_default = array(
+			'tag'			=> '',
+			'wrap'			=> false,
+			'content'		=> '',
+			'attributes'	=> array(),
+			'format'		=> array(),
+		);
+		$format_default = array(
+			'open'	=> '[%s]',
+			'close'	=> '[/%s]',
+		);
+		$args = wp_parse_args($args, $args_default);
+		$args['format'] = wp_parse_args($args['format'], $format_default);
+		
+		// Validate
+		if ( !is_string($args['tag']) || empty($args['tag']) ) {
+			return $ret;
+		}
+		
+		$args = (object) $args;
+		
+		$args->attributes = $this->build_attribute_string($args->attributes);
+		if ( strlen($args->attributes) > 0 ) {
+			$args->attributes = ' ' . $args->attributes;
+		}
+		
+		// Build output
+		$args->format = (object) $args->format;
+		$ret = sprintf( $args->format->open, $args->tag . $args->attributes);
+		
+		// Wrap content if necessary
+		if ( $args->wrap || ( is_string($args->content) && !empty($args->content) ) ) {
+			$ret .= $args->content . sprintf( $args->format->close, $args->tag);
+		}
+
+		return $ret;
 	}
 	
 	/**
@@ -1561,11 +1737,11 @@ class SLB_Utilities {
 	function parse_attribute_string($txt, $defaults = array()) {
 		$txt = trim($txt, ' >');
 		$matches = $attr = array();
-		//Strip tag
+		// Strip tag
 		if ( $txt[0] == '<' && ($s = strpos($txt, ' ')) && $s !== false ) {
 			$txt = trim(substr($txt, $s + 1));
 		}
-		//Parse attributes
+		// Parse attributes
 		$rgx = "/\b(\w+.*?)=([\"'])(.*?)\\2(?:\s|$)/i";
 		preg_match_all($rgx, $txt, $matches);
 		if ( count($matches) > 3 ) {
@@ -1574,7 +1750,7 @@ class SLB_Utilities {
 					$attr[trim($val)] = trim($matches[3][$sub_idx]);
 			}
 		}
-		//Destroy parsing vars
+		// Destroy parsing vars
 		unset($txt, $matches);
 
 		return array_merge($defaults, $attr);
@@ -1587,9 +1763,10 @@ class SLB_Utilities {
 	 */
 	function build_attribute_string($attr) {
 		$ret = '';
-		if ( is_object($attr) )
+		if ( is_object($attr) ) {
 			$attr = (array) $attr;
-		if ( is_array($attr) ) {
+		}
+		if ( is_array($attr) && !empty($attr) ) {
 			array_map('esc_attr', $attr);
 			$attr_str = array();
 			foreach ( $attr as $key => $val ) {
@@ -1600,6 +1777,36 @@ class SLB_Utilities {
 		return $ret;
 	}
 	
+	/* HTML */	
+
+	/**
+	 * Generate HTML element based on values
+	 * @param $args Element arguments
+	 * @return string Generated HTML element
+	 */
+	public function build_html_element($args) {
+		$args_default = array(
+			'tag'			=> 'span',
+			'content'		=> '',
+			'attributes'	=> array()
+		);
+		$args = wp_parse_args($args, $args_default);
+		$args['format'] = array(
+			'open'		=> '<%s>',
+			'close'		=> '</%s>',
+		);
+		// Build element
+		return $this->build_element($args);
+	}
+	
+	/**
+	 * Build HTML link element
+	 * @uses build_html_element() to build link output
+	 * @param string $uri Link URI
+	 * @param string $content Link content
+	 * @param $array (optional) $attributes Additional link attributes
+	 * @return string HTML link element
+	 */
 	function build_html_link($uri, $content, $attributes = array()) {
 		$attributes = array_merge(array('href' => $uri, 'title' => $content), $attributes);
 		return $this->build_html_element(array('tag' => 'a', 'wrap' => true, 'content' => $content, 'attributes' => $attributes));
@@ -1610,7 +1817,7 @@ class SLB_Utilities {
 	 * @param $url Stylesheet URL
 	 * @return string Stylesheet element
 	 */
-	function build_stylesheet_element($url = '') {
+	function build_stylesheet_element($url) {
 		$attributes = array('href' => $url, 'type' => 'text/css', 'rel' => 'stylesheet');
 		return $this->build_html_element(array('tag' => 'link', 'wrap' => false, 'attributes' => $attributes));
 	}
@@ -1624,9 +1831,9 @@ class SLB_Utilities {
 	 * @param bool $wait_doc_ready (optional) Wait until document is fully loaded before executing commands? (Default: No)
 	 */
 	function build_script_element($content = '', $id = '', $wrap_jquery = true, $wait_doc_ready = false) {
-		//Stop processing invalid content
+		// Stop processing invalid content
 		if ( is_array($content) && !empty($content) ) {
-			$content = implode(PHP_EOL, $content);	
+			$content = implode(PHP_EOL, $content);
 		}
 		if ( empty($content) || !is_string($content) ) {
 			return '';
@@ -1635,269 +1842,22 @@ class SLB_Utilities {
 		$start = array('/* <![CDATA[ */');
 		$end = array('/* ]]> */');
 		if ( $wrap_jquery ) {
-			$start[] = '(function($){';
-			$end[] = '})(jQuery);';
+			$start[] = 'if ( !!window.jQuery ) {(function($){';
+			$end[] = '})(jQuery);}';
 			
-			//Add event handler (if necessary)
+			// Add event handler (if necessary)
 			if ( $wait_doc_ready ) {
 				$start[] = '$(document).ready(function(){';
 				$end[] = '})';
 			}
 		}
 		
-		//Reverse order of end values
+		// Reverse order of end values
 		$end = array_reverse($end);
 		$content = implode('', array_merge($start, array($content), $end));
 		if ( is_string($id) && !empty($id) ) {
 			$attributes['id'] = $this->add_prefix($id);
 		}
-		return $this->build_html_element(array('tag' => 'script', 'content' => $content, 'attributes' => $attributes)) . PHP_EOL;
-	}
-	
-	/**
-	 * Generate external script element
-	 * @param $url Script URL
-	 * @return string Script element
-	 */
-	function build_ext_script_element($url = '') {
-		$attributes = array('src' => $url, 'type' => 'text/javascript');
-		return $this->build_html_element(array('tag' => 'script', 'attributes' => $attributes)) . PHP_EOL;
-	}
-	
-	/**
-	 * Generate HTML element based on values
-	 * @param $args Element arguments
-	 * @return string Generated HTML element
-	 */
-	function build_html_element($args) {
-		$defaults = array(
-						'tag'			=> 'span',
-						'wrap'			=> true,
-						'content'		=> '',
-						'attributes'	=> array()
-						);
-		$el_start = '<';
-		$el_end = '>';
-		$el_close = '/';
-		$args = wp_parse_args($args, $defaults);
-		//Collect attributes
-		$attr_exclude = array( 'content', 'tag', 'wrap', 'attributes' );
-		$attr_extra = array_diff_key($args, array_fill_keys($attr_exclude, null));
-		if ( count($attr_extra) ) {
-			//Merge attributes
-			$args['attributes'] = wp_parse_args($attr_extra, $args['attributes']);
-			//Remove attributes from top-level arguments
-			$args = array_diff_key($args, $attr_extra);
-		}
-		extract($args, EXTR_SKIP);
-		$content = trim($content);
-		
-		
-		if ( !$wrap && strlen($content) > 0 )
-			$wrap = true;
-		
-		$attributes = $this->build_attribute_string($attributes);
-		if ( strlen($attributes) > 0 )
-			$attributes = ' ' . $attributes;
-			
-		$ret = $el_start . $tag . $attributes;
-		
-		if ( $wrap )
-			$ret .= $el_end . $content . $el_start . $el_close . $tag;
-		else
-			$ret .= ' ' . $el_close;
-
-		$ret .= $el_end;
-		return $ret;	
-	}
-	
-	/*-** Admin **-*/
-	
-	/**
-	 * Add submenu page in the admin menu
-	 * Adds ability to set the position of the page in the menu
-	 * @see add_submenu_page (Wraps functionality)
-	 * 
-	 * @param $parent
-	 * @param $page_title
-	 * @param $menu_title
-	 * @param $access_level
-	 * @param $file
-	 * @param $function
-	 * @param int $pos Index position of menu page
-	 * 
-	 * @global array $submenu Admin page submenus
-	 */
-	function add_submenu_page($parent, $page_title, $menu_title, $capability, $file, $function = '', $pos = false) {
-		//Add submenu page as usual
-		$args = func_get_args();
-		$hookname = call_user_func_array('add_submenu_page', $args);
-		if ( is_int($pos) ) {
-			global $submenu;
-			//Get last submenu added
-			$parent = $this->get_submenu_parent_file($parent);
-			if ( isset($submenu[$parent]) ) {
-			$subs =& $submenu[$parent];
-
-			//Make sure menu isn't already in the desired position
-			if ( $pos <= ( count($subs) - 1 ) ) {
-				//Get submenu that was just added
-				$sub = array_pop($subs);
-				//Insert into desired position
-				if ( 0 == $pos ) {
-					array_unshift($subs, $sub);
-				} else {
-					$top = array_slice($subs, 0, $pos);
-					$bottom = array_slice($subs, $pos);
-					array_push($top, $sub);
-					$subs = array_merge($top, $bottom);
-				}
-			}
-		}
-		}
-		
-		return $hookname;
-	}
-	
-	/**
-	 * Remove admin submenu
-	 * @param string $parent Submenu parent file
-	 * @param string $file Submenu file name
-	 * @return int|null Index of removed submenu (NULL if submenu not found)
-	 * 
-	 * @global array $submenu
-	 * @global array $_registered_pages
-	 */
-	function remove_submenu_page($parent, $file) {
-		global $submenu, $_registered_pages;
-		$ret = null;
-		
-		$parent = $this->get_submenu_parent_file($parent);
-		$file = plugin_basename($file);
-		$file_index = 2;
-		
-		//Find submenu
-		if ( isset($submenu[$parent]) ) {
-			$subs =& $submenu[$parent];
-			for ($x = 0; $x < count($subs); $x++) {
-				if ( $subs[$x][$file_index] == $file ) {
-					//Remove matching submenu
-					$hookname = get_plugin_page_hookname($file, $parent);
-					remove_all_actions($hookname);
-					unset($_registered_pages[$hookname]);
-					unset($subs[$x]);
-					$subs = array_values($subs);
-					//Set index and stop processing
-					$ret = $x;
-					break;
-				}
-			}
-		}
-		
-		return $ret;
-	}
-	
-	/**
-	 * Replace a submenu page
-	 * Adds a submenu page in the place of an existing submenu page that has the same $file value
-	 * 
-	 * @param $parent
-	 * @param $page_title
-	 * @param $menu_title
-	 * @param $access_level
-	 * @param $file
-	 * @param $function
-	 * @return string Hookname
-	 * 
-	 * @global array $submenu
-	 */
-	function replace_submenu_page($parent, $page_title, $menu_title, $access_level, $file, $function = '') {
-		global $submenu;
-		//Remove matching submenu (if exists)
-		$pos = $this->remove_submenu_page($parent, $file);
-		//Insert submenu page
-		$hookname = $this->add_submenu_page($parent, $page_title, $menu_title, $access_level, $file, $function, $pos);
-		return $hookname;
-	}
-	
-	/**
-	 * Retrieves parent file for submenu
-	 * @param string $parent Parent file
-	 * @return string Formatted parent file name
-	 * 
-	 * @global array $_wp_real_parent_file;
-	 */
-	function get_submenu_parent_file($parent) {
-		global $_wp_real_parent_file;
-		$parent = plugin_basename($parent);
-		if ( isset($_wp_real_parent_file[$parent]) )
-			$parent = $_wp_real_parent_file[$parent];
-		return $parent;
-	}
-	
-	/* Shortcodes */
-	
-	/**
-	 * Generate shortcode to be used in content
-	 * @param string $tag Shortcode tag
-	 * @param array $attr Associative array of attributes
-	 * @return string Shortcode markup
-	 */
-	public function make_shortcode($tag, $attr = array()) {
-		return '[' . $tag . ']';
-	}
-	
-	/**
-	 * Build shortcode regex pattern for specific shortcode
-	 * @uses $shortcode_tags
-	 * @param string $tag Shortcode tag
-	 * @return string Shortcode regex pattern
-	 */
-	public function get_shortcode_regex($tag) {
-		global $shortcode_tags;
-		//Backup shortcodes
-		$tgs_temp = $shortcode_tags;
-		$ret = '';
-		if ( !is_string($tag) || empty($tag) ) {
-			return $ret;
-		}
-		//Modify
-		$shortcode_tags = array( $tag => null );
-		//Build pattern
-		$ret = get_shortcode_regex();
-		//Restore shortcodes
-		$shortcode_tags = $tgs_temp;
-		
-		return $ret;
-	}
-	/**
-	 * Check if content contains shortcode
-	 * @param string $tag Name of shortcode to check for
-	 * @param string $content Content to check for shortcode
-	 * @return bool TRUE if content contains shortcode
-	 */
-	public function has_shortcode($content, $tag) {
-		$ptn = $this->get_shortcode_regex($tag);
-		$ret = ( is_string($content) && preg_match("/$ptn/s", $content) == 1 ) ? true : false;
-		return $ret;
-	}
-	
-	/**
-	 * Add shortcode to content
-	 * @param string $content Content to add shortcode to
-	 * @param bool $in_footer (optional) Add shortcode to head or footer of content (Default: footer)
-	 * @return string Modified content
-	 */
-	public function add_shortcode($content, $tag, $attr = null, $in_footer = true) {
-		if ( !is_string($content) ) {
-			$content = '';
-		}
-		$sc = $this->make_shortcode($tag, $attr);
-		if ( !!$in_footer ) {
-			$content .= $sc;
-		} else {
-			$content = $sc . $content;
-		}
-		return $content;
+		return $this->build_html_element(array('tag' => 'script', 'content' => $content, 'wrap' => true, 'attributes' => $attributes)) . PHP_EOL;
 	}
 }

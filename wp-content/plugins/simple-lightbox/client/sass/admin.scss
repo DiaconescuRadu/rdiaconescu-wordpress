@@ -29,3 +29,26 @@
 	color: #f00;
 	font-weight: bold;
 }
+
+.slb {
+	.columns-2 {
+		margin-right: 300px;
+		.postbox-container {
+			float: left;
+			width: 100%;
+		}
+		.content-secondary {
+			margin-right: -300px;
+			width: 280px;
+			float: right;
+		}
+	}
+}
+
+.slb_admin_action_reset {
+	color: #a00;
+	&:hover {
+		color: #dc3232;
+		border: none;
+	}
+}

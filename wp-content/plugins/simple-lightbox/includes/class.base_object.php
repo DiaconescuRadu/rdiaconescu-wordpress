@@ -98,7 +98,7 @@ class SLB_Base_Object extends SLB_Base {
 	protected function set_props($props) {
 		if ( is_array($props) && !empty($props) ) {
 			foreach ( $props as $key => $val ) {
-				//Check for setter method
+				// Check for setter method
 				$m = 'set_' . $key;
 				if ( method_exists($this, $m) ) {
 					$this->{$m}($val);
@@ -142,9 +142,9 @@ class SLB_Base_Object extends SLB_Base {
 		$ret = array();
 		$curr = $this;
 		while ( $curr->has_parent() ) {
-			//Add ancestor
+			// Add ancestor
 			$ret[] = $par = $curr->get_parent();
-			//Get next ancestor
+			// Get next ancestor
 			$curr = $par;
 		}
 		return $ret;
@@ -161,16 +161,37 @@ class SLB_Base_Object extends SLB_Base {
 	 */
 	protected function add_file($type, $handle, $src, $deps = array()) {
 		if ( is_string($type) && is_string($handle) && is_string($src) ) {
-			//Validate dependencies
+			// Validate dependencies
 			if ( !is_array($deps) ) {
 				$deps = array();
 			}
-			//Init file group
+			// Init file group
 			if ( !isset($this->files[$type]) || !is_array($this->files[$type]) ) {
 				$this->files[$type] = array();
 			}
-			//Add file to group
+			// Add file to group
 			$this->files[$type][$handle] = array('handle' => $handle, 'uri' => $src, 'deps' => $deps); 
+		}
+		return $this;
+	}
+	
+	/**
+	 * Add multiple files
+	 * @param string $type Group to add files to
+	 * @param array $files Files to add
+	 * @see add_file() for file parameters
+	 * @return object Current instance
+	 */
+	protected function add_files($type, $files) {
+		if ( !is_array($files) || empty($files) )
+			return false;
+		$m = $this->m('add_file');
+		foreach ( $files as $file ) {
+			if ( !is_array($file) || empty($file) ) {
+				continue;
+			}
+			array_unshift($file, $type);
+			call_user_func_array($m, $file);
 		}
 		return $this;
 	}
@@ -200,18 +221,38 @@ class SLB_Base_Object extends SLB_Base {
 	 * @return array|null File properties (Default: NULL)
 	 */
 	protected function get_file($type, $handle, $format = null) {
-		//Get files
+		// Get files
 		$files = $this->get_files($type);
-		//Get specified file
+		// Get specified file
 		$ret = ( is_string($type) && isset($files[$handle]) ) ? $files[$handle] : null;
-		//Format return value
+		// Format return value
 		if ( !empty($ret) && !!$format ) {
 			switch ( $format ) {
 				case 'uri':
 					$ret = $ret['uri'];
+					// Normalize URI
+					if ( !$this->util->is_uri($ret) ) {
+						$ret = $this->util->normalize_path(site_url(), $ret);
+					}
+					break;
+				case 'path':
+					$ret = $ret['uri'];
+					// Normalize path
+					if ( !$this->util->is_uri($ret) ) {
+						$ret = $this->util->get_relative_path($ret);
+						$ret = $this->util->normalize_path(ABSPATH, $ret);
+					}
 					break;
 				case 'object':
 					$ret = (object) $ret;
+					break;
+				case 'contents':
+					$ret = $ret['uri'];
+					if ( !$this->util->is_uri($ret) ) {
+						$ret = $this->util->normalize_path(site_url(), $ret);
+					}
+					$get = wp_safe_remote_get($ret);
+					$ret = ( !is_wp_error($get) && 200 == $get['response']['code'] ) ? $get['body'] : '';
 					break;
 			}
 		}
@@ -232,8 +273,27 @@ class SLB_Base_Object extends SLB_Base {
 	 * Retrieve stylesheet files
 	 * @return array Stylesheet files
 	 */
-	public function get_styles() {
-		return $this->get_files('styles');
+	public function get_styles($opts = null) {
+		$files = $this->get_files('styles');
+		if ( is_array($opts) ) {
+			$opts = (object) $opts;
+		}
+		if ( is_object($opts) && !empty($opts) ) {
+			// Parse options
+			// URI Format
+			if ( isset($opts->uri_format) ) {
+				foreach ( $files as $hdl => $props ) {
+					switch ( $opts->uri_format ) {
+						case 'full':
+							if ( !$this->util->is_uri($props['uri']) ) {
+								$files[$hdl]['uri'] = $this->util->normalize_path(site_url(), $props['uri']);
+							}
+							break;
+					}
+				}
+			}
+		}
+		return $files;
 	}
 	
 	/**

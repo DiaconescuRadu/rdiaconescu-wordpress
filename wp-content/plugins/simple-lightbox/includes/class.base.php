@@ -83,7 +83,7 @@ class SLB_Base {
 	 * 
 	 * Array is processed and converted to an object on init
 	 */
-	var $client_files = array(
+	private $client_files = array (
 		'scripts'	=> array(),
 		'styles'	=> array()
 	);
@@ -100,7 +100,7 @@ class SLB_Base {
 	 * Options
 	 * @var SLB_Options
 	 */
-	var $options = null;
+	protected $options = null;
 	
 	/**
 	 * Admin
@@ -116,11 +116,11 @@ class SLB_Base {
 	function __construct() {
 		$this->util = new SLB_Utilities($this);
 		if ( $this->can('init') ) {
-			$hook = 'plugins_loaded';
-			if ( current_filter() == $hook || self::$_init_passed ) {
+			$hook = 'init';
+			if ( did_action($hook) || self::$_init_passed ) {
 				$this->_init();
 			} else {
-				add_action($hook, $this->m('_init'));
+				add_action($hook, $this->m('_init'), 1);
 			}
 		}
 	}
@@ -139,22 +139,22 @@ class SLB_Base {
 		if ( $this->_init || !isset($this) || !$this->can('init') )
 			return false;
 		$this->_init = true;
-		//Environment
+		// Environment
 		$this->_env();
 
 		if ( $this->can('control') ) {
-			//Options
+			// Options
 			$this->_options();
 			
-			//Admin
+			// Admin
 			if ( is_admin() )
 				$this->_admin();
 		}
 
-		//Hooks
+		// Hooks
 		$this->_hooks();
 		
-		//Client files
+		// Client files
 		$this->_client_files();
 	}
 	
@@ -165,42 +165,45 @@ class SLB_Base {
 		if ( !$this->can('singleton') ) {
 			return false;
 		}
-		//Localization
+		// Localization
 		$ldir = 'l10n';
 		$lpath = $this->util->get_plugin_file_path($ldir, array(false, false));
 		$lpath_abs = $this->util->get_file_path($ldir);
 		if ( is_dir($lpath_abs) ) {
-			load_plugin_textdomain('ar-series', false, $lpath);
+			load_plugin_textdomain('simple-lightbox', false, $lpath);
 		}
 		
-		//Context
+		// Context
 		add_action( ( is_admin() ) ? 'admin_print_footer_scripts' : 'wp_footer', $this->util->m('set_client_context'), $this->util->priority('client_footer_output') );
 	}
 	
 	/**
 	 * Initialize options
+	 * To be implemented in child classes
+	 */
+	protected function _options() {}
+	
+	/**
+	 * Initialize options
 	 * To be called by child class
 	 */
-	protected function _options($options_config = null) {
+	protected function _set_options($options_config = null) {
 		$class = $this->util->get_class('Options');
 		$key = 'options';
 		if ( $this->shares($key) ) {
-			/**
-			 * @var SLB_Options
-			 */
 			$opts = $this->gvar($key);
-			//Setup options instance
-			if ( !is_a($opts, $class) ) {
+			// Setup options instance
+			if ( !($opts instanceof $class) ) {
 				$opts = $this->gvar($key, new $class());
 			}
 		} else {
 			$opts = new $class();
 		}
-		//Load options
+		// Load options
 		if ( $this->is_options_valid($options_config, false) ) {
 			$opts->load($options_config);
 		}
-		//Set instance property
+		// Set instance property
 		$this->options = $opts;
 	}
 	
@@ -215,18 +218,15 @@ class SLB_Base {
 		$class = $this->util->get_class('Admin');
 		$key = 'admin';
 		if ( $this->shares($key) ) {
-			/**
-			 * @var SLB_Admin
-			 */
 			$adm = $this->gvar($key);
-			//Setup options instance
-			if ( !is_a($adm, $class) ) {
+			// Setup options instance
+			if ( !($adm instanceof $class) ) {
 				$adm = $this->gvar($key, new $class($this));
 			}
 		} else {
 			$adm = new $class($this);
 		}
-		//Set instance property
+		// Set instance property
 		$this->admin = $adm;
 	}
 	
@@ -235,12 +235,12 @@ class SLB_Base {
 	 */
 	protected function _hooks() {
 		$base = $this->util->get_plugin_base_file();
-		//Activation
+		// Activation
 		$func_activate = '_activate';
 		if ( method_exists($this, $func_activate) )
 			register_activation_hook($base, $this->m($func_activate));
 		
-		//Deactivation
+		// Deactivation
 		$func_deactivate = '_deactivate';
 		if ( method_exists($this, $func_deactivate) )
 			register_deactivation_hook($base, $this->m($func_deactivate));
@@ -249,25 +249,36 @@ class SLB_Base {
 	/**
 	 * Initialize client files
 	 */
-	protected function _client_files() {
+	protected function _client_files($files = null) {
+		// Validation
+		if ( !is_array($files) || empty($files) ) {
+			return false;
+		} 
 		foreach ( $this->client_files as $key => $val ) {
-			if ( empty($val) && isset($this->{$key}) )
-				$this->client_files[$key] =& $this->{$key};
-			$g =& $this->client_files[$key];
-			if ( is_array($g) && !empty($g) ) {
-				$g = $this->util->parse_client_files($g, $key);
+			if ( isset($files[$key]) && is_array($files[$key]) || !empty($files[$key]) ) {
+				$this->client_files[$key] = $this->util->parse_client_files($files[$key], $key);
 			}
-			//Remove empty file groups
-			if ( empty($g) )
+			// Remove empty file groups
+			if ( empty($this->client_files[$key]) ) {
 				unset($this->client_files[$key]);
+			}
 		}
-
-		//Register
+		
+		
+		// Stop if no files are set for registration
+		if ( empty($this->client_files) ) {
+			return false;
+		}
+		
+		// Register
 		add_action('init', $this->m('register_client_files'));
 		
-		//Enqueue
-		$hook_enqueue = ( ( is_admin() ) ? 'admin' : 'wp' ) . '_enqueue_scripts' ;
-		add_action($hook_enqueue, $this->m('enqueue_client_files'));
+		// Enqueue
+		$hk_prfx = ( ( is_admin() ) ? 'admin' : 'wp' );
+		$hk_enqueue = $hk_prfx . '_enqueue_scripts' ;
+		$hk_enqueue_ft = $hk_prfx . '_footer';
+		add_action($hk_enqueue, $this->m('enqueue_client_files'), 10, 0);
+		add_action($hk_enqueue_ft, $this->m('enqueue_client_files_footer'), 1);
 	}
 	
 	/**
@@ -283,10 +294,10 @@ class SLB_Base {
 			if ( !$func )
 				continue;
 			foreach ( $files as $f ) {
-				//Get file URI
-				$f->file = ( !$this->util->is_file($f->file) && is_callable($f->file) ) ? call_user_func($f->file) : $this->util->get_file_url($f->file);
+				// Get file URI
+				$f->file = ( !$this->util->is_file($f->file) && is_callable($f->file) ) ? call_user_func($f->file) : $this->util->get_file_url($f->file, true);
 				$params = array($f->id, $f->file, $f->deps, $v);
-				//Set additional parameters based on file type (script, style, etc.)
+				// Set additional parameters based on file type (script, style, etc.)
 				switch ( $type ) {
 					case 'scripts':
 						$params[] = $f->in_footer;
@@ -295,7 +306,7 @@ class SLB_Base {
 						$params[] = $f->media;
 						break;
 				}
-				//Register file
+				// Register file
 				call_user_func_array($func, $params);
 			}
 		}
@@ -305,52 +316,73 @@ class SLB_Base {
 	 * Enqueues files for client output (scripts/styles) based on context
 	 * @uses `admin_enqueue_scripts` Action hook depending on context
 	 * @uses `wp_enqueue_scripts` Action hook depending on context
+	 * @param bool $footer (optional) Whether to enqueue footer files (Default: No)
 	 * @return void
 	 */
-	function enqueue_client_files() {
-		//Enqueue files
+	function enqueue_client_files($footer = false) {
+		// Validate
+		if ( !is_bool($footer) ) {
+			$footer = false;
+		}
+		// Enqueue files
 		foreach ( $this->client_files as $type => $files ) {
 			$func = $this->get_client_files_handler($type, 'enqueue');
 			if ( !$func ) {
 				continue;
 			}
-			foreach ( $files as $f ) {
-				//Skip shadow files
-				if ( !$f->enqueue ) {
+			foreach ( $files as $fkey => $f ) {
+				// Skip previously-enqueued files and shadow files
+				if ( $f->enqueued || !$f->enqueue ) {
+					continue;
+				}
+				// Enqueue files only for current location (header/footer)
+				if ( isset($f->in_footer) ) {
+					if ( $f->in_footer != $footer ) {
+						continue;
+					}
+				} elseif ( $footer ) {
 					continue;
 				}
 				$load = true;
-				//Global Callback
+				// Global Callback
 				if ( is_callable($f->callback) && !call_user_func($f->callback) ) {
 					$load = false;
 				}
-				//Context
+				// Context
 				if ( $load && !empty($f->context) ) {
-					//Reset $load before evaluating context
+					// Reset $load before evaluating context
 					$load = false;
-					//Iterate through contexts
+					// Iterate through contexts
 					foreach ( $f->context as $ctx ) {
-						//Context + Callback
+						// Context + Callback
 						if ( is_array($ctx) ) {
-							//Stop checking context if callback is invalid
+							// Stop checking context if callback is invalid
 							if ( !is_callable($ctx[1]) || !call_user_func($ctx[1]) )
 								continue;
 							$ctx = $ctx[0];
 						}
-						//Stop checking context if valid context found
+						// Stop checking context if valid context found
 						if ( $this->util->is_context($ctx) ) {
 							$load = true;
 							break;
 						}
 					}
 				}
-				
-				//Load valid file
+				// Load valid file
 				if ( $load ) {
+					// Mark file as enqueued
+					$this->client_files[$type]->{$fkey}->enqueued = true;
 					$func($f->id);
 				}
 			}
 		}
+	}
+
+	/**
+	 * Enqueue client files in the footer
+	 */
+	public function enqueue_client_files_footer() {
+		$this->enqueue_client_files(true);
 	}
 	
 	/**
@@ -462,7 +494,7 @@ class SLB_Base {
 	
 	protected function can($cap) {
 		if ( is_null($this->caps) ) {
-			//Build capabilities based on instance properties
+			// Build capabilities based on instance properties
 			$this->caps = array(
 				'init'			=> ( 'object' != $this->mode ) ? true : false,
 				'singleton'		=> ( !!$this->model ) ? true : false,
@@ -491,10 +523,10 @@ class SLB_Base {
 		}
 		$ret = $val;
 		if ( null !== $val ) {
-			//Set Value
+			// Set Value
 			$g[$name] = $val;
 		} elseif ( isset($g[$name]) ) {
-			//Retrieve variable
+			// Retrieve variable
 			$ret = $g[$name];
 		}
 		return $ret;
@@ -514,7 +546,7 @@ class SLB_Base {
 	function is_options_valid($data, $check_var = true) {
 		$class = $this->util->get_class('Options');
 		$ret = ( empty($data) || !is_array($data) || !class_exists($class) ) ? false : true;
-		if ( $ret && $check_var && !is_a($this->options, $class) )
+		if ( $ret && $check_var && !($this->options instanceof $class) )
 			$ret = false;
 		return $ret;
 	}
